@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Archive Collection System</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div id="loginView" class="login-shell">
+      <section class="login-panel" aria-label="Archive login">
+        <div class="mark">AC</div>
+        <h1>Archive Collection System</h1>
+        <form id="loginForm" class="login-form">
+          <label>
+            Username
+            <input name="username" autocomplete="username" value="admin" required />
+          </label>
+          <label>
+            Password
+            <input name="password" type="password" autocomplete="current-password" value="admin" required />
+          </label>
+          <button type="submit">Sign in</button>
+          <p id="loginError" class="error-text" role="alert"></p>
+        </form>
+        <div class="credential-strip">
+          <span>admin/admin</span>
+          <span>viewer/viewer</span>
+        </div>
+      </section>
+    </div>
+
+    <div id="appView" class="app-shell hidden">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="mark">AC</div>
+          <div>
+            <strong>Archive</strong>
+            <span>V1 Local</span>
+          </div>
+        </div>
+        <nav class="nav-tabs" aria-label="Primary">
+          <button class="active" data-tab="catalog" type="button">Catalog</button>
+          <button data-tab="record" type="button">Record</button>
+          <button data-tab="authorities" type="button">Authorities</button>
+          <button data-tab="storage" type="button">Storage</button>
+          <button data-tab="admin" type="button">Admin</button>
+        </nav>
+        <div class="user-card">
+          <span id="userName"></span>
+          <strong id="userRole"></strong>
+          <button id="logoutButton" type="button">Sign out</button>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="workspace-header">
+          <div>
+            <h1 id="pageTitle">Catalog</h1>
+            <p id="pageSubtitle">Search, browse, and retrieve archive records.</p>
+          </div>
+          <div id="summaryCounts" class="summary-counts"></div>
+        </header>
+
+        <section id="catalogTab" class="tab-panel active">
+          <div class="search-grid">
+            <label class="search-box">
+              Search
+              <input id="queryInput" placeholder="Pacific Theater, Manila, MNA-000123" />
+            </label>
+            <label>
+              Collection
+              <select id="collectionFilter"></select>
+            </label>
+            <label>
+              Type
+              <select id="typeFilter"></select>
+            </label>
+            <label>
+              Resource Type
+              <select id="resourceTypeFilter"></select>
+            </label>
+            <label>
+              Place
+              <select id="placeFilter"></select>
+            </label>
+            <label>
+              Event
+              <select id="eventFilter"></select>
+            </label>
+            <label>
+              Subject
+              <select id="subjectFilter"></select>
+            </label>
+            <label>
+              Campaign
+              <select id="campaignFilter"></select>
+            </label>
+            <label>
+              Formal Test
+              <select id="formalTestFilter">
+                <option value="">All records</option>
+                <option value="true">Formal test data</option>
+                <option value="false">Non-test records</option>
+              </select>
+            </label>
+            <label>
+              Rights
+              <select id="rightsFilter"></select>
+            </label>
+            <label>
+              Date from
+              <input id="dateFromFilter" inputmode="numeric" placeholder="1941" />
+            </label>
+            <label>
+              Date to
+              <input id="dateToFilter" inputmode="numeric" placeholder="1945" />
+            </label>
+          </div>
+
+          <div class="toolbar">
+            <span id="resultCount"></span>
+            <button id="clearFiltersButton" type="button">Clear</button>
+          </div>
+
+          <div class="record-layout">
+            <div class="record-list" id="objectList" aria-label="Catalog records"></div>
+            <article class="record-detail" id="recordDetail" aria-label="Selected record"></article>
+          </div>
+        </section>
+
+        <section id="recordTab" class="tab-panel">
+          <div class="admin-gate" id="recordGate"></div>
+          <form id="objectForm" class="object-form">
+            <div class="form-grid">
+              <label>
+                Permanent ID
+                <input name="permanent_id" placeholder="MNA-000500" required />
+              </label>
+              <label>
+                Title
+                <input name="title" required />
+              </label>
+              <label>
+                Object Type
+                <input name="object_type" placeholder="Photograph" required />
+              </label>
+              <label>
+                Collection
+                <input name="collection" placeholder="Pacific War Collection" />
+              </label>
+              <label>
+                Date Label
+                <input name="date_label" placeholder="1945 or circa 1944" />
+              </label>
+              <label>
+                Date Start
+                <input name="date_start" inputmode="numeric" placeholder="1945" />
+              </label>
+              <label>
+                Date End
+                <input name="date_end" inputmode="numeric" placeholder="1945" />
+              </label>
+              <label>
+                Language
+                <input name="language" placeholder="English" />
+              </label>
+              <label>
+                Rights
+                <input name="rights" placeholder="Public Domain" />
+              </label>
+              <label>
+                Condition
+                <input name="condition" placeholder="Good" />
+              </label>
+              <label>
+                Digitization Status
+                <input name="digitization_status" placeholder="Complete" />
+              </label>
+              <label>
+                Physical Location
+                <input name="storage_location" placeholder="Main Repository / Room 1 / Cabinet A / Box 12" />
+              </label>
+              <label class="wide">
+                Description
+                <textarea name="description" rows="4"></textarea>
+              </label>
+              <label class="wide">
+                Provenance
+                <textarea name="provenance" rows="3"></textarea>
+              </label>
+              <label>
+                Creators
+                <input name="creators" placeholder="John Smith" />
+              </label>
+              <label>
+                People
+                <input name="people" placeholder="Person A, Person B" />
+              </label>
+              <label>
+                Organizations
+                <input name="organizations" placeholder="U.S. Army" />
+              </label>
+              <label>
+                Places
+                <input name="places" placeholder="Manila" />
+              </label>
+              <label>
+                Events
+                <input name="events" placeholder="Battle of Manila" />
+              </label>
+              <label>
+                Subjects
+                <input name="subjects" placeholder="WWII, Pacific Theater" />
+              </label>
+            </div>
+
+            <details class="metadata-section" open>
+              <summary>Dublin Core / DCMI Terms</summary>
+              <div class="form-grid">
+                <label>
+                  Alternative Title
+                  <input name="alternative_title" placeholder="Alternate or translated title" />
+                </label>
+                <label>
+                  Publisher
+                  <input name="publisher" placeholder="National Museum of the Pacific War" />
+                </label>
+                <label>
+                  Contributors
+                  <input name="contributors" placeholder="Interviewer, transcriber, editor" />
+                </label>
+                <label>
+                  Source
+                  <input name="source" placeholder="Source collection or URL" />
+                </label>
+                <label>
+                  Relation
+                  <input name="relation" placeholder="Related collection, object, or event" />
+                </label>
+                <label>
+                  Spatial Coverage
+                  <input name="coverage_spatial" placeholder="Pearl Harbor; Manila; Okinawa" />
+                </label>
+                <label>
+                  Temporal Coverage
+                  <input name="coverage_temporal" placeholder="1941/1945" />
+                </label>
+                <label>
+                  Physical Description
+                  <input name="physical_description" placeholder="15 p. ; 28 cm." />
+                </label>
+                <label>
+                  Extent
+                  <input name="extent" placeholder="1 photograph; 4 pages; 1 audio file" />
+                </label>
+                <label>
+                  Medium
+                  <input name="medium" placeholder="paper; photographic print; digital audio" />
+                </label>
+                <label class="wide">
+                  Citation
+                  <textarea name="citation" rows="2" placeholder="Preferred citation for researchers"></textarea>
+                </label>
+              </div>
+            </details>
+
+            <details class="metadata-section" open>
+              <summary>Pacific War / UNTL-inspired Fields</summary>
+              <div class="form-grid">
+                <label>
+                  Resource Type
+                  <input name="resource_type" placeholder="Photograph, Letter, Sound, Map" />
+                </label>
+                <label>
+                  Genre / Form
+                  <input name="genre_form" placeholder="Oral histories, Correspondence, Military maps" />
+                </label>
+                <label>
+                  Series Title
+                  <input name="series_title" placeholder="Pearl Harbor Collection" />
+                </label>
+                <label>
+                  Subcollection
+                  <input name="subcollection" placeholder="Women in War, WWII Documents, Nimitz" />
+                </label>
+                <label>
+                  Theater
+                  <input name="theater" placeholder="Pacific Theater" />
+                </label>
+                <label>
+                  Campaign
+                  <input name="campaign" placeholder="Philippines Campaign" />
+                </label>
+                <label>
+                  Battle / Event Term
+                  <input name="battle" placeholder="Battle of Leyte Gulf" />
+                </label>
+                <label>
+                  Military Unit
+                  <input name="military_unit" placeholder="U.S. Navy; Fleet Radio Unit Pacific" />
+                </label>
+                <label>
+                  Vessel / Aircraft
+                  <input name="vessel_aircraft" placeholder="USS Enterprise; B-24 Liberator" />
+                </label>
+                <label>
+                  Modern Country
+                  <input name="modern_country" placeholder="Philippines" />
+                </label>
+                <label>
+                  Wartime Jurisdiction
+                  <input name="wartime_jurisdiction" placeholder="Commonwealth of the Philippines" />
+                </label>
+                <label>
+                  Subject Source
+                  <input name="subject_source" placeholder="Local; LCSH; LCGFT; UNTL-BS" />
+                </label>
+              </div>
+            </details>
+
+            <details class="metadata-section">
+              <summary>Identifiers, Rights, Preservation, Interop</summary>
+              <div class="form-grid">
+                <label>
+                  External Identifier
+                  <input name="external_identifier" placeholder="OH00365 or source call number" />
+                </label>
+                <label>
+                  ARK
+                  <input name="ark" placeholder="ark:/67531/..." />
+                </label>
+                <label>
+                  Item URL
+                  <input name="item_url" placeholder="https://texashistory.unt.edu/ark:/..." />
+                </label>
+                <label>
+                  Thumbnail URL
+                  <input name="thumbnail_url" placeholder="https://.../thumbnail/" />
+                </label>
+                <label>
+                  IIIF Manifest URL
+                  <input name="iiif_manifest_url" placeholder="https://.../manifest/" />
+                </label>
+                <label>
+                  License URI
+                  <input name="license_uri" placeholder="https://creativecommons.org/licenses/..." />
+                </label>
+                <label>
+                  Access Rights
+                  <input name="access_rights" placeholder="Public, Restricted, Metadata Only" />
+                </label>
+                <label>
+                  Metadata Profile
+                  <input name="metadata_profile" placeholder="Dublin Core + UNTL" />
+                </label>
+                <label class="check-label">
+                  <input name="primary_source" type="checkbox" checked />
+                  Primary Source
+                </label>
+                <label class="check-label">
+                  <input name="formal_test_data" type="checkbox" />
+                  Formal Test Data
+                </label>
+                <label class="wide">
+                  Display Note
+                  <textarea name="display_note" rows="2"></textarea>
+                </label>
+                <label class="wide">
+                  Internal Note
+                  <textarea name="internal_note" rows="2"></textarea>
+                </label>
+                <label class="wide">
+                  Preservation Note
+                  <textarea name="preservation_note" rows="2"></textarea>
+                </label>
+                <label class="wide">
+                  Metadata JSON
+                  <textarea name="metadata_json" rows="5" placeholder='{"schema":"custom"}'></textarea>
+                </label>
+              </div>
+            </details>
+            <div class="form-actions">
+              <button id="newRecordButton" type="button">New</button>
+              <button id="saveRecordButton" type="submit">Save</button>
+              <span id="recordMessage" class="muted"></span>
+            </div>
+          </form>
+        </section>
+
+        <section id="authoritiesTab" class="tab-panel">
+          <div class="split-panel">
+            <div>
+              <h2>Authority Records</h2>
+              <div id="authorityList" class="authority-list"></div>
+            </div>
+            <div>
+              <h2>Taxonomy</h2>
+              <div id="taxonomyList" class="taxonomy-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="storageTab" class="tab-panel">
+          <div class="split-panel">
+            <div>
+              <h2>Physical Storage</h2>
+              <div id="storageTree" class="storage-tree"></div>
+            </div>
+            <div>
+              <h2>Digital Storage</h2>
+              <div class="storage-note">
+                <strong>Local canonical demo</strong>
+                <code>storage/archive-master/{Permanent ID}/</code>
+                <strong>Google Drive demo</strong>
+                <span>Stored as link metadata until cloud credentials are configured.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="adminTab" class="tab-panel">
+          <div class="admin-gate" id="adminGate"></div>
+          <div class="admin-grid">
+            <section class="tool-panel wide-panel">
+              <h2>AI Intake Review</h2>
+              <form id="intakeUploadForm" class="stack-form">
+                <label>
+                  Batch Images
+                  <input name="files" type="file" accept="image/*,.pdf" multiple required />
+                </label>
+                <button type="submit">Upload for Review</button>
+                <span id="intakeUploadMessage" class="muted"></span>
+              </form>
+
+              <div class="intake-workbench">
+                <div>
+                  <div class="toolbar">
+                    <strong>Review Queue</strong>
+                    <button id="refreshIntakeButton" type="button">Refresh</button>
+                  </div>
+                  <div id="intakeList" class="intake-list"></div>
+                </div>
+
+                <form id="intakeReviewForm" class="intake-review-form hidden">
+                  <div class="toolbar">
+                    <strong id="intakeEditorTitle">Draft</strong>
+                    <span id="intakeStatus" class="muted"></span>
+                  </div>
+                  <div class="form-grid">
+                    <label>
+                      Permanent ID
+                      <input name="permanent_id" placeholder="Auto: AI-INTAKE-000001" />
+                    </label>
+                    <label>
+                      Title
+                      <input name="title" required />
+                    </label>
+                    <label>
+                      Object Type
+                      <input name="object_type" required />
+                    </label>
+                    <label>
+                      Collection
+                      <input name="collection" />
+                    </label>
+                    <label>
+                      Date Label
+                      <input name="date_label" />
+                    </label>
+                    <label>
+                      Date Start
+                      <input name="date_start" inputmode="numeric" />
+                    </label>
+                    <label>
+                      Date End
+                      <input name="date_end" inputmode="numeric" />
+                    </label>
+                    <label>
+                      Language
+                      <input name="language" />
+                    </label>
+                    <label>
+                      Rights
+                      <input name="rights" />
+                    </label>
+                    <label>
+                      Condition
+                      <input name="condition" />
+                    </label>
+                    <label>
+                      Digitization Status
+                      <input name="digitization_status" />
+                    </label>
+                    <label>
+                      Physical Location
+                      <input name="storage_location" />
+                    </label>
+                    <label class="wide">
+                      Description
+                      <textarea name="description" rows="3"></textarea>
+                    </label>
+                    <label class="wide">
+                      Provenance
+                      <textarea name="provenance" rows="2"></textarea>
+                    </label>
+                    <label>
+                      Creators
+                      <input name="creators" />
+                    </label>
+                    <label>
+                      People
+                      <input name="people" />
+                    </label>
+                    <label>
+                      Organizations
+                      <input name="organizations" />
+                    </label>
+                    <label>
+                      Places
+                      <input name="places" />
+                    </label>
+                    <label>
+                      Events
+                      <input name="events" />
+                    </label>
+                    <label>
+                      Subjects
+                      <input name="subjects" />
+                    </label>
+                    <label>
+                      Resource Type
+                      <input name="resource_type" />
+                    </label>
+                    <label>
+                      Genre / Form
+                      <input name="genre_form" />
+                    </label>
+                    <label>
+                      Theater
+                      <input name="theater" />
+                    </label>
+                    <label>
+                      Campaign
+                      <input name="campaign" />
+                    </label>
+                    <label>
+                      Battle
+                      <input name="battle" />
+                    </label>
+                    <label>
+                      Modern Country
+                      <input name="modern_country" />
+                    </label>
+                    <label>
+                      Metadata Profile
+                      <input name="metadata_profile" />
+                    </label>
+                    <label>
+                      Derivative Type
+                      <select name="derivative_type">
+                        <option value="preservation_master">preservation_master</option>
+                        <option value="access_derivative">access_derivative</option>
+                        <option value="working_copy">working_copy</option>
+                        <option value="ocr">ocr</option>
+                      </select>
+                    </label>
+                    <label>
+                      Submit Mode
+                      <select name="submit_mode" id="intakeSubmitMode">
+                        <option value="create_object">Create new object</option>
+                        <option value="attach_existing">Attach to existing object</option>
+                      </select>
+                    </label>
+                    <label id="intakeExistingObjectLabel" class="hidden">
+                      Existing Object
+                      <select name="object_id" id="intakeExistingObjectSelect"></select>
+                    </label>
+                    <label class="wide">
+                      Display Note
+                      <textarea name="display_note" rows="2"></textarea>
+                    </label>
+                    <label class="wide">
+                      Internal Note
+                      <textarea name="internal_note" rows="2"></textarea>
+                    </label>
+                    <label class="wide">
+                      Preservation Note
+                      <textarea name="preservation_note" rows="2"></textarea>
+                    </label>
+                    <label class="wide">
+                      Metadata JSON
+                      <textarea name="metadata_json" rows="5"></textarea>
+                    </label>
+                  </div>
+                  <div class="form-actions">
+                    <button id="saveIntakeDraftButton" type="button">Save Draft</button>
+                    <button id="submitIntakeButton" type="submit">Submit</button>
+                    <button id="rejectIntakeButton" type="button">Reject</button>
+                    <span id="intakeMessage" class="muted"></span>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <section class="tool-panel">
+              <h2>Attach Local Media</h2>
+              <form id="uploadForm" class="stack-form">
+                <label>
+                  Object
+                  <select name="object_id" id="uploadObjectSelect"></select>
+                </label>
+                <label>
+                  Derivative Type
+                  <select name="derivative_type">
+                    <option value="preservation_master">preservation_master</option>
+                    <option value="access_derivative">access_derivative</option>
+                    <option value="ocr">ocr</option>
+                    <option value="transcript">transcript</option>
+                    <option value="metadata_export">metadata_export</option>
+                  </select>
+                </label>
+                <label>
+                  File
+                  <input name="file" type="file" required />
+                </label>
+                <button type="submit">Upload</button>
+              </form>
+            </section>
+
+            <section class="tool-panel">
+              <h2>Attach Google Drive Demo Link</h2>
+              <form id="driveLinkForm" class="stack-form">
+                <label>
+                  Object
+                  <select name="object_id" id="driveObjectSelect"></select>
+                </label>
+                <label>
+                  Display Filename
+                  <input name="filename" placeholder="working-copy.pdf" required />
+                </label>
+                <label>
+                  Derivative Type
+                  <input name="derivative_type" value="working_copy" />
+                </label>
+                <label>
+                  Google Drive URL
+                  <input name="google_drive_url" placeholder="https://drive.google.com/..." required />
+                </label>
+                <button type="submit">Attach</button>
+              </form>
+            </section>
+
+            <section class="tool-panel">
+              <h2>Backup</h2>
+              <button id="backupButton" type="button">Generate Backup</button>
+              <div id="backupResult" class="backup-result"></div>
+            </section>
+
+            <section class="tool-panel">
+              <h2>Audit</h2>
+              <div id="auditList" class="audit-list"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

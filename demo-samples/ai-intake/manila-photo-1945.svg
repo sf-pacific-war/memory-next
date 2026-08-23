@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Manila street photograph, 1945</title>
+  <desc id="desc">A demo archive intake image representing a Pacific War photograph from Manila in 1945.</desc>
+  <rect width="1400" height="900" fill="#d7d2c3"/>
+  <rect y="0" width="1400" height="270" fill="#9fb6bd"/>
+  <rect y="268" width="1400" height="632" fill="#b5aa92"/>
+  <path d="M0 380 C210 320 330 350 505 292 C680 234 880 270 1018 226 C1160 180 1270 205 1400 170 L1400 900 L0 900 Z" fill="#8a826f" opacity="0.55"/>
+  <g fill="#544b3e">
+    <rect x="110" y="265" width="210" height="310"/>
+    <rect x="145" y="312" width="45" height="65" fill="#bfc8c4"/>
+    <rect x="225" y="312" width="45" height="65" fill="#bfc8c4"/>
+    <rect x="175" y="430" width="78" height="145" fill="#2f2b25"/>
+    <rect x="840" y="230" width="270" height="370"/>
+    <rect x="878" y="286" width="58" height="76" fill="#c7cbc4"/>
+    <rect x="1010" y="286" width="58" height="76" fill="#c7cbc4"/>
+    <rect x="930" y="438" width="92" height="162" fill="#2f2b25"/>
+  </g>
+  <g fill="#6f604b">
+    <rect x="360" y="340" width="170" height="210"/>
+    <rect x="390" y="378" width="42" height="56" fill="#c8c7bd"/>
+    <rect x="455" y="378" width="42" height="56" fill="#c8c7bd"/>
+    <rect x="1180" y="320" width="150" height="230"/>
+    <rect x="1214" y="363" width="38" height="54" fill="#c8c7bd"/>
+    <rect x="1270" y="363" width="38" height="54" fill="#c8c7bd"/>
+  </g>
+  <path d="M0 684 C180 640 340 632 520 650 C720 670 845 628 1012 642 C1190 657 1284 704 1400 674 L1400 900 L0 900 Z" fill="#6b665b"/>
+  <g opacity="0.9">
+    <circle cx="654" cy="512" r="36" fill="#2e302f"/>
+    <path d="M616 556 C640 532 674 532 696 556 L722 715 L590 715 Z" fill="#2e302f"/>
+    <rect x="570" y="590" width="34" height="140" fill="#2e302f"/>
+    <rect x="710" y="590" width="34" height="140" fill="#2e302f"/>
+    <rect x="612" y="716" width="34" height="76" fill="#252525"/>
+    <rect x="676" y="716" width="34" height="76" fill="#252525"/>
+  </g>
+  <g opacity="0.72">
+    <circle cx="760" cy="548" r="26" fill="#3a3933"/>
+    <path d="M733 582 C752 565 775 565 792 582 L810 696 L716 696 Z" fill="#3a3933"/>
+    <rect x="709" y="606" width="24" height="112" fill="#3a3933"/>
+    <rect x="797" y="606" width="24" height="112" fill="#3a3933"/>
+  </g>
+  <line x1="86" y1="630" x2="1320" y2="630" stroke="#d9d4c4" stroke-width="9" opacity="0.45"/>
+  <rect x="74" y="64" width="600" height="138" fill="#f2ead8" stroke="#5a5347" stroke-width="4"/>
+  <text x="104" y="122" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#2d2a24">Manila street photograph</text>
+  <text x="104" y="169" font-family="Arial, sans-serif" font-size="26" fill="#4b463d">Pacific War demo intake sample · 1945</text>
+  <rect x="74" y="732" width="1252" height="92" fill="#272823" opacity="0.84"/>
+  <text x="104" y="773" font-family="Arial, sans-serif" font-size="24" fill="#efe9db">Suggested demo metadata: Photograph · Manila · 1945 · WWII · Pacific Theater</text>
+  <text x="104" y="808" font-family="Arial, sans-serif" font-size="20" fill="#d8cfbd">Use this file in Admin → AI Intake Review → Upload for Review.</text>
+</svg>
