@@ -21,7 +21,7 @@ python3 step1/tools/serve.py
 
 当前包含 **31 条真实目录样本**：LoC 16 条、NDL 9 条、Europeana 1 条、NARA 5 条。网页检索本地快照，不实时查询外馆，也不代表完整馆藏。已有样本可直接预览，**不需要注册 API 或配置 key**。
 
-更新样本时，LoC、NDL 和 NARA 公开数据集无需 key；Europeana 获取工具需要自己的 `EUROPEANA_API_KEY`。仓库仅包含空白 [凭据模板](step1/.env.example)，不包含可用密钥。具体命令、来源范围、凭据说明和后续规划见 [Step 1 README](step1/README.md)。
+更新样本时，LoC、NDL 和 NARA 公开数据集无需 key；Europeana 获取工具需要自己的 `EUROPEANA_API_KEY`。仓库仅包含空白 [凭据模板](step1/.env.example)，不包含可用密钥。具体命令、来源范围、凭据说明和后续规划见 [Step 1 README](step1/README.md)。新增 [逐平台接入检查](step1/docs/archive-access.md) 覆盖 8 平台、9 种方式，分别说明无须凭据、已有／缺少 key、待 IP 审批和仅网页入口的状态。
 
 ## 运行旧应用：Step 0
 
@@ -76,7 +76,7 @@ python3 -m unittest discover -s step1/tests -p 'test_*.py' -v
 node --test step1/tests/search.test.mjs
 ```
 
-Step 0 的 7 项检查使用临时副本和新建的演示数据库，验证迁移后的启动、静态资源、登录、搜索和权限。Step 1 的 48 项 Python 测试、10 项 JavaScript 测试验证数据处理、凭据边界、HTTP 文件隔离和搜索。测试无需 API key、不连接外馆；HTTP 检查会短暂绑定本机端口。
+Step 0 的 7 项检查使用临时副本和新建的演示数据库，验证迁移后的启动、静态资源、登录、搜索和权限。Step 1 的 141 项 Python 测试、10 项 JavaScript 测试验证数据处理、凭据边界、HTTP 文件隔离和搜索。测试无需 API key、不连接外馆；HTTP 检查会短暂绑定本机端口。
 
 仓库提供 [GitHub Actions 测试模板](ci/demo-tests.yml)，**尚未启用自动 CI**。当前推送凭据缺少 GitHub 的 `workflow` 权限，因此模板保存在 `ci/`；有相应权限的维护者可以按 [启用说明](ci/README.md) 将其放入 `.github/workflows/`。启用后会在 PR 和 `main` 更新时运行这些检查，不自动部署。
 

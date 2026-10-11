@@ -246,6 +246,25 @@ python3 tools/build_site_data.py
 
 获取工具有 30 秒连接／读取超时和响应体大小限制，不自动重试或翻页。遇到限流不要连续重复请求；接口失败不能视为“没有相关档案”。
 
+## 各平台独立接入检查
+
+现提供 **8 个平台、9 种接入方式**的独立 `access_*.py` 和统一检查器。每个平台的凭据要求、未配置行为、完整命令、申请依据和 unit tests 见 [接入与测试说明](docs/archive-access.md)，当前实测结果见 [验证记录](docs/archive-access-validation.md)。
+
+以下命令从本应用目录运行：
+
+```sh
+# 默认不联网；缺少 key、待审批与仅网页入口分别列出
+python3 tools/check_archives.py
+
+# 已有 Europeana 本地配置时，明确发起小请求；其余来源按条件跳过
+python3 tools/check_archives.py --live --env-file .env.europeana
+
+# 仅运行新增的接入检查 unit tests，不需要真实凭据或网络
+python3 -B -m unittest discover -s tests -p 'test_a*.py' -v
+```
+
+本次 LoC、NDL、NARA 公开数据集和 Europeana 各一次真实请求均通过；DPLA／NARA 实时 API 缺 key，TNA 待 IP 审批，JACAR／IWM 只返回官方网页入口。这些检查只输出状态和计数，不更新网页样本；网页实际检索来源仍为前述四个。
+
 ## 运行测试
 
 ```sh
@@ -260,7 +279,7 @@ node --test tests/search.test.mjs
 
 Node.js 仅用于运行这组开发测试，不是预览网页的条件。如果系统 `node` 无法启动，可使用可运行的 Node.js 运行时的绝对路径替换命令中的 `node`；不要因为 Node.js 故障而阻塞 Python 本地预览。
 
-当前测试包含 **48 项 Python 测试 + 10 项搜索测试**。Demo 开发期间另行检查了桌面／手机布局、跨平台检索、筛选、详情、日期校验和加载失败后的恢复。测试不连接外馆；其中 HTTP 隔离测试会短暂绑定本机端口。仓库迁移保留现有快照，不重新获取外馆数据。
+当前 **141 项 Python 测试 + 10 项搜索测试**全部通过，其中新增 93 项接入检查测试。Demo 开发期间另行检查过桌面／手机布局、跨平台检索、筛选、详情、日期校验和加载失败后的恢复。自动化测试不连接外馆；HTTP 隔离测试会短暂绑定本机端口。本次另行执行的四来源真实小请求见 [接入验证记录](docs/archive-access-validation.md)，已有网页样本保持不变。
 
 ## 已知限制
 
@@ -304,6 +323,8 @@ P1 可以先发布现有静态架构，不必等待所有平台开通实时 API�
 
 - [Demo 实施步骤与验收](docs/demo-steps.md)
 - [Europeana 接入与凭据说明](docs/europeana.md)
+- [逐平台接入、凭据与测试](docs/archive-access.md)
+- [接入实测记录](docs/archive-access-validation.md)
 - [仓库概览及两个应用的关系](../README.md)
 
 后续工作见本文“下一步计划”；当前实际能力以“已实现”部分和本目录代码为准。
