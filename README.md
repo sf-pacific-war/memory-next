@@ -19,9 +19,11 @@ python3 step1/tools/serve.py
 
 打开 **http://127.0.0.1:8000**。顶部可切换 English／中文，也支持 `?lang=en` 和 `?lang=zh-CN`。档案原文保留。可以搜索“缅甸”“滇缅公路”或“英帕尔”，组合来源、资料类型、目录日期和访问状态筛选，再查看记录详情及原馆链接。按 `Ctrl+C` 停止；端口占用时运行 `python3 step1/tools/serve.py --port 8001`。
 
-当前包含 **31 条真实目录样本**：LoC 16 条、NDL 9 条、Europeana 1 条、NARA 5 条。网页检索本地快照，不实时查询外馆，也不代表完整馆藏。已有样本可直接预览，**不需要注册 API 或配置 key**。
+当前包含 **31 条真实目录样本**：美国国会图书馆（LoC） 16 条、日本国立国会图书馆（NDL） 9 条、欧洲数字文化遗产平台（Europeana） 1 条、美国国家档案馆（NARA） 5 条。网页检索本地快照，不实时查询外馆，也不代表完整馆藏。已有样本可直接预览，**不需要注册 API 或配置 key**。
 
-更新样本时，LoC、NDL 和 NARA 公开数据集无需 key；Europeana 获取工具需要自己的 `EUROPEANA_API_KEY`。仓库仅包含空白 [凭据模板](step1/.env.example)，不包含可用密钥。具体命令、来源范围、凭据说明和后续规划见 [Step 1 README](step1/README.md)。新增 [逐平台接入检查](step1/docs/archive-access.md) 覆盖 8 平台、9 种方式，分别说明无须凭据、已有／缺少 key、待 IP 审批和仅网页入口的状态。
+更新样本时，美国国会图书馆（LoC）、日本国立国会图书馆（NDL） 和 美国国家档案馆（NARA） 公开数据集无需 key；欧洲数字文化遗产平台（Europeana） 获取工具需要自己的 `EUROPEANA_API_KEY`。仓库仅包含空白 [凭据模板](step1/.env.example)，不包含可用密钥。具体命令、来源范围、凭据说明和后续规划见 [Step 1 README](step1/README.md)。新增 [逐平台接入检查](step1/docs/archive-access.md) 覆盖 8 平台、9 种方式，分别说明无须凭据、已有／缺少 key、待 IP 审批和仅网页入口的状态。
+
+档案平台使用中英文对照名称，见 [名称表](step1/docs/archive-platform-names.md)。[台湾档案管理局（archives.gov.tw）总结](step1/docs/taiwan-archives.md)记录免 key CSV 的访问验证、合作 API 状态和后续生产接入；尚未加入当前四来源网页或统一检查器。
 
 ## 运行旧应用：Step 0
 

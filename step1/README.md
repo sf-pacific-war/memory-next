@@ -4,7 +4,9 @@
 
 Step 1 的页面、工具、数据、测试、说明和本地配置集中在本目录。功能范围是跨来源检索、筛选、详情和跳转原馆；不包含馆藏管理、LLM、研究工作台或出版。
 
-前端和四个来源的元数据获取工具已实现。当前网页包含 **31 条真实目录样本**：LoC 16 条、NDL 9 条、Europeana 1 条、NARA 5 条。NARA 使用官方公开数据集，无需 key 或 AWS 账户；另外三个来源通过 API 取得样本。Europeana 原始 3 条候选中有 2 条因同名误命中或相关性未确认而暂不展示。网页检索本地快照，不实时请求外馆，也不代表完整馆藏。
+前端和四个来源的元数据获取工具已实现。当前网页包含 **31 条真实目录样本**：美国国会图书馆（LoC） 16 条、日本国立国会图书馆（NDL） 9 条、欧洲数字文化遗产平台（Europeana） 1 条、美国国家档案馆（NARA） 5 条。美国国家档案馆（NARA）使用官方公开数据集，无需 key 或 AWS 账户；另外三个来源通过 API 取得样本。欧洲数字文化遗产平台（Europeana）原始 3 条候选中有 2 条因同名误命中或相关性未确认而暂不展示。网页检索本地快照，不实时请求外馆，也不代表完整馆藏。
+
+平台名称统一采用中文名与英文缩写并列，完整英文名见 [平台中英文名称对照](docs/archive-platform-names.md)。新增研究的 [台湾档案管理局（archives.gov.tw）](docs/taiwan-archives.md)已验证官方 CSV 可读取，但尚无专用接入脚本，也未加入当前四来源网页。
 
 ## 项目定位与当前功能
 
@@ -23,7 +25,7 @@ Step 1 的页面、工具、数据、测试、说明和本地配置集中在本�
 | 访问状态筛选 | 区分“有在线资源”和“访问条件待确认” |
 | 排序与加载 | 按相关性、日期由新到旧／由旧到新排序；每批显示 10 条，可加载更多 |
 | 资料详情 | 查看原始目录标题与描述、机构、语种、日期、记录编号、权利说明及原馆链接 |
-| NARA 档案背景 | 保留档案组、系列／案卷层级、真实祖先标题及公开数据出处；祖先标题参与检索 |
+| 美国国家档案馆（NARA）档案背景 | 保留档案组、系列／案卷层级、真实祖先标题及公开数据出处；祖先标题参与检索 |
 | 查询链接 | 将搜索、筛选和排序写入 URL；刷新或浏览器前进／后退可以恢复这些条件 |
 | 手机及异常状态 | 窄屏布局、折叠筛选、空结果提示、数据加载失败与重试 |
 
@@ -35,24 +37,24 @@ Step 1 的页面、工具、数据、测试、说明和本地配置集中在本�
 
 | 来源 | 当前范围 | 凭据 | 展示数量 |
 | --- | --- | --- | ---: |
-| LoC | `/photos/` API 的 Burma Road 主题样本，不是全 LoC 目录 | 无需 key | 16 |
-| NDL Search | 限定 `iss-ndl-opac` 的日文书目，含战后出版物 | 无需 key | 9 |
-| Europeana | Search API 的 `"Burma Road"` 候选，已排除 2 条误命中或相关性未确认记录 | `EUROPEANA_API_KEY` | 1 |
-| NARA | 官方公开数据集的一个 RG 493 中缅印战区目录分片 | 无需 key 或 AWS 账户 | 5 |
+| 美国国会图书馆（LoC） | `/photos/` API 的 Burma Road 主题样本，不是全美国国会图书馆（LoC）目录 | 无需 key | 16 |
+| 日本国立国会图书馆检索平台（NDL Search） | 限定 `iss-ndl-opac` 的日文书目，含战后出版物 | 无需 key | 9 |
+| 欧洲数字文化遗产平台（Europeana） | Search API 的 `"Burma Road"` 候选，已排除 2 条误命中或相关性未确认记录 | `EUROPEANA_API_KEY` | 1 |
+| 美国国家档案馆（NARA） | 官方公开数据集的一个 RG 493 中缅印战区目录分片 | 无需 key 或 AWS 账户 | 5 |
 
-现有样本获取于 **2026-10-10 UTC**。索引可以重新构建，但新的构建时间不表示重新获取过外馆数据。NARA 另保留数据文件更新时间，该时间也不是档案事件日期。
+现有样本获取于 **2026-10-10 UTC**。索引可以重新构建，但新的构建时间不表示重新获取过外馆数据。美国国家档案馆（NARA）另保留数据文件更新时间，该时间也不是档案事件日期。
 
 ### 可复现的跨平台检索
 
 以下结果基于当前 31 条样本，未加来源、日期等额外筛选；更新样本后数量可能变化。
 
-| 搜索词 | LoC | NDL | Europeana | NARA | 合计 |
+| 搜索词 | 美国国会图书馆（LoC） | 日本国立国会图书馆（NDL） | 欧洲数字文化遗产平台（Europeana） | 美国国家档案馆（NARA） | 合计 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | 缅甸 | 16 | 7 | 1 | 5 | 29 |
 | 滇缅公路 | 13 | 1 | 1 | 0 | 15 |
 | 英帕尔 | 0 | 1 | 0 | 0 | 1 |
 
-NARA 命中可能来自所属档案组标题；详情会显示这层背景，并不表示每个下属文件都直接讨论该关键词。
+美国国家档案馆（NARA）命中可能来自所属档案组标题；详情会显示这层背景，并不表示每个下属文件都直接讨论该关键词。
 
 ## 本地打开网页
 
@@ -75,7 +77,7 @@ python3 tools/serve.py
 1. 输入“缅甸”或“滇缅公路”，查看中文入口对应的中英日别名扩展。
 2. 组合来源、资料类型、目录年份和访问状态筛选；支持保留或排除日期未知的记录。
 3. 切换相关性／日期排序、加载更多，打开详情核对原始目录描述、来源、目录日期及许可。
-4. 点击“前往原馆”；NDL 包含战后出版的书目，目录可访问不代表全文开放。
+4. 点击“前往原馆”；日本国立国会图书馆（NDL）包含战后出版的书目，目录可访问不代表全文开放。
 5. 刷新页面或复制地址，保留当前搜索和筛选条件。地址仅可在运行相同 demo 的环境恢复；`127.0.0.1` 不是供他人访问的公开网址。
 
 页面支持手机窄屏布局和折叠筛选。演示与搜索不消耗 API 配额；前往原馆需要联网。不要双击 `index.html` 直接打开，因为浏览器需要通过本地 HTTP 服务读取目录 JSON。
@@ -124,7 +126,7 @@ python3 tools/serve.py
 | `access` | `online` 或 `unverified`；省略时全部 |
 | `sort` | `newest`、`oldest`；默认 `relevance` |
 
-例如，在 LoC 与 NARA 中查询 Burma，按日期由旧到新排序：
+例如，在美国国会图书馆（LoC）与美国国家档案馆（NARA）中查询 Burma，按日期由旧到新排序：
 
 ```text
 http://127.0.0.1:8000/?q=Burma&source=LoC&source=NARA&sort=oldest
@@ -136,10 +138,10 @@ http://127.0.0.1:8000/?q=Burma&source=LoC&source=NARA&sort=oldest
 
 | 来源 | 当前代码配置的地址 | 参数／说明 |
 | --- | --- | --- |
-| LoC | `https://www.loc.gov/photos/` | `q`、`fo=json`、`c` |
-| NDL | `https://ndlsearch.ndl.go.jp/api/opensearch` | `any`、`dpid=iss-ndl-opac`、`cnt` |
-| Europeana | `https://api.europeana.eu/record/v2/search.json` | `query`、`rows`、`profile=rich`；key 由获取工具读取 |
-| NARA | `https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl` | 固定公开数据分片，没有关键词查询参数 |
+| 美国国会图书馆（LoC） | `https://www.loc.gov/photos/` | `q`、`fo=json`、`c` |
+| 日本国立国会图书馆（NDL） | `https://ndlsearch.ndl.go.jp/api/opensearch` | `any`、`dpid=iss-ndl-opac`、`cnt` |
+| 欧洲数字文化遗产平台（Europeana） | `https://api.europeana.eu/record/v2/search.json` | `query`、`rows`、`profile=rich`；key 由获取工具读取 |
+| 美国国家档案馆（NARA） | `https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl` | 固定公开数据分片，没有关键词查询参数 |
 
 点击原馆链接时，浏览器会另行访问对应机构网站。
 
@@ -147,7 +149,7 @@ http://127.0.0.1:8000/?q=Burma&source=LoC&source=NARA&sort=oldest
 
 ```mermaid
 flowchart LR
-    A[外馆 API / NARA 公开数据集] --> B[Python 获取与标准化]
+    A[外馆 API / 美国国家档案馆（NARA）公开数据集] --> B[Python 获取与标准化]
     B --> C[data/ 源快照]
     C --> D[build_site_data.py]
     R[review-notes.json 排除清单] --> D
@@ -156,7 +158,7 @@ flowchart LR
     F --> G[浏览器搜索、筛选与详情]
 ```
 
-Europeana key 只由对应的获取工具读取，浏览器使用已生成的公开目录。统一字段保留来源 ID、原文、机构、类型、语种、原馆 URL、目录日期、访问状态与权利说明；不会把不同含义的日期统一解释为战役年份。
+欧洲数字文化遗产平台（Europeana） key 只由对应的获取工具读取，浏览器使用已生成的公开目录。统一字段保留来源 ID、原文、机构、类型、语种、原馆 URL、目录日期、访问状态与权利说明；不会把不同含义的日期统一解释为战役年份。
 
 ## 目录
 
@@ -167,9 +169,9 @@ step1/
   .env.example                   可选凭据的空白模板
   .env.europeana                  自行配置的本机凭据，已忽略，不随仓库提供
   tools/
-    fetch_europeana_metadata.py   Europeana 获取与标准化
-    fetch_public_metadata.py      LoC／NDL 免 key 获取与标准化
-    fetch_nara_metadata.py        NARA 官方公开数据集小样本
+    fetch_europeana_metadata.py   欧洲数字文化遗产平台（Europeana）获取与标准化
+    fetch_public_metadata.py      美国国会图书馆（LoC）／日本国立国会图书馆（NDL）免 key 获取与标准化
+    fetch_nara_metadata.py        美国国家档案馆（NARA）官方公开数据集小样本
     build_site_data.py            生成可公开的目录 JSON
     serve.py                      构建数据并启动本地网页
   data/
@@ -203,17 +205,17 @@ step1/
 
 以下命令均在 `step1/` 内运行。预览已有样本无需执行；刷新才会访问外部 API 或公开数据文件。
 
-LoC 与 NDL 不需要注册或 key，每次刷新每个来源只发起一个小请求，不自动翻页：
+美国国会图书馆（LoC）与日本国立国会图书馆（NDL）不需要注册或 key，每次刷新每个来源只发起一个小请求，不自动翻页：
 
 ```sh
 python3 tools/fetch_public_metadata.py --source all
 ```
 
-`--source all` 只包含 LoC 与 NDL。可用 `--source loc` 或 `--source ndl` 只刷新单个来源；`--rows` 范围为 1–20，自定义 `--query` 必须同时选择单个来源。这会更新该来源的当前样本，不会追加到旧样本中。
+`--source all` 只包含美国国会图书馆（LoC）与日本国立国会图书馆（NDL）。可用 `--source loc` 或 `--source ndl` 只刷新单个来源；`--rows` 范围为 1–20，自定义 `--query` 必须同时选择单个来源。这会更新该来源的当前样本，不会追加到旧样本中。
 
 同一来源两次运行建议至少间隔 5 秒。失败时保留该来源之前的成功快照，终端会报告错误。新增结果仍是待审阅候选，记录数可能变化。
 
-NARA 使用其官方 AWS 开放数据集中的 **RG 493：中缅印战区美军档案**，每次只读取一个约 300 KB 的目录数据文件，不下载扫描件、音频或全文：
+美国国家档案馆（NARA）使用其官方 AWS 开放数据集中的 **RG 493：中缅印战区美军档案**，每次只读取一个约 300 KB 的目录数据文件，不下载扫描件、音频或全文：
 
 ```sh
 python3 tools/fetch_nara_metadata.py
@@ -221,11 +223,11 @@ python3 tools/fetch_nara_metadata.py
 
 `--limit` 仅限制这个分片中保留多少条记录，不会下载更多分片，也没有实时 `--query` 搜索能力。
 
-这是公开数据集接入，不是 NARA Catalog 实时 API。无需注册、API key 或 AWS 账户；目录详情保留数据文件地址、文件更新时间和档案层级。系列／案卷记录不等同于单件扫描件，文件更新时间也不表示事件日期。搜索会包含真实祖先档案标题，详情中可核对命中的档案背景。[NARA 数据说明](https://www.archives.gov/developer/national-archives-catalog-dataset)、[AWS 官方数据登记](https://registry.opendata.aws/nara-national-archives-catalog/)。
+这是公开数据集接入，不是美国国家档案馆（NARA） Catalog 实时 API。无需注册、API key 或 AWS 账户；目录详情保留数据文件地址、文件更新时间和档案层级。系列／案卷记录不等同于单件扫描件，文件更新时间也不表示事件日期。搜索会包含真实祖先档案标题，详情中可核对命中的档案背景。[美国国家档案馆（NARA）数据说明](https://www.archives.gov/developer/national-archives-catalog-dataset)、[AWS 官方数据登记](https://registry.opendata.aws/nara-national-archives-catalog/)。
 
-如以后需要实时查询 NARA Catalog，须向 `Catalog_API@nara.gov` 申请 read-only key。API 条款对结果存储存在限制，因此当前没有调用或缓存该 API。[API 接入说明](https://github.com/usnationalarchives/Catalog-API#how-do-i-get-access-to-the-api)。
+如以后需要实时查询美国国家档案馆（NARA） Catalog，须向 `Catalog_API@nara.gov` 申请 read-only key。API 条款对结果存储存在限制，因此当前没有调用或缓存该 API。[API 接入说明](https://github.com/usnationalarchives/Catalog-API#how-do-i-get-access-to-the-api)。
 
-Europeana 刷新需要自己的 key。仓库不提供凭据；仅预览样本可以跳过。先在本目录创建本地配置：
+欧洲数字文化遗产平台（Europeana）刷新需要自己的 key。仓库不提供凭据；仅预览样本可以跳过。先在本目录创建本地配置：
 
 ```sh
 cp .env.example .env.europeana
@@ -266,14 +268,14 @@ python3 tools/build_site_data.py
 # 默认不联网；缺少 key、待审批与仅网页入口分别列出
 python3 tools/check_archives.py
 
-# 已有 Europeana 本地配置时，明确发起小请求；其余来源按条件跳过
+# 已有欧洲数字文化遗产平台（Europeana）本地配置时，明确发起小请求；其余来源按条件跳过
 python3 tools/check_archives.py --live --env-file .env.europeana
 
 # 仅运行新增的接入检查 unit tests，不需要真实凭据或网络
 python3 -B -m unittest discover -s tests -p 'test_a*.py' -v
 ```
 
-本次 LoC、NDL、NARA 公开数据集和 Europeana 各一次真实请求均通过；DPLA／NARA 实时 API 缺 key，TNA 待 IP 审批，JACAR／IWM 只返回官方网页入口。这些检查只输出状态和计数，不更新网页样本；网页实际检索来源仍为前述四个。
+本次美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、美国国家档案馆（NARA）公开数据集和欧洲数字文化遗产平台（Europeana）各一次真实请求均通过；美国数字公共图书馆（DPLA）／美国国家档案馆（NARA）实时 API 缺 key，英国国家档案馆（TNA）待 IP 审批，日本亚洲历史资料中心（JACAR）／帝国战争博物馆（IWM）只返回官方网页入口。这些检查只输出状态和计数，不更新网页样本；网页实际检索来源仍为前述四个。
 
 ## 运行测试
 
@@ -312,7 +314,7 @@ Node.js 仅用于运行这组开发测试，不是预览网页的条件。如果
 | P2：实时联邦检索 | 增加托管后端；逐个接入具备凭据和使用条件的实时来源；处理分来源超时、限流、分页及部分失败；区分实时结果与本地样本 | 一次查询可请求已启用来源；单一来源故障不导致整体失败，页面显示各来源状态 |
 | P3：研究功能扩展 | 在范围确认后增加带引文的 LLM 问答、专题整理和研究成果发布；先完善检索评估与引用依据 | 回答可追溯到记录或授权全文，资料不足时明确说明；发布内容保留出处与权利说明 |
 
-P1 可以先发布现有静态架构，不必等待所有平台开通实时 API。公开试点前需逐来源复核公开展示与凭据用途要求，特别是 Europeana key 用途；NARA 公开数据集与 Catalog API 分别处理。
+P1 可以先发布现有静态架构，不必等待所有平台开通实时 API。公开试点前需逐来源复核公开展示与凭据用途要求，特别是欧洲数字文化遗产平台（Europeana） key 用途；美国国家档案馆（NARA）公开数据集与 Catalog API 分别处理。
 
 ### 后续拟增加的接口（未实现）
 
@@ -332,7 +334,9 @@ P1 可以先发布现有静态架构，不必等待所有平台开通实时 API�
 ## 相关文档
 
 - [Demo 实施步骤与验收](docs/demo-steps.md)
-- [Europeana 接入与凭据说明](docs/europeana.md)
+- [欧洲数字文化遗产平台（Europeana）接入与凭据说明](docs/europeana.md)
+- [平台中英文名称对照](docs/archive-platform-names.md)
+- [台湾档案管理局（archives.gov.tw）：访问验证与接入计划](docs/taiwan-archives.md)
 - [检索词与完整测试命令](docs/archive-search-commands.md)
 - [逐平台接入、凭据与测试](docs/archive-access.md)
 - [接入实测记录](docs/archive-access-validation.md)
