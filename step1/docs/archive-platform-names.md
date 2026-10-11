@@ -12,7 +12,7 @@
 | 英国国家档案馆 | [The National Archives](https://www.nationalarchives.gov.uk/) | 英国国家档案馆（TNA） | `tna`；其 Discovery 目录接口待出口 IP 审批后实测 |
 | 日本亚洲历史资料中心 | [Japan Center for Asian Historical Records](https://www.jacar.go.jp/english/) | 日本亚洲历史资料中心（JACAR） | `jacar`；当前仅网页入口 |
 | 帝国战争博物馆 | [Imperial War Museums](https://www.iwm.org.uk/) | 帝国战争博物馆（IWM） | `iwm`；当前仅网页入口 |
-| 国家发展委员会档案管理局（台湾） | [National Archives Administration, National Development Council](https://www.archives.gov.tw/tw/arctw/274.html) | 台湾档案管理局（archives.gov.tw） | 新增候选；CSV 已验证可读取，无专用脚本或 `--source` 值 |
+| 国家发展委员会档案管理局（台湾） | [National Archives Administration, National Development Council](https://www.archives.gov.tw/tw/arctw/274.html) | 台湾档案管理局（archives.gov.tw） | `taiwan`；当前仅网页入口；CSV 已独立验证可读取，同步和关键词查询待实现 |
 
 “欧洲数字文化遗产平台”是本项目对 Europeana 的说明性中文称谓，不表示它是某一单独的实体档案馆。其他平台也可能提供图书、出版物或聚合目录，不能仅因出现在来源清单中就把所有记录称为战时原始档案。
 
@@ -29,6 +29,6 @@
 
 可执行命令与机器标识保持原样。例如 `python3 tools/access_nara.py --live`、`NARA_API_KEY`、`--source nara_catalog` 与网页 `source=NARA` 不能替换为中文。原馆档案标题与原始描述同样保留原文。
 
-当前统一检查器仍为 **8 个平台、9 条路径**；新增研究的台湾档案管理局（archives.gov.tw）不计入这些已实现入口，也不改变网页当前四来源、31 条样本的范围。
+当前统一检查器为 **9 个平台、10 条路径**，包括台湾档案管理局（archives.gov.tw）的 `manual_only` 入口。清单包括尚不能机器检索的路径；注册到检查清单不等于接通 API，也不改变网页当前四来源、31 条样本的范围。
 
 相关文档：[逐来源接入检查](archive-access.md)、[关键词与命令](archive-search-commands.md)、[验证记录](archive-access-validation.md)、[生产接入计划](archive-access-production-plan.md)。

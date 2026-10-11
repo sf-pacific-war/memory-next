@@ -36,6 +36,7 @@ MESSAGES = {
     "ready": "Configuration is ready; use --live for one request. Connectivity and access are not yet verified.",
     "ok": "One bounded request succeeded and its response structure was validated.",
     "manual_only": "Use the official portal. No documented public API is configured; no request was sent.",
+    "query_not_supported": "This fixed dataset has no keyword search endpoint; no request was sent. Omit --query to check dataset access only.",
     "missing_credential": "Required credential is not configured; no request was sent.",
     "credential_error": "Credential format or local credential file is invalid; no request was sent.",
     "permission_required": "This source requires prior access approval; use --permission-confirmed only after approval.",
@@ -135,9 +136,11 @@ def check_source(source, probe, *, query=None, rows=3, live=False, env_file=None
     effective_query = source.default_query if query is None else query
     if type(rows) is not int or not 1 <= rows <= 5:
         return finish("invalid_input")
+    if query is not None and (not isinstance(query, str) or not query.strip() or len(query) > 200):
+        return finish("invalid_input")
     if source.access_mode == "dataset":
         if query is not None:
-            return finish("invalid_input")
+            return finish("query_not_supported")
     elif not isinstance(effective_query, str) or not effective_query.strip() or len(effective_query) > 200:
         return finish("invalid_input")
     credential = None
@@ -214,7 +217,7 @@ def check_source(source, probe, *, query=None, rows=3, live=False, env_file=None
 def exit_code(result, live):
     if result["status"] == "ok" or (not live and result["status"] in {"ready", "manual_only"}):
         return 0
-    if result["status"] in {"missing_credential", "permission_required", "manual_only", "invalid_input"}:
+    if result["status"] in {"missing_credential", "permission_required", "manual_only", "query_not_supported", "invalid_input"}:
         return 2
     return 1
 

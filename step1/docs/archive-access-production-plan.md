@@ -1,14 +1,14 @@
 # 档案平台接入状态、统一测试与生产整合计划
 
-更新日期：2026-10-11。当前统一检查器覆盖 **8 个档案／聚合平台、9 种访问方式**，美国国家档案馆（NARA）的公开数据集和实时 Catalog API 单列。本文件集中说明当前证据、API 配好后的测试命令，以及接入生产系统的工作顺序。另补充第 9 个候选平台——[台湾档案管理局（archives.gov.tw）](taiwan-archives.md)：CSV 与合作 API 路线单列，尚未加入这 9 个代码入口。英文全称见 [平台名称对照](archive-platform-names.md)。
+更新日期：2026-10-11。当前统一检查器覆盖 **9 个档案／聚合平台、10 种访问方式**，美国国家档案馆（NARA）的公开数据集和实时 Catalog API 单列。本文件集中说明当前证据、API 配好后的测试命令，以及接入生产系统的工作顺序。[台湾档案管理局（archives.gov.tw）](taiwan-archives.md)已注册为 `taiwan`，目前仅提供网页入口和说明；CSV 同步与合作 API 尚未实现。英文全称见 [平台名称对照](archive-platform-names.md)。
 
-**当前有 4 种方式完成真实小请求；3 种方式已有脚本，待 key 或 IP 审批后实测；另 2 个平台只有网页入口，取得正式 API 后还需开发。** 本文中的“API 将可获得”是后续实施假设，不代表已经取得凭据、审批或接口资料。
+**既有记录中有 4 种方式完成真实小请求；3 种方式已有脚本，待 key 或 IP 审批后实测；另 3 个平台目前只有网页入口。** 其中台湾档案管理局（archives.gov.tw）的公开 CSV 有独立有界读取证据，尚不能用统一命令检索。本文中的“API 将可获得”是后续实施假设，不代表已经取得凭据、审批或接口资料。
 
 现有网页仍使用美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、欧洲数字文化遗产平台（Europeana）、美国国家档案馆（NARA）的 **31 条目录快照**。接入检查脚本输出状态和计数，既不导入新记录，也不会自动增加网页中的来源。馆藏管理不在本计划范围内。
 
 ## 1. 全部平台的访问状态
 
-上述检查脚本的四次真实小请求在 **2026-10-11 22:08 UTC** 完成；每种已测试方式仅请求一次、检查 3 条样本。本次文档整理没有重新调用档案 API。详细执行证据见 [验证记录](archive-access-validation.md)。
+以下“实测通过”依据 **2026-10-11 22:08 UTC** 完成的四次真实小请求；每种已测试方式仅请求一次、检查 3 条样本，不代表已经用“飞虎队”完成查询。其他日期或关键词的执行证据以 [验证记录](archive-access-validation.md) 为准。
 
 | 平台／访问方式 | 当前代码入口 | 当前状态 | 凭据／访问前提 | 条件就绪后可以做什么 |
 | --- | --- | --- | --- | --- |
@@ -21,8 +21,9 @@
 | 英国国家档案馆（TNA） Discovery | [access_tna.py](../tools/access_tna.py) | **待实测**；未确认 IP 审批 | 执行机器的出口 IP 获批；没有已配置的 key 参数 | 获批后添加 `--permission-confirmed` 实测 |
 | 日本亚洲历史资料中心（JACAR） | [access_jacar.py](../tools/access_jacar.py) | **仅网页入口**；没有已实现的 API 请求 | 假设未来取得官方接口说明和访问授权 | 先实现真实适配器及测试，再加入 API 实测清单 |
 | 帝国战争博物馆（IWM） | [access_iwm.py](../tools/access_iwm.py) | **仅网页入口**；没有已实现的 API 请求 | 假设未来取得官方接口说明和访问授权 | 同上；现有脚本不会因为填入 key 就开始检索 |
+| 台湾档案管理局（archives.gov.tw） | [access_taiwan.py](../tools/access_taiwan.py) | **仅网页入口**；`taiwan` 返回 `manual_only` | 此状态入口不需 key；合作 API 条件待确认 | 优先实现公开 CSV 同步和本地索引；实时 API 另行开发 |
 
-上述 9 行对应现有代码。台湾来源为另外的接入候选；下表描述独立调研证据，不计入 `check_archives.py` 的 `ok` 数量或前端来源数量。
+上述 10 行对应现有代码。下表是台湾档案管理局（archives.gov.tw）的两条后续数据路线；其历史 CSV 有界读取不计入 `check_archives.py` 的 `ok` 数量或前端来源数量。
 
 | 新增候选／访问方式 | 当前状态 | 凭据要求 | 测试与生产下一步 |
 | --- | --- | --- | --- |
@@ -54,7 +55,7 @@ python3 tools/check_archives.py --live --env-file .env.europeana
 该文件仅配置欧洲数字文化遗产平台（Europeana），且其余条件未变化、四个请求均成功时，预期汇总为：
 
 ```json
-{"ok": 4, "missing_credential": 2, "permission_required": 1, "manual_only": 2}
+{"ok": 4, "missing_credential": 2, "permission_required": 1, "manual_only": 3}
 ```
 
 ### 2.2 新 API key 获得后
@@ -87,14 +88,33 @@ python3 tools/check_archives.py --source all --live --rows 3 --env-file .env.arc
 所有已实现的机器接口都成功时，当前代码的**预期结果**是：
 
 ```json
-{"ok": 7, "manual_only": 2}
+{"ok": 7, "manual_only": 3}
 ```
 
-此情景已用 mock 验证程序行为，**尚未作为真实执行结果发生**。日本亚洲历史资料中心（JACAR）、帝国战争博物馆（IWM）仍为网页入口，因此统一命令会返回退出码 **2**，不是 0。未来两者适配器完成且全部九路真实成功时，才预期为 `{"ok": 9}` 和退出码 0。
+这是条件齐备时的**预期情景，不是已经发生的真实执行结果**。日本亚洲历史资料中心（JACAR）、帝国战争博物馆（IWM）、台湾档案管理局（archives.gov.tw）仍为网页入口，因此统一命令会返回退出码 **2**，不是 0。需分别实现并验收未来数据适配器，才能将相应来源计为成功。
 
-只想检查配置而不访问外馆，移除 `--live`。三个 key 和英国国家档案馆（TNA）确认齐备时，预检会返回 `{"ready": 7, "manual_only": 2}`、退出码 0、实际请求数 0；`ready` 不证明 key 有效。
+只想检查配置而不访问外馆，移除 `--live`。三个 key 和英国国家档案馆（TNA）确认齐备时，不带自定义词的预检会返回 `{"ready": 7, "manual_only": 3}`、退出码 0、实际请求数 0；`ready` 不证明 key 有效。
 
-### 2.3 结果与失败怎么判断
+### 2.3 用同一个关键词测试全部平台
+
+在已有 `.env.europeana` 的本机应用目录，执行：
+
+```sh
+python3 tools/check_archives.py --source all --live --query 'Flying Tigers' --rows 3 --env-file .env.europeana --format table
+
+# 使用中文原词，所有支持的 API 都收到“飞虎队”
+python3 tools/check_archives.py --source all --live --query '飞虎队' --rows 3 --env-file .env.europeana --format table
+```
+
+已有统一配置时将文件参数改成 `--env-file .env.archives`；没有该文件则去掉文件参数，免 key 来源照常请求。英国国家档案馆（TNA）出口 IP 确认获批后才能追加 `--permission-confirmed`。
+
+这两条是独立测试，不会自动翻译查询词，也不会采用网页的主题扩展。6 条 API 路径收到同一词，但各自查询语法和馆藏范围仍不同；缺 key 或审批的来源不请求。美国国家档案馆（NARA）固定数据集返回 `query_not_supported`，3 个网页入口返回 `manual_only`，均不提供命中数。
+
+表格显示逐来源状态和计数；省略 `--format table` 得到完整 JSON，顶层 `mode=keyword` 并保留显式 `query`。不传 `--query` 则是 `mode=access`，按各 API 默认词和固定数据集检查访问。两种模式都不导出档案记录、不更新网页。
+
+当 6 个关键词 API 的凭据和审批均齐备且请求全成功，预期为 `{"ok": 6, "query_not_supported": 1, "manual_only": 3}`，退出码仍为 `2`。实际结果必须以命令输出为准；主题相关性和中文、英文、日文召回需要下一阶段单独评估。
+
+### 2.4 结果与失败怎么判断
 
 | 输出／退出码 | 含义 | 下一步 |
 | --- | --- | --- |
@@ -103,15 +123,16 @@ python3 tools/check_archives.py --source all --live --rows 3 --env-file .env.arc
 | `credential_error` | key 格式或文件条件不正确，未发送请求 | 检查变量、文件位置和忽略规则 |
 | `permission_required` | 英国国家档案馆（TNA）审批尚未确认，未发送请求 | 完成出口 IP 接入并在正确主机复测 |
 | `manual_only` | 仅提供网页入口，未发送 API 请求 | 保留网页入口，取得文档后开发适配器 |
+| `query_not_supported` | 固定数据集不支持本次关键词，未发送请求 | 使用独立 Catalog API，或未来先同步公开数据再查询本地索引 |
 | `access_denied` | 401／403 | 检查 key、账号范围、审批和出口 IP |
 | `rate_limited` | 429 | 停止本轮，按来源要求等待，不连续重试 |
 | `timeout`／`network_error` | 网络或超时错误，不是“没有档案” | 查网络、服务状态，之后低频复测 |
 | `invalid_response` | 返回结构异常、大小超限或返回 HTML 等 | 核实真实 API 文档和解析器 |
 | 退出 `0` | 所要求的检查成功；预检不等于已联网 | 同时阅读每个来源的状态 |
-| 退出 `2` | 有缺凭据、待审批、网页入口或输入参数问题 | 阅读逐来源状态，不能一律当作测试失败或通过 |
+| 退出 `2` | 有缺凭据、待审批、网页入口、不支持关键词或输入参数问题 | 阅读逐来源状态，不能一律当作测试失败或通过 |
 | 退出 `1` | 出现实际请求、响应或配置错误；聚合时优先于 2 | 处理具体错误后复测 |
 
-每个满足访问条件的来源最多一次请求：串行、默认 3 条、30 秒超时、2 MiB 响应上限，不自动重试或翻页。美国国家档案馆（NARA）数据集会读取整个固定小分片，`--rows` 只限制校验后报告的样本数。测试不同来源使用各自默认查询；统一检查不接受跨来源共用的 `--query`。
+每个满足访问条件的来源最多一次请求：串行、默认 3 条、30 秒超时、2 MiB 响应上限，不自动重试或翻页。美国国家档案馆（NARA）数据集仅在没有自定义词的访问检查中读取整个固定小分片，`--rows` 只限制校验后报告的样本数；关键词模式不请求此文件。
 
 ## 3. 每个平台配置好之后怎样单独复测
 
@@ -128,6 +149,7 @@ python3 tools/check_archives.py --source all --live --rows 3 --env-file .env.arc
 | 英国国家档案馆（TNA） | `python3 tools/access_tna.py --live --permission-confirmed --rows 3` | 在获批出口 IP 上得到 `ok`、退出 0 |
 | 日本亚洲历史资料中心（JACAR） | `python3 tools/access_jacar.py --live` | **当前预期 `manual_only`、退出 2**；实现真正 API 后才改为要求 `ok` |
 | 帝国战争博物馆（IWM） | `python3 tools/access_iwm.py --live` | 同上 |
+| 台湾档案管理局（archives.gov.tw） | `python3 tools/access_taiwan.py --live` | 同上；不会自动运行独立 CSV 检查 |
 
 保存执行日期、代码版本、来源 ID、状态及计数即可，不把认证 URL、原始响应、错误正文或 key 加入证据文件。测试结果应标注执行环境；本机成功不能直接替代生产网络验收。
 
@@ -219,7 +241,7 @@ flowchart LR
 
 ## 7. 测试与上线门槛
 
-已有离线测试为 **141 项 Python + 17 项 JavaScript**，其中 93 项覆盖本次接入模块；这些是既有通过记录，本次只整理文档。运行命令如下：
+当前已通过 **149 项 Python 测试**，其中 101 项覆盖接入模块；既有 17 项 JavaScript 测试通过，本轮没有修改前端。关键词聚合、来源跳过和真实中英文请求结果见 [验证记录](archive-access-validation.md)。运行命令如下：
 
 ```sh
 # API 接入模块的离线单元测试，不用真实 key、不请求外馆
@@ -238,7 +260,7 @@ node --test tests/*.test.mjs
 | Staging 集成测试 | 来源准备上线时 | 同步幂等、分页边界、部分来源失败、索引版本切换、实时结果不落盘、浏览器无法读取 Secret |
 | 发布与运维验证 | 灰度启用及回滚演练 | 来源单独停用、版本回退、限流告警、key 轮换和实际生产出口网络 |
 
-生产门槛按**本次启用的来源集合**判断。当前包含两个 portal 的 `--source all --live` 即使七路成功也退出 2，不能机械要求全清单退出 0，也不能用 `|| true` 忽略错误。当前可逐个执行第 3 节单源命令；未来自动化门槛应读取 JSON，要求每个必选来源 `status=ok` 且 `request_sent=true`，其余来源的跳过必须在发布范围中明确列出。
+生产门槛按**本次启用的来源集合**判断。当前包含三个 portal 的 `--source all --live` 即使七路访问检查成功也退出 2；关键词模式还会跳过固定数据集。不能机械要求全清单退出 0，也不能用 `|| true` 忽略错误。当前可逐个执行第 3 节单源命令；未来自动化门槛应读取 JSON，要求每个必选来源 `status=ok` 且 `request_sent=true`，其余来源的跳过必须在发布范围中明确列出。
 
 仓库现有 [CI 模板](https://github.com/sf-pacific-war/memory-next/blob/58d62ad4528b19ea7e48ca326ca73df2ae693ecb/ci/demo-tests.yml) 尚未启用，原因是此前推送凭据缺少 `workflow` 权限。维护者按 [启用说明](https://github.com/sf-pacific-war/memory-next/blob/58d62ad4528b19ea7e48ca326ca73df2ae693ecb/ci/README.md) 启用后，离线测试才会自动运行；真实 key 不提供给不受信任的 PR 测试。上述链接指向 `memory-next` PR 中已提供的模板版本。
 

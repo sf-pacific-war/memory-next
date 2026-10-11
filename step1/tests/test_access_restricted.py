@@ -17,6 +17,7 @@ import access_nara_catalog as nara
 import access_tna as tna
 import access_jacar as jacar
 import access_iwm as iwm
+import access_taiwan as taiwan
 
 
 FAKE_KEY = "synthetic-unit-test-key"
@@ -195,7 +196,7 @@ class RestrictedApiTests(unittest.TestCase):
 
 class PortalAccessTests(unittest.TestCase):
     def test_portals_never_send_requests_even_with_live(self):
-        for module in [jacar, iwm]:
+        for module in [jacar, iwm, taiwan]:
             for live in [False, True]:
                 request = Mock()
                 result = archive_access.check_source(module.SOURCE, module.probe, live=live, request=request)
@@ -210,13 +211,13 @@ class PortalAccessTests(unittest.TestCase):
                     request.assert_not_called()
 
     def test_each_entrypoint_has_working_main(self):
-        for module in [dpla, nara, tna, jacar, iwm]:
+        for module in [dpla, nara, tna, jacar, iwm, taiwan]:
             with self.subTest(source=module.SOURCE.id), patch.object(module, "run_cli", return_value=2) as cli:
                 self.assertEqual(module.main(["--live"]), 2)
                 cli.assert_called_once_with(module.SOURCE, module.probe, ["--live"])
 
     def test_portal_cli_outputs_manual_status(self):
-        for module in [jacar, iwm]:
+        for module in [jacar, iwm, taiwan]:
             with self.subTest(source=module.SOURCE.id), patch("sys.stdout", new_callable=io.StringIO) as stdout:
                 self.assertEqual(module.main([]), 0)
                 self.assertEqual(json.loads(stdout.getvalue())["status"], "manual_only")

@@ -21,9 +21,9 @@ python3 step1/tools/serve.py
 
 当前包含 **31 条真实目录样本**：美国国会图书馆（LoC） 16 条、日本国立国会图书馆（NDL） 9 条、欧洲数字文化遗产平台（Europeana） 1 条、美国国家档案馆（NARA） 5 条。网页检索本地快照，不实时查询外馆，也不代表完整馆藏。已有样本可直接预览，**不需要注册 API 或配置 key**。
 
-更新样本时，美国国会图书馆（LoC）、日本国立国会图书馆（NDL） 和 美国国家档案馆（NARA） 公开数据集无需 key；欧洲数字文化遗产平台（Europeana） 获取工具需要自己的 `EUROPEANA_API_KEY`。仓库仅包含空白 [凭据模板](step1/.env.example)，不包含可用密钥。具体命令、来源范围、凭据说明和后续规划见 [Step 1 README](step1/README.md)。新增 [逐平台接入检查](step1/docs/archive-access.md) 覆盖 8 平台、9 种方式，分别说明无须凭据、已有／缺少 key、待 IP 审批和仅网页入口的状态。
+更新样本时，美国国会图书馆（LoC）、日本国立国会图书馆（NDL） 和 美国国家档案馆（NARA） 公开数据集无需 key；欧洲数字文化遗产平台（Europeana） 获取工具需要自己的 `EUROPEANA_API_KEY`。仓库仅包含空白 [凭据模板](step1/.env.example)，不包含可用密钥。具体命令、来源范围、凭据说明和后续规划见 [Step 1 README](step1/README.md)。新增 [逐平台接入检查](step1/docs/archive-access.md) 覆盖 9 平台、10 种方式，分别说明无须凭据、已有／缺少 key、待 IP 审批和仅网页入口的状态。统一入口可用 `--live --query '飞虎队' --format table` 测试同一关键词；完整命令和中英文实测结果见 [关键词测试说明](step1/docs/archive-search-commands.md)。
 
-档案平台使用中英文对照名称，见 [名称表](step1/docs/archive-platform-names.md)。[台湾档案管理局（archives.gov.tw）总结](step1/docs/taiwan-archives.md)记录免 key CSV 的访问验证、合作 API 状态和后续生产接入；尚未加入当前四来源网页或统一检查器。
+档案平台使用中英文对照名称，见 [名称表](step1/docs/archive-platform-names.md)。[台湾档案管理局（archives.gov.tw）总结](step1/docs/taiwan-archives.md)记录免 key CSV 的访问验证、合作 API 状态和后续生产接入；已作为 `taiwan` 状态入口加入统一检查器，目前返回 `manual_only`；尚未实现 CSV 检索或加入当前四来源网页。
 
 ## 运行旧应用：Step 0
 
@@ -80,7 +80,7 @@ python3 -m unittest discover -s step1/tests -p 'test_*.py' -v
 node --test step1/tests/*.test.mjs
 ```
 
-Step 0 的 7 项检查使用临时副本和新建的演示数据库，验证迁移后的启动、静态资源、登录、搜索和权限。Step 1 的 141 项 Python 测试、17 项 JavaScript 测试验证数据处理、凭据边界、HTTP 文件隔离和搜索。测试无需 API key、不连接外馆；HTTP 检查会短暂绑定本机端口。
+Step 0 的 7 项检查使用临时副本和新建的演示数据库，验证迁移后的启动、静态资源、登录、搜索和权限。Step 1 的 149 项 Python 测试、17 项 JavaScript 测试验证数据处理、凭据边界、HTTP 文件隔离和搜索。测试无需 API key、不连接外馆；HTTP 检查会短暂绑定本机端口。
 
 仓库提供 [GitHub Actions 测试模板](ci/demo-tests.yml)，**尚未启用自动 CI**。当前推送凭据缺少 GitHub 的 `workflow` 权限，因此模板保存在 `ci/`；有相应权限的维护者可以按 [启用说明](ci/README.md) 将其放入 `.github/workflows/`。启用后会在 PR 和 `main` 更新时运行这些检查，不自动部署。
 

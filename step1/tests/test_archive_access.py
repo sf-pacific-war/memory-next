@@ -130,7 +130,8 @@ class PreflightTests(unittest.TestCase):
         result = self.check_without_request(
             source(access_mode="dataset"), query="Burma", live=True
         )
-        self.assertEqual(result["status"], "invalid_input")
+        self.assertEqual(result["status"], "query_not_supported")
+        self.assertEqual(api.exit_code(result, True), 2)
 
     def test_empty_key_cannot_start_a_live_request(self):
         result = self.check_without_request(

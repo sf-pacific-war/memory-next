@@ -31,8 +31,10 @@ def probe(query, rows, credential, request):
     if not isinstance(items, list) or type(total) is not int or total < 0 or total < len(items):
         raise ValueError("Unexpected LoC response structure.")
     for item in items:
-        if not isinstance(item, dict) or not source_url(
-            item.get("url") or item.get("id"), {"www.loc.gov", "loc.gov"}
+        # Some valid records use a protocol-relative catalog URL but retain a
+        # canonical LoC item ID. Validate either identity without following it.
+        if not isinstance(item, dict) or not any(
+            source_url(item.get(field), {"www.loc.gov", "loc.gov"}) for field in ("url", "id")
         ):
             raise ValueError("Unexpected LoC record structure.")
     return {"sample_count": min(len(items), rows), "total_results": total}

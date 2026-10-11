@@ -6,7 +6,7 @@ Step 1 的页面、工具、数据、测试、说明和本地配置集中在本�
 
 前端和四个来源的元数据获取工具已实现。当前网页包含 **31 条真实目录样本**：美国国会图书馆（LoC） 16 条、日本国立国会图书馆（NDL） 9 条、欧洲数字文化遗产平台（Europeana） 1 条、美国国家档案馆（NARA） 5 条。美国国家档案馆（NARA）使用官方公开数据集，无需 key 或 AWS 账户；另外三个来源通过 API 取得样本。欧洲数字文化遗产平台（Europeana）原始 3 条候选中有 2 条因同名误命中或相关性未确认而暂不展示。网页检索本地快照，不实时请求外馆，也不代表完整馆藏。
 
-平台名称统一采用中文名与英文缩写并列，完整英文名见 [平台中英文名称对照](docs/archive-platform-names.md)。新增研究的 [台湾档案管理局（archives.gov.tw）](docs/taiwan-archives.md)已验证官方 CSV 可读取，但尚无专用接入脚本，也未加入当前四来源网页。
+平台名称统一采用中文名与英文缩写并列，完整英文名见 [平台中英文名称对照](docs/archive-platform-names.md)。新增研究的 [台湾档案管理局（archives.gov.tw）](docs/taiwan-archives.md)已验证官方 CSV 可读取，并新增 `taiwan` 状态入口；该入口目前只返回 `manual_only`，尚未实现 CSV 检索或加入当前四来源网页。
 
 ## 项目定位与当前功能
 
@@ -260,7 +260,7 @@ python3 tools/build_site_data.py
 
 从当前状态到 API 配置后复测、再到生产整合的完整步骤见 [访问状态与生产整合计划](docs/archive-access-production-plan.md)。
 
-现提供 **8 个平台、9 种接入方式**的独立 `access_*.py` 和统一检查器。每个平台的凭据要求、未配置行为、完整命令、申请依据和 unit tests 见 [接入与测试说明](docs/archive-access.md)，当前实测结果见 [验证记录](docs/archive-access-validation.md)。
+现提供 **9 个平台、10 种接入方式**的独立 `access_*.py` 和统一检查器。每个平台的凭据要求、未配置行为、完整命令、申请依据和 unit tests 见 [接入与测试说明](docs/archive-access.md)，当前实测结果见 [验证记录](docs/archive-access-validation.md)。
 
 以下命令从本应用目录运行：
 
@@ -271,11 +271,17 @@ python3 tools/check_archives.py
 # 已有欧洲数字文化遗产平台（Europeana）本地配置时，明确发起小请求；其余来源按条件跳过
 python3 tools/check_archives.py --live --env-file .env.europeana
 
+# 全部平台用同一个词在线检查；表格显示状态、是否请求和命中数
+python3 tools/check_archives.py --live --env-file .env.europeana --query '飞虎队' --rows 3 --format table
+
+# 英文对照；查询词原样发送，不会自动翻译
+python3 tools/check_archives.py --live --env-file .env.europeana --query 'Flying Tigers' --rows 3 --format table
+
 # 仅运行新增的接入检查 unit tests，不需要真实凭据或网络
 python3 -B -m unittest discover -s tests -p 'test_a*.py' -v
 ```
 
-本次美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、美国国家档案馆（NARA）公开数据集和欧洲数字文化遗产平台（Europeana）各一次真实请求均通过；美国数字公共图书馆（DPLA）／美国国家档案馆（NARA）实时 API 缺 key，英国国家档案馆（TNA）待 IP 审批，日本亚洲历史资料中心（JACAR）／帝国战争博物馆（IWM）只返回官方网页入口。这些检查只输出状态和计数，不更新网页样本；网页实际检索来源仍为前述四个。
+本次美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、美国国家档案馆（NARA）公开数据集和欧洲数字文化遗产平台（Europeana）各一次真实请求均通过；美国数字公共图书馆（DPLA）／美国国家档案馆（NARA）实时 API 缺 key，英国国家档案馆（TNA）待 IP 审批，日本亚洲历史资料中心（JACAR）／帝国战争博物馆（IWM）只返回官方网页入口。这些检查只输出状态和计数，不更新网页样本；网页实际检索来源仍为前述四个。 统一关键词命令会跳过美国国家档案馆（NARA）固定数据集并返回 `query_not_supported`；台湾档案管理局（archives.gov.tw）以 `taiwan` 列入清单，目前返回 `manual_only`，尚未实现 CSV 检索或实时 API。完整用法及每个平台的对应名称见 [关键词命令](docs/archive-search-commands.md)。
 
 ## 运行测试
 
@@ -291,7 +297,7 @@ node --test tests/*.test.mjs
 
 Node.js 仅用于运行这组开发测试，不是预览网页的条件。如果系统 `node` 无法启动，可使用可运行的 Node.js 运行时的绝对路径替换命令中的 `node`；不要因为 Node.js 故障而阻塞 Python 本地预览。
 
-当前 **141 项 Python 测试 + 17 项前端测试（13 项检索、4 项语言切换基础逻辑）**全部通过，其中新增 93 项接入检查测试。Demo 开发期间另行检查过桌面／手机布局、跨平台检索、筛选、详情、日期校验和加载失败后的恢复。自动化测试不连接外馆；HTTP 隔离测试会短暂绑定本机端口。本次另行执行的四来源真实小请求见 [接入验证记录](docs/archive-access-validation.md)，已有网页样本保持不变。
+当前 **149 项 Python 测试 + 17 项前端测试（13 项检索、4 项语言切换基础逻辑）**全部通过，其中 101 项接入检查测试。Demo 开发期间另行检查过桌面／手机布局、跨平台检索、筛选、详情、日期校验和加载失败后的恢复。自动化测试不连接外馆；HTTP 隔离测试会短暂绑定本机端口。既有四来源访问与本次“飞虎队”中英文真实查询见 [接入验证记录](docs/archive-access-validation.md)，已有网页样本保持不变。
 
 ## 已知限制
 

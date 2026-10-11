@@ -1,12 +1,12 @@
 # 各档案平台的 Python 接入与测试
 
-核对日期：2026-10-11。覆盖 Step 1 清单中的 **8 个平台、9 种接入方式**；美国国家档案馆（NARA）公开数据集与 Catalog API 分开。每种方式都有独立 `.py` 入口。默认只检查本机配置；只有显式添加 `--live` 才会尝试请求外馆。
+核对日期：2026-10-11。覆盖 Step 1 清单中的 **9 个平台、10 种接入方式**；美国国家档案馆（NARA）公开数据集与 Catalog API 分开。每种方式都有独立 `.py` 入口，其中 3 个入口仅提供官方网页及说明。默认只检查本机配置；只有显式添加 `--live` 才会尝试请求支持的外馆接口。
 
 这些脚本用于确认“能否访问及返回结构是否正确”，输出状态和计数，不保存原始 API 响应、档案记录或密钥。它们不会改变网页目前的四来源、31 条样本，也不会自动把美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）等加入网页搜索。现有 `fetch_*.py` 仍负责允许持久化来源的元数据获取。
 
 面向后续 API 就绪和生产集成的路线、统一命令预期结果及上线门槛，见 [访问状态与生产整合计划](archive-access-production-plan.md)。
 
-平台中文名、英文全称和缩写见 [名称对照](archive-platform-names.md)。另有候选来源 [台湾档案管理局（archives.gov.tw）](taiwan-archives.md)：官方 CSV 无需 key，已做有界读取验证；它尚未注册到当前统一检查器，以下 9 路命令不包含它。
+平台中文名、英文全称和缩写见 [名称对照](archive-platform-names.md)。[台湾档案管理局（archives.gov.tw）](taiwan-archives.md)已注册为 `taiwan`，当前返回 `manual_only`；其官方 CSV 无需 key，历史有界读取已通过，但 CSV 同步和关键词查询仍待实现。
 
 ## 1. 逐平台清单
 
@@ -23,6 +23,7 @@
 | 英国国家档案馆（TNA） Discovery | [tools/access_tna.py](../tools/access_tna.py) | 无 key 参数；需要事先申请来源 IP 接入 | 未确认审批；离线测试通过，本次未发送真实请求 | `permission_required`；获批后显式确认 |
 | 日本亚洲历史资料中心（JACAR） | [tools/access_jacar.py](../tools/access_jacar.py) | 公开网页可浏览；本实现没有已确认的公开 API | 返回官方入口；仅入口及无请求行为经过测试 | `manual_only`，不冒充 API 接通 |
 | 帝国战争博物馆（IWM） | [tools/access_iwm.py](../tools/access_iwm.py) | 公开网页可浏览；本实现没有已确认的公开 API | 返回官方 Collections Search 入口 | `manual_only`，不发送 API 请求 |
+| 台湾档案管理局（archives.gov.tw） | [tools/access_taiwan.py](../tools/access_taiwan.py) | 当前入口不需 key；合作 API 条件待确认 | 仅返回官方入口和 CSV 说明，不调用 CSV 或 API | `manual_only`，不发送请求 |
 
 日本亚洲历史资料中心（JACAR）／帝国战争博物馆（IWM）的判断是“本次未确认可接入的官方公开 API”，不是断言机构绝对没有 API。两个脚本提供访问说明和官方链接，不抓取网页或逆向内部接口。
 
@@ -45,9 +46,14 @@ python3 tools/check_archives.py --env-file .env.europeana
 
 # 显式实测：各来源串行，缺 key／未获批／仅网页入口的来源自动跳过
 python3 tools/check_archives.py --live --env-file .env.europeana
+
+# 同一个关键词测试所有平台；表格显示逐来源状态
+python3 tools/check_archives.py --live --query 'Flying Tigers' --env-file .env.europeana --rows 3 --format table
 ```
 
-最后一个命令在本次配置下会请求美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、美国国家档案馆（NARA）公开数据集和欧洲数字文化遗产平台（Europeana）。跳过的来源保留各自状态，报告不会把它们算作成功。各 API 默认最多请求 3 条，`--rows` 仅支持 1–5；美国国家档案馆（NARA）数据集仍读取一个约 300 KB 的固定分片，行数只限制检查后报告的样本量。
+不带 `--query` 的在线命令使用各 API 默认词，并读取美国国家档案馆（NARA）固定数据集；本机目前满足条件的是美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、美国国家档案馆（NARA）公开数据集和欧洲数字文化遗产平台（Europeana）。带 `--query` 时，所有支持检索的 API 原样接收同一关键词；固定数据集返回 `query_not_supported` 且不请求，三个网页入口返回 `manual_only`。其余跳过和错误也逐来源保留。
+
+`--query '飞虎队'` 同样合法，但不会自动翻译成 `Flying Tigers`。可用两种词分别测试，并按机构语言补日文等词；零结果不代表接口不可用。各 API 默认最多请求 3 条，`--rows` 仅支持 1–5。没有查询词的数据集检查仍读取一个约 300 KB 的固定分片，行数只限制检查后报告的样本量。
 
 ## 3. 每个平台分别运行
 
@@ -70,9 +76,10 @@ python3 tools/access_tna.py --live
 # 网页入口及说明；即使加 --live 也不会伪造 API 请求
 python3 tools/access_jacar.py
 python3 tools/access_iwm.py
+python3 tools/access_taiwan.py
 ```
 
-每个脚本都支持 `--help`。`check_archives.py --source loc --live` 等价于对应独立入口。统一检查使用每个平台自己的默认查询；自定义 `--query` 必须选择单个平台。固定美国国家档案馆（NARA）数据集不接受 `--query`。
+每个脚本都支持 `--help`。`check_archives.py --source loc --live` 等价于对应独立入口；`--source all` 为默认值，也接受自定义 `--query`。不传查询词时，API 使用各自默认词。固定美国国家档案馆（NARA）数据集遇到有效 `--query` 会返回 `query_not_supported`，不会悄悄退回到默认数据读取。
 
 ## 4. 凭据如何配置
 
@@ -119,7 +126,8 @@ node --test tests/search.test.mjs
 | 已配置凭据并 `--live` | 只向对应官方端点发一次请求，key 位置正确 |
 | key 含换行、重复配置、配置文件不受 Git 忽略或越界 | `credential_error`，不联网 |
 | 英国国家档案馆（TNA）未确认审批 | `permission_required`，不联网 |
-| 日本亚洲历史资料中心（JACAR）／帝国战争博物馆（IWM） | `manual_only`，无论是否 `--live` 均不联网 |
+| 日本亚洲历史资料中心（JACAR）／帝国战争博物馆（IWM）／台湾档案管理局（archives.gov.tw） | `manual_only`，无论是否 `--live` 均不联网 |
+| 对美国国家档案馆（NARA）固定数据集传有效查询词 | `query_not_supported`，不下载固定分片、不返回命中数 |
 | HTTP 401／403 | `access_denied`，不泄露请求 URL、header 或异常正文 |
 | HTTP 429 | `rate_limited`，不自动重试 |
 | 超时／DNS 或连接失败 | `timeout`／`network_error`，不当作零结果 |
@@ -132,12 +140,12 @@ node --test tests/search.test.mjs
 
 ## 6. 读懂结果与退出码
 
-结果 JSON 包含 `source`、`access_mode`、`credential_state`、`request_sent`、`status` 和检查时间；成功时包含 `sample_count`，仅在有明确 API 总数时附 `total_results`。原始响应只在内存中解析，报告不包含档案正文、认证 URL 或凭据。
+默认结果为 JSON，包含 `source`、`access_mode`、`credential_state`、`request_sent`、`status` 和检查时间；成功时包含 `sample_count`，仅在有明确 API 总数时附 `total_results`。统一报告还记录 `mode`（`access` 或 `keyword`）和本次显式 `query`；`--format table` 显示来源、状态、请求是否发送、样本数和总数。未发送请求的来源不显示命中数。原始响应只在内存中解析，报告不包含档案正文、认证 URL 或凭据。
 
 - `credential_state`: `not_required`、`configured`、`missing`、`invalid`、`not_applicable`。
 - `status=ready` 只表示配置满足发请求的前提；`status=ok` 才表示本次请求及响应结构检查通过。
 - 退出码 `0`：本次要求的检查成功，或无联网要求的正常配置／网页入口说明。
-- 退出码 `2`：因缺 key、缺审批或 `--live` 目标只有网页入口而跳过；命令行参数错误也使用 `2`。
+- 退出码 `2`：因缺 key、缺审批、目标不支持关键词或 `--live` 目标只有网页入口而跳过；命令行参数错误也使用 `2`。
 - 退出码 `1`：真实请求失败、响应不符或凭据文件配置错误。
 
 统一检查只要有未满足条件的来源就会返回 `2`；这不是脚本崩溃。混合结果中实际错误优先返回 `1`，仍保留每个平台的详细状态。没有匹配资料的有效响应可以返回 `0`。

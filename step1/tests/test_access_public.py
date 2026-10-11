@@ -60,6 +60,14 @@ class LoCAccessTests(unittest.TestCase):
         self.assertEqual(loc.probe("missing", 2, None, Mock(return_value=loc_payload(0, []))),
                          {"sample_count": 0, "total_results": 0})
 
+    def test_catalog_url_with_canonical_item_id_is_a_valid_result(self):
+        payload = loc_payload(1, [{"url": "//lccn.loc.gov/2004674327",
+                                   "id": "http://www.loc.gov/item/2004674327/"}])
+        request = Mock(return_value=payload)
+        self.assertEqual(loc.probe("Flying Tigers", 3, None, request),
+                         {"sample_count": 1, "total_results": 1})
+        request.assert_called_once()
+
     def test_count_never_exceeds_requested_rows(self):
         items = [{"id": "https://www.loc.gov/item/" + str(i) + "/"} for i in range(4)]
         self.assertEqual(loc.probe("Burma", 2, None, Mock(return_value=loc_payload(9, items)))["sample_count"], 2)
