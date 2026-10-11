@@ -67,6 +67,8 @@ Git 不会搬运原来被忽略的根目录 `data/`、`storage/`、`backups/`。
 
 ## 测试与发布
 
+各档案平台已经实测／待 API 配置后测试的状态、统一命令和生产接入步骤，集中列在 [访问状态与生产整合计划](step1/docs/archive-access-production-plan.md)。
+
 在仓库根目录运行：
 
 ```sh

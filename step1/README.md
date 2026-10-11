@@ -248,6 +248,8 @@ python3 tools/build_site_data.py
 
 ## 各平台独立接入检查
 
+从当前状态到 API 配置后复测、再到生产整合的完整步骤见 [访问状态与生产整合计划](docs/archive-access-production-plan.md)。
+
 现提供 **8 个平台、9 种接入方式**的独立 `access_*.py` 和统一检查器。每个平台的凭据要求、未配置行为、完整命令、申请依据和 unit tests 见 [接入与测试说明](docs/archive-access.md)，当前实测结果见 [验证记录](docs/archive-access-validation.md)。
 
 以下命令从本应用目录运行：
