@@ -1,6 +1,6 @@
 # Architecture Alignment Backlog
 
-This backlog records follow-up work from the architecture principle review against the archival infrastructure proposal. The current repository remains a local system demo, so some public-portal rules are intentionally staged for later rather than enforced now.
+This backlog records follow-up work from the architecture principle review against the archival infrastructure proposal for the legacy Step 0 app. Step 0 remains a local system demo, so some public-portal rules are intentionally staged for later rather than enforced now. The separate [Step 1 discovery app](../../step1/README.md) has its own scope and roadmap.
 
 ## Implemented Now
 

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "scope": "Step 1 public discovery demo; exclusion decisions do not alter raw source snapshots.",
+  "excluded": [
+    {
+      "id": "europeana:/08711/https___www_biodiversitylibrary_org_item_296987",
+      "reason": "Spring 1944 : spring on Burma Road 的主题相关性尚未确认，暂不进入公开演示目录。"
+    },
+    {
+      "id": "europeana:/318/marc_nli_003995336",
+      "reason": "1948 年耶路撒冷同名 Burma Road 的资料，不属于本演示的中国／缅甸战场范围。"
+    }
+  ]
+}

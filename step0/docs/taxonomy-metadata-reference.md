@@ -1,5 +1,7 @@
 # Archive Collection System Taxonomy And Metadata Reference
 
+This reference describes the legacy Step 0 app. Code, documentation, and runtime filesystem paths are relative to `step0/`; run any relative shell commands from that folder. See the [Step 0 README](../README.md) for startup and existing local-data migration.
+
 Version: 0.1  
 Audience: collection owner, archivist, metadata cataloger, researcher, product owner, and developer.
 

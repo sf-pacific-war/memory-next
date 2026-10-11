@@ -1,5 +1,7 @@
 # Archive Collection System Metadata User Manual
 
+This manual describes the legacy Step 0 app. Filesystem paths such as `data/`, `storage/`, and `backups/` are relative to `step0/`. See the [Step 0 README](../README.md) for startup and existing local-data migration.
+
 Version: 0.1  
 Audience: archivists, metadata curators, collection managers, and developers maintaining the V1 local demo.
 

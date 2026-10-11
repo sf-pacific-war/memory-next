@@ -1,0 +1,28 @@
+name: Demo tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Legacy app relocation, sessions and permissions
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Discovery metadata and HTTP isolation
+        run: python -m unittest discover -s step1/tests -p 'test_*.py' -v
+      - name: Discovery search behavior
+        run: node --test step1/tests/search.test.mjs

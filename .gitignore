@@ -1,6 +1,15 @@
-data/
-storage/
-backups/
+# Shared local development files
 __pycache__/
 *.pyc
+.venv/
 .DS_Store
+.env
+.env.*
+!.env.example
+
+# Keep pre-migration local runtime directories ignored at the repository root.
+# Step 0's own ignore file handles its new runtime directories.
+# Do not ignore data/ globally: Step 1's public snapshots are versioned.
+/data/
+/storage/
+/backups/

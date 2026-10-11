@@ -1,0 +1,13 @@
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+
+# Python runtime files
+__pycache__/
+*.pyc
+.venv/
+
+# Local temporary output
+tmp/
+.DS_Store
