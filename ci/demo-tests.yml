@@ -25,4 +25,4 @@ jobs:
       - name: Discovery metadata and HTTP isolation
         run: python -m unittest discover -s step1/tests -p 'test_*.py' -v
       - name: Discovery search behavior
-        run: node --test step1/tests/search.test.mjs
+        run: node --test step1/tests/*.test.mjs

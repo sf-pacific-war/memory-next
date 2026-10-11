@@ -1,0 +1,188 @@
+# 档案平台检索词与测试命令
+
+核对日期：2026-10-11。以下命令对应当前代码的 **8 个平台、9 种访问路径**，可直接复制到终端。台湾国家档案管理局的公开目录数据已经验证可读取，但尚未加入这些 Python 入口或网页索引。
+
+## 1. 先进入正确目录
+
+目前本机运行的独立 Step 1 应用：
+
+```sh
+cd /Users/jingxugao/Documents/sf-pacific-war-harness/step1-discovery
+```
+
+当前 `memory-next` PR 的隔离 checkout 对应路径是下面这个目录；仅在需要测试该 checkout 时使用，临时目录可能随后被移除：
+
+```sh
+cd /private/tmp/memory-next-step-layout-a2ddwlby/step1
+```
+
+在其他位置 clone 的 `memory-next` 中，进入该仓库的 `step1/`。以下所有命令均在所选的 Step 1 目录内执行。两个目录的本地凭据不自动共享，PR 不包含真实 key。
+
+## 2. 先区分四种测试
+
+| 目的 | 命令特征 | 是否联网／写入样本 |
+| --- | --- | --- |
+| 检查本机配置 | `access_*.py` 或 `check_archives.py`，不加 `--live` | 不联网；不验证 key 是否被外馆接受 |
+| 检查真实访问及检索响应 | 对支持的来源加 `--live --query '关键词'` | 每来源最多一个请求；输出状态和计数，不保存档案记录 |
+| 验证代码行为 | `unittest` / `node --test` | 使用本地或合成数据；不访问外馆、不需要真实 key |
+| 查询现有网页样本 | `serve.py` 后在网页输入关键词 | 查询当前四来源的本地快照；不会向外馆实时搜索 |
+
+`access_*.py` 不会把新结果导入网页。更新样本由已有 `fetch_*.py` 完成，见 [README 的数据刷新步骤](../README.md#可选刷新真实来源数据)。
+
+## 3. 每个入口的关键词命令
+
+下面三条可直接进行免 key 的真实测试：
+
+```sh
+# 美国国会图书馆：滇缅公路；当前限定照片目录
+python3 tools/access_loc.py --live --query 'Burma Road' --rows 3
+
+# 日本国立国会图书馆：缅甸的日文名称；限定 iss-ndl-opac 书目
+python3 tools/access_ndl.py --live --query 'ビルマ' --rows 3
+
+# 美国国家档案馆公开数据集：读取固定 RG 493 分片，没有关键词参数
+python3 tools/access_nara.py --live --rows 3
+```
+
+Europeana 使用本机已有的凭据文件；单引号内部的双引号会作为查询文本的一部分传给 API：
+
+```sh
+python3 tools/access_europeana.py --live --env-file .env.europeana --query '"Burma Road"' --rows 3
+```
+
+下面三条仅在对应 key 或来源 IP 审批就绪后用于真实测试。DPLA 和 NARA 的 `.env.archives` 配置方法见下一节：
+
+```sh
+# 美国数字公共图书馆：需要 DPLA_API_KEY
+python3 tools/access_dpla.py --live --env-file .env.archives --query 'Burma' --rows 3
+
+# 美国国家档案馆实时 Catalog API：需要 NARA_API_KEY
+python3 tools/access_nara_catalog.py --live --env-file .env.archives --query 'Burma' --rows 3
+
+# 英国国家档案馆：只在当前请求来源 IP 已经获批之后使用此标记
+python3 tools/access_tna.py --live --permission-confirmed --query 'Burma' --rows 3
+```
+
+JACAR 和 IWM 目前只输出官方网页入口及接入说明，不能通过当前脚本发起关键词搜索：
+
+```sh
+python3 tools/access_jacar.py
+python3 tools/access_iwm.py
+```
+
+| 平台／路径 | 未传 `--query` 时的默认词 | 可替换的示例关键词 | 凭据或条件 |
+| --- | --- | --- | --- |
+| LoC／美国国会图书馆 | `Burma Road` | `Burma`、`China`、`Ledo Road` | 无需 key |
+| NDL／日本国立国会图书馆 | `ビルマ` | `インパール`、`中国` | 此书目子集无需 key |
+| Europeana／欧洲数字文化平台 | `"Burma Road"`，包括双引号 | `Burma`、`China` | `EUROPEANA_API_KEY` |
+| NARA／美国国家档案馆公开数据集 | 无 | **不支持关键词**；不要加 `--query` | 无需 key 或 AWS 账户 |
+| NARA Catalog API／美国国家档案馆实时目录 | `Burma` | `Burma Road`、`China Burma India` | `NARA_API_KEY` |
+| DPLA／美国数字公共图书馆 | `Burma` | `Burma Road`、`China` | `DPLA_API_KEY` |
+| TNA／英国国家档案馆 Discovery | `Burma` | `Imphal`、`Burma Road` | 来源 IP 事先获批 |
+| JACAR／亚洲历史资料中心 | 不执行查询 | 在 [官方网页](https://www.jacar.go.jp/english/) 手动检索 `ビルマ` 等词 | 当前是 `manual_only` |
+| IWM／帝国战争博物馆 | 不执行查询 | 在 [Collections Search](https://www.iwm.org.uk/collections/search) 手动检索 `Burma` 等词 | 当前是 `manual_only` |
+
+可替换的关键词只是查询示例，不保证有结果，也没有在本次文档核对中逐个进行外网实测。各馆检索语法不同；命令行中的引号用于保护空格，不代表所有 API 都执行完全相同的词组匹配。
+
+当前没有自动翻译 API 查询词：例如 `--query '缅甸'` 会原样发送给选定外馆。网页的固定中英日主题扩展也不会用于这些 Python 检查。JACAR／IWM 虽共用带有 `--query` 的参数解析器，但入口会直接返回 `manual_only`，不会执行查询；不要用此参数误判它们已经支持搜索。
+
+## 4. 本地 credential 文件
+
+`.env.europeana` 是此前在原应用目录配置的 Europeana 文件；已有文件可继续使用。其他目录不一定存在此文件。需要统一存放已申请的三个 key 时，可运行：
+
+```sh
+# -n 避免覆盖已有配置；随后在本地编辑器中填写已取得的 key
+cp -n .env.example .env.archives
+chmod 600 .env.archives
+```
+
+配置项是：
+
+```dotenv
+EUROPEANA_API_KEY=
+DPLA_API_KEY=
+NARA_API_KEY=
+```
+
+只有填入 `EUROPEANA_API_KEY` 后，才能将 Europeana 命令的 `--env-file .env.europeana` 改为 `--env-file .env.archives`。复制空白模板不会自动复制已有 key，也不会注册新 key。
+
+凭据文件必须已经存在、位于当前 Step 1 内、被 Git 忽略，且不超过 64 KiB。此项目的 `.gitignore` 已忽略 `.env.*`，保留空白 `.env.example`。同一 key 不要重复定义；文件只按字面读取 `KEY=value`，不执行 shell、不展开变量。
+
+程序不会自动加载 `.env.europeana` 或 `.env.archives`；必须传 `--env-file`，或者在进程环境中提供对应变量。有效的环境变量优先于文件。对需要 key 的来源，不存在的文件返回 `credential_error`；存在但对应项为空时返回 `missing_credential`。免 key 的来源不读取凭据文件。真实 key 不应放入命令参数、聊天、网页或 Git。
+
+## 5. 离线预检和统一入口
+
+```sh
+# 不联网：一次列出全部来源的配置状态
+python3 tools/check_archives.py
+
+# 同样不联网，显式检查已配置的 Europeana 文件
+python3 tools/check_archives.py --env-file .env.europeana
+
+# 单个入口不加 --live，即为离线预检
+python3 tools/access_loc.py --query 'Burma Road' --rows 3
+
+# 统一入口选择一个来源后，可替代该来源独立脚本
+python3 tools/check_archives.py --source loc --live --query 'Burma Road' --rows 3
+python3 tools/check_archives.py --source ndl --live --query 'ビルマ' --rows 3
+python3 tools/check_archives.py --source europeana --live --env-file .env.europeana --query '"Burma Road"' --rows 3
+
+# 所有来源按各自默认词串行检查；缺条件的来源跳过并报告原因
+python3 tools/check_archives.py --live --env-file .env.europeana --rows 3
+```
+
+统一入口可选 `--source` 值：`all`、`loc`、`ndl`、`europeana`、`nara`、`nara_catalog`、`dpla`、`tna`、`jacar`、`iwm`。默认是 `all`；**`all` 不允许同时传 `--query`**，自定义词时必须选择单个平台。全部检查会包含 NARA 固定数据集和两个网页入口，并不等于九个关键词 API 的联邦搜索。
+
+访问检查的 `--rows` 为 1–5，默认 3；API 查询词须非空且不超过 200 个字符。每个来源最多一个请求，30 秒超时、2 MiB 响应上限，无自动翻页或重试。NARA 数据集仍读取整个固定小分片，`--rows` 只限制报告的样本量。
+
+## 6. Unit tests 和网页关键词测试
+
+```sh
+# 只运行接入检查 unit tests；无需真实凭据或外网
+python3 -B -m unittest discover -s tests -p 'test_a*.py' -v
+
+# 完整 Python 测试；HTTP 隔离测试会短暂监听本机端口
+python3 -B -m unittest discover -s tests -p 'test_*.py' -v
+
+# 网页检索逻辑测试，需要可运行的 Node.js，无需 npm install
+node --test tests/*.test.mjs
+
+# 启动网页；读取已有快照，不需要 API key
+python3 tools/serve.py
+```
+
+启动后保持该终端运行，在浏览器打开以下地址。macOS 也可在另一个终端执行这些命令：
+
+```sh
+# 英文关键词：本地四来源快照
+open 'http://127.0.0.1:8000/?lang=en&q=Burma'
+
+# 中文“缅甸”的 URL 编码，对应网页内置的主题扩展
+open 'http://127.0.0.1:8000/?lang=zh-CN&q=%E7%BC%85%E7%94%B8'
+
+# 中文“滇缅公路”
+open 'http://127.0.0.1:8000/?lang=zh-CN&q=%E6%BB%87%E7%BC%85%E5%85%AC%E8%B7%AF'
+
+# 限定 LoC 和 NARA 两个来源
+open 'http://127.0.0.1:8000/?q=Burma&source=LoC&source=NARA'
+```
+
+`open` 是 macOS 命令；其他系统直接把网址粘贴到浏览器。网页用 `q` 参数保存关键词、`lang=en`／`lang=zh-CN` 选择 English／中文界面；CLI 用 `--query`。切换界面语言不会自动翻译原馆标题、描述或任意检索词。当前网页仍仅包含 LoC、NDL、Europeana、NARA 的本地样本；DPLA／TNA 的检查通过也不会自动成为网页来源。
+
+## 7. 结果如何判断
+
+| 状态 | 含义 |
+| --- | --- |
+| `ready` | 本机配置满足条件，未验证网络或权限 |
+| `ok` | 本次请求成功且响应结构通过校验；`sample_count: 0` 也可为有效结果 |
+| `missing_credential` | 当前来源没有 key，未发送请求 |
+| `permission_required` | TNA 来源 IP 尚未确认获批，未发送请求 |
+| `manual_only` | 当前只有官方网页入口，未发送请求 |
+| `credential_error` | key 格式、文件路径、文件内容或 Git 忽略条件不满足 |
+| `access_denied` / `rate_limited` / `timeout` / `network_error` | 权限、限流或网络问题，不等于零条档案 |
+
+成功的检查只输出诊断状态、`sample_count`，以及 API 明确提供时的 `total_results`，不会输出完整档案记录。NARA 固定数据集的样本数不是关键词命中数或整个档案组总数。
+
+退出码：`0` 表示该次检查成功，或离线预检／网页入口正常；`2` 表示缺 key、缺审批、仅网页入口却要求 `--live`，或参数有误；`1` 表示请求失败、响应不符或凭据配置错误。统一检查有混合结果时优先返回 `1`，其次为 `2`，详细状态仍逐来源保留。
+
+代码和命令核对不等于新增 API 实测。已有真实访问证据见 [验证记录](archive-access-validation.md)；申请凭据、上线整合和来源限制见 [访问状态与生产整合计划](archive-access-production-plan.md)。台湾来源还需要实现 CSV 读取、字段标准化和网页索引接入，当前没有对应 `access_*.py`、`--source` 值或关键词 CLI。

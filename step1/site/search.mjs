@@ -5,10 +5,22 @@ export function normalizeText(value) {
 }
 
 const TOPICS = [
-  { aliases: ['滇缅公路', '滇緬公路', 'Burma Road', 'ビルマ公路', '援蒋ルート'], label: '滇缅公路：跨语言扩展；“援蒋ルート”含更广的援助路线' },
-  { aliases: ['缅甸', '緬甸', 'Burma', 'Myanmar', 'ビルマ', 'ミャンマー'], label: '缅甸：含 Burma、Myanmar 与日文别名，跨时期名称需核对' },
-  { aliases: ['英帕尔', '英帕爾', 'Imphal', 'インパール'], label: '英帕尔：中英日地名扩展' },
-  { aliases: ['中国远征军', '中國遠征軍', 'Chinese Expeditionary Force', '中国遠征軍'], label: '中国远征军：中英日名称扩展' },
+  { aliases: ['滇缅公路', '滇緬公路', 'Burma Road', 'ビルマ公路', '援蒋ルート'], labels: {
+    'zh-CN': '滇缅公路：跨语言扩展；“援蒋ルート”含更广的援助路线',
+    en: 'Burma Road: multilingual expansion; “援蒋ルート” also covers broader aid routes',
+  } },
+  { aliases: ['缅甸', '緬甸', 'Burma', 'Myanmar', 'ビルマ', 'ミャンマー'], labels: {
+    'zh-CN': '缅甸：含 Burma、Myanmar 与日文别名，跨时期名称需核对',
+    en: 'Burma: includes Myanmar and Japanese names; check names against the historical period',
+  } },
+  { aliases: ['英帕尔', '英帕爾', 'Imphal', 'インパール'], labels: {
+    'zh-CN': '英帕尔：中英日地名扩展',
+    en: 'Imphal: expanded to Chinese, English and Japanese place names',
+  } },
+  { aliases: ['中国远征军', '中國遠征軍', 'Chinese Expeditionary Force', '中国遠征軍'], labels: {
+    'zh-CN': '中国远征军：中英日名称扩展',
+    en: 'Chinese Expeditionary Force: expanded to Chinese, English and Japanese names',
+  } },
 ].map(topic => ({ ...topic, terms: topic.aliases.map(normalizeText) }));
 
 function clausesFor(query) {
@@ -26,17 +38,18 @@ function clausesFor(query) {
       const topic = TOPICS.find(candidate => candidate.terms.includes(value));
       if (topic) { found = topic; consumed = n; break; }
     }
-    clauses.push(found ? { terms: found.terms, label: found.label } : { terms: [tokens[i].value], label: null });
+    clauses.push(found ? { terms: found.terms, labels: found.labels } : { terms: [tokens[i].value], labels: null });
     i += consumed;
   }
   return clauses;
 }
 
-export function expandQuery(query) {
+export function expandQuery(query, locale = 'zh-CN') {
   const clauses = clausesFor(query);
+  const language = locale === 'en' ? 'en' : 'zh-CN';
   return {
     terms: [...new Set(clauses.flatMap(clause => clause.terms))],
-    label: [...new Set(clauses.map(clause => clause.label).filter(Boolean))].join('；') || null,
+    label: [...new Set(clauses.map(clause => clause.labels?.[language]).filter(Boolean))].join(language === 'en' ? '; ' : '；') || null,
   };
 }
 
@@ -61,12 +74,18 @@ export function getRecordYears(record) {
   return { start: fallback?.[0] ?? null, end: fallback?.[1] ?? null };
 }
 
-export function formatLabel(type) {
-  return ({ IMAGE: '图像', TEXT: '文献', MAP: '地图', SOUND: '音频', VIDEO: '影像', MIXED: '综合资料' })[String(type ?? '').toUpperCase()] ?? '其他';
+export function formatLabel(type, locale = 'zh-CN') {
+  const labels = locale === 'en'
+    ? { IMAGE: 'Image', TEXT: 'Text', MAP: 'Map', SOUND: 'Audio', VIDEO: 'Video', MIXED: 'Mixed material' }
+    : { IMAGE: '图像', TEXT: '文献', MAP: '地图', SOUND: '音频', VIDEO: '影像', MIXED: '综合资料' };
+  return labels[String(type ?? '').toUpperCase()] ?? (locale === 'en' ? 'Other' : '其他');
 }
 
-export function sourceLabel(source) {
-  return ({ loc: '美国国会图书馆', ndl: '日本国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆' })[normalizeText(source)] ?? String(source ?? '未知来源');
+export function sourceLabel(source, locale = 'zh-CN') {
+  const labels = locale === 'en'
+    ? { loc: 'Library of Congress', ndl: 'National Diet Library', europeana: 'Europeana', nara: 'U.S. National Archives' }
+    : { loc: '美国国会图书馆', ndl: '日本国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆' };
+  return labels[normalizeText(source)] ?? String(source ?? (locale === 'en' ? 'Unknown source' : '未知来源'));
 }
 
 function fieldText(value) {
@@ -77,7 +96,9 @@ function searchFields(record) {
   return [fieldText(record.title), fieldText(record.description), fieldText([
     record.source, record.source_id, record.holding_institution, record.metadata_provider,
     record.subject, record.subjects, record.archival_context, record.place, record.language, record.date_display,
-    record.format, sourceLabel(record.source), formatLabel(record.format),
+    // Both interface languages remain searchable, regardless of the displayed locale.
+    record.format, sourceLabel(record.source), sourceLabel(record.source, 'en'),
+    formatLabel(record.format), formatLabel(record.format, 'en'),
   ])];
 }
 

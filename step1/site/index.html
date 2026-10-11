@@ -24,7 +24,7 @@
         <a href="#sources">数据来源</a>
         <button type="button" id="help-button">使用说明 <span aria-hidden="true">↗</span></button>
       </nav>
-      <span class="edition"><span aria-hidden="true"></span>研究预览版</span>
+      <div class="header-tools"><span class="edition"><span aria-hidden="true"></span>研究预览版</span><label class="language-control"><span class="sr-only">界面语言</span><select id="language" aria-label="界面语言"><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">中文</option></select></label></div>
     </div>
   </header>
   <main>
@@ -49,7 +49,7 @@
         <input id="query" type="search" autocomplete="off" maxlength="240" placeholder="搜索关键词、人物或地点，例如：滇缅公路" aria-describedby="search-hint">
         <button class="primary-button" type="submit">搜索资料 <span aria-hidden="true">↗</span></button>
       </form>
-      <div class="search-suggestions"><span id="search-hint">从一个主题开始</span><button type="button" data-query="滇缅公路">滇缅公路</button><button type="button" data-query="缅甸">缅甸战场</button><button type="button" data-query="英帕尔">英帕尔</button><button type="button" data-query="中国远征军">中国远征军</button></div>
+      <div class="search-suggestions"><span id="search-hint">从一个主题开始</span><button type="button" data-query="滇缅公路" data-query-en="Burma Road">滇缅公路</button><button type="button" data-query="缅甸" data-query-en="Burma">缅甸战场</button><button type="button" data-query="英帕尔" data-query-en="Imphal">英帕尔</button><button type="button" data-query="中国远征军" data-query-en="Chinese Expeditionary Force">中国远征军</button></div>
     </section>
     <div class="collection-strip">
       <div class="wrap strip-inner"><p><span class="status-dot" aria-hidden="true"></span><strong id="sample-count">—</strong> 条目录样本 <span class="strip-divider">/</span> <strong id="source-count">—</strong> 个已接入来源</p><p class="strip-note">本地样本检索<span class="strip-divider">·</span><span id="updated-date">正在载入资料</span></p></div>
@@ -81,6 +81,6 @@
   <footer class="wrap footer"><div><strong>太平洋战争档案</strong><span>PACIFIC WAR ARCHIVES</span></div><p>STEP 01 · 统一发现演示 <span aria-hidden="true">/</span> 元数据有出处，历史有脉络。</p><a href="#discover">回到顶部 ↑</a></footer>
   <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span>CATALOGUE RECORD <span class="dialog-divider">/</span> 资料详情</span><button type="button" class="icon-button" id="close-detail" aria-label="关闭资料详情">×</button></div><div id="detail-content" class="detail-content"></div></dialog>
   <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-top"><span>RESEARCH GUIDE <span class="dialog-divider">/</span> 使用说明</span><button type="button" class="icon-button" id="close-help" aria-label="关闭使用说明">×</button></div><div class="detail-content help-content"><p class="eyebrow">从关键词到原始出处</p><h2 id="help-title">如何使用资料发现</h2><ol><li><strong>输入线索</strong><p>搜索标题、地点或人物。预设主题支持中英日检索词扩展，具体使用的词会显示在结果上方。</p></li><li><strong>缩小范围</strong><p>组合选择来源、资料类型、目录日期与访问状态。日期筛选针对目录记录，不自动判断战役发生年份。</p></li><li><strong>核对原始出处</strong><p>打开记录查看原始描述，再前往原馆确认内容、访问条件和使用许可。</p></li></ol><div class="detail-note">当前搜索本地已导入的真实样本，不是全馆藏实时检索。关键词命中不等于史料相关性已经确认；书目记录也不等于在线全文。</div></div></dialog>
-  <noscript><div class="noscript-note">请启用 JavaScript 以检索本地目录样本。</div></noscript>
+  <noscript><div class="noscript-note">Enable JavaScript to search catalogue samples. / 请启用 JavaScript 以检索本地目录样本。</div></noscript>
 </body>
 </html>

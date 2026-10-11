@@ -78,6 +78,48 @@ test('provides Chinese labels and preserves unknown source names', () => {
   assert.equal(sourceLabel('Other Archive'), 'Other Archive');
 });
 
+test('switches presentation labels to English without translating unknown source names', () => {
+  assert.equal(formatLabel('image', 'en'), 'Image');
+  assert.equal(formatLabel('MIXED', 'en'), 'Mixed material');
+  assert.equal(formatLabel('unknown', 'en'), 'Other');
+  assert.equal(sourceLabel('LoC', 'en'), 'Library of Congress');
+  assert.equal(sourceLabel('NDL', 'en'), 'National Diet Library');
+  assert.equal(sourceLabel('Europeana', 'en'), 'Europeana');
+  assert.equal(sourceLabel('NARA', 'en'), 'U.S. National Archives');
+  assert.equal(sourceLabel(null, 'en'), 'Unknown source');
+  assert.equal(sourceLabel('Other Archive', 'en'), 'Other Archive');
+});
+
+test('topic explanations translate while expanded search terms and original records remain unchanged', () => {
+  const original = structuredClone(records);
+  for (const query of ['滇缅公路', '缅甸', '英帕尔', '中国远征军', 'Burma Road Imphal']) {
+    const chinese = expandQuery(query, 'zh-CN');
+    const english = expandQuery(query, 'en');
+    assert.deepEqual(english.terms, chinese.terms);
+    assert.notEqual(english.label, chinese.label);
+    for (const record of filterRecords(records, { query })) {
+      sourceLabel(record.source, 'en');
+      formatLabel(record.format, 'en');
+      assert.equal(record, records.find(item => item.id === record.id));
+    }
+  }
+  assert.match(expandQuery('滇缅公路', 'en').label, /broader aid routes/);
+  assert.match(expandQuery('缅甸', 'en').label, /historical period/);
+  assert.equal(expandQuery('unknown', 'en').label, null);
+  assert.deepEqual(records, original);
+});
+
+test('institution and material names are searchable in both interface languages', () => {
+  for (const query of ['美国国会图书馆', 'Library of Congress', '"Library of Congress"']) {
+    assert.deepEqual(ids(filterRecords(records, { query })), ['a', 'd']);
+  }
+  for (const query of ['日本国会图书馆', 'National Diet Library']) {
+    assert.deepEqual(ids(filterRecords(records, { query })), ['c']);
+  }
+  assert.deepEqual(ids(filterRecords(records, { query: 'Library of Congress 图像' })), ['a']);
+  assert.deepEqual(ids(filterRecords(records, { query: '美国国会图书馆 Image' })), ['a']);
+});
+
 test('NARA matches genuine archival context while retaining source and date filters', () => {
   const nara = { id: 'nara:123', source: 'NARA', title: 'Weekly Reports', format: 'TEXT',
     year: ['1943', '1945'], archival_context: ['Records of U.S. Army Forces in the China-Burma-India Theaters of Operations'] };
