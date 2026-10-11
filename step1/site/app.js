@@ -1,4 +1,5 @@
 import { filterRecords, expandQuery, formatLabel as typeName, sourceLabel as sourceName } from './search.mjs';
+import { updatePageLinks } from './page-links.mjs';
 import { bindPageTranslations, resolveLocale, normalizeLocale, translate } from './i18n.mjs';
 
 const $ = (id) => document.getElementById(id);
@@ -76,6 +77,7 @@ function writeURL() {
   const query = params.toString();
   const url = `${location.pathname}${query ? `?${query}` : ''}${location.hash}`;
   if (url !== `${location.pathname}${location.search}${location.hash}`) history.pushState(null, '', url);
+  updatePageLinks(locale);
 }
 function checkOption(container, value, label, count, kind) {
   const row = el('label', 'check-row');
@@ -259,18 +261,7 @@ function openRecord(record) {
   if (!$('detail-dialog').open) $('detail-dialog').showModal();
   $('detail-dialog').scrollTop = 0;
 }
-function renderSources() {
-  $('source-cards').replaceChildren();
-  for (const source of catalog.sources) {
-    const card = el('article', 'source-card');
-    const heading = el('div', 'source-card-heading');
-    heading.append(el('span', 'source-abbr', source.id === 'Europeana' ? 'EUROPEANA' : source.id.toUpperCase()), el('span', `source-state${source.count ? '' : ' unavailable'}`, source.count ? (locale === 'en' && source.count === 1 ? '1 sample' : t('{count} 条样本', { count: source.count })) : t('暂未接入')));
-    card.append(heading, el('h3', '', sourceLabel(source.id)), el('p', '', t(source.description || '公开目录元数据样本。')));
-    const url = link(t('访问来源网站 ↗'), source.url);
-    if (url) card.append(url);
-    $('source-cards').append(card);
-  }
-  $('scope-note').textContent = t('样本范围说明：当前索引包含 {count} 条真实目录记录，经过初步排除同名误命中；仍需逐条核对史料相关性。NDL 样本包括战后出版的回忆录与研究书目。更多结果需在原馆继续检索。', { count: catalog.records.length });
+function renderSourceSummary() {
   $('sample-count').textContent = catalog.records.length;
   $('source-count').textContent = catalog.sources.filter(s => s.count > 0).length;
   const dates = catalog.sources.map(s => s.fetched_at).filter(Boolean).sort();
@@ -289,7 +280,7 @@ async function loadCatalog() {
     catalog = data;
     readURL();
     renderFilters();
-    renderSources();
+    renderSourceSummary();
     syncControls();
     update({ save: false });
   } catch {
@@ -312,7 +303,7 @@ function changeLanguage(value, { save = true } = {}) {
     const draftQuery = $('query').value;
     renderFilters();
     for (const input of document.querySelectorAll('input[data-kind]')) input.checked = state[input.dataset.kind].includes(input.value);
-    renderSources();
+    renderSourceSummary();
     update({ save: false, resetPage: false });
     $('query').value = draftQuery;
     if ($('detail-dialog').open && selectedRecord) openRecord(selectedRecord);
@@ -325,6 +316,7 @@ function changeLanguage(value, { save = true } = {}) {
     url.searchParams.set('lang', locale);
     history.pushState(null, '', `${url.pathname}${url.search}${url.hash}`);
   }
+  updatePageLinks(locale);
 }
 $('language').addEventListener('change', () => changeLanguage($('language').value));
 

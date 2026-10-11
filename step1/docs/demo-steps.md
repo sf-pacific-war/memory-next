@@ -14,6 +14,8 @@ python3 tools/serve.py
 
 浏览器打开 **http://127.0.0.1:8000**。无需注册更多账号、提供 key 或安装前端依赖。启动会自动生成 `site/data/catalog.json`；停止时按 `Ctrl+C`。
 
+顶部“数据来源”打开独立页面，也可直接访问 [中文来源页](http://127.0.0.1:8000/sources.html?lang=zh-CN)／[英文来源页](http://127.0.0.1:8000/sources.html?lang=en)。来源页展示当前四个来源、样本数、范围说明和官网链接；与检索页往返时保留 URL 中的搜索、筛选、排序和语言。
+
 平台中英文名称见 [名称对照](archive-platform-names.md)。后续来源研究已补充 [台湾档案管理局（archives.gov.tw）](taiwan-archives.md)，其 CSV 已验证可读取，尚未计入当前网页样本或以下已实现来源。
 
 ## 1 先确定可用来源
@@ -107,6 +109,8 @@ curl --fail --max-time 30 --get 'https://ndlsearch.ndl.go.jp/api/opensearch' \
 
 搜索采用标题、描述、主题词的关键词匹配；小词表扩展中文入口，优先排标题匹配，再排描述匹配。无需向量数据库、LLM 或全文 OCR。初期结果只对导入的样本有效，不称为实时联邦搜索。
 
+数据来源位于独立的 `sources.html` 页面，与检索页共享语言偏好和样式。来源页有自己的加载提示、失败重试和使用说明；仍读取同一份目录快照，不发起外馆实时查询。
+
 当前结构为“Python 获取工具 → `data/` 源快照 → `build_site_data.py` → `site/data/catalog.json` → 静态 HTML/CSS/JavaScript”。31 条记录直接在浏览器内筛选，无需应用 API 服务器或数据库。可选 key 只供获取工具使用，不写入 JSON、网页、URL 日志或 Git；本地运行时从环境变量读取。
 
 所有 Step 1 文件已集中到仓库根目录的 `step1/`。当前实际结构如下；运行方式见[项目 README](../README.md)：
@@ -131,10 +135,14 @@ step1/
   data/ndl-discovery.json
   data/nara-discovery.json
   data/review-notes.json
-  site/index.html
+  site/index.html                检索页面
+  site/sources.html              独立数据来源页面
   site/styles.css
-  site/app.js
+  site/app.js                    检索页交互
+  site/sources.js                来源页交互、加载与重试
   site/search.mjs
+  site/i18n.mjs                  中英文界面文案
+  site/page-links.mjs            保留查询条件和语言的跨页链接
   site/icon.svg
   site/data/catalog.json
   docs/demo-steps.md

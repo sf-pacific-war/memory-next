@@ -1,5 +1,21 @@
 /** UI translations only. Archival titles, descriptions and rights remain verbatim. */
 export const messages = Object.freeze({
+  "数据来源 · 太平洋战争档案": {
+    "zh-CN": "数据来源 · 太平洋战争档案",
+    "en": "Sources · Pacific War Archives"
+  },
+  "了解目录样本的来源机构、收录范围与原始出处。": {
+    "zh-CN": "了解目录样本的来源机构、收录范围与原始出处。",
+    "en": "Explore the institutions, coverage and provenance of the catalogue samples."
+  },
+  "跳至数据来源": {
+    "zh-CN": "跳至数据来源",
+    "en": "Skip to sources"
+  },
+  "返回资料发现 ↗": {
+    "zh-CN": "返回资料发现 ↗",
+    "en": "Back to discovery ↗"
+  },
   "资料发现 · 太平洋战争档案": {
     "zh-CN": "资料发现 · 太平洋战争档案",
     "en": "Discovery · Pacific War Archives"

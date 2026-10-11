@@ -15,13 +15,13 @@
   <a class="skip-link" href="#results-heading">跳至检索结果</a>
   <header class="masthead">
     <div class="header-inner">
-      <a class="brand" href="./" aria-label="太平洋战争档案首页">
+      <a class="brand" href="./" data-page-link="./" aria-label="太平洋战争档案首页">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
         <span><strong>太平洋战争档案</strong><small>PACIFIC WAR ARCHIVES</small></span>
       </a>
       <nav aria-label="主导航">
-        <a class="nav-active" href="#discover" aria-current="page">资料发现</a>
-        <a href="#sources">数据来源</a>
+        <a class="nav-active" href="./" data-page-link="./" aria-current="page">资料发现</a>
+        <a href="sources.html" data-page-link="sources.html">数据来源</a>
         <button type="button" id="help-button">使用说明 <span aria-hidden="true">↗</span></button>
       </nav>
       <div class="header-tools"><span class="edition"><span aria-hidden="true"></span>研究预览版</span><label class="language-control"><span class="sr-only">界面语言</span><select id="language" aria-label="界面语言"><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">中文</option></select></label></div>
@@ -76,7 +76,6 @@
         <div class="results-bottom" id="results-bottom" hidden><span id="shown-count"></span><button type="button" id="load-more" class="secondary-button" hidden>查看更多资料 <span aria-hidden="true">↓</span></button><span class="index-end" aria-hidden="true">— ARCHIVAL DISCOVERY —</span></div>
       </div>
     </section>
-    <section class="sources-section" id="sources" aria-labelledby="sources-heading"><div class="wrap"><div class="sources-title"><div><p class="eyebrow">CONNECTED SOURCES</p><h2 id="sources-heading">一处发现，多种视角。</h2></div><p>展示已取得的公开目录元数据。<br>资料归原提供机构所有，本站保留出处。</p></div><div id="source-cards" class="source-cards"></div><p id="scope-note" class="scope-note"></p></div></section>
   </main>
   <footer class="wrap footer"><div><strong>太平洋战争档案</strong><span>PACIFIC WAR ARCHIVES</span></div><p>STEP 01 · 统一发现演示 <span aria-hidden="true">/</span> 元数据有出处，历史有脉络。</p><a href="#discover">回到顶部 ↑</a></footer>
   <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span>CATALOGUE RECORD <span class="dialog-divider">/</span> 资料详情</span><button type="button" class="icon-button" id="close-detail" aria-label="关闭资料详情">×</button></div><div id="detail-content" class="detail-content"></div></dialog>

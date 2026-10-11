@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="了解目录样本的来源机构、收录范围与原始出处。">
+  <meta name="referrer" content="no-referrer">
+  <title>数据来源 · 太平洋战争档案</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="sources.js"></script>
+</head>
+<body class="sources-page">
+  <a class="skip-link" href="#page-title">跳至数据来源</a>
+  <header class="masthead">
+    <div class="header-inner">
+      <a class="brand" href="./" data-page-link="./" aria-label="太平洋战争档案首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>太平洋战争档案</strong><small>PACIFIC WAR ARCHIVES</small></span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="./" data-page-link="./">资料发现</a>
+        <a class="nav-active" href="sources.html" data-page-link="sources.html" aria-current="page">数据来源</a>
+        <button type="button" id="help-button">使用说明 <span aria-hidden="true">↗</span></button>
+      </nav>
+      <div class="header-tools"><span class="edition"><span aria-hidden="true"></span>研究预览版</span><label class="language-control"><span class="sr-only">界面语言</span><select id="language" aria-label="界面语言"><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">中文</option></select></label></div>
+    </div>
+  </header>
+  <main>
+    <section class="intro wrap" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="section-number">02</span> CONNECTED SOURCES <span class="eyebrow-line"></span></p>
+      <h1 id="page-title" tabindex="-1">数据来源</h1>
+      <p class="sources-tagline">一处发现，多种视角。</p>
+      <p class="intro-description">展示已取得的公开目录元数据。<br>资料归原提供机构所有，本站保留出处。</p>
+      <a class="sources-back" href="./" data-page-link="./">返回资料发现 ↗</a>
+    </section>
+    <div class="collection-strip">
+      <div class="wrap strip-inner"><p><span class="status-dot" aria-hidden="true"></span><strong id="sample-count">—</strong> 条目录样本 <span class="strip-divider">/</span> <strong id="source-count">—</strong> 个已接入来源</p><p class="strip-note">本地样本检索<span class="strip-divider">·</span><span id="updated-date">正在载入资料</span></p></div>
+    </div>
+    <section class="sources-content wrap" aria-label="来源机构">
+      <div id="sources-loading" class="loading-state" role="status"><span class="loading-line" aria-hidden="true"></span><p>正在载入资料</p></div>
+      <div id="source-cards" class="source-cards" aria-busy="true"></div>
+      <div id="error-state" class="empty-state" role="alert" hidden><h2>目录样本暂时无法载入</h2><p>请使用项目的本地启动命令打开页面，并检查样本文件是否生成。</p><button type="button" class="secondary-button" id="retry-button">重新载入</button></div>
+      <p id="scope-note" class="scope-note" hidden></p>
+    </section>
+  </main>
+  <footer class="wrap footer"><div><strong>太平洋战争档案</strong><span>PACIFIC WAR ARCHIVES</span></div><p>STEP 01 · 统一发现演示 <span aria-hidden="true">/</span> 元数据有出处，历史有脉络。</p><a href="#page-title">回到顶部 ↑</a></footer>
+  <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-top"><span>RESEARCH GUIDE <span class="dialog-divider">/</span> 使用说明</span><button type="button" class="icon-button" id="close-help" aria-label="关闭使用说明">×</button></div><div class="detail-content help-content"><p class="eyebrow">从关键词到原始出处</p><h2 id="help-title">如何使用资料发现</h2><ol><li><strong>输入线索</strong><p>搜索标题、地点或人物。预设主题支持中英日检索词扩展，具体使用的词会显示在结果上方。</p></li><li><strong>缩小范围</strong><p>组合选择来源、资料类型、目录日期与访问状态。日期筛选针对目录记录，不自动判断战役发生年份。</p></li><li><strong>核对原始出处</strong><p>打开记录查看原始描述，再前往原馆确认内容、访问条件和使用许可。</p></li></ol><div class="detail-note">当前搜索本地已导入的真实样本，不是全馆藏实时检索。关键词命中不等于史料相关性已经确认；书目记录也不等于在线全文。</div></div></dialog>
+  <noscript><div class="noscript-note">Enable JavaScript to view catalogue sources. / 请启用 JavaScript 以查看目录来源。</div></noscript>
+</body>
+</html>
