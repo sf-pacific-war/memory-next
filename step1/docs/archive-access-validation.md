@@ -48,4 +48,4 @@ Step 1 共 **141 项 Python 测试**，其中 **93 项为本次新增的接入�
 }
 ```
 
-这次清单检查的所有 `request_sent` 都为 `false`，退出码为 `2`，表示有待满足的接入条件。Europeana 的 `configured` 来自显式本地配置文件；新 clone 没有该文件时会显示 `missing_credential`。
+这次清单检查的所有 `request_sent` 都为 `false`，退出码为 `2`，表示有待满足的接入条件。Europeana 的 `configured` 来自显式本地配置文件；新 clone 未配置凭据，且不传 `--env-file` 时会显示 `missing_credential`；如果显式指定了不存在的文件，则为 `credential_error`。
