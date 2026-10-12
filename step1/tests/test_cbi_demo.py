@@ -61,7 +61,7 @@ class CBIDemoTests(unittest.TestCase):
 
     def test_writes_complete_valid_json(self):
         data = demo.write_demo(self.root)
-        self.assertEqual(json.loads((self.root / 'site/data/cbi-demo.json').read_text()), data)
+        self.assertEqual(json.loads((self.root / 'data/cbi/review-report.json').read_text()), data)
 
     def test_space_in_reference_filename_is_retained_without_loading_media(self):
         raw = json.loads((self.folder / 'inventory.json').read_text())
@@ -76,8 +76,8 @@ class CBIDemoTests(unittest.TestCase):
     def test_rejects_symlink_output(self):
         target = self.root / 'outside.json'
         target.write_text('keep')
-        (self.root / 'site/data').mkdir(parents=True)
-        (self.root / 'site/data/cbi-demo.json').symlink_to(target)
+        (self.root / 'data/cbi').mkdir(parents=True, exist_ok=True)
+        (self.root / 'data/cbi/review-report.json').symlink_to(target)
         with self.assertRaises(ValueError):
             demo.write_demo(self.root)
         self.assertEqual(target.read_text(), 'keep')

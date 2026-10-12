@@ -21,8 +21,8 @@
       </a>
       <nav aria-label="主导航">
         <a class="nav-active" href="./" data-page-link="./" aria-current="page">资料发现</a>
+        <a href="topics.html" data-page-link="topics.html">专题浏览</a>
         <a href="sources.html" data-page-link="sources.html">数据来源</a>
-        <a href="cbi-demo.html" data-page-link="cbi-demo.html">CBI demo</a>
         <button type="button" id="help-button">使用说明 <span aria-hidden="true">↗</span></button>
       </nav>
       <div class="header-tools"><span class="edition"><span aria-hidden="true"></span>研究预览版</span><label class="language-control"><span class="sr-only">界面语言</span><select id="language" aria-label="界面语言"><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">中文</option></select></label></div>
@@ -51,9 +51,10 @@
         <button class="primary-button" type="submit">搜索资料 <span aria-hidden="true">↗</span></button>
       </form>
       <div class="search-suggestions"><span id="search-hint">从一个主题开始</span><button type="button" data-query="滇缅公路" data-query-en="Burma Road">滇缅公路</button><button type="button" data-query="缅甸" data-query-en="Burma">缅甸战场</button><button type="button" data-query="英帕尔" data-query-en="Imphal">英帕尔</button><button type="button" data-query="中国远征军" data-query-en="Chinese Expeditionary Force">中国远征军</button></div>
+      <section class="topic-entry" aria-labelledby="topic-entry-title"><div class="topic-entry-heading"><h2 id="topic-entry-title">探索已整理专题</h2><a href="topics.html" data-page-link="topics.html">浏览专题与精选资料 ↗</a></div><div id="topic-shortcuts" class="topic-shortcuts"></div><p class="topic-entry-note">专题关键词和收录资料均可在此检索；标签由编辑整理，原始目录信息保留。</p></section>
     </section>
     <div class="collection-strip">
-      <div class="wrap strip-inner"><p><span class="status-dot" aria-hidden="true"></span><strong id="sample-count">—</strong> 条目录样本 <span class="strip-divider">/</span> <strong id="source-count">—</strong> 个已接入来源</p><p class="strip-note">本地样本检索<span class="strip-divider">·</span><span id="updated-date">正在载入资料</span></p></div>
+      <div class="wrap strip-inner"><p><span class="status-dot" aria-hidden="true"></span><strong id="sample-count">—</strong> 条目录样本 <span class="strip-divider">/</span> <strong id="source-count">—</strong> 个来源机构</p><p class="strip-note">本地样本检索<span class="strip-divider">·</span><span id="updated-date">正在载入资料</span></p></div>
     </div>
     <section class="discovery-layout wrap" aria-label="资料检索">
       <button class="mobile-filter-button" id="filter-toggle" type="button" aria-expanded="false" aria-controls="filters">筛选资料 <span aria-hidden="true">＋</span></button>
@@ -69,11 +70,11 @@
         <div class="results-toolbar"><div><p class="small-label">DISCOVERY INDEX</p><h2 id="results-heading" tabindex="-1">全部资料 <span id="result-count">—</span></h2></div><label class="sort-control">排序<select id="sort"><option value="relevance">相关性优先</option><option value="newest">目录日期：由新到旧</option><option value="oldest">目录日期：由旧到新</option></select></label></div>
         <p class="expansion-note" id="expansion-note" hidden></p>
         <div id="active-filters" class="active-filters" aria-label="当前筛选条件"></div>
-        <p class="results-context">跨来源目录样本 · 保留原始语言与出处</p>
+        <p class="results-context">跨来源目录与专题资料 · 保留原始语言与出处</p>
         <p class="sr-only" id="result-announcement" aria-live="polite" aria-atomic="true"></p>
         <div id="results" class="results-list" aria-busy="true"><div class="loading-state"><span class="loading-line"></span><p>正在整理目录索引…</p></div></div>
         <div id="empty-state" class="empty-state" hidden><span class="empty-icon" aria-hidden="true">⌕</span><h3>暂时没有找到匹配的资料</h3><p>试试更宽泛的关键词，或减少筛选条件。<br>这里检索的是演示样本，不代表原馆没有相关资料。</p><button type="button" class="secondary-button" id="clear-all">清除搜索与筛选</button></div>
-        <div id="error-state" class="empty-state" hidden><h3>目录样本暂时无法载入</h3><p>请使用项目的本地启动命令打开页面，并检查样本文件是否生成。</p><button type="button" class="secondary-button" id="retry-button">重新载入</button></div>
+        <div id="error-state" class="empty-state" hidden><h3>目录样本暂时无法载入</h3><p>请检查网络连接后重试。</p><button type="button" class="secondary-button" id="retry-button">重新载入</button></div>
         <div class="results-bottom" id="results-bottom" hidden><span id="shown-count"></span><button type="button" id="load-more" class="secondary-button" hidden>查看更多资料 <span aria-hidden="true">↓</span></button><span class="index-end" aria-hidden="true">— ARCHIVAL DISCOVERY —</span></div>
       </div>
     </section>

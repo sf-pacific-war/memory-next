@@ -30,7 +30,10 @@ function renderSources() {
     const heading = el('div', 'source-card-heading');
     const count = source.count ? (locale === 'en' && source.count === 1 ? '1 sample' : t('{count} 条样本', { count: source.count })) : t('暂未接入');
     heading.append(el('span', 'source-abbr', source.id.toUpperCase()), el('span', `source-state${source.count ? '' : ' unavailable'}`, count));
-    card.append(heading, el('h2', '', sourceLabel(source.id, locale)), el('p', '', t(source.description || '公开目录元数据样本。')));
+    const curatedOnly = source.access_modes?.length === 1 && source.access_modes[0] === 'curated';
+    const description = curatedOnly ? t('人工整理的原馆记录与研究入口，尚未接通该机构的搜索 API。') : source.access_modes?.includes('curated') ? t('目录数据与人工整理的原馆记录；原件访问和使用条件以来源说明为准。') : t(source.description || '公开目录元数据样本。');
+    card.append(heading, el('h2', '', sourceLabel(source.id, locale)), el('p', '', description));
+    if (source.access_modes?.length) card.append(el('p', 'source-modes', source.access_modes.map(mode => t({ api: 'API 元数据', dataset: '公开数据集', curated: '人工整理' }[mode] || mode)).join(' · ')));
     try {
       const url = new URL(source.url);
       if (['http:', 'https:'].includes(url.protocol) && !url.username && !url.password) {
@@ -46,7 +49,7 @@ function renderSources() {
   $('scope-note').textContent = t('样本范围说明：当前索引包含 {count} 条真实目录记录，经过初步排除同名误命中；仍需逐条核对史料相关性。NDL 样本包括战后出版的回忆录与研究书目。更多结果需在原馆继续检索。', { count: catalog.records.length });
   $('sample-count').textContent = catalog.records.length;
   $('source-count').textContent = catalog.sources.filter(s => s.count > 0).length;
-  const lastDate = catalog.sources.map(s => s.fetched_at).filter(Boolean).sort().at(-1);
+  const lastDate = catalog.sources.flatMap(s => [s.fetched_at, s.checked_at]).filter(Boolean).sort().at(-1);
   const date = new Date(lastDate);
   const formatted = lastDate && !Number.isNaN(date.valueOf()) ? date.toLocaleDateString(locale, { year: 'numeric', month: '2-digit', day: '2-digit' }) : t('日期未提供');
   $('updated-date').textContent = t('样本更新 {date}', { date: formatted });

@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "topics": [
+    {
+      "id": "flying-tigers",
+      "title": {
+        "zh-CN": "飞虎队与航空",
+        "en": "Flying Tigers & aviation"
+      },
+      "description": {
+        "zh-CN": "从 P-40 战斗机照片、航空史书目与博物馆文章认识飞虎队及相关航空部队。第十四航空队与最初的美国志愿航空队需要区分。",
+        "en": "Explore P-40 photographs, aviation bibliography and museum articles on the Flying Tigers and related air units. The Fourteenth Air Force is distinct from the original American Volunteer Group."
+      },
+      "keywords": {
+        "zh-CN": [
+          "飞虎队",
+          "飛虎隊",
+          "陈纳德",
+          "陳納德",
+          "美国志愿航空队",
+          "航空",
+          "第十四航空队"
+        ],
+        "en": [
+          "Flying Tigers",
+          "American Volunteer Group",
+          "AVG",
+          "Chennault",
+          "P-40",
+          "Fourteenth Air Force",
+          "aviation"
+        ]
+      },
+      "record_ids": [
+        "nara:535531",
+        "ndl:R100000002-I000002148858",
+        "smithsonian:hiding-plane-sight",
+        "smithsonian:nmah_1983471",
+        "ndl:R100000002-I000000007635-d3289771",
+        "ndl:R100000002-I000000007635-d3289958",
+        "ndl:R100000002-I000001093304",
+        "ndl:R100000002-I000001095893"
+      ]
+    },
+    {
+      "id": "hump-airlift",
+      "title": {
+        "zh-CN": "驼峰航线",
+        "en": "The Hump airlift"
+      },
+      "description": {
+        "zh-CN": "通过飞行员个人文献与新闻影片，了解印度至中国的喜马拉雅空运。馆藏链接保留各自的媒体访问限制。",
+        "en": "Follow the India-to-China Himalayan airlift through a pilot’s personal collection and a newsreel. Each record retains its own media-access limitations."
+      },
+      "keywords": {
+        "zh-CN": [
+          "驼峰",
+          "駝峰",
+          "驼峰航线",
+          "喜马拉雅",
+          "空运",
+          "昆明"
+        ],
+        "en": [
+          "Hump",
+          "Himalayas",
+          "airlift",
+          "C-47",
+          "Dakota",
+          "Kunming"
+        ]
+      },
+      "record_ids": [
+        "loc:afc2001001.21936",
+        "iwm:503"
+      ]
+    },
+    {
+      "id": "burma-road",
+      "title": {
+        "zh-CN": "滇缅公路",
+        "en": "The Burma Road"
+      },
+      "description": {
+        "zh-CN": "沿公路的建设、村落与卫生调查照片，结合日文回忆文献及法语广播目录，观察这条交通线的不同记录。",
+        "en": "Explore road construction, villages and health-survey photographs alongside Japanese memoir bibliography and a French broadcast record."
+      },
+      "keywords": {
+        "zh-CN": [
+          "滇缅公路",
+          "滇緬公路",
+          "缅甸公路",
+          "中国",
+          "缅甸",
+          "雲南",
+          "云南"
+        ],
+        "en": [
+          "Burma Road",
+          "China-Burma highway",
+          "Yunnan",
+          "route de Birmanie",
+          "China",
+          "Burma"
+        ]
+      },
+      "record_ids": [
+        "loc:2004676827",
+        "loc:2017872473",
+        "loc:2017872503",
+        "loc:2017872482",
+        "loc:2017872504",
+        "loc:2017872505",
+        "loc:2017872525",
+        "ndl:R100000002-I000001663142",
+        "europeana:/2051908/data_euscreenXL_ina_PHD85008112"
+      ]
+    },
+    {
+      "id": "ledo-stilwell-road",
+      "title": {
+        "zh-CN": "雷多公路与盟军运输",
+        "en": "Ledo Road & Allied transport"
+      },
+      "description": {
+        "zh-CN": "工程、运输车队、地方侦察员及公路影片的机构记录。历史照片的原始地点说明仍需结合地图核实。",
+        "en": "Institutional records of road building, supply convoys, local scouts and a road film. Original geographic captions still require map-based checking."
+      },
+      "keywords": {
+        "zh-CN": [
+          "雷多公路",
+          "史迪威公路",
+          "运输",
+          "運輸",
+          "后勤",
+          "盟军",
+          "卡钦",
+          "昆明"
+        ],
+        "en": [
+          "Ledo Road",
+          "Stilwell Road",
+          "transport",
+          "logistics",
+          "convoy",
+          "Kachin",
+          "Kunming"
+        ]
+      },
+      "record_ids": [
+        "nara:535540",
+        "nara:535573",
+        "loc:95519388",
+        "loc:2005677702",
+        "loc:2007675029",
+        "loc:2007675030",
+        "iwm:2992",
+        "nara:567201"
+      ]
+    },
+    {
+      "id": "burma-campaign",
+      "title": {
+        "zh-CN": "缅甸战役与部队",
+        "en": "Burma campaign & units"
+      },
+      "description": {
+        "zh-CN": "照片、战地新闻影片、英帕尔回忆录及钦迪特文献线索。战后出版物的出版时间与战事时间分别保留。",
+        "en": "Photographs, wartime newsreels, Imphal memoirs and Chindit research leads. Publication dates of later works remain distinct from wartime events."
+      },
+      "keywords": {
+        "zh-CN": [
+          "缅甸",
+          "緬甸",
+          "缅甸战役",
+          "英帕尔",
+          "钦迪特",
+          "钦迪特部队",
+          "怒江"
+        ],
+        "en": [
+          "Burma",
+          "Burma campaign",
+          "Imphal",
+          "Chindits",
+          "Merrill’s Marauders",
+          "Salween"
+        ]
+      },
+      "record_ids": [
+        "loc:2007675026",
+        "loc:2007675029",
+        "loc:2007675030",
+        "loc:afc2001001.82964",
+        "loc:2008678725",
+        "loc:2010636632",
+        "loc:2005692391",
+        "ndl:R100000002-I000002594329",
+        "ndl:R100000002-I000001394546",
+        "ndl:R100000002-I000001567087",
+        "ndl:R100000002-I026027253",
+        "europeana:/2022320/8DAA882DC554386D1C625C354C1B6E031692FBF3",
+        "europeana:/2051944/data_euscreenXL_4955234"
+      ]
+    },
+    {
+      "id": "personal-stories",
+      "title": {
+        "zh-CN": "个人经历与回忆",
+        "en": "Personal stories & recollections"
+      },
+      "description": {
+        "zh-CN": "军人个人文献、回忆录与日记书目，呈现中国、缅甸和印度的服役经历。部分条目只有目录信息。",
+        "en": "Personal military collections, memoirs and diary bibliography offer perspectives on service in China, Burma and India. Some entries provide catalogue information only."
+      },
+      "keywords": {
+        "zh-CN": [
+          "个人经历",
+          "口述历史",
+          "口述歷史",
+          "回忆录",
+          "回憶錄",
+          "日记",
+          "士兵",
+          "老兵",
+          "军人"
+        ],
+        "en": [
+          "personal narratives",
+          "oral history",
+          "memoir",
+          "diary",
+          "soldiers",
+          "veterans",
+          "service"
+        ]
+      },
+      "record_ids": [
+        "loc:afc2001001.107713",
+        "loc:afc2001001.119534",
+        "loc:afc2001001.82964",
+        "loc:afc2001001.21936",
+        "ndl:R100000002-I000002594329",
+        "ndl:R100000002-I000001394546",
+        "ndl:R100000002-I000001567087",
+        "ndl:R100000002-I000002108359",
+        "ndl:R100000002-I000001663142",
+        "ndl:R100000002-I000001466950",
+        "ndl:R100000002-I034848408",
+        "ndl:R100000002-I026027253"
+      ]
+    },
+    {
+      "id": "wartime-print",
+      "title": {
+        "zh-CN": "战时报刊与生活指南",
+        "en": "Wartime press & pocket guides"
+      },
+      "description": {
+        "zh-CN": "中国、缅甸及印度袖珍指南、战区报刊与战时中国出版物。可在线阅读的扫描件与仅有查找指南的资料均有标注。",
+        "en": "Pocket guides to China, Burma and India, theater newspapers and a wartime China publication. Records distinguish available scans from finding aids."
+      },
+      "keywords": {
+        "zh-CN": [
+          "报纸",
+          "報紙",
+          "报刊",
+          "指南",
+          "生活",
+          "战时中国",
+          "中国",
+          "印度",
+          "缅甸"
+        ],
+        "en": [
+          "newspaper",
+          "press",
+          "pocket guide",
+          "China",
+          "India",
+          "Burma",
+          "CBI Roundup",
+          "Inside Wartime China"
+        ]
+      },
+      "record_ids": [
+        "ia:PocketGuideToChina1943",
+        "ia:APocketGuideToBurma",
+        "loc:48043776",
+        "carl:p4013coll8/id/2298",
+        "rice:92597",
+        "nara:531341"
+      ]
+    },
+    {
+      "id": "artifacts",
+      "title": {
+        "zh-CN": "文物与识别标志",
+        "en": "Artifacts & insignia"
+      },
+      "description": {
+        "zh-CN": "求救布告与航空队臂章的博物馆目录。相关器物来自不同机构，其使用权与图像可用性需逐项查看。",
+        "en": "Museum records of blood chits and an air-force patch. These objects come from different institutions; check each record for rights and image availability."
+      },
+      "keywords": {
+        "zh-CN": [
+          "文物",
+          "器物",
+          "血幅",
+          "血符",
+          "求救布告",
+          "臂章",
+          "徽章",
+          "识别标志"
+        ],
+        "en": [
+          "artifact",
+          "blood chit",
+          "rescue notice",
+          "patch",
+          "insignia",
+          "OSS"
+        ]
+      },
+      "record_ids": [
+        "smithsonian:nmah_1102530",
+        "smithsonian:nmah_1983471",
+        "cia:office-of-strategic-services-blood-chit"
+      ]
+    },
+    {
+      "id": "maps-military-records",
+      "title": {
+        "zh-CN": "地图与军事档案",
+        "en": "Maps & military records"
+      },
+      "description": {
+        "zh-CN": "战区里程图、兵员登记、通信与部队文件。目录层级包括系列和文件单元，并不代表每条记录已有数字化全文。",
+        "en": "A theater mileage chart, replacement registers, communications and unit files. Series and file-unit descriptions do not imply that every record has digitized full text."
+      },
+      "keywords": {
+        "zh-CN": [
+          "地图",
+          "地圖",
+          "里程",
+          "军事档案",
+          "軍事檔案",
+          "通信",
+          "兵员",
+          "中缅印"
+        ],
+        "en": [
+          "map",
+          "mileage chart",
+          "military records",
+          "communications",
+          "replacements",
+          "China Burma India",
+          "CBI"
+        ]
+      },
+      "record_ids": [
+        "loc:afc2001001.86254.pm0004001?sp=2",
+        "nara:6830397",
+        "nara:565456",
+        "nara:567201",
+        "nara:6705460",
+        "nara:377497694"
+      ]
+    },
+    {
+      "id": "civilian-health",
+      "title": {
+        "zh-CN": "民众、卫生与日常生活",
+        "en": "Civilians, health & daily life"
+      },
+      "description": {
+        "zh-CN": "公路沿线村落、疟疾调查、医院与民众支援的照片，以及防疫部队的战后记录。",
+        "en": "Photographs of villages, malaria surveys, hospitals and civilian war work, with a postwar record of a disease-prevention unit."
+      },
+      "keywords": {
+        "zh-CN": [
+          "民众",
+          "民眾",
+          "平民",
+          "卫生",
+          "衛生",
+          "疟疾",
+          "瘧疾",
+          "医院",
+          "日常生活",
+          "防疫"
+        ],
+        "en": [
+          "civilian",
+          "health",
+          "malaria",
+          "hospital",
+          "daily life",
+          "village",
+          "public health"
+        ]
+      },
+      "record_ids": [
+        "loc:2017872504",
+        "loc:2017872505",
+        "loc:2017872525",
+        "loc:2004680684",
+        "loc:2005677702",
+        "loc:2004676827",
+        "ndl:R100000002-I000001214463"
+      ]
+    }
+  ],
+  "curator_notes": {
+    "nara:535531": {
+      "zh-CN": "NARA 图集将照片标为约 1942 年在中国的飞虎队 P-40 战斗机。一名中国士兵在机列前站岗。",
+      "en": "The NARA gallery identifies Flying Tigers P-40 aircraft in China, circa 1942, with a Chinese soldier guarding the line."
+    },
+    "nara:535540": {
+      "zh-CN": "运输车辆照片以历史上的“雷多补给公路”说明收录。原始地点说明尚需地理核实。",
+      "en": "A transport photograph catalogued under the historical “Ledo supply road” caption. The original location description still needs geographic verification."
+    },
+    "nara:535573": {
+      "zh-CN": "NARA 记录将这张盟军车队照片署名为 John Gutman，日期为 1945 年 2 月 6 日，与雷多至昆明运输有关。",
+      "en": "NARA credits this Allied convoy photograph to John Gutman and dates it to 6 February 1945, in connection with transport from Ledo to Kunming."
+    },
+    "nara:531341": {
+      "zh-CN": "NARA 将 Yarnell 在缅甸拍摄的这张欧战胜利宣告照片标为 1945 年 5 月 9 日。",
+      "en": "NARA dates Yarnell’s photograph of troops in Burma reading the European victory proclamation to 9 May 1945."
+    },
+    "ia:PocketGuideToChina1943": {
+      "zh-CN": "互联网档案馆将这本陆军勤务部中国指南标为 1943 年。记录列有 PDF 与预览图；数字化署名为南卫理公会大学。",
+      "en": "Internet Archive dates this Army Service Forces guide to China to 1943. Its record lists a PDF and preview, with digitization credited to Southern Methodist University."
+    },
+    "ia:APocketGuideToBurma": {
+      "zh-CN": "互联网档案馆将这本缅甸指南标为 1943 年，内容包括习俗、健康与词汇。记录列有 PDF 与预览图。",
+      "en": "Internet Archive dates this Burma guide to 1943 and lists chapters on customs, health and vocabulary, along with a PDF and preview."
+    },
+    "loc:48043776": {
+      "zh-CN": "美国国会图书馆将其著录为 1944 年版本；数字化书名页注明 1944 年 4 月修订。条目访问可能受到限制。",
+      "en": "The Library of Congress describes a 1944 edition; the digitized title page states revised April 1944. Direct item access may be restricted."
+    },
+    "loc:afc2001001.86254.pm0004001?sp=2": {
+      "zh-CN": "Charles E. Kavenagh 个人文献中的中缅印战区里程图。馆藏页面提供查看器链接；此处未复制地图图像。",
+      "en": "A China-Burma-India theater mileage chart in the Charles E. Kavenagh Collection. The resource offers a viewer link; no map image is reproduced here."
+    },
+    "loc:afc2001001.82964": {
+      "zh-CN": "该个人文献记录 Graham 在第 5307 临时混成部队（麦瑞尔突击队）及第 475 步兵团的服役经历。",
+      "en": "This personal collection documents Graham’s service with the 5307th Composite Unit (Merrill’s Marauders) and the 475th Infantry."
+    },
+    "loc:afc2001001.21936": {
+      "zh-CN": "馆藏服役说明将 Frank H. Gray 记为从印度飞往中国、执行驼峰航线任务的 C-47 飞行员。",
+      "en": "The collection’s service note identifies Frank H. Gray as a C-47 pilot who flew the Hump from India to China."
+    },
+    "smithsonian:nmah_1102530": {
+      "zh-CN": "美国国家历史博物馆著录的一件棉质求救布告，与 Robley E. Winfrey 上校有关。馆方注明使用条件适用。",
+      "en": "A cotton blood chit catalogued by the National Museum of American History and associated with Col. Robley E. Winfrey. The museum states that usage conditions apply."
+    },
+    "smithsonian:nmah_1983471": {
+      "zh-CN": "博物馆描述的一枚蓝色圆形第十四航空队臂章。该部队成立于 1943 年，应与最初的美国志愿航空队区分。",
+      "en": "A blue circular Fourteenth Air Force patch described by the museum. This unit dates to 1943 and is distinct from the original American Volunteer Group."
+    },
+    "smithsonian:hiding-plane-sight": {
+      "zh-CN": "美国国家航空航天博物馆文章介绍飞虎队木制 P-40 诱饵，并注明档案照片编号 SI 90-13683。此处仅提供文章线索。",
+      "en": "A National Air and Space Museum article describes wooden P-40 decoys used by the Flying Tigers and cites archival photograph SI 90-13683. This entry provides a link to the article."
+    },
+    "cia:office-of-strategic-services-blood-chit": {
+      "zh-CN": "美国中央情报局博物馆将这件丝质求救布告记为战略情报局在中缅印战区使用的器物。未取得单件媒体的使用许可说明。",
+      "en": "The CIA Museum describes this silk rescue notice as an OSS artifact used in the China-Burma-India theater. No item-specific media licence was established."
+    },
+    "iwm:2992": {
+      "zh-CN": "帝国战争博物馆收录的雷多／史迪威公路战时影片。馆方将该拷贝标为未数字化、媒体目前不可用。",
+      "en": "An Imperial War Museums record for a wartime film about the Ledo/Stilwell Road. This copy is marked not digitized, with media currently unavailable."
+    },
+    "iwm:503": {
+      "zh-CN": "1945 年 7 月的新闻影片目录涉及喜马拉雅上空的 Dakota 飞机、昆明补给与返回印度的难民儿童。馆方目录列有两卷高清媒体。",
+      "en": "The July 1945 newsreel description includes a Dakota over the Himalayas, supplies at Kunming and refugee children returning to India. The catalogue lists two HD reels."
+    },
+    "carl:p4013coll8/id/2298": {
+      "zh-CN": "联合兵种研究图书馆的报刊管理档案包含 1945 年 1 月 11 日的《CBI Roundup》样刊，位于第二部分第 14–19 页。",
+      "en": "The Combined Arms Research Library’s newspaper-control file includes a sample issue of CBI Roundup dated 11 January 1945, in part 2, pages 14–19."
+    },
+    "rice:92597": {
+      "zh-CN": "莱斯大学 Lowe 家族文献的查找指南著录了中国新闻部门于 1943 年出版的《Inside Wartime China》。尚未确认有在线全文。",
+      "en": "The finding aid for Rice University’s Lowe Family Papers lists Inside Wartime China, published by the Chinese Ministry of Information in 1943. Online full text has not been established."
+    },
+    "ndl:R100000002-I000001663142": {
+      "zh-CN": "日本国立国会图书馆著录的 1983 年退伍军人出版物，由興竜会編集委員会编。出版时间晚于其叙述的战争经历。",
+      "en": "A 1983 veterans’ publication catalogued by the National Diet Library, edited by 興竜会編集委員会. Its publication date is later than the wartime experiences it describes."
+    },
+    "europeana:/2051908/data_euscreenXL_ina_PHD85008112": {
+      "zh-CN": "Europeana 著录的法国 INA 音频，标题涉及滇缅公路与太平洋战事。录音日期及可播放状态尚未核实。",
+      "en": "A French INA audio record in Europeana whose title mentions the Burma Road and the Pacific war. The recording date and playable access remain unverified."
+    },
+    "ndl:R100000002-I000000007635-d3289771": {
+      "zh-CN": "通过“フライングタイガース”检索返回的《航空ファン》期刊书目。相关篇目及全文内容尚未逐页核实。",
+      "en": "An issue of 航空ファン returned for the search “フライングタイガース”. The relevant article and full-text content have not been checked page by page."
+    },
+    "ndl:R100000002-I000000007635-d3289958": {
+      "zh-CN": "通过“フライングタイガース”检索返回的《航空ファン》期刊书目。相关篇目及全文内容尚未逐页核实。",
+      "en": "An issue of 航空ファン returned for the search “フライングタイガース”. The relevant article and full-text content have not been checked page by page."
+    }
+  }
+}

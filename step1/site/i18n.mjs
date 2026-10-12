@@ -1,6 +1,42 @@
 /** UI translations only. Archival titles, descriptions and rights remain verbatim. */
 export const messages = Object.freeze({
-  "CBI demo": { "zh-CN": "CBI 演示", "en": "CBI demo" },
+  "访问说明": { "zh-CN": "访问说明", "en": "Access note" },
+  "专题浏览": {"zh-CN": "专题浏览", "en": "Topics"},
+  "专题浏览 · WWII Pacific War": {"zh-CN": "专题浏览 · WWII Pacific War", "en": "Topics · WWII Pacific War"},
+  "WWII Pacific War：按专题浏览已整理的档案资料，从照片、地图与文献走向原始出处。": {"zh-CN": "WWII Pacific War：按专题浏览已整理的档案资料，从照片、地图与文献走向原始出处。", "en": "WWII Pacific War: Browse collected archival topics through photographs, maps and documents, with links to original sources."},
+  "跳至专题资料": {"zh-CN": "跳至专题资料", "en": "Skip to topic records"},
+  "让资料，串起历史。": {"zh-CN": "让资料，串起历史。", "en": "History, one source at a time."},
+  "从已整理的专题出发，浏览不同机构的照片、文献与实物。": {"zh-CN": "从已整理的专题出发，浏览不同机构的照片、文献与实物。", "en": "Explore collected topics through photographs, documents and artifacts from different institutions."},
+  "遇到感兴趣的线索，再到资料发现深入检索。": {"zh-CN": "遇到感兴趣的线索，再到资料发现深入检索。", "en": "Follow a promising lead into Discover to search further."},
+  "研究专题": {"zh-CN": "研究专题", "en": "Research topics"},
+  "收录资料": {"zh-CN": "收录资料", "en": "Collected records"},
+  "专题由编辑整理，资料保留原馆出处。收录范围有限，全文访问与使用条件以原馆为准。": {"zh-CN": "专题由编辑整理，资料保留原馆出处。收录范围有限，全文访问与使用条件以原馆为准。", "en": "Topics are editorial groupings with original archive attribution. Coverage is selective; access and reuse conditions follow the source institution."},
+  "选择一个专题": {"zh-CN": "选择一个专题", "en": "Browse a topic"},
+  "档案选读": {"zh-CN": "档案选读", "en": "FROM THE ARCHIVES"},
+  "专题检索词": {"zh-CN": "专题检索词", "en": "Topic keywords"},
+  "从一份资料，走进一段历史。": {"zh-CN": "从一份资料，走进一段历史。", "en": "Find a story in the sources."},
+  "浏览已收录的照片、地图、文献与实物记录。选择左侧专题，沿着人物、交通线与战时生活逐步展开。": {"zh-CN": "浏览已收录的照片、地图、文献与实物记录。选择左侧专题，沿着人物、交通线与战时生活逐步展开。", "en": "Browse collected photographs, maps, documents and artifacts. Choose a topic to explore people, supply routes and wartime life."},
+  "在资料发现中检索这个专题 ↗": {"zh-CN": "在资料发现中检索这个专题 ↗", "en": "Search this topic in Discover ↗"},
+  "在资料发现中检索全部资料 ↗": {"zh-CN": "在资料发现中检索全部资料 ↗", "en": "Search all records in Discover ↗"},
+  "该专题暂时没有可显示的资料。": {"zh-CN": "该专题暂时没有可显示的资料。", "en": "No records are available in this topic yet."},
+  "查看更多资料 ↓": {"zh-CN": "查看更多资料 ↓", "en": "Show more records ↓"},
+  "探索已整理专题": {"zh-CN": "探索已整理专题", "en": "Explore collected topics"},
+  "浏览专题与精选资料 ↗": {"zh-CN": "浏览专题与精选资料 ↗", "en": "Browse topics and selected records ↗"},
+  "专题关键词和收录资料均可在此检索；标签由编辑整理，原始目录信息保留。": {"zh-CN": "专题关键词和收录资料均可在此检索；标签由编辑整理，原始目录信息保留。", "en": "Search topic keywords and collected records here. Topic tags are editorial; original catalogue information is preserved."},
+  "跨来源目录与专题资料 · 保留原始语言与出处": {"zh-CN": "跨来源目录与专题资料 · 保留原始语言与出处", "en": "Catalogue records and topic collections · Original language and attribution"},
+  "个来源机构": {"zh-CN": "个来源机构", "en": "source institutions"},
+  "请检查网络连接后重试。": {"zh-CN": "请检查网络连接后重试。", "en": "Check your connection and try again."},
+  "编者导读": {"zh-CN": "编者导读", "en": "Editorial note"},
+  "来源核查时间": {"zh-CN": "来源核查时间", "en": "Source checked"},
+  "专题标签（编辑整理）": {"zh-CN": "专题标签（编辑整理）", "en": "Topics (editorial)"},
+  "收录方式": {"zh-CN": "收录方式", "en": "Record origin"},
+  "人工整理的原馆记录／研究入口": {"zh-CN": "人工整理的原馆记录／研究入口", "en": "Manually selected archive record / research guide"},
+  "目录数据与人工整理的原馆记录；原件访问和使用条件以来源说明为准。": {"zh-CN": "目录数据与人工整理的原馆记录；原件访问和使用条件以来源说明为准。", "en": "Catalogue data and manually selected archival records; access and reuse conditions follow the original source."},
+  "人工整理的原馆记录与研究入口，尚未接通该机构的搜索 API。": {"zh-CN": "人工整理的原馆记录与研究入口，尚未接通该机构的搜索 API。", "en": "Manually selected archive records and research guides. This institution’s search API is not connected."},
+  "API 元数据": {"zh-CN": "API 元数据", "en": "API metadata"},
+  "公开数据集": {"zh-CN": "公开数据集", "en": "Public dataset"},
+  "人工整理": {"zh-CN": "人工整理", "en": "Editorial selection"},
+
   "查看资料：{title}（{type}）": {
     "zh-CN": "查看资料：{title}（{type}）",
     "en": "View record: {title} ({type})"
@@ -622,8 +658,8 @@ export const messages = Object.freeze({
     "zh-CN": "资料索引"
   },
   "CONNECTED SOURCES": {
-    "en": "CONNECTED SOURCES",
-    "zh-CN": "已接入来源"
+    "en": "SOURCE INSTITUTIONS",
+    "zh-CN": "来源机构"
   },
   "— ARCHIVAL DISCOVERY —": {
     "en": "— ARCHIVAL DISCOVERY —",

@@ -18,7 +18,7 @@ import serve
 
 def record(identity="loc:one", source="LoC", **extra):
     return {"id": identity, "source_id": identity.split(":", 1)[1], "source": source,
-            "title": "Burma Road", "source_url": "https://www.loc.gov/item/one/", **extra}
+            "title": "Burma Road", "source_url": "https://www.loc.gov/item/" + identity.split(":", 1)[1] + "/", **extra}
 
 
 class BuilderTests(unittest.TestCase):
@@ -92,6 +92,98 @@ class BuilderTests(unittest.TestCase):
         self.assertIsNone(r["source_url"])
         self.assertIsNone(r["thumbnail_url"])
 
+    def extra_records(self, records, queries=None):
+        (self.root / "data/cbi").mkdir(exist_ok=True)
+        (self.root / "data/cbi/archive-records.json").write_text(json.dumps({"records": records, "queries": queries or []}))
+
+    def curated(self, records):
+        (self.root / "data/cbi").mkdir(exist_ok=True)
+        (self.root / "data/cbi/verified-matches.json").write_text(json.dumps({"records": records}))
+
+    def manual_record(self, **extra):
+        return {"id": "cbi-match-internal", "source": "NARA", "archival_url": "https://catalog.archives.gov/id/535531",
+                "archival_title": "P-40 fighter aircraft", "material_type": "photograph",
+                "checked_at": "2026-10-12T00:25:50Z", "access_note": "Official gallery accessible.",
+                "rights_note": "Public domain gallery selection.",
+                "cbi_page_url": "https://cbi-theater.com/flyingtigers/index.html",
+                "evidence": "Internal comparison evidence must remain private.",
+                "next_step": "Internal work note must remain private.", **extra}
+
+    def test_combines_snapshots_and_curated_native_ids_without_changing_retrieval_date(self):
+        self.snapshot("LoC", [record(retrieved_at="2026-10-01T00:00:00Z")])
+        self.extra_records([record(title="Newer duplicate", retrieved_at="2026-10-12T00:00:00Z"), record("loc:two")])
+        self.curated([self.manual_record(), self.manual_record(id="another-internal-id", archival_url="http://catalog.archives.gov/id/535531/?utm_source=test")])
+        output = builder.build_catalog(self.root)
+        self.assertEqual([r["id"] for r in output["records"]], ["loc:one", "loc:two", "nara:535531"])
+        self.assertEqual(output["records"][0]["retrieved_at"], "2026-10-01T00:00:00Z")
+        curated = output["records"][-1]
+        self.assertIsNone(curated["retrieved_at"])
+        self.assertIsNone(curated["date_display"])
+        self.assertIsNone(curated["description"])
+        self.assertEqual(curated["checked_at"], "2026-10-12T00:25:50Z")
+        self.assertEqual(curated["record_origin"], "curated")
+        serialized = json.dumps(output)
+        for private in ("cbi-theater.com", "cbi-match-internal", "evidence", "next_step", "Internal work note"):
+            self.assertNotIn(private, serialized)
+
+    def test_exclusion_propagates_to_canonical_duplicates_in_all_inputs(self):
+        self.snapshot("LoC", [record(), record("loc:separate")])
+        self.extra_records([record("loc:alias", source_url="http://loc.gov/item/one/?utm_medium=link")])
+        (self.root / "data/review-notes.json").write_text(json.dumps({"excluded": [{"id": "loc:alias"}]}))
+        self.assertEqual([r["id"] for r in builder.build_catalog(self.root)["records"]], ["loc:separate"])
+
+    def test_internal_manual_exclusion_suppresses_existing_api_record(self):
+        self.snapshot("NARA", [record("nara:535531", "NARA", source_url="https://catalog.archives.gov/id/535531")])
+        self.curated([self.manual_record()])
+        (self.root / "data/review-notes.json").write_text(json.dumps({"excluded": [{"id": "cbi-match-internal"}]}))
+        self.assertEqual(builder.build_catalog(self.root)["records"], [])
+
+    def test_query_exclusions_apply_to_base_and_extra_snapshots(self):
+        self.snapshot("LoC", [record()])
+        self.extra_records([record()], [{"excluded_records": [{"id": "loc:one"}]}])
+        self.assertEqual(builder.build_catalog(self.root)["records"], [])
+
+    def test_curated_metadata_cannot_substitute_reference_site_or_unverified_preview(self):
+        self.curated([self.manual_record(archival_url="https://cbi-theater.com/id/535531"),
+                      self.manual_record(thumbnail_url="https://www.archives.gov/image.jpg", thumbnail_verified_http_status=403)])
+        records = builder.build_catalog(self.root)["records"]
+        self.assertEqual(len(records), 1)
+        self.assertIsNone(records[0]["thumbnail_url"])
+        self.assertEqual(records[0]["access_status"], "unverified")
+        self.snapshot("LoC", [record(thumbnail_url="https://cbi-theater.com/photo.jpg")])
+        self.assertIsNone(builder.build_catalog(self.root)["records"][0]["thumbnail_url"])
+        self.assertIsNone(builder.archival_thumbnail("https://loc.gov.example.org/photo.jpg"))
+        self.assertIsNone(builder.archival_thumbnail("http://tile.loc.gov/photo.jpg"))
+        self.assertEqual(builder.archival_thumbnail("https://tile.loc.gov/photo.jpg"), "https://tile.loc.gov/photo.jpg")
+
+    def test_topics_use_published_ids_only_and_do_not_overwrite_archive_description(self):
+        self.snapshot("LoC", [record(description="Original archive description.")])
+        self.curated([self.manual_record()])
+        (self.root / "data/topics.json").write_text(json.dumps({
+            "curator_notes": {"nara:535531": {"en": "Editorial note.", "zh-CN": "策展说明。"}},
+            "topics": [{"id": "flying-tigers", "title": {"en": "Flying Tigers", "zh-CN": "飞虎队"},
+                        "description": {"en": "Selected material.", "zh-CN": "精选资料。"},
+                        "keywords": {"en": ["P-40"], "zh-CN": ["飛虎隊"]},
+                        "record_ids": ["loc:one", "nara:535531", "unknown:excluded"]}]}))
+        result = builder.build_catalog(self.root)
+        self.assertEqual(result["topics"][0]["record_ids"], ["loc:one", "nara:535531"])
+        self.assertEqual(result["records"][0]["description"], "Original archive description.")
+        self.assertIsNone(result["records"][1]["description"])
+        self.assertEqual(result["records"][1]["curator_note"]["en"], "Editorial note.")
+        self.assertIn("飞虎队", result["records"][1]["topic_keywords"])
+        self.assertIn("P-40", result["records"][1]["topic_keywords"])
+
+    def test_source_summaries_distinguish_curated_from_api_with_separate_check_dates(self):
+        self.snapshot("NARA", [record("nara:123", "NARA", source_url="https://catalog.archives.gov/id/123", retrieved_at="2026-10-09T00:00:00Z")])
+        self.curated([self.manual_record(), self.manual_record(source="Internet Archive", archival_url="https://archive.org/details/Guide1943")])
+        sources = {r["id"]: r for r in builder.build_catalog(self.root)["sources"]}
+        self.assertEqual(sources["NARA"]["counts_by_origin"], {"dataset": 1, "curated": 1})
+        self.assertEqual(sources["NARA"]["fetched_at"], "2026-10-09T00:00:00Z")
+        self.assertEqual(sources["NARA"]["checked_at"], "2026-10-12T00:25:50Z")
+        self.assertEqual(sources["Internet Archive"]["access_modes"], ["curated"])
+        self.assertIsNone(sources["Internet Archive"]["fetched_at"])
+        self.assertEqual(sources["Internet Archive"]["label"], "互联网档案馆")
+
     def test_missing_review_notes_blocks_publish(self):
         (self.root / "data/review-notes.json").unlink()
         with self.assertRaises(builder.BuildError):
@@ -103,6 +195,35 @@ class BuilderTests(unittest.TestCase):
         with self.assertRaises(builder.BuildError):
             builder.write_catalog(self.root)
         self.assertEqual(list((self.root / "outside").iterdir()), [])
+
+
+class PublishedTopicCorpusTests(unittest.TestCase):
+    """Check actual editorial memberships and provenance, without networking."""
+
+    def test_public_corpus_contains_all_topics_and_no_reference_site_evidence(self):
+        catalog = builder.build_catalog()
+        self.assertEqual(len(catalog["records"]), 58)
+        self.assertEqual(len(catalog["topics"]), 10)
+        self.assertEqual(len(catalog["sources"]), 10)
+        self.assertEqual(sum(s["count"] for s in catalog["sources"]), len(catalog["records"]))
+        indexed = {r["id"]: r for r in catalog["records"]}
+        self.assertEqual(len(indexed), len(catalog["records"]))
+        self.assertTrue(all(r["topic_ids"] for r in catalog["records"]))
+        for topic in catalog["topics"]:
+            self.assertTrue(all(identity in indexed for identity in topic["record_ids"]))
+        self.assertEqual(indexed["loc:afc2001001.82964"]["record_origin"], "api")
+        self.assertIsNone(indexed["iwm:2992"]["retrieved_at"])
+        self.assertEqual(indexed["iwm:2992"]["access_status"], "unverified")
+        self.assertIn("currently unavailable", indexed["iwm:2992"]["curator_note"]["en"])
+        self.assertNotIn("cbi-theater.com", json.dumps(catalog))
+        for record in catalog["records"]:
+            self.assertNotIn("cbi_page_url", record)
+            self.assertNotIn("match_status", record)
+            self.assertNotIn("next_step", record)
+            self.assertNotIn("evidence", record)
+            if record["record_origin"] == "curated":
+                self.assertEqual(set(record["curator_note"]), {"en", "zh-CN"})
+                self.assertIsNone(record["description"])
 
 
 class ServerIsolationTests(unittest.TestCase):

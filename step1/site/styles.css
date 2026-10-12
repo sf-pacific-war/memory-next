@@ -74,3 +74,9 @@ html[lang="en"] .record-source{overflow-wrap:anywhere}
 .sources-content .scope-note{font-size:11px;padding-top:20px}
 .sources-content .loading-state{margin-bottom:28px}
 @media(max-width:700px){.sources-content .source-cards{grid-template-columns:1fr;gap:18px}.sources-content{padding-block:24px 32px}.sources-content .source-card{padding:21px}.sources-tagline{font-size:21px}}
+
+/* Shared topic entry points in the discovery page. */
+.topic-entry{margin-top:27px;padding-top:20px;border-top:1px solid var(--warm-line)}
+.topic-entry-heading{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:12px}.topic-entry-heading h2{font-size:12px;font-weight:600;color:var(--navy);margin:0}.topic-entry-heading a{font-size:11px;color:var(--teal);text-underline-offset:3px}
+.topic-shortcuts{display:flex;gap:8px;flex-wrap:wrap}.topic-shortcut{display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--warm-line);border-radius:3px;color:var(--navy);padding:7px 11px;font-size:11px}.topic-shortcut small{color:var(--teal);font-size:10px}.topic-shortcut[aria-pressed="true"],.topic-shortcut:hover{border-color:var(--teal);background:#e8eeeb}.topic-entry-note{font-size:10px;color:var(--muted);margin:10px 0 0}
+@media(max-width:600px){.topic-entry-heading{align-items:start;flex-direction:column;gap:7px}.topic-shortcut{padding:7px 9px}}

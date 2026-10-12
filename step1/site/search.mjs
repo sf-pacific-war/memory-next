@@ -5,6 +5,18 @@ export function normalizeText(value) {
 }
 
 const TOPICS = [
+  { aliases: ['飞虎队', '飛虎隊', 'Flying Tigers', 'American Volunteer Group', 'AVG'], labels: {
+    'zh-CN': '飞虎队：中英文名称扩展；专题也包含相关航空部队，需区分具体建制',
+    en: 'Flying Tigers: Chinese and English names; related aviation units in the topic remain distinct',
+  } },
+  { aliases: ['驼峰', '駝峰', '驼峰航线', '駝峰航線', '驼峰空运', 'Hump', 'The Hump', 'Hump airlift'], labels: {
+    'zh-CN': '驼峰航线：中英文名称扩展',
+    en: 'The Hump airlift: Chinese and English names',
+  } },
+  { aliases: ['雷多公路', 'Ledo Road', '史迪威公路', 'Stilwell Road'], labels: {
+    'zh-CN': '雷多／史迪威公路：相关历史名称扩展，路段和时期需核对',
+    en: 'Ledo / Stilwell Road: related historical names; check the road section and period',
+  } },
   { aliases: ['滇缅公路', '滇緬公路', 'Burma Road', 'ビルマ公路', '援蒋ルート'], labels: {
     'zh-CN': '滇缅公路：跨语言扩展；“援蒋ルート”含更广的援助路线',
     en: 'Burma Road: multilingual expansion; “援蒋ルート” also covers broader aid routes',
@@ -32,7 +44,7 @@ function clausesFor(query) {
     let found = null;
     let consumed = 1;
     // Prefer the longest matching alias: Burma Road must not become Burma AND Road.
-    for (let n = Math.min(4, tokens.length - i); n >= 1; n--) {
+    for (let n = Math.min(8, tokens.length - i); n >= 1; n--) {
       if (n > 1 && tokens.slice(i, i + n).some(token => token.quoted)) continue;
       const value = tokens.slice(i, i + n).map(token => token.value).join(' ');
       const topic = TOPICS.find(candidate => candidate.terms.includes(value));
@@ -76,15 +88,15 @@ export function getRecordYears(record) {
 
 export function formatLabel(type, locale = 'zh-CN') {
   const labels = locale === 'en'
-    ? { IMAGE: 'Image', TEXT: 'Text', MAP: 'Map', SOUND: 'Audio', VIDEO: 'Video', MIXED: 'Mixed material' }
-    : { IMAGE: '图像', TEXT: '文献', MAP: '地图', SOUND: '音频', VIDEO: '影像', MIXED: '综合资料' };
+    ? { IMAGE: 'Image', TEXT: 'Text', MAP: 'Map', SOUND: 'Audio', VIDEO: 'Video', MIXED: 'Mixed material', OBJECT: 'Artifact' }
+    : { IMAGE: '图像', TEXT: '文献', MAP: '地图', SOUND: '音频', VIDEO: '影像', MIXED: '综合资料', OBJECT: '实物' };
   return labels[String(type ?? '').toUpperCase()] ?? (locale === 'en' ? 'Other' : '其他');
 }
 
 export function sourceLabel(source, locale = 'zh-CN') {
   const labels = locale === 'en'
-    ? { loc: 'Library of Congress', ndl: 'National Diet Library', europeana: 'Europeana', nara: 'U.S. National Archives' }
-    : { loc: '美国国会图书馆', ndl: '日本国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆' };
+    ? { loc: 'Library of Congress', ndl: 'National Diet Library', europeana: 'Europeana', nara: 'U.S. National Archives', 'internet archive': 'Internet Archive', smithsonian: 'Smithsonian Institution', cia: 'CIA Museum', iwm: 'Imperial War Museums', carl: 'Combined Arms Research Library', 'rice university': 'Rice University' }
+    : { loc: '美国国会图书馆', ndl: '日本国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆', 'internet archive': '互联网档案馆', smithsonian: '史密森尼学会', cia: '美国中央情报局博物馆', iwm: '英国帝国战争博物馆', carl: '美国陆军联合兵种研究图书馆', 'rice university': '莱斯大学' };
   return labels[normalizeText(source)] ?? String(source ?? (locale === 'en' ? 'Unknown source' : '未知来源'));
 }
 
@@ -96,6 +108,7 @@ function searchFields(record) {
   return [fieldText(record.title), fieldText(record.description), fieldText([
     record.source, record.source_id, record.holding_institution, record.metadata_provider,
     record.subject, record.subjects, record.archival_context, record.place, record.language, record.date_display,
+    record.topic_keywords, Object.values(record.curator_note || {}), record.source_name_en, record.source_name_zh,
     // Both interface languages remain searchable, regardless of the displayed locale.
     record.format, sourceLabel(record.source), sourceLabel(record.source, 'en'),
     formatLabel(record.format), formatLabel(record.format, 'en'),
@@ -103,7 +116,7 @@ function searchFields(record) {
 }
 
 export function filterRecords(records, options = {}) {
-  const { query = '', sources = [], types = [], access = 'all', startYear = '', endYear = '', includeUnknownDates = true, sort = 'relevance' } = options;
+  const { query = '', sources = [], types = [], access = 'all', startYear = '', endYear = '', includeUnknownDates = true, sort = 'relevance', topic = '' } = options;
   const clauses = clausesFor(query);
   const chosenSources = sources.map(normalizeText);
   const chosenTypes = types.map(normalizeText);
@@ -112,6 +125,7 @@ export function filterRecords(records, options = {}) {
   if (lower > upper) return [];
   const matches = [];
   records.forEach((record, index) => {
+    if (topic && !(record.topic_ids || []).includes(topic)) return;
     if (chosenSources.length && !chosenSources.includes(normalizeText(record.source))) return;
     if (chosenTypes.length && !chosenTypes.includes(normalizeText(record.format))) return;
     if (access !== 'all' && (record.access_status ?? 'unverified') !== access) return;

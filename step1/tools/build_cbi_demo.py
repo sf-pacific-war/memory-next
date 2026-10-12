@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a metadata-only CBI comparison demo; never fetch or publish CBI media.
+"""Build an internal metadata comparison report; never fetch or publish CBI media.
 
 Human-reviewed comparisons and automatic title leads have separate statuses.
 A publication match never transfers to its individual image references.
@@ -133,9 +133,9 @@ def build_demo(root=PROJECT_ROOT):
 def write_demo(root=PROJECT_ROOT):
     root = Path(root)
     data = build_demo(root)
-    path = root / 'site' / 'data' / 'cbi-demo.json'
-    if any(p.is_symlink() for p in (root / 'site', path.parent, path)):
-        raise ValueError('Public demo destination must not be a symbolic link.')
+    path = root / 'data' / 'cbi' / 'review-report.json'
+    if any(p.is_symlink() for p in (root / 'data', path.parent, path)):
+        raise ValueError('Internal report destination must not be a symbolic link.')
     path.parent.mkdir(exist_ok=True, parents=True)
     temporary = None
     try:
@@ -152,7 +152,7 @@ def write_demo(root=PROJECT_ROOT):
 
 def main():
     data = write_demo()
-    print(f"CBI demo: {len(data['items'])} references, {len(data['records'])} archive records, {len(data['comparisons'])} reviewed comparisons. No CBI media fetched.")
+    print(f"Internal comparison report: {len(data['items'])} references, {len(data['records'])} archive records, {len(data['comparisons'])} reviewed comparisons. No CBI media fetched.")
 
 
 if __name__ == '__main__':

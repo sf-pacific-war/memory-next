@@ -1,5 +1,6 @@
 import { filterRecords, expandQuery, formatLabel as typeName, sourceLabel as sourceName } from './search.mjs';
 import { updatePageLinks } from './page-links.mjs';
+import { archivalThumbnail } from './archive-media.mjs';
 import { bindPageTranslations, resolveLocale, normalizeLocale, translate } from './i18n.mjs';
 
 const $ = (id) => document.getElementById(id);
@@ -15,7 +16,7 @@ const formatLabel = type => typeName(type, locale);
 const applyPageLanguage = bindPageTranslations(document);
 let selectedRecord = null;
 let loadFailed = false;
-const defaults = () => ({ query: '', sources: [], types: [], access: 'all', startYear: '', endYear: '', includeUnknownDates: true, sort: 'relevance' });
+const defaults = () => ({ query: '', topic: '', sources: [], types: [], access: 'all', startYear: '', endYear: '', includeUnknownDates: true, sort: 'relevance' });
 let state = defaults();
 let catalog = null;
 let visibleCount = PAGE_SIZE;
@@ -55,6 +56,7 @@ function readURL() {
   const params = new URLSearchParams(location.search);
   state = defaults();
   state.query = (params.get('q') || '').slice(0, 240);
+  state.topic = (catalog.topics || []).some(t => t.id === params.get('topic')) ? params.get('topic') : '';
   state.sources = params.getAll('source').filter(v => catalog.sources.some(s => s.id === v));
   state.types = params.getAll('type').filter(v => catalog.records.some(r => r.format === v));
   state.access = ['online', 'unverified'].includes(params.get('access')) ? params.get('access') : 'all';
@@ -67,6 +69,7 @@ function writeURL() {
   const params = new URLSearchParams();
   params.set('lang', locale);
   if (state.query) params.set('q', state.query);
+  if (state.topic) params.set('topic', state.topic);
   state.sources.forEach(v => params.append('source', v));
   state.types.forEach(v => params.append('type', v));
   if (state.access !== 'all') params.set('access', state.access);
@@ -135,6 +138,7 @@ function renderChips() {
     container.append(button);
   }
   if (state.query) chip(`“${state.query}”`, () => { state.query = ''; });
+  if (state.topic) chip((catalog.topics || []).find(t => t.id === state.topic)?.title[locale] || state.topic, () => { state.topic = ''; });
   state.sources.forEach(v => chip(sourceLabel(v), () => { state.sources = state.sources.filter(x => x !== v); }));
   state.types.forEach(v => chip(formatLabel(v), () => { state.types = state.types.filter(x => x !== v); }));
   if (state.startYear || state.endYear) chip(`${state.startYear || t('不限')}—${state.endYear || t('不限')}`, () => { state.startYear = ''; state.endYear = ''; });
@@ -165,7 +169,7 @@ function recordPreview(record) {
   const caption = el('span', 'preview-caption', t('无预览图'));
   fallback.append(caption);
   button.append(fallback, el('span', 'preview-type', formatLabel(record.format)));
-  const url = safeURL(record.thumbnail_url);
+  const url = archivalThumbnail(record.thumbnail_url);
   if (url?.startsWith('https://')) {
     const image = el('img', 'record-thumbnail');
     image.alt = '';
@@ -202,7 +206,8 @@ function recordCard(record, index) {
     if (i) meta.append(el('span', 'meta-dot', '·'));
     meta.append(el('span', '', value));
   });
-  const description = el('p', 'record-description', record.description || t('原目录未提供摘要，可前往来源页面查看完整记录。'));
+  const note = record.curator_note?.[locale];
+  const description = el('p', 'record-description', record.description || (note ? `${t('编者导读')} · ${note}` : t('原目录未提供摘要，可前往来源页面查看完整记录。')));
   const bottom = el('div', 'record-bottom');
   bottom.append(el('span', `access-badge${record.access_status === 'online' ? ' online' : ''}`, record.access_status === 'online' ? t('有在线资源') : t('访问条件待确认')));
   const original = link(t('原馆记录 ↗'), record.source_url, 'record-link');
@@ -235,6 +240,7 @@ function update({ save = true, resetPage = true } = {}) {
   $('expansion-note').hidden = !expanded.label;
   $('expansion-note').textContent = expanded.label ? t('{label}。检索词：{terms}', { label: expanded.label, terms: expanded.terms.join(' / ') }) : '';
   renderResults();
+  document.querySelectorAll('[data-topic-id]').forEach(n => n.setAttribute('aria-pressed', String(n.dataset.topicId === state.topic)));
   if (!valid) {
     $('empty-state').hidden = true;
     $('result-announcement').textContent = $('date-error').textContent;
@@ -242,13 +248,14 @@ function update({ save = true, resetPage = true } = {}) {
   document.querySelectorAll('[data-query]').forEach(n => { n.setAttribute('aria-pressed', String([n.dataset.query, n.dataset.queryEn].includes(state.query))); });
   if (save) writeURL();
 }
-function openRecord(record) {
+function openRecord(record, { save = true } = {}) {
   selectedRecord = record;
   const container = $('detail-content');
   container.replaceChildren();
   const title = el('h2', '', record.title || t('未提供标题'));
   title.id = 'detail-title';
   container.append(el('p', 'eyebrow', `${record.source} / ${sourceLabel(record.source)}`), title, el('p', 'detail-description', record.description || t('原目录未提供描述。')));
+  if (record.curator_note?.[locale]) container.append(el('p', 'detail-note', `${t('编者导读')} · ${record.curator_note[locale]}`));
   const grid = el('dl', 'detail-grid');
   const fields = [
     [t('收藏机构'), list(record.holding_institution).join('；') || t('原记录未标注')],
@@ -259,7 +266,7 @@ function openRecord(record) {
     [t('主题词'), list(record.subjects).join(' · ') || t('原记录未提供')],
     [t('元数据许可'), record.metadata_rights || t('此记录未单独提供许可，请核对来源条款。')],
     [t('原件权利说明'), list(record.content_rights).join('\n') || t('未提供；不代表无版权限制。')],
-    [t('来源记录编号'), record.source_id || record.id],
+    [t('来源记录编号'), record.archival_id || record.source_id || record.id],
     [t('样本获取时间'), formatDate(record.retrieved_at)],
   ];
   if (record.level_of_description) {
@@ -269,13 +276,17 @@ function openRecord(record) {
   if (record.record_group) fields.push([t('档案组'), `RG ${record.record_group}`]);
   if (list(record.archival_context).length) fields.push([t('所属档案背景（参与检索）'), list(record.archival_context).join('\n')]);
   if (record.dataset_updated_at) fields.push([t('公开数据文件更新时间'), formatDate(record.dataset_updated_at)]);
+  if (record.access_note) fields.push([t('访问说明'), record.access_note]);
+  if (record.checked_at) fields.push([t('来源核查时间'), formatDate(record.checked_at)]);
+  if (record.topic_ids?.length) fields.push([t('专题标签（编辑整理）'), (catalog.topics || []).filter(topic => record.topic_ids.includes(topic.id)).map(topic => topic.title[locale]).join(' · ')]);
+  if (record.record_origin === 'curated') fields.push([t('收录方式'), t('人工整理的原馆记录／研究入口')]);
   for (const [name, value] of fields) {
     const row = el('div');
     row.append(el('dt', '', name), el('dd', '', value));
     grid.append(row);
   }
   container.append(grid, el('p', 'detail-note', t('本条为待核对的目录候选。目录日期可能是创作或出版日期；战后回忆录的出版年份不表示事件发生年份。元数据许可不等于图片、音频或全文的使用许可。')));
-  if (record.source === 'NARA') container.append(el('p', 'detail-note', t('NARA 记录来自官方开放数据集。系列和档案组记录可能描述多份材料；命中所属档案背景不等于每个下属文件都讨论该关键词。数字目录可访问，不代表原件已数字化。')));
+  if (record.source === 'NARA' && record.record_origin === 'dataset') container.append(el('p', 'detail-note', t('NARA 记录来自官方开放数据集。系列和档案组记录可能描述多份材料；命中所属档案背景不等于每个下属文件都讨论该关键词。数字目录可访问，不代表原件已数字化。')));
   const links = el('div', 'detail-links');
   const original = link(t('前往原馆记录 ↗'), record.source_url, 'primary-button');
   if (original) links.append(original);
@@ -290,12 +301,44 @@ function openRecord(record) {
   container.append(links);
   if (!$('detail-dialog').open) $('detail-dialog').showModal();
   $('detail-dialog').scrollTop = 0;
+  if (save) {
+    const url = new URL(location.href);
+    if (url.searchParams.get('record') !== record.id) {
+      url.searchParams.set('record', record.id);
+      history.pushState(null, '', url);
+    }
+  }
+}
+function closeRecord() {
+  $('detail-dialog').close();
+  selectedRecord = null;
+  const url = new URL(location.href);
+  if (url.searchParams.has('record')) {
+    url.searchParams.delete('record');
+    history.replaceState(null, '', url);
+  }
 }
 function renderSourceSummary() {
   $('sample-count').textContent = catalog.records.length;
   $('source-count').textContent = catalog.sources.filter(s => s.count > 0).length;
-  const dates = catalog.sources.map(s => s.fetched_at).filter(Boolean).sort();
+  const dates = catalog.sources.flatMap(s => [s.fetched_at, s.checked_at]).filter(Boolean).sort();
   $('updated-date').textContent = t('样本更新 {date}', { date: formatDate(dates.at(-1)) });
+}
+function renderTopics() {
+  const container = $('topic-shortcuts');
+  container.replaceChildren();
+  for (const topic of catalog.topics || []) {
+    const button = el('button', 'topic-shortcut');
+    button.type = 'button';
+    button.dataset.topicId = topic.id;
+    button.setAttribute('aria-pressed', String(state.topic === topic.id));
+    button.append(el('span', '', topic.title[locale]), el('small', '', topic.record_ids.length));
+    button.addEventListener('click', () => {
+      state = { ...defaults(), topic: topic.id };
+      syncControls(); update();
+    });
+    container.append(button);
+  }
 }
 async function loadCatalog() {
   loadFailed = false;
@@ -311,8 +354,11 @@ async function loadCatalog() {
     readURL();
     renderFilters();
     renderSourceSummary();
+    renderTopics();
     syncControls();
     update({ save: false });
+    const requested = data.records.find(record => record.id === new URLSearchParams(location.search).get('record'));
+    if (requested) openRecord(requested, { save: false });
   } catch {
     catalog = null;
     loadFailed = true;
@@ -334,9 +380,10 @@ function changeLanguage(value, { save = true } = {}) {
     renderFilters();
     for (const input of document.querySelectorAll('input[data-kind]')) input.checked = state[input.dataset.kind].includes(input.value);
     renderSourceSummary();
+    renderTopics();
     update({ save: false, resetPage: false });
     $('query').value = draftQuery;
-    if ($('detail-dialog').open && selectedRecord) openRecord(selectedRecord);
+    if ($('detail-dialog').open && selectedRecord) openRecord(selectedRecord, { save: false });
   } else if (loadFailed) {
     $('updated-date').textContent = t('样本载入失败');
     $('result-announcement').textContent = t('目录样本载入失败，可点击重新载入。');
@@ -389,14 +436,20 @@ $('filter-toggle').addEventListener('click', () => {
 });
 $('help-button').addEventListener('click', () => $('help-dialog').showModal());
 $('close-help').addEventListener('click', () => $('help-dialog').close());
-$('close-detail').addEventListener('click', () => $('detail-dialog').close());
+$('close-detail').addEventListener('click', closeRecord);
+$('detail-dialog').addEventListener('cancel', e => { e.preventDefault(); closeRecord(); });
 for (const id of ['detail-dialog', 'help-dialog']) $(id).addEventListener('click', e => {
   const rect = $(id).getBoundingClientRect();
-  if (e.target === $(id) && (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom)) $(id).close();
+  if (e.target === $(id) && (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom)) {
+    if (id === 'detail-dialog') closeRecord(); else $(id).close();
+  }
 });
 window.addEventListener('popstate', () => {
   if (catalog) { readURL(); syncControls(); }
   changeLanguage(resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale(), navigator.languages || [navigator.language]), { save: false });
+  const requested = catalog?.records.find(record => record.id === new URLSearchParams(location.search).get('record'));
+  if (requested) openRecord(requested, { save: false });
+  else { $('detail-dialog').close(); selectedRecord = null; }
 });
 // Make the initial language explicit so Back restores it even after preferences change.
 const initialURL = new URL(location.href);

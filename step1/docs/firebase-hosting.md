@@ -4,7 +4,7 @@
 
 ## 发布内容
 
-发布目录只有 `site/`：三个页面、脚本、样式、图标和两个公开 JSON。凭据、`tools/`、`docs/` 及根目录 `data/` 不发布。CBI 媒体不会上传；预览仍由档案机构提供。当前版本约 5.5 MB，目录搜索在浏览器执行，不运行云端 Python 服务。
+发布目录只有 `site/`：三个页面、旧地址兼容跳转、脚本、样式、图标和统一目录 JSON。凭据、`tools/`、`docs/` 及根目录 `data/` 不发布。内部参考清单、对照报告和访问日志不发布；预览由档案机构提供。目录搜索在浏览器执行，不运行云端 Python 服务。
 
 `cleanUrls` 关闭，以保留 `.html` 页面地址；没有 SPA 全路径重写。未找到的路径返回 404。未指纹化文件每次使用前重新验证缓存，`.mjs` 明确使用 JavaScript MIME 类型。
 
@@ -24,11 +24,10 @@ firebase projects:list
 
 ```sh
 python3 tools/build_site_data.py
-python3 tools/build_cbi_demo.py
 firebase emulators:start --only hosting --project project-864074c6-a2ba-4b47-a1f
 ```
 
-打开 `http://127.0.0.1:5105/`、`/sources.html` 和 `/cbi-demo.html`。结束时按 Ctrl+C。
+打开 `http://127.0.0.1:5105/`、`/sources.html` 和 `/topics.html`。结束时按 Ctrl+C。
 
 ## 发布
 
@@ -39,9 +38,9 @@ firebase hosting:sites:list --project project-864074c6-a2ba-4b47-a1f
 firebase deploy --only hosting --project project-864074c6-a2ba-4b47-a1f
 ```
 
-`predeploy` 自动离线重建首页目录及 CBI 演示 JSON，不刷新外馆数据。部署成功后使用 CLI 返回的 Hosting URL；只有完成发布并通过线上验证后，该 URL 才表示可用网站。
+`predeploy` 自动离线重建统一目录 `site/data/catalog.json`，不刷新外馆数据。部署成功后使用 CLI 返回的 Hosting URL；只有完成发布并通过线上验证后，该 URL 才表示可用网站。
 
-验收：三个页面可访问，中英文和筛选可用；公开 JSON 数量与本地一致；`.mjs` 响应类型正确；凭据、工具、原始研究文件和不存在的路径不可访问。既有版本可在 Firebase Console 的 Hosting 发布历史中回滚。
+验收：三个页面可访问，中英文和筛选可用；统一目录的记录及专题数量与本地一致；`.mjs` 响应类型正确；凭据、工具、原始研究文件和不存在的路径不可访问。既有版本可在 Firebase Console 的 Hosting 发布历史中回滚。
 
 ## 运行与费用
 

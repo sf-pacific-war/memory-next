@@ -16,3 +16,6 @@ tmp/
 .firebase/
 firebase-debug.log*
 ui-debug.log*
+
+# Generated internal comparison report (not a web artifact)
+data/cbi/review-report.json
