@@ -109,7 +109,8 @@
         "loc:2017872505",
         "loc:2017872525",
         "europeana:/2051908/data_euscreenXL_ina_PHD85008112",
-        "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a"
+        "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+        "yunnan:nanyang-volunteers"
       ]
     },
     {
@@ -151,7 +152,8 @@
         "loc:2007675029",
         "loc:2007675030",
         "iwm:2992",
-        "nara:567201"
+        "nara:567201",
+        "yunnan:nanyang-volunteers"
       ]
     },
     {
@@ -200,7 +202,10 @@
         "taiwan:35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
         "taiwan:85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
         "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
-        "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a"
+        "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+        "shac:67020",
+        "shac:67000",
+        "shac:67040"
       ]
     },
     {
@@ -358,7 +363,10 @@
         "nara:567201",
         "nara:6705460",
         "nara:377497694",
-        "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb"
+        "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+        "shac:67020",
+        "shac:67000",
+        "shac:67040"
       ]
     },
     {
@@ -524,6 +532,22 @@
     "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a": {
       "en": "Case title concerning Chinese Expeditionary Force organization. Retains the archive’s original title and number; historical dates are not supplied in this CSV.",
       "zh-CN": "有关中国远征军编制的案卷目录。保留原始案名与档号，CSV 未提供历史年代。"
+    },
+    "shac:67020": {
+      "en": "Telegram dated 30 June 1944 on Eighth Army deployments at Songshan, supplied by the Second Historical Archives of China. The 2014 date is the exhibit publication date.",
+      "zh-CN": "1944年6月30日关于松山战役第八军兵力部署的电报，由中国第二历史档案馆提供；2014年为展览网页发布时间。"
+    },
+    "shac:67000": {
+      "en": "Selected scans of an account of the Chinese-American attack on Myitkyina. The caption refers to 16 May 1944; the document creation date is not separately established.",
+      "zh-CN": "中美联军奇袭密支那作战经过的精选扫描件。展览标注1944年5月16日；未单独核实文件形成日期。"
+    },
+    "shac:67040": {
+      "en": "A campaign map covering western Yunnan and northern Burma from October 1943 to March 1945. This is the mapped period, not a verified map creation date.",
+      "zh-CN": "反映1943年10月至1945年3月滇西缅北战役经过的地图；这一区间是地图涉及的战事时期，并非已核实的制图日期。"
+    },
+    "yunnan:nanyang-volunteers": {
+      "en": "Official collection guide to the Nanyang volunteer drivers and mechanics archives held in Yunnan, useful for Burma Road transport research. The linked nomination describes holdings; it is not the complete digitized collection.",
+      "zh-CN": "云南省档案馆所藏南侨机工档案的官方申报与介绍入口，可用于研究滇缅公路运输。链接提供馆藏说明，不代表整套档案已全文开放。"
     }
   },
   "reading_links": {

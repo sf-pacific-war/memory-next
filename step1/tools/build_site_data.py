@@ -15,8 +15,10 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-THUMBNAIL_HOSTS = ("loc.gov", "archives.gov", "si.edu", "archive.org", "iwm.org.uk")
+THUMBNAIL_HOSTS = ("loc.gov", "archives.gov", "si.edu", "archive.org", "iwm.org.uk", "www.saac.gov.cn")
 SOURCE_NAMES = {
+    "SHAC": ("Second Historical Archives of China", "中国第二历史档案馆"),
+    "Yunnan Archives": ("Yunnan Provincial Archives", "云南省档案馆"),
     "Taiwan NAA": ("National Archives Administration, National Development Council (Taiwan)", "台湾国家发展委员会档案管理局"),
     "LoC": ("Library of Congress", "美国国会图书馆"),
     "Europeana": ("Europeana", "欧洲数字文化遗产平台"),
@@ -49,12 +51,17 @@ SOURCES = (
     {"id": "Taiwan NAA", "file": "taiwan-discovery.json", "prefix": "taiwan:", "origin": "dataset",
      "label": "台湾国家发展委员会档案管理局", "url": "https://aa.archives.gov.tw/",
      "description": "官方开放案卷目录：保留繁体案名、全宗与档号。资料产制日期不是档案年代；全文与影像访问条件需在 A+ 另行确认。"},
+    {"id": "SHAC", "file": "mainland-shac.json", "prefix": "shac:", "origin": "curated",
+     "label": "中国第二历史档案馆", "url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm"},
+    {"id": "Yunnan Archives", "file": "mainland-yunnan.json", "prefix": "yunnan:", "origin": "curated",
+     "label": "云南省档案馆", "url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml"},
 )
 TEXT_FIELDS = (
     "id", "source_id", "source", "title", "description", "date_display", "date_kind",
     "format", "access_status", "review_status", "retrieved_at", "query_used",
     "level_of_description", "record_group", "dataset_updated_at",
     "dataset_generated_at", "archival_id", "access_note", "source_url_kind",
+    "checked_at", "source_page_published_at", "coverage_display",
 )
 LIST_FIELDS = (
     "holding_institution", "metadata_provider", "year", "language", "metadata_language",

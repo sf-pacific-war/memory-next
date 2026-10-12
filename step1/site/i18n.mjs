@@ -1,5 +1,9 @@
 /** UI translations only. Archival titles, descriptions and rights remain verbatim. */
 export const messages = Object.freeze({
+  "发表日期": {"zh-CN": "发表日期", "en": "Publication date"},
+  "文件形成日期": {"zh-CN": "文件形成日期", "en": "Document date"},
+  "原馆网页发布日期": {"zh-CN": "原馆网页发布日期", "en": "Source page published"},
+  "史料涉及时期": {"zh-CN": "史料涉及时期", "en": "Historical coverage"},
   "记录说明：{title}": {"zh-CN": "记录说明：{title}", "en": "Record notes: {title}"},
   "在新标签页打开原馆检索入口": {"zh-CN": "在新标签页打开原馆检索入口", "en": "Open archive catalogue search in a new tab"},
   "在新标签页打开原始出处": {"zh-CN": "在新标签页打开原始出处", "en": "Open original source in a new tab"},

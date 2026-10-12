@@ -263,7 +263,7 @@ function openRecord(record, { save = true } = {}) {
   const fields = [
     [t('收藏机构'), list(record.holding_institution).join('；') || t('原记录未标注')],
     [t('元数据提供方'), list(record.metadata_provider).join('；') || sourceLabel(record.source)],
-    [t('目录日期'), record.date_display || t('日期不详')],
+    [t(record.date_kind === 'publication' ? '发表日期' : record.date_kind === 'creation' ? '文件形成日期' : '目录日期'), record.date_display || t('日期不详')],
     [t('资料类型 / 语种'), `${formatLabel(record.format)} / ${languageLabel(record)}`],
     [t('访问状态'), record.access_status === 'online' ? t('来源标有在线数字资源；实际访问条件以原馆为准。') : t('只有目录或聚合记录，尚未确认公开全文／媒体访问。')],
     [t('主题词'), list(record.subjects).join(' · ') || t('原记录未提供')],
@@ -284,6 +284,8 @@ function openRecord(record, { save = true } = {}) {
   if (list(record.archival_context).length) fields.push([t('所属档案背景（参与检索）'), list(record.archival_context).join('\n')]);
   if (record.dataset_generated_at) fields.push([t('目录资料产制日期'), record.dataset_generated_at]);
   if (record.dataset_updated_at) fields.push([t('公开数据文件更新时间'), formatDate(record.dataset_updated_at)]);
+  if (record.source_page_published_at) fields.push([t('原馆网页发布日期'), record.source_page_published_at]);
+  if (record.coverage_display) fields.push([t('史料涉及时期'), record.coverage_display]);
   if (record.access_note) fields.push([t('访问说明'), record.access_note]);
   if (record.checked_at) fields.push([t('来源核查时间'), formatDate(record.checked_at)]);
   if (record.topic_ids?.length) fields.push([t('专题标签（编辑整理）'), (catalog.topics || []).filter(topic => record.topic_ids.includes(topic.id)).map(topic => topic.title[locale]).join(' · ')]);

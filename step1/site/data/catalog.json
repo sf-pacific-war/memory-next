@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T02:57:17.259040Z",
+  "generated_at": "2026-10-12T03:13:13.338426Z",
   "records": [
     {
       "id": "loc:2004676827",
@@ -21,6 +21,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -113,6 +116,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -183,6 +189,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -253,6 +262,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -323,6 +335,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -397,6 +412,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -470,6 +488,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -560,6 +581,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -634,6 +658,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -699,6 +726,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -789,6 +819,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -879,6 +912,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress"
       ],
@@ -954,6 +990,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -1027,6 +1066,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Veterans History Project, American Folklife Center, Library of Congress"
       ],
@@ -1111,6 +1153,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Veterans History Project, American Folklife Center, Library of Congress"
       ],
@@ -1194,6 +1239,9 @@
       "archival_id": "AFC/2001/001/82964",
       "access_note": "Official indexed metadata confirms collection and unit affiliation; item sequence contains hundreds of images.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Veterans History Project, American Folklife Center, Library of Congress"
       ],
@@ -1235,7 +1283,6 @@
       "record_origin": "api",
       "source_name_en": "Library of Congress",
       "source_name_zh": "美国国会图书馆",
-      "checked_at": "2026-10-12T00:25:50Z",
       "topic_ids": [
         "burma-campaign",
         "personal-stories"
@@ -1298,6 +1345,9 @@
       "archival_id": "Europeana /2051908/data_euscreenXL_ina_PHD85008112; INA PHD85008112",
       "access_note": "Europeana API metadata was retrieved on 2026-10-10; this specific item/provider link was not rendered by the web retrieval tool today. Media access remains unverified.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Audiovisual Institute France"
       ],
@@ -1324,7 +1374,6 @@
       "record_origin": "api",
       "source_name_en": "Europeana",
       "source_name_zh": "欧洲数字文化遗产平台",
-      "checked_at": "2026-10-12T00:25:50Z",
       "topic_ids": [
         "burma-road"
       ],
@@ -1369,6 +1418,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1439,6 +1491,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1508,6 +1563,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1595,6 +1653,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1666,6 +1727,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1735,6 +1799,9 @@
       "archival_id": "B5018230601/0031/002.3/5000.2",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -1805,6 +1872,9 @@
       "archival_id": "B5018230601/0031/0503/7031",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -1872,6 +1942,9 @@
       "archival_id": "B5018230601/0031/152.2/2196.2",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -1951,6 +2024,9 @@
       "archival_id": "B5018230601/0031/543/2196",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -2017,6 +2093,9 @@
       "archival_id": "B5018230601/0031/581.29/5000",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -2083,6 +2162,9 @@
       "archival_id": "B5018230601/0032/583/5000",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -2150,6 +2232,9 @@
       "archival_id": "B5018230601/0032/583.3/7421.7",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -2216,6 +2301,9 @@
       "archival_id": "B5018230601/0033/543.1/3430",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -2282,6 +2370,9 @@
       "archival_id": "B5018230601/0031/542.9/5000",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -2348,6 +2439,9 @@
       "archival_id": "B5018230601/0031/543.62/8043",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -2431,6 +2525,9 @@
       "archival_id": "B5018230601/0031/583.1/3430",
       "access_note": null,
       "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "National Archives Administration, National Development Council (Taiwan)"
       ],
@@ -2478,6 +2575,370 @@
       }
     },
     {
+      "id": "shac:67020",
+      "source_id": "Web exhibit 67020",
+      "source": "SHAC",
+      "title": "中国远征军司令长官卫立煌报告松山战役第八军兵力布置致蒋介石电",
+      "description": null,
+      "date_display": "1944-06-30",
+      "date_kind": "creation",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "source_page_published_at": "2014-09-19",
+      "coverage_display": null,
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "year": [
+        "1944"
+      ],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580d3d256.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "source_name_en": "Second Historical Archives of China",
+      "source_name_zh": "中国第二历史档案馆",
+      "topic_ids": [
+        "burma-campaign",
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween",
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "1944年6月30日关于松山战役第八军兵力部署的电报，由中国第二历史档案馆提供；2014年为展览网页发布时间。",
+        "en": "Telegram dated 30 June 1944 on Eighth Army deployments at Songshan, supplied by the Second Historical Archives of China. The 2014 date is the exhibit publication date."
+      }
+    },
+    {
+      "id": "shac:67000",
+      "source_id": "Web exhibit 67000",
+      "source": "SHAC",
+      "title": "中美联军奇袭密支那作战经过",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "source_page_published_at": "2014-09-19",
+      "coverage_display": "1944-05-16 (exhibit caption; creation date not separately supplied)",
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "year": [],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67000.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67000.htm",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580cee852.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "source_name_en": "Second Historical Archives of China",
+      "source_name_zh": "中国第二历史档案馆",
+      "topic_ids": [
+        "burma-campaign",
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween",
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "中美联军奇袭密支那作战经过的精选扫描件。展览标注1944年5月16日；未单独核实文件形成日期。",
+        "en": "Selected scans of an account of the Chinese-American attack on Myitkyina. The caption refers to 16 May 1944; the document creation date is not separately established."
+      }
+    },
+    {
+      "id": "shac:67040",
+      "source_id": "Web exhibit 67040",
+      "source": "SHAC",
+      "title": "滇西缅北之战经过要图",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "MAP",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "source_page_published_at": "2014-09-19",
+      "coverage_display": "1943-10–1945-03 (campaign coverage; map creation date not separately supplied)",
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "year": [],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67040.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67040.htm",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580d4b063.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "source_name_en": "Second Historical Archives of China",
+      "source_name_zh": "中国第二历史档案馆",
+      "topic_ids": [
+        "burma-campaign",
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween",
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "反映1943年10月至1945年3月滇西缅北战役经过的地图；这一区间是地图涉及的战事时期，并非已核实的制图日期。",
+        "en": "A campaign map covering western Yunnan and northern Burma from October 1943 to March 1945. This is the mapped period, not a verified map creation date."
+      }
+    },
+    {
+      "id": "yunnan:nanyang-volunteers",
+      "source_id": "SAAC heritage page 77d37779d7534cdd8e7f2ff73bf05ed9",
+      "source": "Yunnan Archives",
+      "title": "2018 南侨机工档案",
+      "description": null,
+      "date_display": "2021-04-16",
+      "date_kind": "publication",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": "Public collection nomination guide with an official PDF link. This is a research guide, not the full digitized collection. The title’s 2018 refers to the inscription, not a wartime document date.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "source_page_published_at": "2021-04-16",
+      "coverage_display": null,
+      "holding_institution": [
+        "云南省档案馆 / Yunnan Provincial Archives"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "year": [
+        "2021"
+      ],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml",
+      "aggregator_url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "source_name_en": "Yunnan Provincial Archives",
+      "source_name_zh": "云南省档案馆",
+      "topic_ids": [
+        "burma-road",
+        "ledo-stilwell-road"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma",
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming"
+      ],
+      "curator_note": {
+        "zh-CN": "云南省档案馆所藏南侨机工档案的官方申报与介绍入口，可用于研究滇缅公路运输。链接提供馆藏说明，不代表整套档案已全文开放。",
+        "en": "Official collection guide to the Nanyang volunteer drivers and mechanics archives held in Yunnan, useful for Burma Road transport research. The linked nomination describes holdings; it is not the complete digitized collection."
+      }
+    },
+    {
       "id": "loc:2005677702",
       "source_id": "2005677702",
       "source": "LoC",
@@ -2497,6 +2958,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -2586,6 +3050,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -2678,6 +3145,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -2770,6 +3240,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "Kirklees Image Archive OAI Feed"
       ],
@@ -2834,6 +3307,9 @@
       "archival_id": null,
       "access_note": null,
       "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [
         "NRK"
       ],
@@ -2901,6 +3377,9 @@
       "archival_id": "NAID 535531; 208-AA-12X-21",
       "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "National Archives and Records Administration"
@@ -2920,7 +3399,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "photograph",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": "https://www.archives.gov/research/military/ww2/photos",
       "source_name_en": "National Archives and Records Administration",
       "source_name_zh": "美国国家档案馆",
@@ -2970,6 +3448,9 @@
       "archival_id": "NAID 535540; 208-AA-45L-1",
       "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "National Archives and Records Administration"
@@ -2989,7 +3470,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "photograph",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
       "source_name_en": "National Archives and Records Administration",
       "source_name_zh": "美国国家档案馆",
@@ -3040,6 +3520,9 @@
       "archival_id": "NAID 535573; 208-AA-338A-1",
       "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "National Archives and Records Administration"
@@ -3059,7 +3542,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "photograph",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
       "source_name_en": "National Archives and Records Administration",
       "source_name_zh": "美国国家档案馆",
@@ -3110,6 +3592,9 @@
       "archival_id": "NAID 531341; 111-SC-262229",
       "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "National Archives and Records Administration"
@@ -3129,7 +3614,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "photograph",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
       "source_name_en": "National Archives and Records Administration",
       "source_name_zh": "美国国家档案馆",
@@ -3182,6 +3666,9 @@
       "archival_id": "PocketGuideToChina1943; ark:/13960/t2h71pv46",
       "access_note": "IA metadata, PDF download listing and preview image accessible without credentials.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Internet Archive"
@@ -3201,7 +3688,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "book",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": "https://archive.org/details/PocketGuideToChina1943",
       "source_name_en": "Internet Archive",
       "source_name_zh": "互联网档案馆",
@@ -3254,6 +3740,9 @@
       "archival_id": "APocketGuideToBurma; ark:/13960/t5k95zz7z",
       "access_note": "IA metadata, PDF download listing and preview image accessible without credentials.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Internet Archive"
@@ -3273,7 +3762,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "book",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": "https://archive.org/details/APocketGuideToBurma",
       "source_name_en": "Internet Archive",
       "source_name_zh": "互联网档案馆",
@@ -3326,6 +3814,9 @@
       "archival_id": "LCCN 48043776; DS406 .U6 1944",
       "access_note": "Digitized-book resource list and indexed metadata accessible; direct item fetch returned HTTP 403 during this check.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Library of Congress"
@@ -3345,7 +3836,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "book",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Library of Congress",
       "source_name_zh": "美国国会图书馆",
@@ -3398,6 +3888,9 @@
       "archival_id": "AFC/2001/001/86254; resource afc2001001.86254.pm0004001",
       "access_note": "Official indexed resource metadata and image-viewer link available; no map image reused here.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Library of Congress"
@@ -3417,7 +3910,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "map",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Library of Congress",
       "source_name_zh": "美国国会图书馆",
@@ -3468,6 +3960,9 @@
       "archival_id": "AFC/2001/001/21936",
       "access_note": "Official search-indexed metadata verified; direct item request returned HTTP 403 in this environment.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Library of Congress"
@@ -3487,7 +3982,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "personal_narrative",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Library of Congress",
       "source_name_zh": "美国国会图书馆",
@@ -3553,6 +4047,9 @@
       "archival_id": "nmah_1102530; catalogue 1991.0840.007",
       "access_note": "Official indexed collection metadata verified; direct page fetch returned HTTP 520 during this check.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Smithsonian Institution"
@@ -3572,7 +4069,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "artifact",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Smithsonian Institution",
       "source_name_zh": "史密森学会",
@@ -3622,6 +4118,9 @@
       "archival_id": "nmah_1983471",
       "access_note": "Official indexed collection page supplies the description; direct canonical page was not rendered by the retrieval tool.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Smithsonian Institution"
@@ -3641,7 +4140,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "artifact",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Smithsonian Institution",
       "source_name_zh": "史密森学会",
@@ -3708,6 +4206,9 @@
       "archival_id": "NASM editorial; archival photograph SI 90-13683",
       "access_note": "Official search-indexed article and photo identifier verified; direct fetch returned HTTP 403.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Smithsonian Institution"
@@ -3727,7 +4228,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "article",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Smithsonian Institution",
       "source_name_zh": "史密森学会",
@@ -3777,6 +4277,9 @@
       "archival_id": "public museum page: office-of-strategic-services-blood-chit",
       "access_note": "Official public artifact description accessible without credentials.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Central Intelligence Agency Museum"
@@ -3796,7 +4299,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "artifact",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Central Intelligence Agency Museum",
       "source_name_zh": "美国中央情报局博物馆",
@@ -3846,6 +4348,9 @@
       "archival_id": "Film number USA 14; IWM film record 2992",
       "access_note": "Official catalogue accessible; IWM marks this copy Digitised: No and Media not currently available. No playable copy is claimed.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Imperial War Museums"
@@ -3865,7 +4370,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "film",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Imperial War Museums",
       "source_name_zh": "帝国战争博物馆",
@@ -3916,6 +4420,9 @@
       "archival_id": "Film number GEN 16; IWM film record 503",
       "access_note": "Official indexed film metadata lists digitized media and two HD reels.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Imperial War Museums"
@@ -3935,7 +4442,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "film",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Imperial War Museums",
       "source_name_zh": "帝国战争博物馆",
@@ -3982,6 +4488,9 @@
       "archival_id": "CARL p4013coll8/2298; call number N13669; Part 2, pages 14–19",
       "access_note": "Official indexed catalogue metadata verified; direct viewer timed out during this check. No PDF fetched.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Ike Skelton Combined Arms Research Library"
@@ -4001,7 +4510,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "newspaper",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Ike Skelton Combined Arms Research Library",
       "source_name_zh": "艾克·斯凯尔顿联合兵种研究图书馆",
@@ -4054,6 +4562,9 @@
       "archival_id": "Lowe Family Papers MS 0588; Box 4, Folder 12; archival object 92597",
       "access_note": "Official search-indexed finding aid verified; no online full text established and no repository contact sent.",
       "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
       "holding_institution": [],
       "metadata_provider": [
         "Woodson Research Center, Rice University"
@@ -4073,7 +4584,6 @@
       "dataset_url": null,
       "record_origin": "curated",
       "material_type": "book",
-      "checked_at": "2026-10-12T00:25:50Z",
       "thumbnail_source_url": null,
       "source_name_en": "Woodson Research Center, Rice University",
       "source_name_zh": "莱斯大学伍德森研究中心",
@@ -4186,6 +4696,44 @@
       ],
       "counts_by_origin": {
         "dataset": 11
+      }
+    },
+    {
+      "id": "SHAC",
+      "label": "中国第二历史档案馆",
+      "label_en": "Second Historical Archives of China",
+      "source_name_en": "Second Historical Archives of China",
+      "source_name_zh": "中国第二历史档案馆",
+      "url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 3,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 3
+      }
+    },
+    {
+      "id": "Yunnan Archives",
+      "label": "云南省档案馆",
+      "label_en": "Yunnan Provincial Archives",
+      "source_name_en": "Yunnan Provincial Archives",
+      "source_name_zh": "云南省档案馆",
+      "url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 1,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 1
       }
     },
     {
@@ -4412,7 +4960,8 @@
         "loc:2017872505",
         "loc:2017872525",
         "europeana:/2051908/data_euscreenXL_ina_PHD85008112",
-        "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a"
+        "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+        "yunnan:nanyang-volunteers"
       ]
     },
     {
@@ -4454,7 +5003,8 @@
         "loc:2007675029",
         "loc:2007675030",
         "iwm:2992",
-        "nara:567201"
+        "nara:567201",
+        "yunnan:nanyang-volunteers"
       ]
     },
     {
@@ -4503,7 +5053,10 @@
         "taiwan:35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
         "taiwan:85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
         "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
-        "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a"
+        "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+        "shac:67020",
+        "shac:67000",
+        "shac:67040"
       ]
     },
     {
@@ -4661,7 +5214,10 @@
         "nara:567201",
         "nara:6705460",
         "nara:377497694",
-        "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb"
+        "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+        "shac:67020",
+        "shac:67000",
+        "shac:67040"
       ]
     },
     {

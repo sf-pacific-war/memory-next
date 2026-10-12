@@ -2,7 +2,7 @@
 
 **WWII Pacific War / 二战太平洋战场**面向太平洋战争研究，重点覆盖中国、缅甸及中缅印战区。应用以两个入口连接同一份档案目录：**资料发现**用于主动搜索，**专题浏览**用于阅读已整理的主题资料。每条记录保留收藏机构、原馆链接和权利说明。
 
-当前为已上线、也可本地运行的双语研究 Demo：**55 条去重记录、10 个来源机构、10 个研究专题**。网页搜索已导入的快照，不实时查询外馆。网站通过 Firebase Hosting 公开托管：[打开网站](https://project-864074c6-a2ba-4b47-a1f.web.app/)。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在范围内。
+当前为已上线、也可本地运行的双语研究 Demo：**59 条去重记录、12 个来源机构、10 个研究专题**。网页搜索已导入的快照，不实时查询外馆。网站通过 Firebase Hosting 公开托管：[打开网站](https://project-864074c6-a2ba-4b47-a1f.web.app/)。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在范围内。
 
 ## 在线访问
 
@@ -66,9 +66,13 @@ python3 tools/serve.py
 | 美国陆军联合兵种研究图书馆（Combined Arms Research Library，CARL） | 1 | 人工整理的文献记录 |
 | 莱斯大学（Rice University） | 1 | 人工整理的数字馆藏记录 |
 | 台湾国家发展委员会档案管理局（National Archives Administration, Taiwan） | 11 | 官方开放案卷目录 CSV；按主题选入，保留档号与全宗 |
-| **合计** | **55** | 有限研究样本，不代表完整馆藏 |
+| 中国第二历史档案馆（Second Historical Archives of China，SHAC） | 3 | 国家档案局官方展览中的电报、作战经过与地图扫描件 |
+| 云南省档案馆（Yunnan Provincial Archives） | 1 | 国家档案局发布的南侨机工档案馆藏申报／介绍入口 |
+| **合计** | **59** | 有限研究样本，不代表完整馆藏 |
 
 台湾目录保留繁体原题名、全宗、档号及目录资料产制日期。CSV 没有摘要、逐件详情 URL 或历史年代；不会将资料产制日期、档号中的年份当作档案日期。标题和预览链接至 A+ 查档入口；记录说明提供档号，部分记录另附原馆精选文件链接。当前导入来自有界 CSV 前缀，不代表完整目录。
+
+中国大陆来源为精选的官方展览与馆藏指南，尚未接通全馆搜索 API。持有档案的机构与网页发布方分别记录；展览编号不冒充档号，文件日期、战事覆盖时期和网页发布日期分开显示。大陆页面可运行 `python3 tools/check_mainland_sources.py --live --source all --format table` 检查；`--query` 仅筛选已收录记录，不向外馆发起关键词搜索。
 
 专题包括飞虎队与航空、驼峰航线、滇缅公路、雷多公路与盟军运输、缅甸战役与部队、个人经历与回忆、战时报刊与生活指南、文物与识别标志、地图与军事档案、民众卫生与日常生活。
 
@@ -211,4 +215,5 @@ Firebase Hosting 仅发布 `site/`；发布前自动运行统一目录构建器�
 - [关键词命令](docs/archive-search-commands.md)
 - [生产整合计划](docs/archive-access-production-plan.md)
 - [欧洲数字文化遗产平台（Europeana）](docs/europeana.md)
+- [中国大陆档案来源、验证与下一步](docs/mainland-archives.md)
 - [台湾档案管理局（archives.gov.tw）](docs/taiwan-archives.md)

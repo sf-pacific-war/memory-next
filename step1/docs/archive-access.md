@@ -2,7 +2,7 @@
 
 核对日期：2026-10-12（UTC）。覆盖 Step 1 清单中的 **8 个平台、9 种接入方式**；美国国家档案馆（NARA）公开数据集与 Catalog API 分开。每种方式都有独立 `.py` 入口，其中 2 个入口仅提供官方网页及说明。默认只检查本机配置；只有显式添加 `--live` 才会尝试请求支持的外馆接口。
 
-这些脚本用于确认“能否访问及返回结构是否正确”，输出状态和计数，不保存原始 API 响应、档案记录或密钥。它们不会改变网页目前的 10 个来源机构、55 条记录，也不会自动把美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）等加入网页搜索。现有 `fetch_*.py` 仍负责允许持久化来源的元数据获取。
+这些脚本用于确认“能否访问及返回结构是否正确”，输出状态和计数，不保存原始 API 响应、档案记录或密钥。它们不会改变网页目前的 12 个来源机构、59 条记录，也不会自动把美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）等加入网页搜索。现有 `fetch_*.py` 仍负责允许持久化来源的元数据获取。
 
 面向后续 API 就绪和生产集成的路线、统一命令预期结果及上线门槛，见 [访问状态与生产整合计划](archive-access-production-plan.md)。
 
@@ -163,3 +163,13 @@ API 传输层设 30 秒超时、2 MiB 响应上限；台湾 CSV 为默认 4 MiB 
 - [日本亚洲历史资料中心（JACAR）官方入口](https://www.jacar.go.jp/english/)、[帝国战争博物馆（IWM） Collections Search](https://www.iwm.org.uk/collections/search)
 
 英国国家档案馆（TNA）和美国国家档案馆（NARA） Catalog API 的响应不缓存为本地目录；现有美国国家档案馆（NARA）持久化导入继续使用另行发布的官方公开数据集。
+
+## 中国大陆精选档案入口
+
+中国第二历史档案馆（Second Historical Archives of China）与云南省档案馆（Yunnan Provincial Archives）目前按精选官方网页接入，不在上述 API／CSV 检查器中冒充检索 API。页面可用性使用独立命令：
+
+```sh
+python3 tools/check_mainland_sources.py --live --source all --format table
+```
+
+无需凭据；默认不加 `--live` 时仅离线预检。`--query` 筛选本地选定记录，不调用全馆关键词检索。收录范围、未纳入的来源和后续步骤见[中国大陆来源说明](mainland-archives.md)。

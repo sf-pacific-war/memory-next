@@ -49,7 +49,7 @@ class BuilderTests(unittest.TestCase):
     def test_missing_and_invalid_sources_are_visible_as_unavailable(self):
         (self.root / "data/europeana-discovery-candidates.json").write_text("not json")
         catalog = builder.build_catalog(self.root)
-        self.assertEqual([s["id"] for s in catalog["sources"]], ["LoC", "Europeana", "NARA", "Taiwan NAA"])
+        self.assertEqual([s["id"] for s in catalog["sources"]], ["LoC", "Europeana", "NARA", "Taiwan NAA", "SHAC", "Yunnan Archives"])
         self.assertTrue(all(s["status"] == "unavailable" and s["count"] == 0 for s in catalog["sources"]))
 
     def test_empty_successful_snapshot_is_available(self):
@@ -227,11 +227,37 @@ class BuilderTests(unittest.TestCase):
 class PublishedTopicCorpusTests(unittest.TestCase):
     """Check actual editorial memberships and provenance, without networking."""
 
+    def test_mainland_entries_keep_holding_archives_dates_and_access_scope_distinct(self):
+        catalog = builder.build_catalog()
+        indexed = {r["id"]: r for r in catalog["records"]}
+        sources = {s["id"]: s for s in catalog["sources"]}
+        self.assertEqual(sources["SHAC"]["counts_by_origin"], {"curated": 3})
+        self.assertEqual(sources["Yunnan Archives"]["counts_by_origin"], {"curated": 1})
+        telegram = indexed["shac:67020"]
+        self.assertEqual(telegram["date_display"], "1944-06-30")
+        self.assertEqual(telegram["date_kind"], "creation")
+        self.assertEqual(telegram["source_page_published_at"], "2014-09-19")
+        self.assertIn("Second Historical Archives", telegram["holding_institution"][0])
+        self.assertIn("State Archives Administration", telegram["metadata_provider"][0])
+        for identity in ("shac:67000", "shac:67040"):
+            self.assertIsNone(indexed[identity]["date_display"])
+            self.assertEqual(indexed[identity]["year"], [])
+            self.assertTrue(indexed[identity]["coverage_display"])
+        guide = indexed["yunnan:nanyang-volunteers"]
+        self.assertEqual(guide["date_kind"], "publication")
+        self.assertEqual(guide["year"], ["2021"])
+        for identity in ("shac:67020", "shac:67000", "shac:67040", "yunnan:nanyang-volunteers"):
+            record = indexed[identity]
+            self.assertTrue(record["checked_at"])
+            self.assertIsNone(record["retrieved_at"])
+            self.assertIsNone(record["archival_id"])
+            self.assertNotIn("page_markers", record)
+
     def test_public_corpus_contains_all_topics_and_no_reference_site_evidence(self):
         catalog = builder.build_catalog()
-        self.assertEqual(len(catalog["records"]), 55)
+        self.assertEqual(len(catalog["records"]), 59)
         self.assertEqual(len(catalog["topics"]), 10)
-        self.assertEqual(len(catalog["sources"]), 10)
+        self.assertEqual(len(catalog["sources"]), 12)
         self.assertEqual(sum(s["count"] for s in catalog["sources"]), len(catalog["records"]))
         indexed = {r["id"]: r for r in catalog["records"]}
         self.assertEqual(len(indexed), len(catalog["records"]))

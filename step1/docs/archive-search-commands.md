@@ -45,7 +45,7 @@ python3 tools/check_archives.py --source all --live --query '飞虎队' --rows 3
 | 检查本机配置 | `access_*.py` 或 `check_archives.py`，不加 `--live` | 不联网；不验证 key 是否被外馆接受 |
 | 检查真实访问及检索响应 | 对支持的来源加 `--live --query '关键词'` | 每来源最多一个请求；输出状态和计数，不保存档案记录 |
 | 验证代码行为 | `unittest` / `node --test` | 使用本地或合成数据；不访问外馆、不需要真实 key |
-| 查询现有网页样本 | `serve.py` 后在网页输入关键词 | 查询当前 10 个来源机构的 55 条本地记录；不会向外馆实时搜索 |
+| 查询现有网页样本 | `serve.py` 后在网页输入关键词 | 查询当前 12 个来源机构的 59 条本地记录；不会向外馆实时搜索 |
 
 `access_*.py` 不会把新结果导入网页。更新样本由已有 `fetch_*.py` 完成，见 [README 的数据刷新步骤](../README.md#可选刷新真实来源数据)。
 
@@ -194,7 +194,7 @@ open 'http://127.0.0.1:8000/?lang=zh-CN&q=%E6%BB%87%E7%BC%85%E5%85%AC%E8%B7%AF'
 open 'http://127.0.0.1:8000/?q=Burma&source=LoC&source=NARA'
 ```
 
-`open` 是 macOS 命令；其他系统直接把网址粘贴到浏览器。网页用 `q` 参数保存关键词、`lang=en`／`lang=zh-CN` 选择 English／中文界面；CLI 用 `--query`。切换界面语言不会自动翻译原馆标题、描述或任意检索词。当前网页包含 10 个来源机构、55 条去重记录；来源分别标注 API、公开数据集或人工整理；美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）的检查通过也不会自动成为网页来源。
+`open` 是 macOS 命令；其他系统直接把网址粘贴到浏览器。网页用 `q` 参数保存关键词、`lang=en`／`lang=zh-CN` 选择 English／中文界面；CLI 用 `--query`。切换界面语言不会自动翻译原馆标题、描述或任意检索词。当前网页包含 12 个来源机构、59 条去重记录；来源分别标注 API、公开数据集或人工整理；美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）的检查通过也不会自动成为网页来源。
 
 ## 7. 结果如何判断
 
@@ -223,3 +223,15 @@ python3 tools/fetch_taiwan_metadata.py --input /absolute/path/to/official.csv --
 ```
 
 完整参数、截断解释、原馆链接及发布步骤见[台湾来源说明](taiwan-archives.md)。
+
+## 中国大陆精选档案网页
+
+中国第二历史档案馆（Second Historical Archives of China）和云南省档案馆（Yunnan Provincial Archives）使用官方展览／馆藏指南入口：
+
+```sh
+python3 tools/check_mainland_sources.py --live --source all --format table
+python3 tools/check_mainland_sources.py --live --source shac --query '密支那'
+python3 tools/check_mainland_sources.py --live --source yunnan --query '南侨'
+```
+
+这里 `--query` 只筛选当前收录的标题等字段，再检查对应网页；不是外馆关键词 API，不需要凭据。详见[大陆来源说明](mainland-archives.md)。

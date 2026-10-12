@@ -98,8 +98,8 @@ export function formatLabel(type, locale = 'zh-CN') {
 
 export function sourceLabel(source, locale = 'zh-CN') {
   const labels = locale === 'en'
-    ? { 'taiwan naa': 'Taiwan National Archives Administration', loc: 'Library of Congress', europeana: 'Europeana', nara: 'U.S. National Archives', 'internet archive': 'Internet Archive', smithsonian: 'Smithsonian Institution', cia: 'CIA Museum', iwm: 'Imperial War Museums', carl: 'Combined Arms Research Library', 'rice university': 'Rice University' }
-    : { 'taiwan naa': '台湾国家发展委员会档案管理局', loc: '美国国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆', 'internet archive': '互联网档案馆', smithsonian: '史密森尼学会', cia: '美国中央情报局博物馆', iwm: '英国帝国战争博物馆', carl: '美国陆军联合兵种研究图书馆', 'rice university': '莱斯大学' };
+    ? { shac: 'Second Historical Archives of China', 'yunnan archives': 'Yunnan Provincial Archives', 'taiwan naa': 'Taiwan National Archives Administration', loc: 'Library of Congress', europeana: 'Europeana', nara: 'U.S. National Archives', 'internet archive': 'Internet Archive', smithsonian: 'Smithsonian Institution', cia: 'CIA Museum', iwm: 'Imperial War Museums', carl: 'Combined Arms Research Library', 'rice university': 'Rice University' }
+    : { shac: '中国第二历史档案馆', 'yunnan archives': '云南省档案馆', 'taiwan naa': '台湾国家发展委员会档案管理局', loc: '美国国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆', 'internet archive': '互联网档案馆', smithsonian: '史密森尼学会', cia: '美国中央情报局博物馆', iwm: '英国帝国战争博物馆', carl: '美国陆军联合兵种研究图书馆', 'rice university': '莱斯大学' };
   return labels[normalizeText(source)] ?? String(source ?? (locale === 'en' ? 'Unknown source' : '未知来源'));
 }
 
