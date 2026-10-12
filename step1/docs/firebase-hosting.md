@@ -2,6 +2,15 @@
 
 本应用使用 Firebase Hosting 托管 `site/` 静态文件。项目为 **FTCBI-Digital-Web**，项目 ID `project-864074c6-a2ba-4b47-a1f`，项目编号 `827712857886`。项目映射保存在 `.firebaserc`；路由、缓存、响应头和构建钩子保存在 `firebase.json`。
 
+## 当前公开版本
+
+- [资料发现](https://project-864074c6-a2ba-4b47-a1f.web.app/?lang=zh-CN)
+- [专题浏览](https://project-864074c6-a2ba-4b47-a1f.web.app/topics.html?lang=zh-CN)
+- [数据来源](https://project-864074c6-a2ba-4b47-a1f.web.app/sources.html?lang=zh-CN)
+- 发布于 **2026-10-12 02:12 UTC**，Hosting 版本 `d57841064b4bcf54`。
+- 公开目录为 **58 条记录、10 个专题、10 个来源机构**。
+- 17 个线上文件与本地发布产物的 SHA-256 一致；页面、双语检索、JavaScript 模块 MIME、响应头及私有路径 404 均已验证。
+
 ## 发布内容
 
 发布目录只有 `site/`：三个页面、旧地址兼容跳转、脚本、样式、图标和统一目录 JSON。凭据、`tools/`、`docs/` 及根目录 `data/` 不发布。内部参考清单、对照报告和访问日志不发布；预览由档案机构提供。目录搜索在浏览器执行，不运行云端 Python 服务。
@@ -38,7 +47,7 @@ firebase hosting:sites:list --project project-864074c6-a2ba-4b47-a1f
 firebase deploy --only hosting --project project-864074c6-a2ba-4b47-a1f
 ```
 
-`predeploy` 自动离线重建统一目录 `site/data/catalog.json`，不刷新外馆数据。部署成功后使用 CLI 返回的 Hosting URL；只有完成发布并通过线上验证后，该 URL 才表示可用网站。
+`predeploy` 自动离线重建统一目录 `site/data/catalog.json`，不刷新外馆数据。后续发布使用 CLI 返回的 Hosting URL 验收；当前站点地址保持不变。
 
 验收：三个页面可访问，中英文和筛选可用；统一目录的记录及专题数量与本地一致；`.mjs` 响应类型正确；凭据、工具、原始研究文件和不存在的路径不可访问。既有版本可在 Firebase Console 的 Hosting 发布历史中回滚。
 

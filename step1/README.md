@@ -2,7 +2,15 @@
 
 **WWII Pacific War / 二战太平洋战场**面向太平洋战争研究，重点覆盖中国、缅甸及中缅印战区。应用以两个入口连接同一份档案目录：**资料发现**用于主动搜索，**专题浏览**用于阅读已整理的主题资料。每条记录保留收藏机构、原馆链接和权利说明。
 
-当前为可本地运行的双语研究 Demo：**58 条去重记录、10 个来源机构、10 个研究专题**。网页搜索已导入的快照，不实时查询外馆。Firebase Hosting 配置已提供，项目已启用 Firebase；公开发布仍待完成 CLI 登录。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在范围内。
+当前为已上线、也可本地运行的双语研究 Demo：**58 条去重记录、10 个来源机构、10 个研究专题**。网页搜索已导入的快照，不实时查询外馆。网站通过 Firebase Hosting 公开托管：[打开网站](https://project-864074c6-a2ba-4b47-a1f.web.app/)。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在范围内。
+
+## 在线访问
+
+- [资料发现](https://project-864074c6-a2ba-4b47-a1f.web.app/?lang=zh-CN)
+- [专题浏览](https://project-864074c6-a2ba-4b47-a1f.web.app/topics.html?lang=zh-CN)
+- [数据来源](https://project-864074c6-a2ba-4b47-a1f.web.app/sources.html?lang=zh-CN)
+
+三个页面共享当前目录，支持 English／中文。访问公开网站无需本地 Python 或 API 凭据。
 
 ## 本地运行
 
@@ -174,11 +182,11 @@ node --test tests/*.test.mjs
 
 测试覆盖规范化、跨输入去重与排除、公开字段边界、凭据处理、HTTP 隔离、多语言搜索、专题成员及导航状态。测试不连接外馆；HTTP 测试需要短暂绑定本机端口。Node.js 仅用于开发测试；网站运行无需 Node.js。
 
-Firebase Hosting 仅发布 `site/`；发布前自动运行统一目录构建器。项目为 **FTCBI-Digital-Web**（`project-864074c6-a2ba-4b47-a1f`），公开发布待完成 CLI 登录。模拟器端口为 `5105`，生产监控尚未配置。完整步骤见 [Firebase Hosting 部署](docs/firebase-hosting.md)。
+Firebase Hosting 仅发布 `site/`；发布前自动运行统一目录构建器。项目为 **FTCBI-Digital-Web**（`project-864074c6-a2ba-4b47-a1f`），公开站点为 [https://project-864074c6-a2ba-4b47-a1f.web.app](https://project-864074c6-a2ba-4b47-a1f.web.app)，已通过线上页面、检索、语言切换、静态文件一致性与私有路径隔离验证。模拟器端口为 `5105`，生产监控尚未配置。完整步骤见 [Firebase Hosting 部署](docs/firebase-hosting.md)。
 
 ## 下一步
 
-1. 完成公开静态试点的登录、发布及线上验收，建立数据更新和回滚流程。
+1. 维护公开试点的数据更新、发布与回滚流程，补充运行监控。
 2. 审阅更多资料，补充结构化日期、档号、作者、版本与媒体权利，扩展双语专题及检索评估样本。
 3. 按来源取得 API 凭据和使用许可，建设托管搜索后端，处理分页、限流、超时、缓存和部分失败。
 4. 在有明确引用和使用权限的材料上增加 LLM 问答、专题编辑与研究成果发布。
