@@ -3,7 +3,7 @@ import { updatePageLinks } from './page-links.mjs';
 import { bindPageTranslations, resolveLocale, normalizeLocale, translate } from './i18n.mjs';
 
 const $ = (id) => document.getElementById(id);
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 12;
 const LANGUAGE_KEY = 'pacific-war-discovery-language';
 function savedLocale() {
   try { return localStorage.getItem(LANGUAGE_KEY); } catch { return null; }
@@ -154,8 +154,37 @@ function typeVisual(type) {
   };
   // Fixed decorative SVG only; catalogue strings are always inserted as text.
   div.innerHTML = `<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">${paths[type] || paths.TEXT}</svg>`;
-  div.append(el('span', '', ['IMAGE', 'TEXT', 'SOUND', 'MAP', 'VIDEO'].includes(type) ? type : 'RECORD'));
   return div;
+}
+function recordPreview(record) {
+  const button = el('button', 'record-preview');
+  button.type = 'button';
+  button.setAttribute('aria-label', t('查看资料：{title}（{type}）', { title: record.title || t('未提供标题'), type: formatLabel(record.format) }));
+  button.addEventListener('click', () => openRecord(record));
+  const fallback = typeVisual(record.format);
+  const caption = el('span', 'preview-caption', t('无预览图'));
+  fallback.append(caption);
+  button.append(fallback, el('span', 'preview-type', formatLabel(record.format)));
+  const url = safeURL(record.thumbnail_url);
+  if (url?.startsWith('https://')) {
+    const image = el('img', 'record-thumbnail');
+    image.alt = '';
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.referrerPolicy = 'no-referrer';
+    caption.textContent = t('正在载入预览…');
+    image.addEventListener('load', () => {
+      image.classList.add('is-loaded');
+      fallback.hidden = true;
+    }, { once: true });
+    image.addEventListener('error', () => {
+      image.remove();
+      caption.textContent = t('无预览图');
+    }, { once: true });
+    image.src = url;
+    button.append(image);
+  }
+  return button;
 }
 function recordCard(record, index) {
   const article = el('article', 'record-card');
@@ -165,10 +194,11 @@ function recordCard(record, index) {
   const title = el('h3', 'record-title');
   const button = el('button', '', record.title || t('未提供标题'));
   button.type = 'button';
+  button.title = record.title || t('未提供标题');
   button.addEventListener('click', () => openRecord(record));
   title.append(button);
   const meta = el('div', 'record-meta');
-  [record.date_display || t('日期不详'), formatLabel(record.format), languageLabel(record)].forEach((value, i) => {
+  [record.date_display || t('日期不详'), languageLabel(record)].forEach((value, i) => {
     if (i) meta.append(el('span', 'meta-dot', '·'));
     meta.append(el('span', '', value));
   });
@@ -180,7 +210,7 @@ function recordCard(record, index) {
   content.append(top, title, meta);
   if (record.record_group) content.append(el('p', 'record-context', t('档案组 RG {group} · {context}', { group: record.record_group, context: list(record.archival_context)[0] || t('查看详情了解档案层级') })));
   content.append(description, bottom);
-  article.append(typeVisual(record.format), content);
+  article.append(recordPreview(record), content);
   return article;
 }
 function renderResults() {

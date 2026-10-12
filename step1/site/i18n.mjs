@@ -1,5 +1,17 @@
 /** UI translations only. Archival titles, descriptions and rights remain verbatim. */
 export const messages = Object.freeze({
+  "查看资料：{title}（{type}）": {
+    "zh-CN": "查看资料：{title}（{type}）",
+    "en": "View record: {title} ({type})"
+  },
+  "无预览图": {
+    "zh-CN": "无预览图",
+    "en": "No preview available"
+  },
+  "正在载入预览…": {
+    "zh-CN": "正在载入预览…",
+    "en": "Loading preview…"
+  },
   "数据来源 · 太平洋战争档案": {
     "zh-CN": "数据来源 · 太平洋战争档案",
     "en": "Sources · Pacific War Archives"
