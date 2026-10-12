@@ -2,7 +2,7 @@
 
 **WWII Pacific War / 二战太平洋战场**是一个面向太平洋战争研究的资料发现应用，重点覆盖中国、缅甸及中缅印战区。研究者可以跨机构搜索目录、查看资料预览和出处，并回到原馆阅读；CBI 演示页提供参考线索与档案记录的对照核查。
 
-当前状态为**可本地运行的双语研究 Demo**：静态前端、Python 数据工具、人工刷新元数据。网页搜索本地快照，不实时查询外馆。公开部署、用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在本应用范围内。
+当前状态为**可本地运行的双语研究 Demo**：静态前端、Python 数据工具、人工刷新元数据。网页搜索本地快照，不实时查询外馆。Firebase Hosting 配置已提供，公开站点尚未发布。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在本应用范围内。
 
 ## 快速开始
 
@@ -80,6 +80,8 @@ flowchart LR
 step1/
   README.md
   .env.example                  可选凭据模板
+  .firebaserc                   Firebase 项目映射
+  firebase.json                 静态托管、构建钩子与本地模拟器
   tools/
     serve.py                    本地静态服务
     build_site_data.py          生成资料发现页目录
@@ -253,7 +255,7 @@ node --test tests/*.test.mjs
 
 测试套件包含 **181 项 Python 测试、20 项 JavaScript 测试**，覆盖标准化、公开字段边界、凭据处理、HTTP 文件隔离、检索与语言切换、爬取范围、预览来源及匹配状态。测试不连接外馆或消耗 API 配额；HTTP 隔离测试需要短暂绑定本机端口。Node.js 仅用于开发测试，建议使用 Node.js 22；网页运行无需 Node.js。
 
-当前交付为本地应用，未配置公开部署和生产监控。`site/` 是静态托管产物；部署前分别运行两个构建器，并检查元数据与预览的公开展示条件。真实访问状态见 [接入验证记录](docs/archive-access-validation.md) 及 CBI 演示中的时间戳报告；端点可用性可能随时间变化。
+Firebase Hosting 仅发布 `site/`，部署钩子自动运行两个离线构建器。项目 **FTCBI-Digital-Web**（`project-864074c6-a2ba-4b47-a1f`）已启用 Firebase，公开发布待完成 CLI 登录。本地 Hosting 模拟器在 `127.0.0.1:5105` 验证页面、模块响应类型和文件边界。完整登录、验证、发布与回滚步骤见 [Firebase Hosting 部署](docs/firebase-hosting.md)。生产监控尚未配置。真实来源访问状态见 [接入验证记录](docs/archive-access-validation.md) 及 CBI 演示中的时间戳报告；端点可用性可能随时间变化。
 
 ## 限制与下一步
 
@@ -270,6 +272,7 @@ node --test tests/*.test.mjs
 
 ## 文档索引
 
+- [Firebase Hosting 部署](docs/firebase-hosting.md)
 - [CBI 演示指南与操作命令](docs/cbi-demo.md)
 - [人工档案对照与证据](docs/cbi-archival-matches.md)
 - [补充平台网页核查](docs/cbi-platform-web-checks.md)

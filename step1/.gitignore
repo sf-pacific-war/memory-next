@@ -11,3 +11,8 @@ __pycache__/
 # Local temporary output
 tmp/
 .DS_Store
+
+# Firebase local cache and CLI logs
+.firebase/
+firebase-debug.log*
+ui-debug.log*
