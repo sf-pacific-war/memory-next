@@ -5,6 +5,9 @@ export function normalizeText(value) {
 }
 
 const TOPICS = [
+  { aliases: ['驻印军', '駐印軍', '中国驻印军', '中國駐印軍', 'Chinese Army in India'], labels: {
+    'zh-CN': '驻印军：简繁中文与英文名称扩展', en: 'Chinese Army in India: simplified/traditional Chinese and English names',
+  } },
   { aliases: ['飞虎队', '飛虎隊', 'Flying Tigers', 'American Volunteer Group', 'AVG'], labels: {
     'zh-CN': '飞虎队：中英文名称扩展；专题也包含相关航空部队，需区分具体建制',
     en: 'Flying Tigers: Chinese and English names; related aviation units in the topic remain distinct',
@@ -95,8 +98,8 @@ export function formatLabel(type, locale = 'zh-CN') {
 
 export function sourceLabel(source, locale = 'zh-CN') {
   const labels = locale === 'en'
-    ? { loc: 'Library of Congress', europeana: 'Europeana', nara: 'U.S. National Archives', 'internet archive': 'Internet Archive', smithsonian: 'Smithsonian Institution', cia: 'CIA Museum', iwm: 'Imperial War Museums', carl: 'Combined Arms Research Library', 'rice university': 'Rice University' }
-    : { loc: '美国国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆', 'internet archive': '互联网档案馆', smithsonian: '史密森尼学会', cia: '美国中央情报局博物馆', iwm: '英国帝国战争博物馆', carl: '美国陆军联合兵种研究图书馆', 'rice university': '莱斯大学' };
+    ? { 'taiwan naa': 'Taiwan National Archives Administration', loc: 'Library of Congress', europeana: 'Europeana', nara: 'U.S. National Archives', 'internet archive': 'Internet Archive', smithsonian: 'Smithsonian Institution', cia: 'CIA Museum', iwm: 'Imperial War Museums', carl: 'Combined Arms Research Library', 'rice university': 'Rice University' }
+    : { 'taiwan naa': '台湾国家发展委员会档案管理局', loc: '美国国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆', 'internet archive': '互联网档案馆', smithsonian: '史密森尼学会', cia: '美国中央情报局博物馆', iwm: '英国帝国战争博物馆', carl: '美国陆军联合兵种研究图书馆', 'rice university': '莱斯大学' };
   return labels[normalizeText(source)] ?? String(source ?? (locale === 'en' ? 'Unknown source' : '未知来源'));
 }
 
@@ -106,7 +109,7 @@ function fieldText(value) {
 
 function searchFields(record) {
   return [fieldText(record.title), fieldText(record.description), fieldText([
-    record.source, record.source_id, record.holding_institution, record.metadata_provider,
+    record.source, record.source_id, record.archival_id, record.holding_institution, record.metadata_provider,
     record.subject, record.subjects, record.archival_context, record.place, record.language, record.date_display,
     record.topic_keywords, Object.values(record.curator_note || {}), record.source_name_en, record.source_name_zh,
     // Both interface languages remain searchable, regardless of the displayed locale.

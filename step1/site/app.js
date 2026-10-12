@@ -51,7 +51,7 @@ function formatDate(value) {
   return value && !Number.isNaN(date.valueOf()) ? date.toLocaleDateString(locale, { year: 'numeric', month: '2-digit', day: '2-digit' }) : t('日期未提供');
 }
 function languageLabel(record) {
-  const names = { eng: t('英语'), en: t('英语'), english: t('英语'), jpn: t('日语'), ja: t('日语'), japanese: t('日语'), fr: t('法语'), fre: t('法语'), fra: t('法语'), french: t('法语'), chi: t('中文'), zho: t('中文'), zh: t('中文'), dut: t('荷兰语'), nld: t('荷兰语') };
+  const names = { eng: t('英语'), en: t('英语'), english: t('英语'), jpn: t('日语'), ja: t('日语'), japanese: t('日语'), fr: t('法语'), fre: t('法语'), fra: t('法语'), french: t('法语'), chi: t('中文'), zho: t('中文'), zh: t('中文'), 'zh-hant': t('繁体中文'), 'zh-tw': t('繁体中文'), dut: t('荷兰语'), nld: t('荷兰语') };
   return [...new Set(list(record.language).map(v => names[v.toLowerCase()] || v))].join(locale === 'en' ? ', ' : '、') || t('语种未标注');
 }
 function readURL() {
@@ -212,7 +212,7 @@ function recordCard(record, index) {
   const description = el('p', 'record-description', record.description || (note ? `${t('编者导读')} · ${note}` : t('原目录未提供摘要，可前往来源页面查看完整记录。')));
   const bottom = el('div', 'record-bottom');
   bottom.append(el('span', `access-badge${record.access_status === 'online' ? ' online' : ''}`, record.access_status === 'online' ? t('有在线资源') : t('访问条件待确认')));
-  const original = link(t('原馆记录 ↗'), record.source_url, 'record-link');
+  const original = link(t(record.source_url_kind === 'catalogue_search' ? '前往 A+ 查档 ↗' : '原馆记录 ↗'), record.source_url, 'record-link');
   if (original) bottom.append(original);
   content.append(top, title, meta);
   if (record.record_group) content.append(el('p', 'record-context', t('档案组 RG {group} · {context}', { group: record.record_group, context: list(record.archival_context)[0] || t('查看详情了解档案层级') })));
@@ -277,6 +277,7 @@ function openRecord(record, { save = true } = {}) {
   }
   if (record.record_group) fields.push([t('档案组'), `RG ${record.record_group}`]);
   if (list(record.archival_context).length) fields.push([t('所属档案背景（参与检索）'), list(record.archival_context).join('\n')]);
+  if (record.dataset_generated_at) fields.push([t('目录资料产制日期'), record.dataset_generated_at]);
   if (record.dataset_updated_at) fields.push([t('公开数据文件更新时间'), formatDate(record.dataset_updated_at)]);
   if (record.access_note) fields.push([t('访问说明'), record.access_note]);
   if (record.checked_at) fields.push([t('来源核查时间'), formatDate(record.checked_at)]);
@@ -289,13 +290,16 @@ function openRecord(record, { save = true } = {}) {
   }
   container.append(grid, el('p', 'detail-note', t('本条为待核对的目录候选。目录日期可能是创作或出版日期；战后回忆录的出版年份不表示事件发生年份。元数据许可不等于图片、音频或全文的使用许可。')));
   if (record.source === 'NARA' && record.record_origin === 'dataset') container.append(el('p', 'detail-note', t('NARA 记录来自官方开放数据集。系列和档案组记录可能描述多份材料；命中所属档案背景不等于每个下属文件都讨论该关键词。数字目录可访问，不代表原件已数字化。')));
+  if (record.source_url_kind === 'catalogue_search') container.append(el('p', 'detail-note', t('此条来自台湾档案局公开案名清单。请复制档号，到 A+ 国家档案资讯网查询；清单未提供逐条详情链接、摘要或档案年代。')));
   const links = el('div', 'detail-links');
-  const original = link(t('前往原馆记录 ↗'), record.source_url, 'primary-button');
+  const original = link(t(record.source_url_kind === 'catalogue_search' ? '前往 A+ 查档 ↗' : '前往原馆记录 ↗'), record.source_url, 'primary-button');
   if (original) links.append(original);
   if (record.aggregator_url !== record.source_url) {
     const aggregator = link(t('查看聚合目录 ↗'), record.aggregator_url, 'secondary-button');
     if (aggregator) links.append(aggregator);
   }
+  const reading = link(t('阅读原馆精选档案 ↗'), record.reading_url, 'secondary-button');
+  if (reading) links.append(reading);
   if (record.dataset_url) {
     const dataset = link(t('公开数据文件 ↗'), record.dataset_url, 'secondary-button');
     if (dataset) links.append(dataset);

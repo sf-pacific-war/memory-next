@@ -1,113 +1,101 @@
-# 台湾档案管理局（archives.gov.tw）访问验证与接入计划
+# 台湾档案管理局（Taiwan NAA）接入、测试与使用边界
 
-本文整理 `archives.gov.tw` 的访问渠道、已验证范围、测试方法和生产接入步骤。**CSV 数据可公开访问；Step 1 统一检查器已加入 `taiwan` 入口，但它仅返回 `manual_only`，未实现 CSV 同步、关键词查询或网页目录接入。**
+台湾档案管理局（National Archives Administration, National Development Council）的公开“国家档案案名清单”已采用 **CSV 元数据路线**：`access_taiwan.py` 检查访问并在有界样本中匹配关键词，`fetch_taiwan_metadata.py` 生成网页目录快照。两者无需注册、API key 或登录。A+ 国家档案资讯网（Archives Access Service）的实时查询／影像 API 尚未接通，CSV 导入不是全馆实时检索。
 
-机构为台湾的国家发展委员会档案管理局（官网用字：國家發展委員會檔案管理局），官方英文名为 **National Archives Administration, National Development Council**，可核对[官方组织法英文版](https://www.archives.gov.tw/tw/arctw/274.html)。
+机构官方用字为“國家發展委員會檔案管理局”；英文全称依据[官方组织法英文版](https://www.archives.gov.tw/tw/arctw/274.html)。检查命令的来源 ID 为 `taiwan`，网页与快照的来源 ID 为 `Taiwan NAA`。
 
-验证日期：**2026-10-11**。以下 HTTP 结果来自该日此前完成的检查；增加 `taiwan` 清单入口不重复下载 CSV，也不把历史结果作为本轮自动请求结果。
+## 访问渠道
 
-## 1. 官网、目录与开放数据的区别
-
-| 入口／中英文名称 | 用途 | 凭据和目前状态 |
+| 官方入口 | 用途 | 当前接入与限制 |
 | --- | --- | --- |
-| [档案局官网（National Archives Administration, National Development Council）](https://www.archives.gov.tw/) | 机构信息、档案应用说明、开放数据入口 | 公共网页可访问；不是统一搜索 API |
-| [A+ 国家档案资讯网（Archives Access Service, A+）](https://aa.archives.gov.tw/) | 查询该局档案目录、查看档案详情、申请利用 | 可浏览公开目录；会员申请服务与公开浏览是不同功能，影像是否公开需逐条确认 |
-| [机关档案目录查询网（Navigating Electronic Agencies’ Records, NEAR）](https://near.archives.gov.tw/) | 查询各机关公布的档案目录 | 目录存在不代表原件由档案局保管；申请利用通常需向档案保管机关办理 |
-| [档案资源整合查询平台（Archives Cross Boundaries, ACROSS）](https://across.archives.gov.tw/) | 跨档案馆、图书馆及博物馆的资源发现入口 | 官方介绍的整合查询网站；本项目未验证rename 可供第三方调用的公开检索 API |
-| [国家档案案名清单（National Archives Case-title List，英文为本文说明性译名）](https://data.gov.tw/dataset/95315) | 案卷层级标题目录 CSV | 免费、无需 API key；已验证文件访问和表头，可作为本地索引的数据来源 |
+| [档案管理局官网（National Archives Administration）](https://www.archives.gov.tw/) | 机构资讯、研究文章、开放政策 | 信息入口，不是检索 API |
+| [国家档案资讯网 A+（Archives Access Service）](https://aa.archives.gov.tw/) | 国家档案目录、详情、影像及应用申请 | 网页链接；公开目录、会员功能与影像开放是不同权限 |
+| [机关档案目录查询网 NEAR（Navigating Electronic Agencies’ Records）](https://near.archives.gov.tw/) | 各机关档案目录 | 分散保管的机关目录，不代表原件均由档案局持有 |
+| [档案资源整合查询平台 ACROSS（Archives Cross Boundaries）](https://across.archives.gov.tw/) | 跨机构发现入口 | 未确认供本项目直接调用的公开 API |
+| [国家档案案名清单（National Archives Case-title List，说明性译名）](https://data.gov.tw/dataset/95315) | 案卷层级标题目录 CSV | 当前机器读取和关键词匹配路线；免费、无需凭据 |
 
-三个查询系统的英文名和职责可参见[档案局官方英文介绍](https://www.archives.gov.tw/wSite/public/Attachment/0/f1715659234651.pdf)及[档案应用指南](https://www.archives.gov.tw/wSite/public/Attachment/0/f1715653511448.pdf)。
+查询系统的英文名称及职责见[档案局英文介绍](https://www.archives.gov.tw/wSite/public/Attachment/0/f1715659234651.pdf)和[档案应用指南](https://www.archives.gov.tw/wSite/public/Attachment/0/f1715653511448.pdf)。
 
-## 2. 已验证的 CSV 与适用边界
+## 字段与覆盖范围
 
-[政府资料开放平台的数据集 95315](https://data.gov.tw/dataset/95315)提供案卷层级清单，说明按年更新、提供至前一年资料，标注免费及「政府資料開放授權條款-第1版」。集成时应保留来源与授权标注；目录的开放授权不能直接推定档案影像也可转载。授权文本见[官方授权条款](https://data.gov.tw/licenses)。
+官方字段为 `序號,全宗名,檔號,案名,資料產製日期`。同步器保留全宗名、完整档号和原始繁体案名，使用全宗与档号的哈希生成记录 ID，不能使用可能重排的行号。**“資料產製日期”是目录制作时间，不是档案年代**；仅凭 CSV 无法确认历史日期时，网页日期保持不详。目录语言为繁体中文，不代表原件语言已知；原件 `language` 保持空值，目录语言单列 `metadata_language`。
 
-2026-10-11 的实际检查：向官方 CSV 地址发出 GET 请求，得到 **HTTP 200、Content-Type: text/csv**，读取前 **4,096 bytes** 后关闭连接。服务端未返回 `Content-Range`，不能仅靠 Range 请求保证小样本下载，命令需主动限制读取量。以下表头与官方字段说明一致：
+CSV 不含完整案情摘要、逐件稳定详情链接、扫描图地址或逐图权利。普通 CSV 记录只提供 A+ 检索入口和档号，`source_url_kind=catalogue_search`；不伪造单件链接，也不标成在线全文。另有经过人工核查的原馆详情链接时，须保留核查依据。
 
-```text
-序號,全宗名,檔號,案名,資料產製日期
-```
+在线读取默认最多 4 MiB 加 1 字节的截断检测，扫描最多 200,000 行；导入器默认导出最多 20 条匹配记录。请求为一次固定官方 CSV GET，无凭据、重定向、重试或媒体下载。报告保留 `bytes_read`、`scanned_rows`、`matched_count`、`scan_complete`、`source_exhausted` 和 `row_limit_reached`。只有完整扫描才报告 `total_results`。**部分样本中的零命中不等于全馆没有相关资料**，输出条数也不是全馆命中总数。
 
-可用于检索和展示的字段是全宗名、档号、案名；`資料產製日期` 表示数据产制日期，**不能映射成档案的历史年代**。表头没有完整摘要、全文、档案起止年代或逐条详情 URL。
+早期 4,096 字节检查只确认匿名 HTTP 200、`text/csv` 和预期表头；服务端没有返回 `Content-Range`，因此程序主动限制读取量。较大样本及新连接器的实际执行证据见[接入验证记录](archive-access-validation.md)。
 
-这次有限读取只证明当时文件可访问且表头符合预期，尚未验证全文件完整性、总记录数、重复记录、战时关键词命中率，也没有获取全文或批量影像。官方年度更新说明不等于本项目已经核实文件内容的最新日期。
+## 命令行测试与网页更新
 
-## 3. 与中国、缅甸战场的关系
-
-官方[中国驻印军专题](https://art.archives.gov.tw/tw/art/1632.html)介绍 1942 年中国远征军入缅作战后部分部队转入印度整训，以及之后参与缅北反攻和中印公路相关战事；专题列有「駐印軍案」「中華民國駐印軍編制案」。这证明该机构有相关研究资源，**尚不能证明这两条记录已经在本项目的 CSV 样本或网页目录中**。
-
-后续主题验收可使用 `飛虎隊／飞虎队`、`滇緬／滇缅`、`遠征軍／远征军`、`駐印軍／驻印军`、`緬甸／缅甸`、`Burma`、`China Burma India`。这些是待验证的查询词，不是已经获得的命中结果。应结合真实档案年代筛选 1937–1945 年；仅凭关键词也可能命中战后材料。
-
-## 4. 命令行复测
-
-在 Step 1 应用目录中，可以先查看已注册的入口：
+在本应用目录执行；`memory-next` 仓库中是 `step1/`，原工作目录是 `step1-discovery/`。
 
 ```sh
+# 离线预检：不读取外馆，不需要凭据
 python3 tools/access_taiwan.py
-python3 tools/check_archives.py --source taiwan --live --query '飛虎隊' --format table
+
+# 在线有界检查：输出状态与计数，不写入网页
+python3 tools/access_taiwan.py --live --query '驻印军' --rows 3
+python3 tools/check_archives.py --source taiwan --live --query '飛虎隊' --rows 3 --format table
+
+# 生成候选快照：明确联网，最多输出 20 条匹配记录
+python3 tools/fetch_taiwan_metadata.py --live --query '驻印军' --rows 20 --output data/taiwan-discovery-candidates.json
+
+# 使用已有的完整官方 CSV；不联网
+python3 tools/fetch_taiwan_metadata.py --input /absolute/path/to/official.csv --query '駐印軍' --rows 20 --output data/taiwan-discovery-candidates.json
+
+# 如果输入文件只是下载前缀，必须标明，不能将文件末尾当成源目录末尾
+python3 tools/fetch_taiwan_metadata.py --input /absolute/path/to/partial.csv --partial-input --query '駐印軍|滇緬|中印' --rows 20 --output data/taiwan-discovery-candidates.json
 ```
 
-两条命令都返回 `manual_only`，不会发送 API 或 CSV 请求；第二条要求在线查询，因此退出码为 `2`。`--query` 只是记录本次意图，不意味着该来源已经支持检索。在 [A+ 国家档案资讯网（Archives Access Service）](https://aa.archives.gov.tw/)可手动尝试 `飛虎隊` 等繁体词，具体命中需另行核实。
+`access_*.py` 的 `--rows` 为 1–5，默认 3；导入器的 `--rows` 为 1–100，默认 20。导入器可通过 `--max-bytes`（最多 64 MiB）和 `--max-scan-rows`（最多 1,000,000 行）扩大有界读取。`--query` 支持最多 8 个以 `|` 分隔的 OR 短语及有限的繁简／英文别名，默认 `駐印軍`；这不是任意中文翻译或全文检索。
 
-以下命令只依赖 Python 3 标准库，不需要 credential。它请求官方文件、最多读取 4 KB、验证首行并打印状态与列名；不下载整包、不保存档案内容、也不执行关键词搜索。不会自动跟随重定向。
+本地 CSV 可以用 `--fetched-at` 指定有时区的 ISO 获取时间；未提供时保持未知，不把本地文件修改时间当成获取时间。未提供 `--live` 或 `--input` 时只返回就绪状态，不访问文件或网络。
 
-```bash
-python3 - <<'PY'
-import csv
-import json
-from urllib.error import HTTPError, URLError
-from urllib.parse import quote
-from urllib.request import HTTPRedirectHandler, Request, build_opener
+检查候选的档号、主题和覆盖范围后，将选定记录及其获取范围写入 `data/taiwan-discovery.json`，保留已核查的上一版以便回滚。不要直接用查询的前若干条覆盖当前 11 条人工选定的军事主题记录。然后执行：
 
-class NoRedirect(HTTPRedirectHandler):
-    def redirect_request(self, req, fp, code, msg, headers, newurl):
-        return None
-
-url = "https://www.archives.gov.tw/opendata/" + quote("國家檔案案名清單.csv")
-request = Request(url, headers={"User-Agent": "Step1DiscoveryAccessCheck/1.0"})
-try:
-    with build_opener(NoRedirect).open(request, timeout=30) as response:
-        status = response.status
-        content_type = response.headers.get_content_type()
-        sample = response.read(4096)
-except HTTPError as exc:
-    code = exc.code
-    if exc.fp is not None:
-        exc.close()
-    raise SystemExit("HTTP error: %s" % code)
-except (URLError, TimeoutError, OSError) as exc:
-    raise SystemExit("Request failed: %s" % type(exc).__name__)
-
-if status != 200 or content_type != "text/csv":
-    raise SystemExit("Unexpected response: %s %s" % (status, content_type))
-if b"\n" not in sample:
-    raise SystemExit("No complete header within the 4096-byte limit")
-# Decode only a complete line, so a cut-off UTF-8 character at the end is harmless.
-header_bytes = sample.split(b"\n", 1)[0].rstrip(b"\r")
-columns = next(csv.reader([header_bytes.decode("utf-8-sig")]))
-expected = ["序號", "全宗名", "檔號", "案名", "資料產製日期"]
-if columns != expected:
-    raise SystemExit("CSV schema changed; inspect before importing")
-print(json.dumps({"status": status, "content_type": content_type,
-                  "bytes_read": len(sample), "columns": columns}, ensure_ascii=False))
-PY
+```sh
+python3 tools/build_site_data.py
+python3 tools/serve.py
 ```
 
-成功时退出码为 `0`；网络失败、响应类型异常或字段变化时为非 `0`。`timeout=30` 是网络操作超时，读取上限是 4 KB。上面的 CSV 命令仍是独立的有界检查；`tools/access_taiwan.py` 和 `tools/check_archives.py --source taiwan` 都不会调用它。
+```sh
+# 浏览器仅检索已收录快照，不实时请求台湾站点
+open 'http://127.0.0.1:8000/?lang=zh-CN&q=驻印军&source=Taiwan%20NAA'
 
-## 5. 实时 API：存在合作案例，公开接入方式待确认
+# 合成响应与本地数据测试，无需凭据或外网
+python3 -B -m unittest discover -s tests -p 'test_*.py'
+node --test tests/*.test.mjs
+```
 
-[官方合作交流记录](https://www.archives.gov.tw/tw/arctw/59.html)记载：依据合作协议，曾为国史馆（Academia Historica）提供目录接口，并为促进转型正义委员会（Transitional Justice Commission）提供查询及影像相关接口。这能证明合作接口曾存在；尚不能据此认定有公开自助申请、任何人可调用的实时 API。
+## 已核实的中缅印研究入口
 
-目前没有确认供本项目使用的官方 endpoint、认证协议或测试账号。不设置猜测的 API 地址或环境变量，也不把网页路径中的 `API/v1` 当成开发者接口承诺。取得接口后，应先确认文档版本、允许用途、测试与生产权限、认证方式、IP 限制、配额、分页和错误格式，以及目录缓存、公开展示、全文与影像利用范围，再编写适配器和真实请求测试。
+以下线索来自直接核对官方 HTML 元数据，与 CSV 命中是独立证据；不能据此声称都在本次 CSV 样本内。没有下载影像或 PDF，也没有认定它们与 CBI 参考站上的照片／实物相同。
 
-## 6. 接入生产系统的下一步
+| 官方标题与链接 | 完整档号 | 日期与内容 | 访问层级 |
+| --- | --- | --- | --- |
+| [駐印軍案](https://art.archives.gov.tw/tw/art/1632-15619.html) | `B5018230601/0031/0503/7031` | 展示备忘录为 1944-07-13；中缅印战区总部致何应钦，涉及昆明补充兵员和雨季空运 | 公开专题详情，列出 3 个选件影像链接；未验证媒体读取 |
+| [中華民國駐印軍編制案](https://art.archives.gov.tw/tw/art/1632-15618.html) | `B5018230601/0032/583/5000` | 1943 年；驻印军暂行编制表及官兵员额 | 公开专题详情，列出 3 个选件影像链接；未验证媒体读取 |
+| [西南邊疆問題處理案](https://art.archives.gov.tw/tw/art/1669.html) | `B5018230601/0035/061.8/1060.4` | 页面事件年为 1945 年；中印公路东段警备司令部滇西边疆视察计划 | 公开中印公路专题及选件说明 |
+| [美國援華及救濟事項](https://art.archives.gov.tw/tw/art/1670.html) | `A303000000B/0030/452.2/0019` | 1941 年；驻西雅图领事报告美国援华救济组织协调 | 公开专题及选件说明 |
+| [American Aid to China 美國援華](https://aa.archives.gov.tw/ELK/SearchDetailed?FullPath=C3260603001%2F0036%2F0001%2F001) | `C3260603001/0036/0001/001` | **目录日期 1947-01-15**；内容回顾援华、滇缅公路、铁路与空运，不能将战时主题当作目录年代 | 公开 A+ 单件目录，列出 82 页数字影像；批量下载界面有验证码，未验证逐页媒体 |
 
-1. **同步与解析：** 新建专门的 CSV 同步任务，设定下载大小、超时及重试上限；记录来源 URL、获取时间、校验和、授权和数据版本。按字段而非列位置解析，保留原始繁体文字。
-2. **稳定标识：** 验证档号的唯一性后，以来源命名空间和档号生成 ID；必要时结合全宗。不要把行序号作为跨版本稳定 ID。
-3. **补全与搜索：** 增加繁简中文和历史地名别名；档案年代、摘要及详情链接仅从已核实的数据补入，缺失时保持为空。提供来源筛选并保留原文案名。
-4. **测试：** 离线覆盖 UTF-8 BOM、繁体字、引号和逗号、缺列、空档号、重复及超大文件；网络模拟覆盖超时、HTML 错误页、字段漂移和下载中断。另设显式开启的有限在线检查，并用人工核验记录测试相关性。
-5. **加入 Step 1 检索：** 在已有 `taiwan` 状态入口之外，实现统一记录模型和网页目录构建，验证跨平台搜索、语言切换和缺失字段展示；完成前保持 `manual_only`，不把状态入口视为数据已接入。
-6. **托管更新与回滚：** 由托管任务定期检查官方年度发布变化，先构建候选索引，经完整性和数量变化检查后切换；保留上一成功版本、失败告警与回滚入口。实时 API 若获批，再作为另一条独立接入路线验收。
+最后一件记录注明美国国家档案馆（NARA）出处 `RG 226; NND750140; NM54 entry 8; BOX 1; ARC 6037564`，台湾物件号 `T2014000200192`。这种出处关系可供跨馆核查，不能仅凭相近标题认定同一实体件。补充入口包括[中国驻印军](https://art.archives.gov.tw/tw/art/1632.html)、[中缅印航空线](https://art.archives.gov.tw/tw/art/1667-15684.html)（档号 `A303000000B/0030/042.2/0001`，事件年 1941）及[缅甸禁运限运](https://art.archives.gov.tw/tw/art/1668.html)。
 
-平台全称对照见 [中英文名称表](archive-platform-names.md)。其余来源及测试入口见[访问检查说明](archive-access.md)、[关键词命令](archive-search-commands.md)和[生产接入计划](archive-access-production-plan.md)。
+档号中的民国年份与选件事件日期可能不同，例如 `0031` 不能直接覆盖《駐印軍案》选件的 1944 年日期。正文、目录日期、选件日期与编辑核查日期应分开保存。
+
+## 元数据与影像的使用条件
+
+“国家档案案名清单”按[政府资料开放授权条款第 1 版](https://data.gov.tw/license)提供。数据集许可适用于该公开目录，不自动覆盖 A+ 影像、第三方图片或其他全文。
+
+官方专题页链接的[政府网站资料开放宣告](https://www.archives.gov.tw/tw/arctw/625-10226.html)采用 CC BY 4.0，并要求署名；另有特别标记的第三方图片、影音和文字等例外。当前可以记录“网站权利政策已核实”，单件影像仍应保持“逐件权利待审”。目录公开、列有扫描图、技术上能显示影像与可以重新发布，是不同判断。
+
+演示保留官方标题、档号、全宗与出处链接。没有逐件权利和媒体证据时，不把台湾记录显示为有可复用预览图或完整数字全文。
+
+## 生产接入下一步
+
+1. **扩大并验证覆盖：** 有界快照不等于完整同步。生产任务需要受控的完整获取或官方增量机制、校验和、行数／重复监测、版本记录与失败回滚；不能将截断快照当成完整新版本覆盖旧索引。
+2. **保留字段语义：** 原始繁体标题、全宗、完整档号和资料制作日期分开保存；确认来源后才能补档案年代、稳定单件链接或摘要。
+3. **检索验收：** 对“驻印军／駐印軍”“滇缅／滇緬”“飞虎队／飛虎隊”等词验证别名规则，记录原始词、实际扩展词、扫描范围和样本数；区分案卷标题匹配与全文检索。
+4. **托管发布：** 以受控构建任务更新快照，运行解析、去重、来源、日期与公开字段测试，再发布静态目录；显示更新时间及覆盖限制，保留上一可用版本。
+5. **影像与合作 API：** [官方合作说明](https://www.archives.gov.tw/tw/arctw/59.html)记载对合作机构提供过查询／影像服务，本项目尚未取得接口文档或授权。取得正式条件后另建适配器及测试；不推测端点、认证方式或环境变量，也不绕过登录／验证码。

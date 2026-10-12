@@ -1,5 +1,12 @@
 /** UI translations only. Archival titles, descriptions and rights remain verbatim. */
 export const messages = Object.freeze({
+  "繁体中文": {"zh-CN": "繁体中文", "en": "Traditional Chinese"},
+  "阅读原馆精选档案 ↗": {"zh-CN": "阅读原馆精选档案 ↗", "en": "Read selected archival pages ↗"},
+  "官方开放案卷目录：保留繁体案名、全宗与档号。资料产制日期不是档案年代；全文与影像访问条件需在 A+ 另行确认。": {"zh-CN": "官方开放案卷目录：保留繁体案名、全宗与档号。资料产制日期不是档案年代；全文与影像访问条件需在 A+ 另行确认。", "en": "Official open case-title catalogue, preserving Traditional Chinese titles, fonds and archival numbers. Data creation dates are not historical dates; confirm full-text and image access in A+."},
+  "前往 A+ 查档 ↗": {"zh-CN": "前往 A+ 查档 ↗", "en": "Search A+ catalogue ↗"},
+  "目录资料产制日期": {"zh-CN": "目录资料产制日期", "en": "Catalogue data creation date"},
+  "此条来自台湾档案局公开案名清单。请复制档号，到 A+ 国家档案资讯网查询；清单未提供逐条详情链接、摘要或档案年代。": {"zh-CN": "此条来自台湾档案局公开案名清单。请复制档号，到 A+ 国家档案资讯网查询；清单未提供逐条详情链接、摘要或档案年代。", "en": "From Taiwan NAA’s open case-title list. Copy the archival number and search in A+. The list does not provide individual record links, descriptions or historical dates."},
+
   "访问说明": { "zh-CN": "访问说明", "en": "Access note" },
   "专题浏览": {"zh-CN": "专题浏览", "en": "Topics"},
   "专题浏览 · WWII Pacific War": {"zh-CN": "专题浏览 · WWII Pacific War", "en": "Topics · WWII Pacific War"},

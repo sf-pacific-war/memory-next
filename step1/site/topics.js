@@ -69,7 +69,7 @@ function recordCard(record) {
   try {
     const url = new URL(record.source_url);
     if (['http:', 'https:'].includes(url.protocol) && !url.username && !url.password) {
-      const original = link(t('原馆记录 ↗'), url.href, 'record-link');
+      const original = link(t(record.source_url_kind === 'catalogue_search' ? '前往 A+ 查档 ↗' : '原馆记录 ↗'), url.href, 'record-link');
       original.target = '_blank'; original.rel = 'noopener noreferrer'; bottom.append(original);
     }
   } catch { /* No external link for an invalid archive URL. */ }

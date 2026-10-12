@@ -108,7 +108,7 @@ class CbiFetchTests(unittest.TestCase):
 
     def test_refresh_plan_only_requests_supported_api_sources(self):
         self.assertEqual({entry[0] for entry in api.PLAN}, {"LoC", "Europeana"})
-        self.assertEqual(set(api.SOURCE_CONFIG), {"LoC", "Europeana", "NARA"})
+        self.assertEqual(set(api.SOURCE_CONFIG), {"LoC", "Europeana", "NARA", "Taiwan NAA"})
         with self.assertRaises(api.public.FetchError):
             api.fetch("unsupported", "Burma", "https://example.org/api", 1, None)
         api.public.fetch_bytes.assert_not_called()

@@ -1,4 +1,4 @@
-"""Check nine access routes for eight platforms; optionally send one keyword to each API."""
+"""Check nine access routes for eight platforms; optionally query APIs and the Taiwan public CSV."""
 
 from collections import Counter
 import importlib
@@ -12,14 +12,18 @@ SOURCE_IDS = ("loc", "europeana", "nara", "nara_catalog", "dpla", "tna", "jacar"
 def print_table(report):
     print("Mode: " + report["mode"] + (" (live)" if report["live"] else " (offline)"))
     if report["query"] is not None:
-        print("Query (unchanged; no translation): " + json.dumps(report["query"], ensure_ascii=False))
+        print("Query (unchanged for APIs; CSV aliases are reported per source): " + json.dumps(report["query"], ensure_ascii=False))
     print("{:<14} {:<22} {:<5} {:>6} {:>10}".format("SOURCE", "STATUS", "SENT", "SAMPLE", "TOTAL"))
     for result in report["results"]:
         print("{:<14} {:<22} {:<5} {:>6} {:>10}".format(
             result["source"], result["status"], "yes" if result["request_sent"] else "no",
             result.get("sample_count", "-"), result.get("total_results", "-")))
+    for result in report["results"]:
+        if result.get("scan_complete") is False:
+            print("Partial CSV scan for " + result["source"] + ": " + str(result["scanned_rows"])
+                  + " rows scanned; " + str(result["matched_count"]) + " observed matches; total unknown.")
     print("Summary: " + json.dumps(report["summary"], ensure_ascii=False))
-    print("- = not measured/reported; 0 = a successful query returned no matches.")
+    print("- = not measured/reported; 0 = no matches in the measured scope (CSV scan scope may be partial).")
     print("Counts only; no records saved or added to the website. Use --format json for details.")
 
 
@@ -37,7 +41,10 @@ def main(argv=None):
     results = []
     for source_id in SOURCE_IDS if selected == "all" else (selected,):
         adapter = importlib.import_module("access_" + source_id)
-        results.append(check_source(adapter.SOURCE, getattr(adapter, "probe", None), **options))
+        if callable(getattr(adapter, "check", None)):
+            results.append(adapter.check(**options))
+        else:
+            results.append(check_source(adapter.SOURCE, getattr(adapter, "probe", None), **options))
     report = {"live": args.live, "mode": "keyword" if args.query is not None else "access",
               "query": args.query, "summary": dict(Counter(r["status"] for r in results)), "results": results}
     if output_format == "table":

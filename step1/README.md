@@ -2,7 +2,7 @@
 
 **WWII Pacific War / 二战太平洋战场**面向太平洋战争研究，重点覆盖中国、缅甸及中缅印战区。应用以两个入口连接同一份档案目录：**资料发现**用于主动搜索，**专题浏览**用于阅读已整理的主题资料。每条记录保留收藏机构、原馆链接和权利说明。
 
-当前为已上线、也可本地运行的双语研究 Demo：**44 条去重记录、9 个来源机构、10 个研究专题**。网页搜索已导入的快照，不实时查询外馆。网站通过 Firebase Hosting 公开托管：[打开网站](https://project-864074c6-a2ba-4b47-a1f.web.app/)。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在范围内。
+当前为已上线、也可本地运行的双语研究 Demo：**55 条去重记录、10 个来源机构、10 个研究专题**。网页搜索已导入的快照，不实时查询外馆。网站通过 Firebase Hosting 公开托管：[打开网站](https://project-864074c6-a2ba-4b47-a1f.web.app/)。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在范围内。
 
 ## 在线访问
 
@@ -64,7 +64,10 @@ python3 tools/serve.py
 | 英国帝国战争博物馆（Imperial War Museums，IWM） | 2 | 人工整理的影片目录 |
 | 美国陆军联合兵种研究图书馆（Combined Arms Research Library，CARL） | 1 | 人工整理的文献记录 |
 | 莱斯大学（Rice University） | 1 | 人工整理的数字馆藏记录 |
-| **合计** | **44** | 有限研究样本，不代表完整馆藏 |
+| 台湾国家发展委员会档案管理局（National Archives Administration, Taiwan） | 11 | 官方开放案卷目录 CSV；按主题选入，保留档号与全宗 |
+| **合计** | **55** | 有限研究样本，不代表完整馆藏 |
+
+台湾目录保留繁体原题名、全宗、档号及目录资料产制日期。CSV 没有摘要、逐件详情 URL 或历史年代；不会将资料产制日期、档号中的年份当作档案日期。详情提供 A+ 查档入口，部分记录附原馆精选文件链接。当前导入来自有界 CSV 前缀，不代表完整目录。
 
 专题包括飞虎队与航空、驼峰航线、滇缅公路、雷多公路与盟军运输、缅甸战役与部队、个人经历与回忆、战时报刊与生活指南、文物与识别标志、地图与军事档案、民众卫生与日常生活。
 
@@ -126,6 +129,8 @@ step1-discovery/
 ```sh
 # LoC 的标准样本
 python3 tools/fetch_public_metadata.py --source all
+# 台湾档案局公开目录：有界下载后本地匹配；无需 key，样本需审阅
+python3 tools/fetch_taiwan_metadata.py --live --query '驻印军|滇缅|远征军|缅甸' --rows 20 --output data/taiwan-discovery-candidates.json
 # NARA 固定公开目录分片
 python3 tools/fetch_nara_metadata.py
 # Europeana，凭据仅保存在本地
@@ -137,7 +142,9 @@ python3 tools/fetch_cbi_archives.py --live --env-file .env.archives
 python3 tools/build_site_data.py
 ```
 
-维护主题、成员记录与编辑导读时修改 `data/topics.json`。新增候选仍需审阅出处、主题与权利；构建器不会自动确认其历史相关性。构建日期不会替换来源获取日期或人工核查日期。重复来源快照会保留既有来源记录，人工整理记录可补充带标签的核查时间、访问说明和档号。
+台湾命令只生成候选文件，不替换已发布的 11 条核查记录。审阅候选并将选定记录及其获取范围写入 `data/taiwan-discovery.json` 后，再运行构建器。
+
+维护主题、成员记录与编辑导读时修改 `data/topics.json`；其中 `reading_links` 为台湾记录补充已核实的原馆精选文件页面。新增候选仍需审阅出处、主题与权利；构建器不会自动确认其历史相关性。构建日期不会替换来源获取日期或人工核查日期。重复来源快照会保留既有来源记录，人工整理记录可补充带标签的核查时间、访问说明和档号。
 
 需要 API 凭据时：
 
@@ -146,13 +153,13 @@ cp -n .env.example .env.archives
 chmod 600 .env.archives
 # 填写本机文件后检查；默认不联网
 python3 tools/check_archives.py --env-file .env.archives --format table
-# 在线小请求，关键词原样发送，不自动翻译
+# 在线小请求：API 使用原词；台湾 CSV 支持有限别名扩展
 python3 tools/check_archives.py --live --env-file .env.archives --query '飞虎队' --rows 3 --format table
 # NARA 固定数据集不支持关键词查询
 python3 tools/access_nara.py --live --rows 3
 ```
 
-LoC 与 NARA 公开数据集不需要 key；Europeana 使用 `EUROPEANA_API_KEY`。NARA Catalog API、美国数字公共图书馆（DPLA）需要各自凭据；英国国家档案馆（TNA）需先解决访问授权。日本亚洲历史资料中心（JACAR）、IWM 与台湾档案管理局有网页入口，检查器不将其标记为已接通 API。完整访问状态、测试命令与生产接入步骤见文档索引。
+LoC、NARA 公开数据集和台湾档案局 CSV 不需要 key；Europeana 使用 `EUROPEANA_API_KEY`。NARA Catalog API、美国数字公共图书馆（DPLA）需要各自凭据；英国国家档案馆（TNA）需先解决访问授权。台湾档案局提供无需 key 的 CSV 接入，支持有限简繁与英文别名；这是下载后的本地匹配，不是 A+ 实时搜索 API。日本亚洲历史资料中心（JACAR）和 IWM 检查器仍只提供网页入口。完整访问状态、测试命令与生产接入步骤见文档索引。
 
 填好的 `.env.*` 文件由 Git 忽略，不进入 `site/` 或公开 JSON。接入检查只输出状态，不更新网页数据；在线检查有不可用来源时可返回退出码 2。
 

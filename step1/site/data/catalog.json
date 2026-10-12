@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T02:23:42.625982Z",
+  "generated_at": "2026-10-12T02:47:46.467264Z",
   "records": [
     {
       "id": "loc:2004676827",
@@ -17,6 +17,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -105,6 +109,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -171,6 +179,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -237,6 +249,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -303,6 +319,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -373,6 +393,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -442,6 +466,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -528,6 +556,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -598,6 +630,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -659,6 +695,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -745,6 +785,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
       ],
@@ -831,6 +875,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress"
       ],
@@ -902,6 +950,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -971,6 +1023,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Veterans History Project, American Folklife Center, Library of Congress"
       ],
@@ -1051,6 +1107,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Veterans History Project, American Folklife Center, Library of Congress"
       ],
@@ -1130,6 +1190,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "AFC/2001/001/82964",
+      "access_note": "Official indexed metadata confirms collection and unit affiliation; item sequence contains hundreds of images.",
+      "source_url_kind": null,
       "holding_institution": [
         "Veterans History Project, American Folklife Center, Library of Congress"
       ],
@@ -1172,8 +1236,6 @@
       "source_name_en": "Library of Congress",
       "source_name_zh": "美国国会图书馆",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official indexed metadata confirms collection and unit affiliation; item sequence contains hundreds of images.",
-      "archival_id": "AFC/2001/001/82964",
       "topic_ids": [
         "burma-campaign",
         "personal-stories"
@@ -1232,6 +1294,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "Europeana /2051908/data_euscreenXL_ina_PHD85008112; INA PHD85008112",
+      "access_note": "Europeana API metadata was retrieved on 2026-10-10; this specific item/provider link was not rendered by the web retrieval tool today. Media access remains unverified.",
+      "source_url_kind": null,
       "holding_institution": [
         "National Audiovisual Institute France"
       ],
@@ -1259,8 +1325,6 @@
       "source_name_en": "Europeana",
       "source_name_zh": "欧洲数字文化遗产平台",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Europeana API metadata was retrieved on 2026-10-10; this specific item/provider link was not rendered by the web retrieval tool today. Media access remains unverified.",
-      "archival_id": "Europeana /2051908/data_euscreenXL_ina_PHD85008112; INA PHD85008112",
       "topic_ids": [
         "burma-road"
       ],
@@ -1301,6 +1365,10 @@
       "level_of_description": "series",
       "record_group": "493",
       "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1367,6 +1435,10 @@
       "level_of_description": "fileUnit",
       "record_group": "493",
       "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1432,6 +1504,10 @@
       "level_of_description": "fileUnit",
       "record_group": "493",
       "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1515,6 +1591,10 @@
       "level_of_description": "series",
       "record_group": "493",
       "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1582,6 +1662,10 @@
       "level_of_description": "fileUnit",
       "record_group": "493",
       "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "National Archives at College Park - Textual Reference"
       ],
@@ -1632,6 +1716,768 @@
       ]
     },
     {
+      "id": "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+      "source_id": "85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+      "source": "Taiwan NAA",
+      "title": "中英滇緬國界及抗戰形勢ㄧ覽圖",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/002.3/5000.2",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中英滇缅国界及抗战形势图的案卷目录；CSV 提供案名和档号，未提供地图影像或历史日期。",
+        "en": "Map-related case title on the China–Burma border and wartime situation. The CSV supplies the case title and archival number, not the map image or historical date."
+      }
+    },
+    {
+      "id": "taiwan:856635a6b614e7a282ddaf7b6505162b17768af67b54cdc4d5583b50afe8fa8d",
+      "source_id": "856635a6b614e7a282ddaf7b6505162b17768af67b54cdc4d5583b50afe8fa8d",
+      "source": "Taiwan NAA",
+      "title": "駐印軍案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/0503/7031",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "驻印军案卷。可另读原馆教学网站的精选文件；精选页仅代表案卷的部分内容。",
+        "en": "Chinese Army in India case file. Selected documents can be read on the archive’s teaching site; those pages represent part of the case."
+      },
+      "reading_url": "https://art.archives.gov.tw/tw/art/1632-15619.html"
+    },
+    {
+      "id": "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+      "source_id": "6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+      "source": "Taiwan NAA",
+      "title": "滇緬路作戰",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/152.2/2196.2",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-road",
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma",
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关滇缅路作战的案卷。请用档号在原馆目录核对具体内容与年代。",
+        "en": "Case title concerning military operations along the Burma Road. Open the source catalogue with the archival number to confirm the contents and dates."
+      }
+    },
+    {
+      "id": "taiwan:f5b75dd85438f5704d24afc2cf91500d32e632dfadedc83fb9a7f08cb2c5e582",
+      "source_id": "f5b75dd85438f5704d24afc2cf91500d32e632dfadedc83fb9a7f08cb2c5e582",
+      "source": "Taiwan NAA",
+      "title": "緬甸戰役報告書",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/543/2196",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "缅甸战役报告书的案卷目录，出自国防部史政编译局全宗。公开清单未提供报告正文或年代。",
+        "en": "Burma campaign report: a case-level title from the military history fonds. The open list does not supply its contents or dates."
+      }
+    },
+    {
+      "id": "taiwan:4b6403a447e6e51558f2c68147d2058ad08b48c18f3c8621cbb78bac48f582c4",
+      "source_id": "4b6403a447e6e51558f2c68147d2058ad08b48c18f3c8621cbb78bac48f582c4",
+      "source": "Taiwan NAA",
+      "title": "中華民國駐印軍總指揮部編制案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/581.29/5000",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中国驻印军总指挥部编制的案卷目录；CSV 未包含实际编制表。",
+        "en": "Case title concerning the organization of the Chinese Army in India headquarters. The CSV does not include the actual organizational chart."
+      }
+    },
+    {
+      "id": "taiwan:d86915b33282ec38aa9faa1d308c03be6616cf5383f7b5f2142fc162df02ea9f",
+      "source_id": "d86915b33282ec38aa9faa1d308c03be6616cf5383f7b5f2142fc162df02ea9f",
+      "source": "Taiwan NAA",
+      "title": "中華民國駐印軍編制案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0032/583/5000",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "中国驻印军编制案。原馆教学网站提供精选页，CSV 本身仅提供案卷层级元数据。",
+        "en": "Chinese Army in India organization case. The archive’s teaching site provides selected pages; the CSV itself supplies only case-level metadata."
+      },
+      "reading_url": "https://art.archives.gov.tw/tw/art/1632-15618.html"
+    },
+    {
+      "id": "taiwan:c2cf4b2a16d817efda075563f7222ae8388196ed14e303a70daf3f96fdf0a973",
+      "source_id": "c2cf4b2a16d817efda075563f7222ae8388196ed14e303a70daf3f96fdf0a973",
+      "source": "Taiwan NAA",
+      "title": "陸軍遠征軍師屬步兵團編制案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0032/583.3/7421.7",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中国远征军师属步兵团编制的案卷目录，具体年代与完整编制文件需向原馆核对。",
+        "en": "Case title concerning infantry-regiment organization in Chinese Expeditionary Force divisions. Dates and the full organizational documents need source verification."
+      }
+    },
+    {
+      "id": "taiwan:35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
+      "source_id": "35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
+      "source": "Taiwan NAA",
+      "title": "遠征軍作戰準備檢討報告(第二次)",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0033/543.1/3430",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "案名为远征军作战准备检讨报告（第二次）；此处提供目录线索，不是报告全文转录。",
+        "en": "Second review report on Chinese Expeditionary Force operational preparations, as titled in the case list. This is a catalogue lead, not a transcript of the report."
+      }
+    },
+    {
+      "id": "taiwan:85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
+      "source_id": "85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
+      "source": "Taiwan NAA",
+      "title": "中英美聯合反攻緬甸之意見",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/542.9/5000",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中英美联合反攻缅甸意见的案卷目录；案名本身不能证明意见已获采纳或实施。",
+        "en": "Case title concerning proposed Chinese, British and American joint operations in Burma. The title does not establish adoption or execution of the proposals."
+      }
+    },
+    {
+      "id": "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
+      "source_id": "117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
+      "source": "Taiwan NAA",
+      "title": "美空軍志願隊在滇緬作戰要報",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/543.62/8043",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "flying-tigers",
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "飞虎队与航空",
+        "Flying Tigers & aviation",
+        "飞虎队",
+        "飛虎隊",
+        "陈纳德",
+        "陳納德",
+        "美国志愿航空队",
+        "航空",
+        "第十四航空队",
+        "Flying Tigers",
+        "American Volunteer Group",
+        "AVG",
+        "Chennault",
+        "P-40",
+        "Fourteenth Air Force",
+        "aviation",
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关美空军志愿队在滇缅作战的案卷目录，作为飞虎队与航空专题的研究线索；具体建制及报告年代须查原件核实。",
+        "en": "Case title concerning American volunteer air-unit operations in Yunnan and Burma. Included as an aviation research lead; verify the unit identity and report dates in the original documents."
+      }
+    },
+    {
+      "id": "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+      "source_id": "196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+      "source": "Taiwan NAA",
+      "title": "遠征軍編制案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/583.1/3430",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中国远征军编制的案卷目录。保留原始案名与档号，CSV 未提供历史年代。",
+        "en": "Case title concerning Chinese Expeditionary Force organization. Retains the archive’s original title and number; historical dates are not supplied in this CSV."
+      }
+    },
+    {
       "id": "loc:2005677702",
       "source_id": "2005677702",
       "source": "LoC",
@@ -1647,6 +2493,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -1732,6 +2582,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -1820,6 +2674,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
       ],
@@ -1908,6 +2766,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "Kirklees Image Archive OAI Feed"
       ],
@@ -1968,6 +2830,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
       "holding_institution": [
         "NRK"
       ],
@@ -2031,6 +2897,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NAID 535531; 208-AA-12X-21",
+      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "National Archives and Records Administration"
@@ -2051,8 +2921,6 @@
       "record_origin": "curated",
       "material_type": "photograph",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
-      "archival_id": "NAID 535531; 208-AA-12X-21",
       "thumbnail_source_url": "https://www.archives.gov/research/military/ww2/photos",
       "source_name_en": "National Archives and Records Administration",
       "source_name_zh": "美国国家档案馆",
@@ -2098,6 +2966,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NAID 535540; 208-AA-45L-1",
+      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "National Archives and Records Administration"
@@ -2118,8 +2990,6 @@
       "record_origin": "curated",
       "material_type": "photograph",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
-      "archival_id": "NAID 535540; 208-AA-45L-1",
       "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
       "source_name_en": "National Archives and Records Administration",
       "source_name_zh": "美国国家档案馆",
@@ -2166,6 +3036,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NAID 535573; 208-AA-338A-1",
+      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "National Archives and Records Administration"
@@ -2186,8 +3060,6 @@
       "record_origin": "curated",
       "material_type": "photograph",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
-      "archival_id": "NAID 535573; 208-AA-338A-1",
       "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
       "source_name_en": "National Archives and Records Administration",
       "source_name_zh": "美国国家档案馆",
@@ -2234,6 +3106,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NAID 531341; 111-SC-262229",
+      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "National Archives and Records Administration"
@@ -2254,8 +3130,6 @@
       "record_origin": "curated",
       "material_type": "photograph",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
-      "archival_id": "NAID 531341; 111-SC-262229",
       "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
       "source_name_en": "National Archives and Records Administration",
       "source_name_zh": "美国国家档案馆",
@@ -2304,6 +3178,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "PocketGuideToChina1943; ark:/13960/t2h71pv46",
+      "access_note": "IA metadata, PDF download listing and preview image accessible without credentials.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Internet Archive"
@@ -2324,8 +3202,6 @@
       "record_origin": "curated",
       "material_type": "book",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "IA metadata, PDF download listing and preview image accessible without credentials.",
-      "archival_id": "PocketGuideToChina1943; ark:/13960/t2h71pv46",
       "thumbnail_source_url": "https://archive.org/details/PocketGuideToChina1943",
       "source_name_en": "Internet Archive",
       "source_name_zh": "互联网档案馆",
@@ -2374,6 +3250,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "APocketGuideToBurma; ark:/13960/t5k95zz7z",
+      "access_note": "IA metadata, PDF download listing and preview image accessible without credentials.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Internet Archive"
@@ -2394,8 +3274,6 @@
       "record_origin": "curated",
       "material_type": "book",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "IA metadata, PDF download listing and preview image accessible without credentials.",
-      "archival_id": "APocketGuideToBurma; ark:/13960/t5k95zz7z",
       "thumbnail_source_url": "https://archive.org/details/APocketGuideToBurma",
       "source_name_en": "Internet Archive",
       "source_name_zh": "互联网档案馆",
@@ -2444,6 +3322,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "LCCN 48043776; DS406 .U6 1944",
+      "access_note": "Digitized-book resource list and indexed metadata accessible; direct item fetch returned HTTP 403 during this check.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Library of Congress"
@@ -2464,8 +3346,6 @@
       "record_origin": "curated",
       "material_type": "book",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Digitized-book resource list and indexed metadata accessible; direct item fetch returned HTTP 403 during this check.",
-      "archival_id": "LCCN 48043776; DS406 .U6 1944",
       "thumbnail_source_url": null,
       "source_name_en": "Library of Congress",
       "source_name_zh": "美国国会图书馆",
@@ -2514,6 +3394,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "AFC/2001/001/86254; resource afc2001001.86254.pm0004001",
+      "access_note": "Official indexed resource metadata and image-viewer link available; no map image reused here.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Library of Congress"
@@ -2534,8 +3418,6 @@
       "record_origin": "curated",
       "material_type": "map",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official indexed resource metadata and image-viewer link available; no map image reused here.",
-      "archival_id": "AFC/2001/001/86254; resource afc2001001.86254.pm0004001",
       "thumbnail_source_url": null,
       "source_name_en": "Library of Congress",
       "source_name_zh": "美国国会图书馆",
@@ -2582,6 +3464,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "AFC/2001/001/21936",
+      "access_note": "Official search-indexed metadata verified; direct item request returned HTTP 403 in this environment.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Library of Congress"
@@ -2602,8 +3488,6 @@
       "record_origin": "curated",
       "material_type": "personal_narrative",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official search-indexed metadata verified; direct item request returned HTTP 403 in this environment.",
-      "archival_id": "AFC/2001/001/21936",
       "thumbnail_source_url": null,
       "source_name_en": "Library of Congress",
       "source_name_zh": "美国国会图书馆",
@@ -2665,6 +3549,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "nmah_1102530; catalogue 1991.0840.007",
+      "access_note": "Official indexed collection metadata verified; direct page fetch returned HTTP 520 during this check.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Smithsonian Institution"
@@ -2685,8 +3573,6 @@
       "record_origin": "curated",
       "material_type": "artifact",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official indexed collection metadata verified; direct page fetch returned HTTP 520 during this check.",
-      "archival_id": "nmah_1102530; catalogue 1991.0840.007",
       "thumbnail_source_url": null,
       "source_name_en": "Smithsonian Institution",
       "source_name_zh": "史密森学会",
@@ -2732,6 +3618,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "nmah_1983471",
+      "access_note": "Official indexed collection page supplies the description; direct canonical page was not rendered by the retrieval tool.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Smithsonian Institution"
@@ -2752,8 +3642,6 @@
       "record_origin": "curated",
       "material_type": "artifact",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official indexed collection page supplies the description; direct canonical page was not rendered by the retrieval tool.",
-      "archival_id": "nmah_1983471",
       "thumbnail_source_url": null,
       "source_name_en": "Smithsonian Institution",
       "source_name_zh": "史密森学会",
@@ -2816,6 +3704,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NASM editorial; archival photograph SI 90-13683",
+      "access_note": "Official search-indexed article and photo identifier verified; direct fetch returned HTTP 403.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Smithsonian Institution"
@@ -2836,8 +3728,6 @@
       "record_origin": "curated",
       "material_type": "article",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official search-indexed article and photo identifier verified; direct fetch returned HTTP 403.",
-      "archival_id": "NASM editorial; archival photograph SI 90-13683",
       "thumbnail_source_url": null,
       "source_name_en": "Smithsonian Institution",
       "source_name_zh": "史密森学会",
@@ -2883,6 +3773,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "public museum page: office-of-strategic-services-blood-chit",
+      "access_note": "Official public artifact description accessible without credentials.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Central Intelligence Agency Museum"
@@ -2903,8 +3797,6 @@
       "record_origin": "curated",
       "material_type": "artifact",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official public artifact description accessible without credentials.",
-      "archival_id": "public museum page: office-of-strategic-services-blood-chit",
       "thumbnail_source_url": null,
       "source_name_en": "Central Intelligence Agency Museum",
       "source_name_zh": "美国中央情报局博物馆",
@@ -2950,6 +3842,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "Film number USA 14; IWM film record 2992",
+      "access_note": "Official catalogue accessible; IWM marks this copy Digitised: No and Media not currently available. No playable copy is claimed.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Imperial War Museums"
@@ -2970,8 +3866,6 @@
       "record_origin": "curated",
       "material_type": "film",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official catalogue accessible; IWM marks this copy Digitised: No and Media not currently available. No playable copy is claimed.",
-      "archival_id": "Film number USA 14; IWM film record 2992",
       "thumbnail_source_url": null,
       "source_name_en": "Imperial War Museums",
       "source_name_zh": "帝国战争博物馆",
@@ -3018,6 +3912,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "Film number GEN 16; IWM film record 503",
+      "access_note": "Official indexed film metadata lists digitized media and two HD reels.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Imperial War Museums"
@@ -3038,8 +3936,6 @@
       "record_origin": "curated",
       "material_type": "film",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official indexed film metadata lists digitized media and two HD reels.",
-      "archival_id": "Film number GEN 16; IWM film record 503",
       "thumbnail_source_url": null,
       "source_name_en": "Imperial War Museums",
       "source_name_zh": "帝国战争博物馆",
@@ -3082,6 +3978,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "CARL p4013coll8/2298; call number N13669; Part 2, pages 14–19",
+      "access_note": "Official indexed catalogue metadata verified; direct viewer timed out during this check. No PDF fetched.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Ike Skelton Combined Arms Research Library"
@@ -3102,8 +4002,6 @@
       "record_origin": "curated",
       "material_type": "newspaper",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official indexed catalogue metadata verified; direct viewer timed out during this check. No PDF fetched.",
-      "archival_id": "CARL p4013coll8/2298; call number N13669; Part 2, pages 14–19",
       "thumbnail_source_url": null,
       "source_name_en": "Ike Skelton Combined Arms Research Library",
       "source_name_zh": "艾克·斯凯尔顿联合兵种研究图书馆",
@@ -3152,6 +4050,10 @@
       "level_of_description": null,
       "record_group": null,
       "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "Lowe Family Papers MS 0588; Box 4, Folder 12; archival object 92597",
+      "access_note": "Official search-indexed finding aid verified; no online full text established and no repository contact sent.",
+      "source_url_kind": null,
       "holding_institution": [],
       "metadata_provider": [
         "Woodson Research Center, Rice University"
@@ -3172,8 +4074,6 @@
       "record_origin": "curated",
       "material_type": "book",
       "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Official search-indexed finding aid verified; no online full text established and no repository contact sent.",
-      "archival_id": "Lowe Family Papers MS 0588; Box 4, Folder 12; archival object 92597",
       "thumbnail_source_url": null,
       "source_name_en": "Woodson Research Center, Rice University",
       "source_name_zh": "莱斯大学伍德森研究中心",
@@ -3267,6 +4167,25 @@
       "counts_by_origin": {
         "dataset": 5,
         "curated": 4
+      }
+    },
+    {
+      "id": "Taiwan NAA",
+      "label": "台湾国家发展委员会档案管理局",
+      "label_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "url": "https://aa.archives.gov.tw/",
+      "description": "官方开放案卷目录：保留繁体案名、全宗与档号。资料产制日期不是档案年代；全文与影像访问条件需在 A+ 另行确认。",
+      "status": "available",
+      "count": 11,
+      "fetched_at": "2026-10-12T02:39:47.229624+00:00",
+      "checked_at": null,
+      "access_modes": [
+        "dataset"
+      ],
+      "counts_by_origin": {
+        "dataset": 11
       }
     },
     {
@@ -3418,7 +4337,8 @@
       "record_ids": [
         "nara:535531",
         "smithsonian:hiding-plane-sight",
-        "smithsonian:nmah_1983471"
+        "smithsonian:nmah_1983471",
+        "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10"
       ]
     },
     {
@@ -3491,7 +4411,8 @@
         "loc:2017872504",
         "loc:2017872505",
         "loc:2017872525",
-        "europeana:/2051908/data_euscreenXL_ina_PHD85008112"
+        "europeana:/2051908/data_euscreenXL_ina_PHD85008112",
+        "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a"
       ]
     },
     {
@@ -3572,7 +4493,17 @@
         "loc:2010636632",
         "loc:2005692391",
         "europeana:/2022320/8DAA882DC554386D1C625C354C1B6E031692FBF3",
-        "europeana:/2051944/data_euscreenXL_4955234"
+        "europeana:/2051944/data_euscreenXL_4955234",
+        "taiwan:856635a6b614e7a282ddaf7b6505162b17768af67b54cdc4d5583b50afe8fa8d",
+        "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+        "taiwan:f5b75dd85438f5704d24afc2cf91500d32e632dfadedc83fb9a7f08cb2c5e582",
+        "taiwan:4b6403a447e6e51558f2c68147d2058ad08b48c18f3c8621cbb78bac48f582c4",
+        "taiwan:d86915b33282ec38aa9faa1d308c03be6616cf5383f7b5f2142fc162df02ea9f",
+        "taiwan:c2cf4b2a16d817efda075563f7222ae8388196ed14e303a70daf3f96fdf0a973",
+        "taiwan:35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
+        "taiwan:85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
+        "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
+        "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a"
       ]
     },
     {
@@ -3729,7 +4660,8 @@
         "nara:565456",
         "nara:567201",
         "nara:6705460",
-        "nara:377497694"
+        "nara:377497694",
+        "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb"
       ]
     },
     {

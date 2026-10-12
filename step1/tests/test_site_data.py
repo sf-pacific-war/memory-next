@@ -49,7 +49,7 @@ class BuilderTests(unittest.TestCase):
     def test_missing_and_invalid_sources_are_visible_as_unavailable(self):
         (self.root / "data/europeana-discovery-candidates.json").write_text("not json")
         catalog = builder.build_catalog(self.root)
-        self.assertEqual([s["id"] for s in catalog["sources"]], ["LoC", "Europeana", "NARA"])
+        self.assertEqual([s["id"] for s in catalog["sources"]], ["LoC", "Europeana", "NARA", "Taiwan NAA"])
         self.assertTrue(all(s["status"] == "unavailable" and s["count"] == 0 for s in catalog["sources"]))
 
     def test_empty_successful_snapshot_is_available(self):
@@ -70,7 +70,34 @@ class BuilderTests(unittest.TestCase):
         self.assertEqual(item["dataset_updated_at"], "2026-09-28T20:13:00Z")
         self.assertTrue(item["dataset_url"].endswith("rg_493-1.jsonl"))
         self.assertIn("China-Burma-India", item["archival_context"][0])
-        self.assertEqual(catalog["sources"][-1]["count"], 1)
+        self.assertEqual(next(source for source in catalog["sources"] if source["id"] == "NARA")["count"], 1)
+
+    def test_shared_taiwan_portal_does_not_merge_distinct_archival_cases(self):
+        common = {"source_url": "https://aa.archives.gov.tw/", "aggregator_url": "https://data.gov.tw/dataset/95315",
+                  "source_url_kind": "catalogue_search", "archival_id": "B/0031/001", "dataset_generated_at": "2026-10-01",
+                  "date_display": None, "year": [], "level_of_description": "fileUnit"}
+        self.snapshot("Taiwan NAA", [record("taiwan:a", "Taiwan NAA", **common),
+            record("taiwan:b", "Taiwan NAA", **{**common, "archival_id": "B/0032/002"}),
+            record("taiwan:a", "Taiwan NAA", **common)])
+        output = builder.build_catalog(self.root)
+        self.assertEqual([r["id"] for r in output["records"]], ["taiwan:a", "taiwan:b"])
+        self.assertTrue(all(r["record_origin"] == "dataset" for r in output["records"]))
+        self.assertEqual(output["records"][0]["archival_id"], "B/0031/001")
+        self.assertEqual(output["records"][0]["dataset_generated_at"], "2026-10-01")
+        self.assertIsNone(output["records"][0]["date_display"])
+        self.assertEqual(output["records"][0]["year"], [])
+
+    def test_selected_taiwan_reading_links_keep_original_case_provenance(self):
+        self.snapshot("Taiwan NAA", [record("taiwan:a", "Taiwan NAA", source_url="https://aa.archives.gov.tw/", source_url_kind="catalogue_search"),
+                                      record("taiwan:b", "Taiwan NAA", source_url="https://aa.archives.gov.tw/", source_url_kind="catalogue_search")])
+        (self.root / "data/topics.json").write_text(json.dumps({"reading_links": {
+            "taiwan:a": "https://art.archives.gov.tw/tw/art/1632-15619.html",
+            "taiwan:b": "https://art.archives.gov.tw.example.org/not-an-archive"}}))
+        a, b = builder.build_catalog(self.root)["records"]
+        self.assertEqual(a["source_url"], "https://aa.archives.gov.tw/")
+        self.assertTrue(a["reading_url"].endswith("1632-15619.html"))
+        self.assertIsNone(a["date_display"])
+        self.assertNotIn("reading_url", b)
 
     def test_output_allowlist_drops_raw_credentials_and_nested_values(self):
         self.snapshot("LoC", [record(api_key="synthetic-secret", raw={"secret": "synthetic-secret"},
@@ -202,9 +229,9 @@ class PublishedTopicCorpusTests(unittest.TestCase):
 
     def test_public_corpus_contains_all_topics_and_no_reference_site_evidence(self):
         catalog = builder.build_catalog()
-        self.assertEqual(len(catalog["records"]), 44)
+        self.assertEqual(len(catalog["records"]), 55)
         self.assertEqual(len(catalog["topics"]), 10)
-        self.assertEqual(len(catalog["sources"]), 9)
+        self.assertEqual(len(catalog["sources"]), 10)
         self.assertEqual(sum(s["count"] for s in catalog["sources"]), len(catalog["records"]))
         indexed = {r["id"]: r for r in catalog["records"]}
         self.assertEqual(len(indexed), len(catalog["records"]))

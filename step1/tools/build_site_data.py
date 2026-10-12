@@ -17,6 +17,7 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 THUMBNAIL_HOSTS = ("loc.gov", "archives.gov", "si.edu", "archive.org", "iwm.org.uk")
 SOURCE_NAMES = {
+    "Taiwan NAA": ("National Archives Administration, National Development Council (Taiwan)", "台湾国家发展委员会档案管理局"),
     "LoC": ("Library of Congress", "美国国会图书馆"),
     "Europeana": ("Europeana", "欧洲数字文化遗产平台"),
     "NARA": ("National Archives and Records Administration", "美国国家档案馆"),
@@ -42,14 +43,18 @@ SOURCES = (
     {"id": "Europeana", "file": "europeana-discovery-candidates.json", "prefix": "europeana:",
      "label": "欧洲数字文化遗产", "url": "https://www.europeana.eu/",
      "description": "欧洲文化机构聚合目录。元数据为 CC0，原始内容使用权以来源说明为准。"},
-    {"id": "NARA", "file": "nara-discovery.json", "prefix": "nara:",
+    {"id": "NARA", "origin": "dataset", "file": "nara-discovery.json", "prefix": "nara:",
      "label": "美国国家档案馆", "url": "https://www.archives.gov/developer/national-archives-catalog-dataset",
      "description": "NARA 官方开放数据集的 RG 493 目录样本，以及人工整理的官方照片记录。目录与照片分别保留来源和访问说明；并非实时 Catalog API。"},
+    {"id": "Taiwan NAA", "file": "taiwan-discovery.json", "prefix": "taiwan:", "origin": "dataset",
+     "label": "台湾国家发展委员会档案管理局", "url": "https://aa.archives.gov.tw/",
+     "description": "官方开放案卷目录：保留繁体案名、全宗与档号。资料产制日期不是档案年代；全文与影像访问条件需在 A+ 另行确认。"},
 )
 TEXT_FIELDS = (
     "id", "source_id", "source", "title", "description", "date_display", "date_kind",
     "format", "access_status", "review_status", "retrieved_at", "query_used",
     "level_of_description", "record_group", "dataset_updated_at",
+    "dataset_generated_at", "archival_id", "access_note", "source_url_kind",
 )
 LIST_FIELDS = (
     "holding_institution", "metadata_provider", "year", "language", "metadata_language",
@@ -241,12 +246,20 @@ def bilingual(value):
 def apply_topics(project_root, records):
     payload = read_optional(project_root / "data" / "topics.json", {})
     notes = payload.get("curator_notes", {})
+    reading_links = payload.get("reading_links", {})
     indexed = {r["id"]: r for r in records}
     for record in records:
         record.update({"topic_ids": [], "topic_keywords": []})
         note = bilingual(notes.get(record["id"])) if isinstance(notes, dict) else {}
         if note:
             record["curator_note"] = note
+        # Selected scans on the official teaching site supplement the case list;
+        # they are not treated as a permalink to the entire archival case.
+        reading_url = public_url(reading_links.get(record["id"])) if isinstance(reading_links, dict) else None
+        if (record["source"] == "Taiwan NAA" and reading_url
+                and urlsplit(reading_url).scheme == "https"
+                and urlsplit(reading_url).hostname == "art.archives.gov.tw"):
+            record["reading_url"] = reading_url
     topics = []
     seen = set()
     for raw in payload.get("topics", []):
@@ -287,7 +300,7 @@ def build_catalog(project_root=PROJECT_ROOT):
         for raw in payload["records"]:
             clean = public_record(raw, source)
             if clean:
-                clean["record_origin"] = "dataset" if source["id"] == "NARA" else "api"
+                clean["record_origin"] = source.get("origin", "api")
                 candidates.append((clean, {clean["id"]}))
     extra = read_optional(project_root / "data" / "cbi" / "archive-records.json", {})
     for query in extra.get("queries", []):
@@ -298,7 +311,7 @@ def build_catalog(project_root=PROJECT_ROOT):
         source = source_index.get(raw.get("source")) if isinstance(raw, dict) else None
         clean = public_record(raw, source) if source else None
         if clean:
-            clean["record_origin"] = "dataset" if source["id"] == "NARA" else "api"
+            clean["record_origin"] = source.get("origin", "api")
             candidates.append((clean, {clean["id"]}))
     curated = read_optional(project_root / "data" / "cbi" / "verified-matches.json", {})
     for raw in curated.get("records", []):
@@ -312,6 +325,8 @@ def build_catalog(project_root=PROJECT_ROOT):
         if record.get("source_id"):
             keys.add((record["source"], "native", record["source_id"]))
         for field in ("source_url", "aggregator_url"):
+            if record.get("source_url_kind") == "catalogue_search":
+                continue  # A shared search portal is not the identity of an archival item.
             url = canonical_archival_url(record.get(field))
             if url:
                 keys.add((record["source"], "url", url))

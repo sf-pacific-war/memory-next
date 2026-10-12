@@ -14,6 +14,7 @@ from urllib.parse import parse_qs, urlsplit
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import archive_access
 import check_archives
+import fetch_taiwan_metadata as taiwan_csv
 
 
 API_IDS = ("loc", "europeana", "nara_catalog", "dpla", "tna")
@@ -54,6 +55,14 @@ def transport_for(responses):
 
 
 class AccessCliTests(unittest.TestCase):
+    def setUp(self):
+        # CSV transport is separate from the small JSON API transport. Always
+        # replace it explicitly so combined-command tests cannot use the network.
+        fixture = (",".join(taiwan_csv.COLUMNS) + "\n").encode("utf-8-sig")
+        patcher = patch.object(taiwan_csv, "fetch_csv", return_value=taiwan_csv.Download(fixture, True, len(fixture)))
+        self.taiwan_network = patcher.start()
+        self.addCleanup(patcher.stop)
+
     def capture(self, main, args):
         output = io.StringIO()
         with redirect_stdout(output):
@@ -71,7 +80,7 @@ class AccessCliTests(unittest.TestCase):
             "europeana": (2, "missing_credential"), "dpla": (2, "missing_credential"),
             "nara_catalog": (2, "missing_credential"), "tna": (2, "permission_required"),
             "jacar": (0, "manual_only"), "iwm": (0, "manual_only"),
-            "taiwan": (0, "manual_only"),
+            "taiwan": (0, "ready"),
         }
         with patch.dict(archive_access.os.environ, {}, clear=True), patch.object(archive_access, "request_bytes") as network:
             for source_id, (code, status) in expected.items():
@@ -81,26 +90,29 @@ class AccessCliTests(unittest.TestCase):
                     self.assertEqual((actual, report["status"]), (code, status))
                     self.assertFalse(report["request_sent"])
             network.assert_not_called()
+        self.taiwan_network.assert_not_called()
 
     def test_all_inventory_distinguishes_configured_key_and_pending_access(self):
         with patch.dict(archive_access.os.environ, {"EUROPEANA_API_KEY": "synthetic-key"}, clear=True), patch.object(archive_access, "request_bytes") as network:
             code, report = self.capture(check_archives.main, [])
             self.assertEqual(code, 2)
-            self.assertEqual(report["summary"], {"ready": 3, "missing_credential": 2, "permission_required": 1, "manual_only": 3})
+            self.assertEqual(report["summary"], {"ready": 4, "missing_credential": 2, "permission_required": 1, "manual_only": 2})
             self.assertEqual(len(report["results"]), 9)
             self.assertEqual(report["mode"], "access")
             self.assertIsNone(report["query"])
             self.assertNotIn("synthetic-key", json.dumps(report))
             network.assert_not_called()
+        self.taiwan_network.assert_not_called()
 
     def test_live_on_manual_or_unconfigured_sources_is_an_explicit_skip(self):
         with patch.dict(archive_access.os.environ, {}, clear=True), patch.object(archive_access, "request_bytes") as network:
-            for source_id in ("europeana", "dpla", "nara_catalog", "tna", "jacar", "iwm", "taiwan"):
+            for source_id in ("europeana", "dpla", "nara_catalog", "tna", "jacar", "iwm"):
                 with self.subTest(source=source_id):
                     code, report = self.capture(check_archives.main, ["--source", source_id, "--live"])
                     self.assertEqual(code, 2)
                     self.assertFalse(report["results"][0]["request_sent"])
             network.assert_not_called()
+        self.taiwan_network.assert_not_called()
 
     def assert_api_requests(self, network, sources, query, rows):
         self.assertEqual(network.call_count, len(sources))
@@ -124,11 +136,11 @@ class AccessCliTests(unittest.TestCase):
         self.assertEqual(code, 2)
         self.assertEqual(report["mode"], "keyword")
         self.assertEqual(report["query"], query)
-        self.assertEqual(report["summary"], {"ok": 2, "query_not_supported": 1, "missing_credential": 2,
-                                              "permission_required": 1, "manual_only": 3})
+        self.assertEqual(report["summary"], {"ok": 3, "query_not_supported": 1, "missing_credential": 2,
+                                              "permission_required": 1, "manual_only": 2})
         self.assert_api_requests(network, ("loc", "europeana"), query, 2)
         for result in report["results"]:
-            self.assertEqual(result["request_sent"], result["source"] in {"loc", "europeana"})
+            self.assertEqual(result["request_sent"], result["source"] in {"loc", "europeana", "taiwan"})
             if not result["request_sent"]:
                 self.assertNotIn("sample_count", result)
                 self.assertNotIn("total_results", result)
@@ -140,7 +152,7 @@ class AccessCliTests(unittest.TestCase):
                 patch.object(archive_access, "request_bytes", side_effect=transport_for(api_responses())) as network:
             code, report = self.capture(check_archives.main, ["--live", "--query", query, "--rows", "1", "--permission-confirmed"])
         self.assertEqual(code, 2)
-        self.assertEqual(report["summary"], {"ok": 5, "query_not_supported": 1, "manual_only": 3})
+        self.assertEqual(report["summary"], {"ok": 6, "query_not_supported": 1, "manual_only": 2})
         self.assert_api_requests(network, API_IDS, query, 1)
         for key in SYNTHETIC_KEYS.values():
             self.assertNotIn(key, json.dumps(report))
@@ -151,12 +163,13 @@ class AccessCliTests(unittest.TestCase):
             code, report = self.capture(check_archives.main, ["--query", "飞虎队", "--permission-confirmed"])
         self.assertEqual(code, 2)
         self.assertFalse(report["live"])
-        self.assertEqual(report["summary"], {"ready": 5, "query_not_supported": 1, "manual_only": 3})
+        self.assertEqual(report["summary"], {"ready": 6, "query_not_supported": 1, "manual_only": 2})
         for result in report["results"]:
             self.assertFalse(result["request_sent"])
             self.assertNotIn("sample_count", result)
             self.assertNotIn("total_results", result)
         network.assert_not_called()
+        self.taiwan_network.assert_not_called()
 
     def test_all_keyword_zero_matches_are_success_not_unavailable(self):
         with patch.dict(archive_access.os.environ, SYNTHETIC_KEYS, clear=True), \
@@ -181,7 +194,7 @@ class AccessCliTests(unittest.TestCase):
             code, report = self.capture(check_archives.main, ["--live", "--query", "飞虎队", "--permission-confirmed"])
         self.assertEqual(code, 1)
         self.assertEqual(network.call_count, 5)
-        self.assertEqual(report["summary"], {"access_denied": 1, "ok": 4, "query_not_supported": 1, "manual_only": 3})
+        self.assertEqual(report["summary"], {"access_denied": 1, "ok": 5, "query_not_supported": 1, "manual_only": 2})
         self.assertEqual(report["results"][-1]["source"], "taiwan")
         loc = report["results"][0]
         self.assertTrue(loc["request_sent"])
@@ -198,6 +211,7 @@ class AccessCliTests(unittest.TestCase):
                 check_archives.main(["--source", "all", "--live"] + invalid)
             self.assertEqual(raised.exception.code, 2)
             network.assert_not_called()
+        self.taiwan_network.assert_not_called()
 
     def test_table_keeps_zero_matches_distinct_from_skips_and_redacts_keys(self):
         output = io.StringIO()
@@ -208,13 +222,13 @@ class AccessCliTests(unittest.TestCase):
         text = output.getvalue()
         self.assertEqual(code, 2)
         self.assertIn("飞虎队", text)
-        self.assertIn("unchanged; no translation", text)
+        self.assertIn("unchanged for APIs; CSV aliases", text)
         rows = {fields[0]: fields[1:] for line in text.splitlines()
                 if (fields := line.split()) and fields[0] in check_archives.SOURCE_IDS}
         self.assertEqual(len(rows), 9)
-        for source in ("loc", "europeana"):
+        for source in ("loc", "europeana", "taiwan"):
             self.assertEqual(rows[source], ["ok", "yes", "0", "0"])
-        for source in ("nara", "nara_catalog", "dpla", "tna", "jacar", "iwm", "taiwan"):
+        for source in ("nara", "nara_catalog", "dpla", "tna", "jacar", "iwm"):
             self.assertEqual(rows[source][1:], ["no", "-", "-"])
         self.assertNotIn(SYNTHETIC_KEYS["EUROPEANA_API_KEY"], text)
 
@@ -232,6 +246,7 @@ class AccessCliTests(unittest.TestCase):
             self.assertEqual((code, report["status"]), (2, "invalid_input"))
             self.assertFalse(report["request_sent"])
             network.assert_not_called()
+        self.taiwan_network.assert_not_called()
 
 
 if __name__ == "__main__":

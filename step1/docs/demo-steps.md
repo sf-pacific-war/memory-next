@@ -1,6 +1,6 @@
 # Step 1：统一发现演示步骤
 
-当前应用提供 **资料发现 / Discover**、**专题浏览 / Topics**、**数据来源 / Sources**。共享目录包含 **44 条去重记录、9 个来源机构、10 个双语专题**，可检索照片、地图、文献、影片与实物记录。搜索在浏览器中的已收录元数据上执行；不实时查询全部外馆，也不需要模型 API、数据库或登录。
+当前应用提供 **资料发现 / Discover**、**专题浏览 / Topics**、**数据来源 / Sources**。共享目录包含 **55 条去重记录、10 个来源机构、10 个双语专题**，可检索照片、地图、文献、影片与实物记录。搜索在浏览器中的已收录元数据上执行；不实时查询全部外馆，也不需要模型 API、数据库或登录。
 
 ## 本地运行
 
@@ -36,12 +36,13 @@ python3 tools/serve.py
 | 帝国战争博物馆（Imperial War Museums，IWM） | 2 | 人工整理的影片目录 |
 | 艾克·斯凯尔顿联合兵种研究图书馆（CARL） | 1 | 人工整理的报刊档案线索 |
 | 莱斯大学伍德森研究中心（Rice University） | 1 | 人工整理的查找指南 |
+| 台湾档案管理局（Taiwan NAA） | 11 | 官方公开 CSV 的案卷标题目录；全宗、档号保留，历史日期未知 |
 
-目录链接不代表全文开放；未数字化影片与尚未确认的媒体访问状态保留在详情中。日期字段来自机构元数据，编辑核查时间与检索获取时间分别记录，不将它们当作历史事件日期。不同机构的相似对象不自动合并为同一实物。
+目录链接不代表全文开放；未数字化影片与尚未确认的媒体访问状态保留在详情中。日期字段来自机构元数据，编辑核查时间与检索获取时间分别记录，不将它们当作历史事件日期。台湾 CSV 的资料产制日期同样不作为历史日期；默认链接进入 A+ 检索。两个已核实的驻印军专题页另标为原馆专题阅读，不冒充每条 CSV 的单件详情或扫描图。不同机构的相似对象不自动合并为同一实物。
 
 ## 真实接入测试与更新
 
-接入探针仅返回状态和计数，不会修改网页。统一检查器包含 **8 个平台、9 条路径**；其中 5 条是支持关键词的 API 路径，是否发出请求取决于凭据与审批。日本亚洲历史资料中心（JACAR）、帝国战争博物馆（IWM）、台湾档案管理局为网页入口，不冒充已接通的检索 API。
+接入探针仅返回状态和计数，不会修改网页。统一检查器包含 **8 个平台、9 条路径**；其中 5 条是支持关键词的 API 路径，另有台湾档案管理局（Taiwan NAA）的有界 CSV 匹配。API 是否发出请求取决于凭据与审批；台湾 CSV 无需 key。日本亚洲历史资料中心（JACAR）和帝国战争博物馆（IWM）为网页入口。
 
 ```sh
 # 无网络：查看配置与访问条件
@@ -53,6 +54,7 @@ python3 tools/check_archives.py --live --query 'Flying Tigers' --rows 3 --env-fi
 # 无需 key 的来源访问检查
 python3 tools/access_loc.py --live --query 'Burma Road' --rows 3
 python3 tools/access_nara.py --live --rows 3
+python3 tools/access_taiwan.py --live --query '驻印军' --rows 3
 ```
 
 美国国家档案馆（NARA）的固定数据集没有关键词参数；其 Catalog API 是另一条需要凭据的路径。没有 `.env.europeana` 时，去掉文件参数即可检查其他来源。真实 key 只保存在被 Git 忽略的本地配置或进程环境变量，不写入聊天、网页或提交。
@@ -63,10 +65,12 @@ python3 tools/access_nara.py --live --rows 3
 python3 tools/fetch_public_metadata.py --source loc --rows 20
 python3 tools/fetch_nara_metadata.py
 python3 tools/fetch_europeana_metadata.py --env-file .env.europeana --query '"Burma Road"' --rows 3 --output data/europeana-discovery-candidates.json
+# 台湾 CSV：先导出候选，不覆盖已审阅的演示快照
+python3 tools/fetch_taiwan_metadata.py --live --query '驻印军' --rows 20 --output data/taiwan-discovery-candidates.json
 python3 tools/build_site_data.py
 ```
 
-这些命令会实际请求外馆并更新允许保存的元数据；失败时保留既有快照。每个来源低频串行，无自动翻页或重试。主题候选与编辑导读位于 `data/topics.json`；内部核查数据不进入网站。预览只采用允许的档案机构域名，不下载或复用参考站媒体。
+`fetch_*.py` 命令会实际请求外馆并写入指定输出；失败时保留既有快照。台湾候选文件不会自动发布，审阅后才替换 `data/taiwan-discovery.json` 并重建。其部分 CSV 样本不代表全馆覆盖，见[台湾来源说明](taiwan-archives.md)。每个来源低频串行，无自动翻页或重试。主题候选与编辑导读位于 `data/topics.json`；内部核查数据不进入网站。预览只采用允许的档案机构域名，不下载或复用参考站媒体。
 
 ## 验收与测试
 

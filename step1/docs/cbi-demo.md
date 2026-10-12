@@ -11,4 +11,4 @@ python3 tools/build_cbi_demo.py
 python3 tools/build_site_data.py
 ```
 
-内部报告输出为 `data/cbi/review-report.json`，由 Git 忽略。公开构建器只允许原馆记录字段、经过整理的专题和编辑导读进入 `site/data/catalog.json`。不下载、缓存或展示参考站媒体。
+内部报告输出为 `data/cbi/review-report.json`，由 Git 忽略。公开构建器只允许原馆记录字段、经过整理的专题和编辑导读进入 `site/data/catalog.json`。不下载、缓存或展示参考站媒体。台湾档案管理局（Taiwan NAA）的公开 CSV 快照位于 `data/taiwan-discovery.json`，独立于 CBI 对照清单；经审阅后进入共享目录。其接入、覆盖限制与官方专题阅读链接见[台湾来源说明](taiwan-archives.md)，不能将新增目录记录算成已确认的 CBI 同图／同物。

@@ -126,3 +126,15 @@ test('NARA matches genuine archival context while retaining source and date filt
   assert.deepEqual(ids(filterRecords([...records, nara], { query: '缅甸', sources: ['NARA'], startYear: '1944', endYear: '1944' })), ['nara:123']);
   assert.deepEqual(filterRecords([nara], { query: '滇缅公路' }), []);
 });
+
+
+test('Taiwan case numbers and simplified/traditional names are discoverable without inferred dates', () => {
+  const taiwan = { id: 'taiwan:fixture', source: 'Taiwan NAA', title: '駐印軍案', format: 'TEXT',
+    archival_id: 'B5018230601/0031/0503/7031', dataset_generated_at: '2026-10-01', year: [] };
+  for (const query of ['驻印军', '駐印軍', 'Chinese Army in India', taiwan.archival_id, '台湾国家发展委员会档案管理局']) {
+    assert.deepEqual(ids(filterRecords([taiwan], { query })), ['taiwan:fixture']);
+  }
+  assert.equal(sourceLabel('Taiwan NAA', 'en'), 'Taiwan National Archives Administration');
+  assert.deepEqual(getRecordYears(taiwan), { start: null, end: null });
+  assert.deepEqual(filterRecords([taiwan], { startYear: '1942', endYear: '1945', includeUnknownDates: false }), []);
+});
