@@ -1,0 +1,21 @@
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+
+# Python runtime files
+__pycache__/
+*.pyc
+.venv/
+
+# Local temporary output
+tmp/
+.DS_Store
+
+# Firebase local cache and CLI logs
+.firebase/
+firebase-debug.log*
+ui-debug.log*
+
+# Generated internal comparison report (not a web artifact)
+data/cbi/review-report.json

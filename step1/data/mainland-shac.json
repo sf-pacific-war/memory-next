@@ -1,0 +1,131 @@
+{
+  "source": "SHAC",
+  "access_mode": "curated official pages; no API",
+  "checked_at": "2026-10-12T03:08:48.949685Z",
+  "records": [
+    {
+      "id": "shac:67020",
+      "source_id": "Web exhibit 67020",
+      "source": "SHAC",
+      "title": "中国远征军司令长官卫立煌报告松山战役第八军兵力布置致蒋介石电",
+      "description": null,
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm",
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "format": "TEXT",
+      "date_display": "1944-06-30",
+      "date_kind": "creation",
+      "year": [
+        "1944"
+      ],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "metadata_rights": null,
+      "access_status": "online",
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "record_origin": "curated",
+      "page_markers": [
+        "卫立煌",
+        "002564936a811580d3d256.jpg",
+        "中国第二历史档案馆"
+      ],
+      "source_page_published_at": "2014-09-19",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580d3d256.jpg",
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected."
+    },
+    {
+      "id": "shac:67000",
+      "source_id": "Web exhibit 67000",
+      "source": "SHAC",
+      "title": "中美联军奇袭密支那作战经过",
+      "description": null,
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67000.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67000.htm",
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "format": "TEXT",
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "metadata_rights": null,
+      "access_status": "online",
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "record_origin": "curated",
+      "page_markers": [
+        "中美联军奇袭密支那作战经过",
+        "002564936a811580cee852.jpg",
+        "中国第二历史档案馆"
+      ],
+      "source_page_published_at": "2014-09-19",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580cee852.jpg",
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected.",
+      "coverage_display": "1944-05-16 (exhibit caption; creation date not separately supplied)"
+    },
+    {
+      "id": "shac:67040",
+      "source_id": "Web exhibit 67040",
+      "source": "SHAC",
+      "title": "滇西缅北之战经过要图",
+      "description": null,
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67040.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67040.htm",
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "format": "MAP",
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "metadata_rights": null,
+      "access_status": "online",
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "record_origin": "curated",
+      "page_markers": [
+        "滇西缅北之战经过要图",
+        "002564936a811580d4b063.jpg",
+        "中国第二历史档案馆"
+      ],
+      "source_page_published_at": "2014-09-19",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580d4b063.jpg",
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected.",
+      "coverage_display": "1943-10–1945-03 (campaign coverage; map creation date not separately supplied)"
+    }
+  ]
+}

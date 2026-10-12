@@ -1,0 +1,660 @@
+{
+  "source": "LoC",
+  "effective_query": "\"Burma Road\"",
+  "fetched_at": "2026-10-10T04:18:30.587081Z",
+  "total_results": 23,
+  "returned_count": 16,
+  "selection_note": "First API page; excludes known title collisions for Bahamian song cards and California roads. Other records remain candidates.",
+  "records": [
+    {
+      "id": "loc:2004676827",
+      "source_id": "2004676827",
+      "source": "LoC",
+      "title": "[Chinese laborers working to reopen the Burma Road in southwest China, 1944]",
+      "description": "1 photographic print.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1944.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1944"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2004676827/",
+      "aggregator_url": "https://www.loc.gov/item/2004676827/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No copyright restriction known for government issued photographs or for images published or copyrighted before 1923. For information see \"New York World-Telegram & ...,\" https://www.loc.gov/rr/print/res/076_nyw.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "china",
+        "laborers",
+        "photographic prints",
+        "road construction",
+        "burma road (china and burma)"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c30000/3c34000/3c34700/3c34787_150px.jpg"
+    },
+    {
+      "id": "loc:2017872473",
+      "source_id": "2017872473",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. A section of the Burma road",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2017872473/",
+      "aggregator_url": "https://www.loc.gov/item/2017872473/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02311_150px.jpg"
+    },
+    {
+      "id": "loc:2017872503",
+      "source_id": "2017872503",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. A treacherous section of the Burma road",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2017872503/",
+      "aggregator_url": "https://www.loc.gov/item/2017872503/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02341_150px.jpg"
+    },
+    {
+      "id": "loc:2017872482",
+      "source_id": "2017872482",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. A section of the Burma road showing the construction of the road",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2017872482/",
+      "aggregator_url": "https://www.loc.gov/item/2017872482/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02320_150px.jpg"
+    },
+    {
+      "id": "loc:2007675026",
+      "source_id": "2007675026",
+      "source": "LoC",
+      "title": "Queue of Chinese warriors, central sector of China's Salween front",
+      "description": "1 photographic print : gelatin silver. | Photograph shows Chinese soldiers marching along a narrow section of the Burma Road toward the fighting lines on the Salween front.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "[1943]",
+      "date_kind": "source_supplied",
+      "year": [
+        "1943"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2007675026/",
+      "aggregator_url": "https://www.loc.gov/item/2007675026/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No known restrictions on publication. No copyright renewal found in U.S. Copyright Office, 2012."
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "world war",
+        "gelatin silver prints",
+        "soldiers",
+        "chinese",
+        "military personnel",
+        "marching",
+        "burma road (china and burma)",
+        "troop movements"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/13300/13331_150px.jpg"
+    },
+    {
+      "id": "loc:2008678725",
+      "source_id": "2008678725",
+      "source": "LoC",
+      "title": "Save Burma",
+      "description": "1 drawing : graphite on illustration board. | Cartoon drawing shows a fighter plane emerging from a cloud of smoke with the words \"Unconditional Surrender\" above a mountainous road representing the Burma Road.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "[19]43.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1943"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2008678725/",
+      "aggregator_url": "https://www.loc.gov/item/2008678725/",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "Rights status not evaluated. For general information see \"Copyright and Other Restrictions ...,\" https://www.loc.gov/rr/print/195_copr.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "world war",
+        "drawings",
+        "fighter planes",
+        "campaigns & battles",
+        "political cartoons",
+        "burma road (china and burma)",
+        "burma"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/18500/18535_150px.jpg"
+    },
+    {
+      "id": "loc:2017872504",
+      "source_id": "2017872504",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. The old Burma road passing through a village. The bridge is used only when the water is high",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2017872504/",
+      "aggregator_url": "https://www.loc.gov/item/2017872504/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02342_150px.jpg"
+    },
+    {
+      "id": "loc:2010636632",
+      "source_id": "2010636632",
+      "source": "LoC",
+      "title": "Back in the right direction",
+      "description": "1 drawing.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "[1940 Oct.]",
+      "date_kind": "source_supplied",
+      "year": [
+        "1940"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2010636632/",
+      "aggregator_url": "https://www.loc.gov/item/2010636632/",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "Publication may be restricted. For information see \"Herbert Block (\"Herblock\") Rights and Restrictions,\" https://www.loc.gov/rr/print/res/271_herb.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "editorial cartoons",
+        "world war",
+        "british",
+        "drawings",
+        "diplomacy",
+        "american",
+        "asia",
+        "burma road (china and burma)"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/hlb/01100/01146_150px.jpg"
+    },
+    {
+      "id": "loc:2005692391",
+      "source_id": "2005692391",
+      "source": "LoC",
+      "title": "Photographs concerning the war activities of the Far Eastern peoples, 1940-45",
+      "description": "7 photographic prints. | Photographs show Chinese repairing the Burma Road, Indians mining tin in the Dutch East Indies, Dutch planes and ships manned by Dutch East Indians, etc.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1940-1945.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1940",
+        "1945"
+      ],
+      "format": "MIXED",
+      "language": [
+        "english"
+      ],
+      "source_url": "https://www.loc.gov/item/2005692391/",
+      "aggregator_url": "https://www.loc.gov/item/2005692391/",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "Rights status of individual images not evaluated. For general information see: \"Copyright and Other Restrictions ...,\" https://www.loc.gov/rr/print/195_copr.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": []
+    },
+    {
+      "id": "loc:2017872505",
+      "source_id": "2017872505",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. A village street along the Burma road with a ditch running down the center. The anopheles minimus mosquito will not breed in this dirty water",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2017872505/",
+      "aggregator_url": "https://www.loc.gov/item/2017872505/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02343_150px.jpg"
+    },
+    {
+      "id": "loc:2017872525",
+      "source_id": "2017872525",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma Highway. This hospital along the Burma Road made over from the estate of a wealthy Chinese for war wounded was immediately filled up with malaria cases",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "eng"
+      ],
+      "source_url": "https://www.loc.gov/item/2017872525/",
+      "aggregator_url": "https://www.loc.gov/item/2017872525/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "film negatives",
+        "china"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02364_150px.jpg"
+    },
+    {
+      "id": "loc:95519388",
+      "source_id": "95519388",
+      "source": "LoC",
+      "title": "The Stilwell Road: monument to allied cooperation and human preseverance--Men of a U.S. field artillery battery fire their 75-mm. howitzer at Japanese emplacements along the Burma Road near Namhkam, one of the key towns along the Stilwell Road",
+      "description": "1 photographic print.",
+      "holding_institution": [
+        "Library of Congress"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "[1945]",
+      "date_kind": "source_supplied",
+      "year": [
+        "1945"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "english"
+      ],
+      "source_url": "https://www.loc.gov/item/95519388/",
+      "aggregator_url": "https://www.loc.gov/item/95519388/",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "howitzers",
+        "world war",
+        "campaigns & battles",
+        "photographic prints",
+        "american",
+        "artillery (troops)",
+        "burma"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b30000/3b38000/3b38800/3b38881_150px.jpg"
+    },
+    {
+      "id": "loc:2004680684",
+      "source_id": "2004680684",
+      "source": "LoC",
+      "title": "Malaria control in India and China. 1929-1940. U.S. Public Health Service survey for malaria control as a member of the League of Nations malaria investigation committeee to India ...",
+      "description": "64 photographic prints. | Photographs show U.S. Public Health Service survey for malaria control as a member of the League of Nations malaria investigation committee to India in 1929-1930, and the PHS investigation commission to the China-Burma Highway in 1939-1940. Chefang Valley and Burma Road. Testing, sampling, dusting, spraying breeding places of malaria mosquitoes. Educational control work. Drainage ditches in irrigated rice fields. Terraced hillside farm. Children in India.",
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1929-1940.",
+      "date_kind": "source_supplied",
+      "year": [
+        "1929",
+        "1940"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "english"
+      ],
+      "source_url": "https://www.loc.gov/item/2004680684/",
+      "aggregator_url": "https://www.loc.gov/item/2004680684/",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [
+        "No known restrictions on publication."
+      ],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "photographic prints"
+      ]
+    },
+    {
+      "id": "loc:afc2001001.107713",
+      "source_id": "afc2001001.107713",
+      "source": "LoC",
+      "title": "Clifford Boyd Ellis Collection",
+      "description": "Staff Sergeant, Army Air Forces/Corps, World War, 1939-1945 - India; China; China-Burma-India (CBI) Theater.",
+      "holding_institution": [
+        "Veterans History Project, American Folklife Center, Library of Congress"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1942",
+      "date_kind": "source_supplied",
+      "year": [
+        "1942"
+      ],
+      "format": "MIXED",
+      "language": [
+        "english"
+      ],
+      "source_url": "https://www.loc.gov/item/afc2001001.107713/",
+      "aggregator_url": "https://www.loc.gov/item/afc2001001.107713/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "world war, 1939-1945",
+        "21st photographic reconnaissance squadron",
+        "world war",
+        "central pacific",
+        "veteran",
+        "staff sergeant",
+        "ellis, clifford boyd",
+        "personal narratives",
+        "india-burma",
+        "biographical information",
+        "air offensive japan",
+        "china",
+        "male",
+        "army air forces/corps",
+        "united states. army air forces/corps"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/vhp/1077/107713/ph0001001i.jpg"
+    },
+    {
+      "id": "loc:afc2001001.119534",
+      "source_id": "afc2001001.119534",
+      "source": "LoC",
+      "title": "William Cecil Norvelle, Sr. Collection",
+      "description": "Sergeant, Army, World War, 1939-1945 - Chabua Air Force Base, Assam, India; Calcutta, India; India; China-Burma-India (CBI) Theater.",
+      "holding_institution": [
+        "Veterans History Project, American Folklife Center, Library of Congress"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1942",
+      "date_kind": "source_supplied",
+      "year": [
+        "1942"
+      ],
+      "format": "MIXED",
+      "language": [
+        "english"
+      ],
+      "source_url": "https://www.loc.gov/item/afc2001001.119534/",
+      "aggregator_url": "https://www.loc.gov/item/afc2001001.119534/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "world war, 1939-1945",
+        "white",
+        "world war",
+        "veteran",
+        "68th service group",
+        "army",
+        "personal narratives",
+        "enlisted",
+        "original photographic print",
+        "1819th ordnance supply & maintenance",
+        "sergeant",
+        "united states. army",
+        "male",
+        "norvelle sr., william cecil"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/vhp/1195/119534/ph0001001i.jpg"
+    },
+    {
+      "id": "loc:afc2001001.82964",
+      "source_id": "afc2001001.82964",
+      "source": "LoC",
+      "title": "William Munro Graham Collection",
+      "description": "Major, Army, World War, 1939-1945 - Algeria; India; Burma; China; Egypt; Fort Belvoir, Virginia; China-Burma-India (CBI) Theater.",
+      "holding_institution": [
+        "Veterans History Project, American Folklife Center, Library of Congress"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "date_display": "1941",
+      "date_kind": "source_supplied",
+      "year": [
+        "1941"
+      ],
+      "format": "MIXED",
+      "language": [
+        "english"
+      ],
+      "source_url": "https://www.loc.gov/item/afc2001001.82964/",
+      "aggregator_url": "https://www.loc.gov/item/afc2001001.82964/",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": null,
+      "content_rights": [],
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "subjects": [
+        "world war, 1939-1945",
+        "company b, 10th battalion, engineer replacement training center",
+        "drafted",
+        "world war",
+        "engineer replacement training center",
+        "major",
+        "army",
+        "veteran",
+        "personal narratives",
+        "original photographic print",
+        "475th infantry regiment",
+        "5307th composite unit (provisional) (merrill's marauders)",
+        "5332nd brigade, 475th infantry regiment",
+        "united states. army",
+        "graham, william munro",
+        "male"
+      ],
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/vhp/0829/082964/ph0001001i.jpg"
+    }
+  ]
+}

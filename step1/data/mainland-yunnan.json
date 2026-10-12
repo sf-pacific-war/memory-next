@@ -1,0 +1,47 @@
+{
+  "source": "Yunnan Archives",
+  "access_mode": "curated official pages; no API",
+  "checked_at": "2026-10-12T03:08:48.949685Z",
+  "records": [
+    {
+      "id": "yunnan:nanyang-volunteers",
+      "source_id": "SAAC heritage page 77d37779d7534cdd8e7f2ff73bf05ed9",
+      "source": "Yunnan Archives",
+      "title": "2018 南侨机工档案",
+      "description": null,
+      "source_url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml",
+      "aggregator_url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml",
+      "holding_institution": [
+        "云南省档案馆 / Yunnan Provincial Archives"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "format": "TEXT",
+      "date_display": "2021-04-16",
+      "date_kind": "publication",
+      "year": [
+        "2021"
+      ],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "metadata_rights": null,
+      "access_status": "online",
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "record_origin": "curated",
+      "page_markers": [
+        "南侨机工档案",
+        "882996d668c84e30a8c56bf79e1849ee.pdf"
+      ],
+      "source_page_published_at": "2021-04-16",
+      "access_note": "Public collection nomination guide with an official PDF link. This is a research guide, not the full digitized collection. The title’s 2018 refers to the inscription, not a wartime document date."
+    }
+  ]
+}

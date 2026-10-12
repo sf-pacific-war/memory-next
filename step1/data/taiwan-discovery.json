@@ -1,0 +1,464 @@
+{
+  "source": "Taiwan NAA",
+  "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+  "effective_query": "驻印军|滇缅|远征军|缅甸",
+  "effective_queries": [
+    "驻印军",
+    "駐印軍",
+    "Chinese Army in India",
+    "滇缅",
+    "滇緬",
+    "滇缅公路",
+    "滇緬公路",
+    "Burma Road",
+    "远征军",
+    "遠征軍",
+    "Chinese Expeditionary Force",
+    "缅甸",
+    "緬甸",
+    "Burma",
+    "Myanmar"
+  ],
+  "fetched_at": "2026-10-12T02:39:47.229624+00:00",
+  "returned_count": 11,
+  "matched_count": 67,
+  "scanned_rows": 147274,
+  "duplicate_rows": 0,
+  "bytes_read": 14942208,
+  "source_exhausted": false,
+  "row_limit_reached": false,
+  "scan_complete": false,
+  "selection_note": "Local substring search over case title, fonds and archival number, with explicit query aliases. Records are case-level metadata; digitization, historical dates and item URLs are not supplied. Partial CSV scan; matched_count counts only observed matches and is not a dataset total. Editorial selection: 11 military campaign/organization/map case titles. Boundary-only and postwar titles not selected. Historical years remain unknown; no date inferred from call numbers.",
+  "records": [
+    {
+      "id": "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+      "source_id": "85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "中英滇緬國界及抗戰形勢ㄧ覽圖",
+      "description": null,
+      "archival_id": "B5018230601/0031/002.3/5000.2",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:856635a6b614e7a282ddaf7b6505162b17768af67b54cdc4d5583b50afe8fa8d",
+      "source_id": "856635a6b614e7a282ddaf7b6505162b17768af67b54cdc4d5583b50afe8fa8d",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "駐印軍案",
+      "description": null,
+      "archival_id": "B5018230601/0031/0503/7031",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+      "source_id": "6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "滇緬路作戰",
+      "description": null,
+      "archival_id": "B5018230601/0031/152.2/2196.2",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:f5b75dd85438f5704d24afc2cf91500d32e632dfadedc83fb9a7f08cb2c5e582",
+      "source_id": "f5b75dd85438f5704d24afc2cf91500d32e632dfadedc83fb9a7f08cb2c5e582",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "緬甸戰役報告書",
+      "description": null,
+      "archival_id": "B5018230601/0031/543/2196",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:4b6403a447e6e51558f2c68147d2058ad08b48c18f3c8621cbb78bac48f582c4",
+      "source_id": "4b6403a447e6e51558f2c68147d2058ad08b48c18f3c8621cbb78bac48f582c4",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "中華民國駐印軍總指揮部編制案",
+      "description": null,
+      "archival_id": "B5018230601/0031/581.29/5000",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:d86915b33282ec38aa9faa1d308c03be6616cf5383f7b5f2142fc162df02ea9f",
+      "source_id": "d86915b33282ec38aa9faa1d308c03be6616cf5383f7b5f2142fc162df02ea9f",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "中華民國駐印軍編制案",
+      "description": null,
+      "archival_id": "B5018230601/0032/583/5000",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:c2cf4b2a16d817efda075563f7222ae8388196ed14e303a70daf3f96fdf0a973",
+      "source_id": "c2cf4b2a16d817efda075563f7222ae8388196ed14e303a70daf3f96fdf0a973",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "陸軍遠征軍師屬步兵團編制案",
+      "description": null,
+      "archival_id": "B5018230601/0032/583.3/7421.7",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
+      "source_id": "35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "遠征軍作戰準備檢討報告(第二次)",
+      "description": null,
+      "archival_id": "B5018230601/0033/543.1/3430",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
+      "source_id": "85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "中英美聯合反攻緬甸之意見",
+      "description": null,
+      "archival_id": "B5018230601/0031/542.9/5000",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
+      "source_id": "117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "美空軍志願隊在滇緬作戰要報",
+      "description": null,
+      "archival_id": "B5018230601/0031/543.62/8043",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    },
+    {
+      "id": "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+      "source_id": "196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+      "source": "Taiwan NAA",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "title": "遠征軍編制案",
+      "description": null,
+      "archival_id": "B5018230601/0031/583.1/3430",
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "source_url": "https://aa.archives.gov.tw/",
+      "source_url_kind": "catalogue_search",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "dataset_generated_at": "1150819",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://data.gov.tw/license",
+      "content_rights": [],
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "record_origin": "dataset",
+      "level_of_description": "fileUnit",
+      "metadata_language": [
+        "zh-Hant"
+      ]
+    }
+  ],
+  "sha256": "dd6b116055ee36563055238a9bbee3835237960dd2fe50a988d532136bd63928"
+}

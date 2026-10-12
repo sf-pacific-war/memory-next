@@ -1,0 +1,5267 @@
+{
+  "generated_at": "2026-10-12T03:13:13.338426Z",
+  "records": [
+    {
+      "id": "loc:2004676827",
+      "source_id": "2004676827",
+      "source": "LoC",
+      "title": "[Chinese laborers working to reopen the Burma Road in southwest China, 1944]",
+      "description": "1 photographic print.",
+      "date_display": "1944.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1944"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No copyright restriction known for government issued photographs or for images published or copyrighted before 1923. For information see \"New York World-Telegram & ...,\" https://www.loc.gov/rr/print/res/076_nyw.html"
+      ],
+      "subjects": [
+        "china",
+        "laborers",
+        "photographic prints",
+        "road construction",
+        "burma road (china and burma)"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2004676827/",
+      "aggregator_url": "https://www.loc.gov/item/2004676827/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c30000/3c34000/3c34700/3c34787_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-road",
+        "civilian-health"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma",
+        "民众、卫生与日常生活",
+        "Civilians, health & daily life",
+        "民众",
+        "民眾",
+        "平民",
+        "卫生",
+        "衛生",
+        "疟疾",
+        "瘧疾",
+        "医院",
+        "日常生活",
+        "防疫",
+        "civilian",
+        "health",
+        "malaria",
+        "hospital",
+        "daily life",
+        "village",
+        "public health"
+      ]
+    },
+    {
+      "id": "loc:2017872473",
+      "source_id": "2017872473",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. A section of the Burma road",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2017872473/",
+      "aggregator_url": "https://www.loc.gov/item/2017872473/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02311_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-road"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma"
+      ]
+    },
+    {
+      "id": "loc:2017872503",
+      "source_id": "2017872503",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. A treacherous section of the Burma road",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2017872503/",
+      "aggregator_url": "https://www.loc.gov/item/2017872503/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02341_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-road"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma"
+      ]
+    },
+    {
+      "id": "loc:2017872482",
+      "source_id": "2017872482",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. A section of the Burma road showing the construction of the road",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2017872482/",
+      "aggregator_url": "https://www.loc.gov/item/2017872482/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02320_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-road"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma"
+      ]
+    },
+    {
+      "id": "loc:2007675026",
+      "source_id": "2007675026",
+      "source": "LoC",
+      "title": "Queue of Chinese warriors, central sector of China's Salween front",
+      "description": "1 photographic print : gelatin silver. | Photograph shows Chinese soldiers marching along a narrow section of the Burma Road toward the fighting lines on the Salween front.",
+      "date_display": "[1943]",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1943"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on publication. No copyright renewal found in U.S. Copyright Office, 2012."
+      ],
+      "subjects": [
+        "world war",
+        "gelatin silver prints",
+        "soldiers",
+        "chinese",
+        "military personnel",
+        "marching",
+        "burma road (china and burma)",
+        "troop movements"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2007675026/",
+      "aggregator_url": "https://www.loc.gov/item/2007675026/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/13300/13331_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ]
+    },
+    {
+      "id": "loc:2008678725",
+      "source_id": "2008678725",
+      "source": "LoC",
+      "title": "Save Burma",
+      "description": "1 drawing : graphite on illustration board. | Cartoon drawing shows a fighter plane emerging from a cloud of smoke with the words \"Unconditional Surrender\" above a mountainous road representing the Burma Road.",
+      "date_display": "[19]43.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1943"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "Rights status not evaluated. For general information see \"Copyright and Other Restrictions ...,\" https://www.loc.gov/rr/print/195_copr.html"
+      ],
+      "subjects": [
+        "world war",
+        "drawings",
+        "fighter planes",
+        "campaigns & battles",
+        "political cartoons",
+        "burma road (china and burma)",
+        "burma"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2008678725/",
+      "aggregator_url": "https://www.loc.gov/item/2008678725/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/18500/18535_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ]
+    },
+    {
+      "id": "loc:2017872504",
+      "source_id": "2017872504",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. The old Burma road passing through a village. The bridge is used only when the water is high",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2017872504/",
+      "aggregator_url": "https://www.loc.gov/item/2017872504/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02342_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-road",
+        "civilian-health"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma",
+        "民众、卫生与日常生活",
+        "Civilians, health & daily life",
+        "民众",
+        "民眾",
+        "平民",
+        "卫生",
+        "衛生",
+        "疟疾",
+        "瘧疾",
+        "医院",
+        "日常生活",
+        "防疫",
+        "civilian",
+        "health",
+        "malaria",
+        "hospital",
+        "daily life",
+        "village",
+        "public health"
+      ]
+    },
+    {
+      "id": "loc:2010636632",
+      "source_id": "2010636632",
+      "source": "LoC",
+      "title": "Back in the right direction",
+      "description": "1 drawing.",
+      "date_display": "[1940 Oct.]",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1940"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "Publication may be restricted. For information see \"Herbert Block (\"Herblock\") Rights and Restrictions,\" https://www.loc.gov/rr/print/res/271_herb.html"
+      ],
+      "subjects": [
+        "editorial cartoons",
+        "world war",
+        "british",
+        "drawings",
+        "diplomacy",
+        "american",
+        "asia",
+        "burma road (china and burma)"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2010636632/",
+      "aggregator_url": "https://www.loc.gov/item/2010636632/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/hlb/01100/01146_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ]
+    },
+    {
+      "id": "loc:2005692391",
+      "source_id": "2005692391",
+      "source": "LoC",
+      "title": "Photographs concerning the war activities of the Far Eastern peoples, 1940-45",
+      "description": "7 photographic prints. | Photographs show Chinese repairing the Burma Road, Indians mining tin in the Dutch East Indies, Dutch planes and ships manned by Dutch East Indians, etc.",
+      "date_display": "1940-1945.",
+      "date_kind": "source_supplied",
+      "format": "MIXED",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1940",
+        "1945"
+      ],
+      "language": [
+        "english"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "Rights status of individual images not evaluated. For general information see: \"Copyright and Other Restrictions ...,\" https://www.loc.gov/rr/print/195_copr.html"
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2005692391/",
+      "aggregator_url": "https://www.loc.gov/item/2005692391/",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ]
+    },
+    {
+      "id": "loc:2017872505",
+      "source_id": "2017872505",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma highway. A village street along the Burma road with a ditch running down the center. The anopheles minimus mosquito will not breed in this dirty water",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "subjects": [
+        "film negatives",
+        "burma"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2017872505/",
+      "aggregator_url": "https://www.loc.gov/item/2017872505/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02343_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-road",
+        "civilian-health"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma",
+        "民众、卫生与日常生活",
+        "Civilians, health & daily life",
+        "民众",
+        "民眾",
+        "平民",
+        "卫生",
+        "衛生",
+        "疟疾",
+        "瘧疾",
+        "医院",
+        "日常生活",
+        "防疫",
+        "civilian",
+        "health",
+        "malaria",
+        "hospital",
+        "daily life",
+        "village",
+        "public health"
+      ]
+    },
+    {
+      "id": "loc:2017872525",
+      "source_id": "2017872525",
+      "source": "LoC",
+      "title": "Public Health Service Investigation Commission to the China-Burma Highway. This hospital along the Burma Road made over from the estate of a wealthy Chinese for war wounded was immediately filled up with malaria cases",
+      "description": "1 negative ; 4 x 5 inches or smaller.",
+      "date_display": "1939 or 1940.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1939",
+        "1940"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on images made by the U.S. government; images copied from other sources may be restricted. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+      ],
+      "subjects": [
+        "film negatives",
+        "china"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2017872525/",
+      "aggregator_url": "https://www.loc.gov/item/2017872525/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8e02000/8e02300/8e02364_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-road",
+        "civilian-health"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma",
+        "民众、卫生与日常生活",
+        "Civilians, health & daily life",
+        "民众",
+        "民眾",
+        "平民",
+        "卫生",
+        "衛生",
+        "疟疾",
+        "瘧疾",
+        "医院",
+        "日常生活",
+        "防疫",
+        "civilian",
+        "health",
+        "malaria",
+        "hospital",
+        "daily life",
+        "village",
+        "public health"
+      ]
+    },
+    {
+      "id": "loc:95519388",
+      "source_id": "95519388",
+      "source": "LoC",
+      "title": "The Stilwell Road: monument to allied cooperation and human preseverance--Men of a U.S. field artillery battery fire their 75-mm. howitzer at Japanese emplacements along the Burma Road near Namhkam, one of the key towns along the Stilwell Road",
+      "description": "1 photographic print.",
+      "date_display": "[1945]",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1945"
+      ],
+      "language": [
+        "english"
+      ],
+      "metadata_language": [],
+      "content_rights": [],
+      "subjects": [
+        "howitzers",
+        "world war",
+        "campaigns & battles",
+        "photographic prints",
+        "american",
+        "artillery (troops)",
+        "burma"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/95519388/",
+      "aggregator_url": "https://www.loc.gov/item/95519388/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b30000/3b38000/3b38800/3b38881_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "ledo-stilwell-road"
+      ],
+      "topic_keywords": [
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming"
+      ]
+    },
+    {
+      "id": "loc:2004680684",
+      "source_id": "2004680684",
+      "source": "LoC",
+      "title": "Malaria control in India and China. 1929-1940. U.S. Public Health Service survey for malaria control as a member of the League of Nations malaria investigation committeee to India ...",
+      "description": "64 photographic prints. | Photographs show U.S. Public Health Service survey for malaria control as a member of the League of Nations malaria investigation committee to India in 1929-1930, and the PHS investigation commission to the China-Burma Highway in 1939-1940. Chefang Valley and Burma Road. Testing, sampling, dusting, spraying breeding places of malaria mosquitoes. Educational control work. Drainage ditches in irrigated rice fields. Terraced hillside farm. Children in India.",
+      "date_display": "1929-1940.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1929",
+        "1940"
+      ],
+      "language": [
+        "english"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on publication."
+      ],
+      "subjects": [
+        "photographic prints"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2004680684/",
+      "aggregator_url": "https://www.loc.gov/item/2004680684/",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "civilian-health"
+      ],
+      "topic_keywords": [
+        "民众、卫生与日常生活",
+        "Civilians, health & daily life",
+        "民众",
+        "民眾",
+        "平民",
+        "卫生",
+        "衛生",
+        "疟疾",
+        "瘧疾",
+        "医院",
+        "日常生活",
+        "防疫",
+        "civilian",
+        "health",
+        "malaria",
+        "hospital",
+        "daily life",
+        "village",
+        "public health"
+      ]
+    },
+    {
+      "id": "loc:afc2001001.107713",
+      "source_id": "afc2001001.107713",
+      "source": "LoC",
+      "title": "Clifford Boyd Ellis Collection",
+      "description": "Staff Sergeant, Army Air Forces/Corps, World War, 1939-1945 - India; China; China-Burma-India (CBI) Theater.",
+      "date_display": "1942",
+      "date_kind": "source_supplied",
+      "format": "MIXED",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Veterans History Project, American Folklife Center, Library of Congress"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1942"
+      ],
+      "language": [
+        "english"
+      ],
+      "metadata_language": [],
+      "content_rights": [],
+      "subjects": [
+        "world war, 1939-1945",
+        "21st photographic reconnaissance squadron",
+        "world war",
+        "central pacific",
+        "veteran",
+        "staff sergeant",
+        "ellis, clifford boyd",
+        "personal narratives",
+        "india-burma",
+        "biographical information",
+        "air offensive japan",
+        "china",
+        "male",
+        "army air forces/corps",
+        "united states. army air forces/corps"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/afc2001001.107713/",
+      "aggregator_url": "https://www.loc.gov/item/afc2001001.107713/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/vhp/1077/107713/ph0001001i.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "personal-stories"
+      ],
+      "topic_keywords": [
+        "个人经历与回忆",
+        "Personal stories & recollections",
+        "个人经历",
+        "口述历史",
+        "口述歷史",
+        "回忆录",
+        "回憶錄",
+        "日记",
+        "士兵",
+        "老兵",
+        "军人",
+        "personal narratives",
+        "oral history",
+        "memoir",
+        "diary",
+        "soldiers",
+        "veterans",
+        "service"
+      ]
+    },
+    {
+      "id": "loc:afc2001001.119534",
+      "source_id": "afc2001001.119534",
+      "source": "LoC",
+      "title": "William Cecil Norvelle, Sr. Collection",
+      "description": "Sergeant, Army, World War, 1939-1945 - Chabua Air Force Base, Assam, India; Calcutta, India; India; China-Burma-India (CBI) Theater.",
+      "date_display": "1942",
+      "date_kind": "source_supplied",
+      "format": "MIXED",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Veterans History Project, American Folklife Center, Library of Congress"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1942"
+      ],
+      "language": [
+        "english"
+      ],
+      "metadata_language": [],
+      "content_rights": [],
+      "subjects": [
+        "world war, 1939-1945",
+        "white",
+        "world war",
+        "veteran",
+        "68th service group",
+        "army",
+        "personal narratives",
+        "enlisted",
+        "original photographic print",
+        "1819th ordnance supply & maintenance",
+        "sergeant",
+        "united states. army",
+        "male",
+        "norvelle sr., william cecil"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/afc2001001.119534/",
+      "aggregator_url": "https://www.loc.gov/item/afc2001001.119534/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/vhp/1195/119534/ph0001001i.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "personal-stories"
+      ],
+      "topic_keywords": [
+        "个人经历与回忆",
+        "Personal stories & recollections",
+        "个人经历",
+        "口述历史",
+        "口述歷史",
+        "回忆录",
+        "回憶錄",
+        "日记",
+        "士兵",
+        "老兵",
+        "军人",
+        "personal narratives",
+        "oral history",
+        "memoir",
+        "diary",
+        "soldiers",
+        "veterans",
+        "service"
+      ]
+    },
+    {
+      "id": "loc:afc2001001.82964",
+      "source_id": "afc2001001.82964",
+      "source": "LoC",
+      "title": "William Munro Graham Collection",
+      "description": "Major, Army, World War, 1939-1945 - Algeria; India; Burma; China; Egypt; Fort Belvoir, Virginia; China-Burma-India (CBI) Theater.",
+      "date_display": "1941",
+      "date_kind": "source_supplied",
+      "format": "MIXED",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:18:30.587081Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "AFC/2001/001/82964",
+      "access_note": "Official indexed metadata confirms collection and unit affiliation; item sequence contains hundreds of images.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Veterans History Project, American Folklife Center, Library of Congress"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1941"
+      ],
+      "language": [
+        "english"
+      ],
+      "metadata_language": [],
+      "content_rights": [],
+      "subjects": [
+        "world war, 1939-1945",
+        "company b, 10th battalion, engineer replacement training center",
+        "drafted",
+        "world war",
+        "engineer replacement training center",
+        "major",
+        "army",
+        "veteran",
+        "personal narratives",
+        "original photographic print",
+        "475th infantry regiment",
+        "5307th composite unit (provisional) (merrill's marauders)",
+        "5332nd brigade, 475th infantry regiment",
+        "united states. army",
+        "graham, william munro",
+        "male"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/afc2001001.82964/",
+      "aggregator_url": "https://www.loc.gov/item/afc2001001.82964/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/vhp/0829/082964/ph0001001i.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "burma-campaign",
+        "personal-stories"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween",
+        "个人经历与回忆",
+        "Personal stories & recollections",
+        "个人经历",
+        "口述历史",
+        "口述歷史",
+        "回忆录",
+        "回憶錄",
+        "日记",
+        "士兵",
+        "老兵",
+        "军人",
+        "personal narratives",
+        "oral history",
+        "memoir",
+        "diary",
+        "soldiers",
+        "veterans",
+        "service"
+      ],
+      "curator_note": {
+        "zh-CN": "该个人文献记录 Graham 在第 5307 临时混成部队（麦瑞尔突击队）及第 475 步兵团的服役经历。",
+        "en": "This personal collection documents Graham’s service with the 5307th Composite Unit (Merrill’s Marauders) and the 475th Infantry."
+      }
+    },
+    {
+      "id": "europeana:/2051908/data_euscreenXL_ina_PHD85008112",
+      "source_id": "/2051908/data_euscreenXL_ina_PHD85008112",
+      "source": "Europeana",
+      "title": "The discussion of the three friends: The Pacific; Rommel offensive; Burma road; Japanese to Java. / La discussion des Trois Amis : le Pacifique ; offensive Rommel ; route de Birmanie ; Japonais à Java",
+      "description": null,
+      "date_display": null,
+      "date_kind": "source_supplied",
+      "format": "SOUND",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T02:43:56.382359Z",
+      "query_used": "\"Burma Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "Europeana /2051908/data_euscreenXL_ina_PHD85008112; INA PHD85008112",
+      "access_note": "Europeana API metadata was retrieved on 2026-10-10; this specific item/provider link was not rendered by the web retrieval tool today. Media access remains unverified.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Audiovisual Institute France"
+      ],
+      "metadata_provider": [
+        "EUscreen"
+      ],
+      "year": [],
+      "language": [
+        "French",
+        "fr"
+      ],
+      "metadata_language": [
+        "fr"
+      ],
+      "content_rights": [
+        "http://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "http://www.ina.fr/audio/PHD85008112/la-discussion-des-trois-amis-le-pacifique-offensive-rommel-route-de-birmanie-japonais-a-java.fr.html",
+      "aggregator_url": "https://www.europeana.eu/item/2051908/data_euscreenXL_ina_PHD85008112",
+      "metadata_rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Europeana",
+      "source_name_zh": "欧洲数字文化遗产平台",
+      "topic_ids": [
+        "burma-road"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma"
+      ],
+      "curator_note": {
+        "zh-CN": "Europeana 著录的法国 INA 音频，标题涉及滇缅公路与太平洋战事。录音日期及可播放状态尚未核实。",
+        "en": "A French INA audio record in Europeana whose title mentions the Burma Road and the Pacific war. The recording date and playable access remain unverified."
+      }
+    },
+    {
+      "id": "nara:6830397",
+      "source_id": "6830397",
+      "source": "NARA",
+      "title": "Register Regarding Chinese Replacements",
+      "description": "This series consists solely of a register of incoming Chinese replacements. The information documented in the register per each entry is as follows: dates; number of troops departed; method of travel; destination; backlog; and source.",
+      "date_display": "1945",
+      "date_kind": "archival_inclusive",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "series",
+      "record_group": "493",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "year": [
+        "1945"
+      ],
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "subjects": [],
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations"
+      ],
+      "source_url": "https://catalog.archives.gov/id/6830397",
+      "aggregator_url": "https://catalog.archives.gov/id/6830397",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ]
+    },
+    {
+      "id": "nara:565456",
+      "source_id": "565456",
+      "source": "NARA",
+      "title": "332nd Airdrome Squadron",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "fileUnit",
+      "record_group": "493",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "subjects": [],
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+        "Historical Records"
+      ],
+      "source_url": "https://catalog.archives.gov/id/565456",
+      "aggregator_url": "https://catalog.archives.gov/id/565456",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ]
+    },
+    {
+      "id": "nara:567201",
+      "source_id": "567201",
+      "source": "NARA",
+      "title": "202 Proposed Military Transportation Service",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "fileUnit",
+      "record_group": "493",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "subjects": [],
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+        "Numbered Subject Files"
+      ],
+      "source_url": "https://catalog.archives.gov/id/567201",
+      "aggregator_url": "https://catalog.archives.gov/id/567201",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "ledo-stilwell-road",
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming",
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ]
+    },
+    {
+      "id": "nara:6705460",
+      "source_id": "6705460",
+      "source": "NARA",
+      "title": "Standard Operating Procedures",
+      "description": "This series consists of memorandums, circulars, and correspondence maintained by the Signal Section. The records pertain to standard operating procedures for various items and processes, including identification cards, film handling, signal communications, photographic supply, combat photography, and film and equipment exchange operations, among others.",
+      "date_display": "1944 – 1946",
+      "date_kind": "archival_inclusive",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "series",
+      "record_group": "493",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "year": [
+        "1944",
+        "1946"
+      ],
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "subjects": [],
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations"
+      ],
+      "source_url": "https://catalog.archives.gov/id/6705460",
+      "aggregator_url": "https://catalog.archives.gov/id/6705460",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ]
+    },
+    {
+      "id": "nara:377497694",
+      "source_id": "377497694",
+      "source": "NARA",
+      "title": "List of Items, Files 2, 4, and 5; Messages (\"Radios\") - Personal File: File 2, Items 592-812: June 23-Sept. 15, 1943 THRU File 5, Items 1501-1609: Dec. 1, 1943-Jan. 9, 1944",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "fileUnit",
+      "record_group": "493",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "subjects": [],
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+        "Personal Message Files"
+      ],
+      "source_url": "https://catalog.archives.gov/id/377497694",
+      "aggregator_url": "https://catalog.archives.gov/id/377497694",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ]
+    },
+    {
+      "id": "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+      "source_id": "85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+      "source": "Taiwan NAA",
+      "title": "中英滇緬國界及抗戰形勢ㄧ覽圖",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/002.3/5000.2",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中英滇缅国界及抗战形势图的案卷目录；CSV 提供案名和档号，未提供地图影像或历史日期。",
+        "en": "Map-related case title on the China–Burma border and wartime situation. The CSV supplies the case title and archival number, not the map image or historical date."
+      }
+    },
+    {
+      "id": "taiwan:856635a6b614e7a282ddaf7b6505162b17768af67b54cdc4d5583b50afe8fa8d",
+      "source_id": "856635a6b614e7a282ddaf7b6505162b17768af67b54cdc4d5583b50afe8fa8d",
+      "source": "Taiwan NAA",
+      "title": "駐印軍案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/0503/7031",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "驻印军案卷。可另读原馆教学网站的精选文件；精选页仅代表案卷的部分内容。",
+        "en": "Chinese Army in India case file. Selected documents can be read on the archive’s teaching site; those pages represent part of the case."
+      },
+      "reading_url": "https://art.archives.gov.tw/tw/art/1632-15619.html"
+    },
+    {
+      "id": "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+      "source_id": "6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+      "source": "Taiwan NAA",
+      "title": "滇緬路作戰",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/152.2/2196.2",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-road",
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma",
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关滇缅路作战的案卷。请用档号在原馆目录核对具体内容与年代。",
+        "en": "Case title concerning military operations along the Burma Road. Open the source catalogue with the archival number to confirm the contents and dates."
+      }
+    },
+    {
+      "id": "taiwan:f5b75dd85438f5704d24afc2cf91500d32e632dfadedc83fb9a7f08cb2c5e582",
+      "source_id": "f5b75dd85438f5704d24afc2cf91500d32e632dfadedc83fb9a7f08cb2c5e582",
+      "source": "Taiwan NAA",
+      "title": "緬甸戰役報告書",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/543/2196",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "缅甸战役报告书的案卷目录，出自国防部史政编译局全宗。公开清单未提供报告正文或年代。",
+        "en": "Burma campaign report: a case-level title from the military history fonds. The open list does not supply its contents or dates."
+      }
+    },
+    {
+      "id": "taiwan:4b6403a447e6e51558f2c68147d2058ad08b48c18f3c8621cbb78bac48f582c4",
+      "source_id": "4b6403a447e6e51558f2c68147d2058ad08b48c18f3c8621cbb78bac48f582c4",
+      "source": "Taiwan NAA",
+      "title": "中華民國駐印軍總指揮部編制案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/581.29/5000",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中国驻印军总指挥部编制的案卷目录；CSV 未包含实际编制表。",
+        "en": "Case title concerning the organization of the Chinese Army in India headquarters. The CSV does not include the actual organizational chart."
+      }
+    },
+    {
+      "id": "taiwan:d86915b33282ec38aa9faa1d308c03be6616cf5383f7b5f2142fc162df02ea9f",
+      "source_id": "d86915b33282ec38aa9faa1d308c03be6616cf5383f7b5f2142fc162df02ea9f",
+      "source": "Taiwan NAA",
+      "title": "中華民國駐印軍編制案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0032/583/5000",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "中国驻印军编制案。原馆教学网站提供精选页，CSV 本身仅提供案卷层级元数据。",
+        "en": "Chinese Army in India organization case. The archive’s teaching site provides selected pages; the CSV itself supplies only case-level metadata."
+      },
+      "reading_url": "https://art.archives.gov.tw/tw/art/1632-15618.html"
+    },
+    {
+      "id": "taiwan:c2cf4b2a16d817efda075563f7222ae8388196ed14e303a70daf3f96fdf0a973",
+      "source_id": "c2cf4b2a16d817efda075563f7222ae8388196ed14e303a70daf3f96fdf0a973",
+      "source": "Taiwan NAA",
+      "title": "陸軍遠征軍師屬步兵團編制案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0032/583.3/7421.7",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中国远征军师属步兵团编制的案卷目录，具体年代与完整编制文件需向原馆核对。",
+        "en": "Case title concerning infantry-regiment organization in Chinese Expeditionary Force divisions. Dates and the full organizational documents need source verification."
+      }
+    },
+    {
+      "id": "taiwan:35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
+      "source_id": "35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
+      "source": "Taiwan NAA",
+      "title": "遠征軍作戰準備檢討報告(第二次)",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0033/543.1/3430",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "案名为远征军作战准备检讨报告（第二次）；此处提供目录线索，不是报告全文转录。",
+        "en": "Second review report on Chinese Expeditionary Force operational preparations, as titled in the case list. This is a catalogue lead, not a transcript of the report."
+      }
+    },
+    {
+      "id": "taiwan:85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
+      "source_id": "85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
+      "source": "Taiwan NAA",
+      "title": "中英美聯合反攻緬甸之意見",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/542.9/5000",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中英美联合反攻缅甸意见的案卷目录；案名本身不能证明意见已获采纳或实施。",
+        "en": "Case title concerning proposed Chinese, British and American joint operations in Burma. The title does not establish adoption or execution of the proposals."
+      }
+    },
+    {
+      "id": "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
+      "source_id": "117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
+      "source": "Taiwan NAA",
+      "title": "美空軍志願隊在滇緬作戰要報",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/543.62/8043",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "flying-tigers",
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "飞虎队与航空",
+        "Flying Tigers & aviation",
+        "飞虎队",
+        "飛虎隊",
+        "陈纳德",
+        "陳納德",
+        "美国志愿航空队",
+        "航空",
+        "第十四航空队",
+        "Flying Tigers",
+        "American Volunteer Group",
+        "AVG",
+        "Chennault",
+        "P-40",
+        "Fourteenth Air Force",
+        "aviation",
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关美空军志愿队在滇缅作战的案卷目录，作为飞虎队与航空专题的研究线索；具体建制及报告年代须查原件核实。",
+        "en": "Case title concerning American volunteer air-unit operations in Yunnan and Burma. Included as an aviation research lead; verify the unit identity and report dates in the original documents."
+      }
+    },
+    {
+      "id": "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+      "source_id": "196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+      "source": "Taiwan NAA",
+      "title": "遠征軍編制案",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T02:39:47.229624+00:00",
+      "query_used": "驻印军|滇缅|远征军|缅甸",
+      "level_of_description": "fileUnit",
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": "1150819",
+      "archival_id": "B5018230601/0031/583.1/3430",
+      "access_note": null,
+      "source_url_kind": "catalogue_search",
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "metadata_provider": [
+        "National Archives Administration, National Development Council (Taiwan)"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [
+        "zh-Hant"
+      ],
+      "content_rights": [],
+      "subjects": [],
+      "archival_context": [
+        "國防部史政編譯局"
+      ],
+      "source_url": "https://aa.archives.gov.tw/",
+      "aggregator_url": null,
+      "metadata_rights": "https://data.gov.tw/license",
+      "dataset_url": "https://www.archives.gov.tw/opendata/%E5%9C%8B%E5%AE%B6%E6%AA%94%E6%A1%88%E6%A1%88%E5%90%8D%E6%B8%85%E5%96%AE.csv",
+      "record_origin": "dataset",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ],
+      "curator_note": {
+        "zh-CN": "有关中国远征军编制的案卷目录。保留原始案名与档号，CSV 未提供历史年代。",
+        "en": "Case title concerning Chinese Expeditionary Force organization. Retains the archive’s original title and number; historical dates are not supplied in this CSV."
+      }
+    },
+    {
+      "id": "shac:67020",
+      "source_id": "Web exhibit 67020",
+      "source": "SHAC",
+      "title": "中国远征军司令长官卫立煌报告松山战役第八军兵力布置致蒋介石电",
+      "description": null,
+      "date_display": "1944-06-30",
+      "date_kind": "creation",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "source_page_published_at": "2014-09-19",
+      "coverage_display": null,
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "year": [
+        "1944"
+      ],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580d3d256.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "source_name_en": "Second Historical Archives of China",
+      "source_name_zh": "中国第二历史档案馆",
+      "topic_ids": [
+        "burma-campaign",
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween",
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "1944年6月30日关于松山战役第八军兵力部署的电报，由中国第二历史档案馆提供；2014年为展览网页发布时间。",
+        "en": "Telegram dated 30 June 1944 on Eighth Army deployments at Songshan, supplied by the Second Historical Archives of China. The 2014 date is the exhibit publication date."
+      }
+    },
+    {
+      "id": "shac:67000",
+      "source_id": "Web exhibit 67000",
+      "source": "SHAC",
+      "title": "中美联军奇袭密支那作战经过",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "source_page_published_at": "2014-09-19",
+      "coverage_display": "1944-05-16 (exhibit caption; creation date not separately supplied)",
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "year": [],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67000.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67000.htm",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580cee852.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "source_name_en": "Second Historical Archives of China",
+      "source_name_zh": "中国第二历史档案馆",
+      "topic_ids": [
+        "burma-campaign",
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween",
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "中美联军奇袭密支那作战经过的精选扫描件。展览标注1944年5月16日；未单独核实文件形成日期。",
+        "en": "Selected scans of an account of the Chinese-American attack on Myitkyina. The caption refers to 16 May 1944; the document creation date is not separately established."
+      }
+    },
+    {
+      "id": "shac:67040",
+      "source_id": "Web exhibit 67040",
+      "source": "SHAC",
+      "title": "滇西缅北之战经过要图",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "MAP",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": "Public selected-document exhibit and archive-hosted scan. The numeric identifier is a website exhibit ID, not an archival call number. General catalogue/API access is not connected.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "source_page_published_at": "2014-09-19",
+      "coverage_display": "1943-10–1945-03 (campaign coverage; map creation date not separately supplied)",
+      "holding_institution": [
+        "中国第二历史档案馆 / Second Historical Archives of China"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "year": [],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67040.htm",
+      "aggregator_url": "https://www.saac.gov.cn/zt/2014-09/15/content_67040.htm",
+      "thumbnail_url": "https://www.saac.gov.cn/zt/attachement/jpg/site2/20140915/002564936a811580d4b063.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "source_name_en": "Second Historical Archives of China",
+      "source_name_zh": "中国第二历史档案馆",
+      "topic_ids": [
+        "burma-campaign",
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween",
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "反映1943年10月至1945年3月滇西缅北战役经过的地图；这一区间是地图涉及的战事时期，并非已核实的制图日期。",
+        "en": "A campaign map covering western Yunnan and northern Burma from October 1943 to March 1945. This is the mapped period, not a verified map creation date."
+      }
+    },
+    {
+      "id": "yunnan:nanyang-volunteers",
+      "source_id": "SAAC heritage page 77d37779d7534cdd8e7f2ff73bf05ed9",
+      "source": "Yunnan Archives",
+      "title": "2018 南侨机工档案",
+      "description": null,
+      "date_display": "2021-04-16",
+      "date_kind": "publication",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": "Public collection nomination guide with an official PDF link. This is a research guide, not the full digitized collection. The title’s 2018 refers to the inscription, not a wartime document date.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "source_page_published_at": "2021-04-16",
+      "coverage_display": null,
+      "holding_institution": [
+        "云南省档案馆 / Yunnan Provincial Archives"
+      ],
+      "metadata_provider": [
+        "国家档案局 / State Archives Administration"
+      ],
+      "year": [
+        "2021"
+      ],
+      "language": [
+        "zh"
+      ],
+      "metadata_language": [
+        "zh-Hans"
+      ],
+      "content_rights": [
+        "No open reuse licence verified. Public access to the exhibit or guide does not establish permission to republish the underlying documents or images."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml",
+      "aggregator_url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "source_name_en": "Yunnan Provincial Archives",
+      "source_name_zh": "云南省档案馆",
+      "topic_ids": [
+        "burma-road",
+        "ledo-stilwell-road"
+      ],
+      "topic_keywords": [
+        "滇缅公路",
+        "The Burma Road",
+        "滇緬公路",
+        "缅甸公路",
+        "中国",
+        "缅甸",
+        "雲南",
+        "云南",
+        "Burma Road",
+        "China-Burma highway",
+        "Yunnan",
+        "route de Birmanie",
+        "China",
+        "Burma",
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming"
+      ],
+      "curator_note": {
+        "zh-CN": "云南省档案馆所藏南侨机工档案的官方申报与介绍入口，可用于研究滇缅公路运输。链接提供馆藏说明，不代表整套档案已全文开放。",
+        "en": "Official collection guide to the Nanyang volunteer drivers and mechanics archives held in Yunnan, useful for Burma Road transport research. The linked nomination describes holdings; it is not the complete digitized collection."
+      }
+    },
+    {
+      "id": "loc:2005677702",
+      "source_id": "2005677702",
+      "source": "LoC",
+      "title": "Chinese civilian war effort, 1940-1943",
+      "description": "30 photographic prints. | Photographs show building Yunnan-Burma railway and Ledo Road; war industries.",
+      "date_display": "1940-1943.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T00:27:18.701494Z",
+      "query_used": "\"Ledo Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1940",
+        "1943"
+      ],
+      "language": [
+        "english"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "No known restrictions on publication."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2005677702/",
+      "aggregator_url": "https://www.loc.gov/item/2005677702/",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "ledo-stilwell-road",
+        "civilian-health"
+      ],
+      "topic_keywords": [
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming",
+        "民众、卫生与日常生活",
+        "Civilians, health & daily life",
+        "民众",
+        "民眾",
+        "平民",
+        "卫生",
+        "衛生",
+        "疟疾",
+        "瘧疾",
+        "医院",
+        "日常生活",
+        "防疫",
+        "civilian",
+        "health",
+        "malaria",
+        "hospital",
+        "daily life",
+        "village",
+        "public health"
+      ]
+    },
+    {
+      "id": "loc:2007675029",
+      "source_id": "2007675029",
+      "source": "LoC",
+      "title": "Human bloodhounds on heels of the Japs, northern Burma",
+      "description": "1 photographic print. | Photograph shows Sgt. James Fletcher, of Atlanta, Georgia, with some Kachin scouts. The Kachin natives helped the Allies in Burma obtain information vital to the builders of the Ledo Road.",
+      "date_display": "1944.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T00:27:18.701494Z",
+      "query_used": "\"Ledo Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1944"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "Publication may be restricted. For information see \"New York World-Telegram & ...,\" https://www.loc.gov/rr/print/res/076_nyw.html"
+      ],
+      "subjects": [
+        "burma",
+        "group portraits",
+        "stilwell road (burma and india)",
+        "burmese",
+        "photographic prints",
+        "kachin state",
+        "world war",
+        "military scouts"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2007675029/",
+      "aggregator_url": "https://www.loc.gov/item/2007675029/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/13300/13340_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "ledo-stilwell-road",
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming",
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ]
+    },
+    {
+      "id": "loc:2007675030",
+      "source_id": "2007675030",
+      "source": "LoC",
+      "title": "Human bloodhounds on heels of the Japs, northern Burma",
+      "description": "1 photographic print. | Photograph shows Sgt. James Fletcher, of Atlanta, Georgia (left foreground), and Pvt. John Davenport, Jr., of Goldsville, S.C., leading a group of Kachin scouts as they ford a stream. The Kachin natives helped the Allies in Burma obtain information vital to the builders of the Ledo Road.",
+      "date_display": "1944.",
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T00:27:18.701494Z",
+      "query_used": "\"Ledo Road\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+      ],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [
+        "1944"
+      ],
+      "language": [
+        "eng"
+      ],
+      "metadata_language": [],
+      "content_rights": [
+        "Publication may be restricted. For information see \"New York World-Telegram & ...,\" https://www.loc.gov/rr/print/res/076_nyw.html"
+      ],
+      "subjects": [
+        "burma",
+        "group portraits",
+        "stilwell road (burma and india)",
+        "burmese",
+        "photographic prints",
+        "kachin state",
+        "world war",
+        "military scouts"
+      ],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/2007675030/",
+      "aggregator_url": "https://www.loc.gov/item/2007675030/",
+      "thumbnail_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/13300/13345_150px.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "ledo-stilwell-road",
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming",
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ]
+    },
+    {
+      "id": "europeana:/2022320/8DAA882DC554386D1C625C354C1B6E031692FBF3",
+      "source_id": "/2022320/8DAA882DC554386D1C625C354C1B6E031692FBF3",
+      "source": "Europeana",
+      "title": "Wartime Archive of Reg Stone of Skelmanthorpe: The Times newspaper Home News, page: 11: article on the subject of Archive from Burma campaign shows Chindits founder clashed repeatedly with his superiors, Orde Wingates son to sell war papers and medals, by Alan Hamilton and John Shaw.",
+      "description": "\"I met General Wingate on airstrip at Comilla, Bengal. We had a brew up. He was seeking a flight back into Imphal\" Reg Stone. Imphal is the capital of the Indian state of Manipur.",
+      "date_display": null,
+      "date_kind": "source_supplied",
+      "format": "IMAGE",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T00:28:07.290736Z",
+      "query_used": "Chindits",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "Kirklees Image Archive OAI Feed"
+      ],
+      "metadata_provider": [
+        "CultureGrid"
+      ],
+      "year": [],
+      "language": [
+        "EN-GB"
+      ],
+      "metadata_language": [
+        "en"
+      ],
+      "content_rights": [
+        "http://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "http://www.kirkleesimages.org.uk/frontend.php?keywords=Ref_No_increment%3BEQUALS%3Bk026406&pos=2&action=zoom",
+      "aggregator_url": "https://www.europeana.eu/item/2022320/8DAA882DC554386D1C625C354C1B6E031692FBF3",
+      "metadata_rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Europeana",
+      "source_name_zh": "欧洲数字文化遗产平台",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ]
+    },
+    {
+      "id": "europeana:/2051944/data_euscreenXL_4955234",
+      "source_id": "/2051944/data_euscreenXL_4955234",
+      "source": "Europeana",
+      "title": "Birma (Burma): Amerikanske soldater i kamp i jungelen / 19. jun. 1944 · Filmavisen 1944",
+      "description": "Story number in issue: 9\nAmerikansk filmklipp fra jungelen i Birma (Burma) i Asia. Viser soldatene i kamp, ikke bare mot innbitte japanske styrker, men også mot en fiendtlig og ukjent natur. Oversiktsbilder amerikansk feltflyplass med fly. Soldater med full oppakning går ombord i flyene. Kondensstriper etter fly på himmelen. Oversikt fallskjermer daler mot bakken, sett fra fly. Amerikanske soldater i kamp i jungelen. Sårede soldater bæres på bårer på jungelsti til forbindingsplass. Såret og blindet soldat leies gjennom sump. Støvler tråkker i sump. (Kommentator: Egil Nakling (?), NRK). Filmavisen var en ukentlig nyhetsbulletin som gikk som forfilm på kino i årene 1941 - 1963. Bulletinene var produsert av Norsk Film A/S. NRK mottok filmene i 1976 og har siden sendt dem i reprise med jevne mellomrom. Samlingen er dessverre ikke komplett. \nSendedato på det enkelte program er oppgitt premieredato på kino. Filmavisen blir også referert til som Norsk ukerevy, Norsk filmrevy og Ukerevyen. Blant kommentatorstemmene hører vi Egil Nakling (krigsårene), Halfdan Hegtun, Rolf Kirkvaag, Andor Birkeland og Knut Jørgen Erichsen.\n\nDet er viktig å understreke at Filmavisen i krigsårene var en del av okkupasjonsmaktens propaganda.",
+      "date_display": "1944",
+      "date_kind": "source_supplied",
+      "format": "VIDEO",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": "2026-10-12T00:28:12.360386Z",
+      "query_used": "Burma AND \"1944\"",
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": null,
+      "access_note": null,
+      "source_url_kind": null,
+      "checked_at": null,
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [
+        "NRK"
+      ],
+      "metadata_provider": [
+        "EUscreen"
+      ],
+      "year": [
+        "1944"
+      ],
+      "language": [
+        "Norwegian",
+        "no"
+      ],
+      "metadata_language": [
+        "no"
+      ],
+      "content_rights": [
+        "http://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://tv.nrk.no/serie/filmavisen/FMAA44002444/19-06-1944",
+      "aggregator_url": "https://www.europeana.eu/item/2051944/data_euscreenXL_4955234",
+      "metadata_rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dataset_url": null,
+      "record_origin": "api",
+      "source_name_en": "Europeana",
+      "source_name_zh": "欧洲数字文化遗产平台",
+      "topic_ids": [
+        "burma-campaign"
+      ],
+      "topic_keywords": [
+        "缅甸战役与部队",
+        "Burma campaign & units",
+        "缅甸",
+        "緬甸",
+        "缅甸战役",
+        "钦迪特",
+        "钦迪特部队",
+        "怒江",
+        "Burma",
+        "Burma campaign",
+        "Chindits",
+        "Merrill’s Marauders",
+        "Salween"
+      ]
+    },
+    {
+      "id": "nara:535531",
+      "source_id": "535531",
+      "source": "NARA",
+      "title": "A Chinese soldier guards a line of American P-40 fighter planes",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NAID 535531; 208-AA-12X-21",
+      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "National Archives and Records Administration"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "NARA states the photographs selected for this official gallery are in the public domain and have no use restrictions. Credit National Archives and the item/local identifier."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://catalog.archives.gov/id/535531",
+      "aggregator_url": "https://catalog.archives.gov/id/535531",
+      "thumbnail_url": "https://www.archives.gov/files/research/still-pictures/ww2-208-aa-12x-21.jpeg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "photograph",
+      "thumbnail_source_url": "https://www.archives.gov/research/military/ww2/photos",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "flying-tigers"
+      ],
+      "topic_keywords": [
+        "飞虎队与航空",
+        "Flying Tigers & aviation",
+        "飞虎队",
+        "飛虎隊",
+        "陈纳德",
+        "陳納德",
+        "美国志愿航空队",
+        "航空",
+        "第十四航空队",
+        "Flying Tigers",
+        "American Volunteer Group",
+        "AVG",
+        "Chennault",
+        "P-40",
+        "Fourteenth Air Force",
+        "aviation"
+      ],
+      "curator_note": {
+        "zh-CN": "NARA 图集将照片标为约 1942 年在中国的飞虎队 P-40 战斗机。一名中国士兵在机列前站岗。",
+        "en": "The NARA gallery identifies Flying Tigers P-40 aircraft in China, circa 1942, with a Chinese soldier guarding the line."
+      }
+    },
+    {
+      "id": "nara:535540",
+      "source_id": "535540",
+      "source": "NARA",
+      "title": "U.S.-built Army trucks on a mountain supply road (original caption: Ledo supply road)",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NAID 535540; 208-AA-45L-1",
+      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "National Archives and Records Administration"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "NARA states the selected photographs in this gallery are public domain. Original captions are historical metadata, not independently verified geography."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://catalog.archives.gov/id/535540",
+      "aggregator_url": "https://catalog.archives.gov/id/535540",
+      "thumbnail_url": "https://www.archives.gov/research/african-americans/ww2-pictures/images/african-americans-wwii-009.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "photograph",
+      "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "ledo-stilwell-road"
+      ],
+      "topic_keywords": [
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming"
+      ],
+      "curator_note": {
+        "zh-CN": "运输车辆照片以历史上的“雷多补给公路”说明收录。原始地点说明尚需地理核实。",
+        "en": "A transport photograph catalogued under the historical “Ledo supply road” caption. The original location description still needs geographic verification."
+      }
+    },
+    {
+      "id": "nara:535573",
+      "source_id": "535573",
+      "source": "NARA",
+      "title": "American and Chinese soldiers place allied flags on a jeep before the first convoy to China",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NAID 535573; 208-AA-338A-1",
+      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "National Archives and Records Administration"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "NARA states the selected photographs in this gallery are public domain; cite NAID 535573 and 208-AA-338A-1."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://catalog.archives.gov/id/535573",
+      "aggregator_url": "https://catalog.archives.gov/id/535573",
+      "thumbnail_url": "https://www.archives.gov/research/african-americans/ww2-pictures/images/african-americans-wwii-010.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "photograph",
+      "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "ledo-stilwell-road"
+      ],
+      "topic_keywords": [
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming"
+      ],
+      "curator_note": {
+        "zh-CN": "NARA 记录将这张盟军车队照片署名为 John Gutman，日期为 1945 年 2 月 6 日，与雷多至昆明运输有关。",
+        "en": "NARA credits this Allied convoy photograph to John Gutman and dates it to 6 February 1945, in connection with transport from Ledo to Kunming."
+      }
+    },
+    {
+      "id": "nara:531341",
+      "source_id": "531341",
+      "source": "NARA",
+      "title": "Troops in Burma read the proclamation of victory in Europe",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "IMAGE",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NAID 531341; 111-SC-262229",
+      "access_note": "Official NARA gallery and image accessible; catalogue requires JavaScript.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "National Archives and Records Administration"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "NARA states the selected photographs in this gallery are public domain; cite NAID 531341 and 111-SC-262229."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://catalog.archives.gov/id/531341",
+      "aggregator_url": "https://catalog.archives.gov/id/531341",
+      "thumbnail_url": "https://www.archives.gov/research/african-americans/ww2-pictures/images/african-americans-wwii-012.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "photograph",
+      "thumbnail_source_url": "https://www.archives.gov/files/research/african-americans/ww2-pictures/",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "topic_ids": [
+        "wartime-print"
+      ],
+      "topic_keywords": [
+        "战时报刊与生活指南",
+        "Wartime press & pocket guides",
+        "报纸",
+        "報紙",
+        "报刊",
+        "指南",
+        "生活",
+        "战时中国",
+        "中国",
+        "印度",
+        "缅甸",
+        "newspaper",
+        "press",
+        "pocket guide",
+        "China",
+        "India",
+        "Burma",
+        "CBI Roundup",
+        "Inside Wartime China"
+      ],
+      "curator_note": {
+        "zh-CN": "NARA 将 Yarnell 在缅甸拍摄的这张欧战胜利宣告照片标为 1945 年 5 月 9 日。",
+        "en": "NARA dates Yarnell’s photograph of troops in Burma reading the European victory proclamation to 9 May 1945."
+      }
+    },
+    {
+      "id": "ia:PocketGuideToChina1943",
+      "source_id": "PocketGuideToChina1943",
+      "source": "Internet Archive",
+      "title": "Pocket Guide To China",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "PocketGuideToChina1943; ark:/13960/t2h71pv46",
+      "access_note": "IA metadata, PDF download listing and preview image accessible without credentials.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Internet Archive"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "Internet Archive item metadata displays Public Domain Mark 1.0; digitization credited to Southern Methodist University. Retain item attribution."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://archive.org/details/PocketGuideToChina1943",
+      "aggregator_url": "https://archive.org/details/PocketGuideToChina1943",
+      "thumbnail_url": "https://archive.org/download/PocketGuideToChina1943/__ia_thumb.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "book",
+      "thumbnail_source_url": "https://archive.org/details/PocketGuideToChina1943",
+      "source_name_en": "Internet Archive",
+      "source_name_zh": "互联网档案馆",
+      "topic_ids": [
+        "wartime-print"
+      ],
+      "topic_keywords": [
+        "战时报刊与生活指南",
+        "Wartime press & pocket guides",
+        "报纸",
+        "報紙",
+        "报刊",
+        "指南",
+        "生活",
+        "战时中国",
+        "中国",
+        "印度",
+        "缅甸",
+        "newspaper",
+        "press",
+        "pocket guide",
+        "China",
+        "India",
+        "Burma",
+        "CBI Roundup",
+        "Inside Wartime China"
+      ],
+      "curator_note": {
+        "zh-CN": "互联网档案馆将这本陆军勤务部中国指南标为 1943 年。记录列有 PDF 与预览图；数字化署名为南卫理公会大学。",
+        "en": "Internet Archive dates this Army Service Forces guide to China to 1943. Its record lists a PDF and preview, with digitization credited to Southern Methodist University."
+      }
+    },
+    {
+      "id": "ia:APocketGuideToBurma",
+      "source_id": "APocketGuideToBurma",
+      "source": "Internet Archive",
+      "title": "A Pocket Guide To Burma",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "online",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "APocketGuideToBurma; ark:/13960/t5k95zz7z",
+      "access_note": "IA metadata, PDF download listing and preview image accessible without credentials.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Internet Archive"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "Internet Archive item metadata displays Public Domain Mark 1.0; the scan is credited to Google. Retain item attribution."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://archive.org/details/APocketGuideToBurma",
+      "aggregator_url": "https://archive.org/details/APocketGuideToBurma",
+      "thumbnail_url": "https://archive.org/download/APocketGuideToBurma/__ia_thumb.jpg",
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "book",
+      "thumbnail_source_url": "https://archive.org/details/APocketGuideToBurma",
+      "source_name_en": "Internet Archive",
+      "source_name_zh": "互联网档案馆",
+      "topic_ids": [
+        "wartime-print"
+      ],
+      "topic_keywords": [
+        "战时报刊与生活指南",
+        "Wartime press & pocket guides",
+        "报纸",
+        "報紙",
+        "报刊",
+        "指南",
+        "生活",
+        "战时中国",
+        "中国",
+        "印度",
+        "缅甸",
+        "newspaper",
+        "press",
+        "pocket guide",
+        "China",
+        "India",
+        "Burma",
+        "CBI Roundup",
+        "Inside Wartime China"
+      ],
+      "curator_note": {
+        "zh-CN": "互联网档案馆将这本缅甸指南标为 1943 年，内容包括习俗、健康与词汇。记录列有 PDF 与预览图。",
+        "en": "Internet Archive dates this Burma guide to 1943 and lists chapters on customs, health and vocabulary, along with a PDF and preview."
+      }
+    },
+    {
+      "id": "loc:48043776",
+      "source_id": "48043776",
+      "source": "LoC",
+      "title": "A pocket guide to India",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "LCCN 48043776; DS406 .U6 1944",
+      "access_note": "Digitized-book resource list and indexed metadata accessible; direct item fetch returned HTTP 403 during this check.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "LoC’s digitized-book record states the books in this collection are public domain and free to use and reuse; credit Library of Congress."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/48043776/",
+      "aggregator_url": "https://www.loc.gov/item/48043776/",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "book",
+      "thumbnail_source_url": null,
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "wartime-print"
+      ],
+      "topic_keywords": [
+        "战时报刊与生活指南",
+        "Wartime press & pocket guides",
+        "报纸",
+        "報紙",
+        "报刊",
+        "指南",
+        "生活",
+        "战时中国",
+        "中国",
+        "印度",
+        "缅甸",
+        "newspaper",
+        "press",
+        "pocket guide",
+        "China",
+        "India",
+        "Burma",
+        "CBI Roundup",
+        "Inside Wartime China"
+      ],
+      "curator_note": {
+        "zh-CN": "美国国会图书馆将其著录为 1944 年版本；数字化书名页注明 1944 年 4 月修订。条目访问可能受到限制。",
+        "en": "The Library of Congress describes a 1944 edition; the digitized title page states revised April 1944. Direct item access may be restricted."
+      }
+    },
+    {
+      "id": "loc:afc2001001.86254.pm0004001?sp=2",
+      "source_id": "afc2001001.86254.pm0004001?sp=2",
+      "source": "LoC",
+      "title": "Mileage chart for the China-Burma-India theater of war",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "MAP",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "AFC/2001/001/86254; resource afc2001001.86254.pm0004001",
+      "access_note": "Official indexed resource metadata and image-viewer link available; no map image reused here.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "Veterans History Project contributors may retain copyright; check item and VHP publication/exhibition guidance before reproducing."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/resource/afc2001001.86254.pm0004001/?sp=2",
+      "aggregator_url": "https://www.loc.gov/resource/afc2001001.86254.pm0004001/?sp=2",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "map",
+      "thumbnail_source_url": null,
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "maps-military-records"
+      ],
+      "topic_keywords": [
+        "地图与军事档案",
+        "Maps & military records",
+        "地图",
+        "地圖",
+        "里程",
+        "军事档案",
+        "軍事檔案",
+        "通信",
+        "兵员",
+        "中缅印",
+        "map",
+        "mileage chart",
+        "military records",
+        "communications",
+        "replacements",
+        "China Burma India",
+        "CBI"
+      ],
+      "curator_note": {
+        "zh-CN": "Charles E. Kavenagh 个人文献中的中缅印战区里程图。馆藏页面提供查看器链接；此处未复制地图图像。",
+        "en": "A China-Burma-India theater mileage chart in the Charles E. Kavenagh Collection. The resource offers a viewer link; no map image is reproduced here."
+      }
+    },
+    {
+      "id": "loc:afc2001001.21936",
+      "source_id": "afc2001001.21936",
+      "source": "LoC",
+      "title": "Frank H. Gray Collection",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "MIXED",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "AFC/2001/001/21936",
+      "access_note": "Official search-indexed metadata verified; direct item request returned HTTP 403 in this environment.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Library of Congress"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "VHP contributors retain any copyright they hold; educational availability is not a blanket reuse licence."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.loc.gov/item/afc2001001.21936/",
+      "aggregator_url": "https://www.loc.gov/item/afc2001001.21936/",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "personal_narrative",
+      "thumbnail_source_url": null,
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "topic_ids": [
+        "hump-airlift",
+        "personal-stories"
+      ],
+      "topic_keywords": [
+        "驼峰航线",
+        "The Hump airlift",
+        "驼峰",
+        "駝峰",
+        "喜马拉雅",
+        "空运",
+        "昆明",
+        "Hump",
+        "Himalayas",
+        "airlift",
+        "C-47",
+        "Dakota",
+        "Kunming",
+        "个人经历与回忆",
+        "Personal stories & recollections",
+        "个人经历",
+        "口述历史",
+        "口述歷史",
+        "回忆录",
+        "回憶錄",
+        "日记",
+        "士兵",
+        "老兵",
+        "军人",
+        "personal narratives",
+        "oral history",
+        "memoir",
+        "diary",
+        "soldiers",
+        "veterans",
+        "service"
+      ],
+      "curator_note": {
+        "zh-CN": "馆藏服役说明将 Frank H. Gray 记为从印度飞往中国、执行驼峰航线任务的 C-47 飞行员。",
+        "en": "The collection’s service note identifies Frank H. Gray as a C-47 pilot who flew the Hump from India to China."
+      }
+    },
+    {
+      "id": "smithsonian:nmah_1102530",
+      "source_id": "nmah_1102530",
+      "source": "Smithsonian",
+      "title": "blood chit",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "OBJECT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "nmah_1102530; catalogue 1991.0840.007",
+      "access_note": "Official indexed collection metadata verified; direct page fetch returned HTTP 520 during this check.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Smithsonian Institution"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "The Smithsonian record explicitly says Usage Conditions Apply. No image is embedded in this demo entry."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://americanhistory.si.edu/collections/object/nmah_1102530",
+      "aggregator_url": "https://americanhistory.si.edu/collections/object/nmah_1102530",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "artifact",
+      "thumbnail_source_url": null,
+      "source_name_en": "Smithsonian Institution",
+      "source_name_zh": "史密森学会",
+      "topic_ids": [
+        "artifacts"
+      ],
+      "topic_keywords": [
+        "文物与识别标志",
+        "Artifacts & insignia",
+        "文物",
+        "器物",
+        "血幅",
+        "血符",
+        "求救布告",
+        "臂章",
+        "徽章",
+        "识别标志",
+        "artifact",
+        "blood chit",
+        "rescue notice",
+        "patch",
+        "insignia",
+        "OSS"
+      ],
+      "curator_note": {
+        "zh-CN": "美国国家历史博物馆著录的一件棉质求救布告，与 Robley E. Winfrey 上校有关。馆方注明使用条件适用。",
+        "en": "A cotton blood chit catalogued by the National Museum of American History and associated with Col. Robley E. Winfrey. The museum states that usage conditions apply."
+      }
+    },
+    {
+      "id": "smithsonian:nmah_1983471",
+      "source_id": "nmah_1983471",
+      "source": "Smithsonian",
+      "title": "patch (Fourteenth Air Force)",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "OBJECT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "nmah_1983471",
+      "access_note": "Official indexed collection page supplies the description; direct canonical page was not rendered by the retrieval tool.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Smithsonian Institution"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "Smithsonian image use is marked Usage Conditions Apply. The record link is retained without image reuse."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://americanhistory.si.edu/collections/object/nmah_1983471",
+      "aggregator_url": "https://americanhistory.si.edu/collections/object/nmah_1983471",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "artifact",
+      "thumbnail_source_url": null,
+      "source_name_en": "Smithsonian Institution",
+      "source_name_zh": "史密森学会",
+      "topic_ids": [
+        "flying-tigers",
+        "artifacts"
+      ],
+      "topic_keywords": [
+        "飞虎队与航空",
+        "Flying Tigers & aviation",
+        "飞虎队",
+        "飛虎隊",
+        "陈纳德",
+        "陳納德",
+        "美国志愿航空队",
+        "航空",
+        "第十四航空队",
+        "Flying Tigers",
+        "American Volunteer Group",
+        "AVG",
+        "Chennault",
+        "P-40",
+        "Fourteenth Air Force",
+        "aviation",
+        "文物与识别标志",
+        "Artifacts & insignia",
+        "文物",
+        "器物",
+        "血幅",
+        "血符",
+        "求救布告",
+        "臂章",
+        "徽章",
+        "识别标志",
+        "artifact",
+        "blood chit",
+        "rescue notice",
+        "patch",
+        "insignia",
+        "OSS"
+      ],
+      "curator_note": {
+        "zh-CN": "博物馆描述的一枚蓝色圆形第十四航空队臂章。该部队成立于 1943 年，应与最初的美国志愿航空队区分。",
+        "en": "A blue circular Fourteenth Air Force patch described by the museum. This unit dates to 1943 and is distinct from the original American Volunteer Group."
+      }
+    },
+    {
+      "id": "smithsonian:hiding-plane-sight",
+      "source_id": "hiding-plane-sight",
+      "source": "Smithsonian",
+      "title": "Hiding in Plane Sight",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "NASM editorial; archival photograph SI 90-13683",
+      "access_note": "Official search-indexed article and photo identifier verified; direct fetch returned HTTP 403.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Smithsonian Institution"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "Article and image reuse rights are not established in the retrieved excerpt; link only."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://airandspace.si.edu/stories/editorial/hiding-plane-sight",
+      "aggregator_url": "https://airandspace.si.edu/stories/editorial/hiding-plane-sight",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "article",
+      "thumbnail_source_url": null,
+      "source_name_en": "Smithsonian Institution",
+      "source_name_zh": "史密森学会",
+      "topic_ids": [
+        "flying-tigers"
+      ],
+      "topic_keywords": [
+        "飞虎队与航空",
+        "Flying Tigers & aviation",
+        "飞虎队",
+        "飛虎隊",
+        "陈纳德",
+        "陳納德",
+        "美国志愿航空队",
+        "航空",
+        "第十四航空队",
+        "Flying Tigers",
+        "American Volunteer Group",
+        "AVG",
+        "Chennault",
+        "P-40",
+        "Fourteenth Air Force",
+        "aviation"
+      ],
+      "curator_note": {
+        "zh-CN": "美国国家航空航天博物馆文章介绍飞虎队木制 P-40 诱饵，并注明档案照片编号 SI 90-13683。此处仅提供文章线索。",
+        "en": "A National Air and Space Museum article describes wooden P-40 decoys used by the Flying Tigers and cites archival photograph SI 90-13683. This entry provides a link to the article."
+      }
+    },
+    {
+      "id": "cia:office-of-strategic-services-blood-chit",
+      "source_id": "office-of-strategic-services-blood-chit",
+      "source": "CIA",
+      "title": "Office of Strategic Services Blood Chit",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "OBJECT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "public museum page: office-of-strategic-services-blood-chit",
+      "access_note": "Official public artifact description accessible without credentials.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Central Intelligence Agency Museum"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "No item-specific media licence was established from the record; metadata and outbound link only."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://www.cia.gov/legacy/museum/artifact/office-of-strategic-services-blood-chit/",
+      "aggregator_url": "https://www.cia.gov/legacy/museum/artifact/office-of-strategic-services-blood-chit/",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "artifact",
+      "thumbnail_source_url": null,
+      "source_name_en": "Central Intelligence Agency Museum",
+      "source_name_zh": "美国中央情报局博物馆",
+      "topic_ids": [
+        "artifacts"
+      ],
+      "topic_keywords": [
+        "文物与识别标志",
+        "Artifacts & insignia",
+        "文物",
+        "器物",
+        "血幅",
+        "血符",
+        "求救布告",
+        "臂章",
+        "徽章",
+        "识别标志",
+        "artifact",
+        "blood chit",
+        "rescue notice",
+        "patch",
+        "insignia",
+        "OSS"
+      ],
+      "curator_note": {
+        "zh-CN": "美国中央情报局博物馆将这件丝质求救布告记为战略情报局在中缅印战区使用的器物。未取得单件媒体的使用许可说明。",
+        "en": "The CIA Museum describes this silk rescue notice as an OSS artifact used in the China-Burma-India theater. No item-specific media licence was established."
+      }
+    },
+    {
+      "id": "iwm:2992",
+      "source_id": "2992",
+      "source": "IWM",
+      "title": "THE STILWELL ROAD [Main Title]",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "VIDEO",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "Film number USA 14; IWM film record 2992",
+      "access_note": "Official catalogue accessible; IWM marks this copy Digitised: No and Media not currently available. No playable copy is claimed.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Imperial War Museums"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "IWM film access and licensing conditions apply; no video or still image copied."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://film.iwmcollections.org.uk/record/2992",
+      "aggregator_url": "https://film.iwmcollections.org.uk/record/2992",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "film",
+      "thumbnail_source_url": null,
+      "source_name_en": "Imperial War Museums",
+      "source_name_zh": "帝国战争博物馆",
+      "topic_ids": [
+        "ledo-stilwell-road"
+      ],
+      "topic_keywords": [
+        "雷多公路与盟军运输",
+        "Ledo Road & Allied transport",
+        "雷多公路",
+        "史迪威公路",
+        "运输",
+        "運輸",
+        "后勤",
+        "盟军",
+        "卡钦",
+        "昆明",
+        "Ledo Road",
+        "Stilwell Road",
+        "transport",
+        "logistics",
+        "convoy",
+        "Kachin",
+        "Kunming"
+      ],
+      "curator_note": {
+        "zh-CN": "帝国战争博物馆收录的雷多／史迪威公路战时影片。馆方将该拷贝标为未数字化、媒体目前不可用。",
+        "en": "An Imperial War Museums record for a wartime film about the Ledo/Stilwell Road. This copy is marked not digitized, with media currently unavailable."
+      }
+    },
+    {
+      "id": "iwm:503",
+      "source_id": "503",
+      "source": "IWM",
+      "title": "THE GEN NO 16 [Main Title]",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "VIDEO",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "Film number GEN 16; IWM film record 503",
+      "access_note": "Official indexed film metadata lists digitized media and two HD reels.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Imperial War Museums"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "IWM catalogue attribution is © IWM. Streaming availability does not grant clipping or republication rights."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://film.iwmcollections.org.uk/record/503",
+      "aggregator_url": "https://film.iwmcollections.org.uk/record/503",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "film",
+      "thumbnail_source_url": null,
+      "source_name_en": "Imperial War Museums",
+      "source_name_zh": "帝国战争博物馆",
+      "topic_ids": [
+        "hump-airlift"
+      ],
+      "topic_keywords": [
+        "驼峰航线",
+        "The Hump airlift",
+        "驼峰",
+        "駝峰",
+        "喜马拉雅",
+        "空运",
+        "昆明",
+        "Hump",
+        "Himalayas",
+        "airlift",
+        "C-47",
+        "Dakota",
+        "Kunming"
+      ],
+      "curator_note": {
+        "zh-CN": "1945 年 7 月的新闻影片目录涉及喜马拉雅上空的 Dakota 飞机、昆明补给与返回印度的难民儿童。馆方目录列有两卷高清媒体。",
+        "en": "The July 1945 newsreel description includes a Dakota over the Himalayas, supplies at Kunming and refugee children returning to India. The catalogue lists two HD reels."
+      }
+    },
+    {
+      "id": "carl:p4013coll8/id/2298",
+      "source_id": "p4013coll8/id/2298",
+      "source": "CARL",
+      "title": "Control of theater newspaper \"CBI Roundup\" — attached issue dated January 11, 1945",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "CARL p4013coll8/2298; call number N13669; Part 2, pages 14–19",
+      "access_note": "Official indexed catalogue metadata verified; direct viewer timed out during this check. No PDF fetched.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Ike Skelton Combined Arms Research Library"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "CARL states Approved for public release; distribution is unlimited. Check any separately credited images before standalone image reuse."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://cgsc.contentdm.oclc.org/digital/collection/p4013coll8/id/2298/",
+      "aggregator_url": "https://cgsc.contentdm.oclc.org/digital/collection/p4013coll8/id/2298/",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "newspaper",
+      "thumbnail_source_url": null,
+      "source_name_en": "Ike Skelton Combined Arms Research Library",
+      "source_name_zh": "艾克·斯凯尔顿联合兵种研究图书馆",
+      "topic_ids": [
+        "wartime-print"
+      ],
+      "topic_keywords": [
+        "战时报刊与生活指南",
+        "Wartime press & pocket guides",
+        "报纸",
+        "報紙",
+        "报刊",
+        "指南",
+        "生活",
+        "战时中国",
+        "中国",
+        "印度",
+        "缅甸",
+        "newspaper",
+        "press",
+        "pocket guide",
+        "China",
+        "India",
+        "Burma",
+        "CBI Roundup",
+        "Inside Wartime China"
+      ],
+      "curator_note": {
+        "zh-CN": "联合兵种研究图书馆的报刊管理档案包含 1945 年 1 月 11 日的《CBI Roundup》样刊，位于第二部分第 14–19 页。",
+        "en": "The Combined Arms Research Library’s newspaper-control file includes a sample issue of CBI Roundup dated 11 January 1945, in part 2, pages 14–19."
+      }
+    },
+    {
+      "id": "rice:92597",
+      "source_id": "92597",
+      "source": "Rice University",
+      "title": "Inside Wartime China published by the Chinese Ministry of Information, 1943",
+      "description": null,
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "format": "TEXT",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "retrieved_at": null,
+      "query_used": null,
+      "level_of_description": null,
+      "record_group": null,
+      "dataset_updated_at": null,
+      "dataset_generated_at": null,
+      "archival_id": "Lowe Family Papers MS 0588; Box 4, Folder 12; archival object 92597",
+      "access_note": "Official search-indexed finding aid verified; no online full text established and no repository contact sent.",
+      "source_url_kind": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "source_page_published_at": null,
+      "coverage_display": null,
+      "holding_institution": [],
+      "metadata_provider": [
+        "Woodson Research Center, Rice University"
+      ],
+      "year": [],
+      "language": [],
+      "metadata_language": [],
+      "content_rights": [
+        "The finding aid says open for research and stored off site; it provides no blanket reproduction licence or online scan."
+      ],
+      "subjects": [],
+      "archival_context": [],
+      "source_url": "https://archives.library.rice.edu/repositories/2/archival_objects/92597",
+      "aggregator_url": "https://archives.library.rice.edu/repositories/2/archival_objects/92597",
+      "thumbnail_url": null,
+      "metadata_rights": null,
+      "dataset_url": null,
+      "record_origin": "curated",
+      "material_type": "book",
+      "thumbnail_source_url": null,
+      "source_name_en": "Woodson Research Center, Rice University",
+      "source_name_zh": "莱斯大学伍德森研究中心",
+      "topic_ids": [
+        "wartime-print"
+      ],
+      "topic_keywords": [
+        "战时报刊与生活指南",
+        "Wartime press & pocket guides",
+        "报纸",
+        "報紙",
+        "报刊",
+        "指南",
+        "生活",
+        "战时中国",
+        "中国",
+        "印度",
+        "缅甸",
+        "newspaper",
+        "press",
+        "pocket guide",
+        "China",
+        "India",
+        "Burma",
+        "CBI Roundup",
+        "Inside Wartime China"
+      ],
+      "curator_note": {
+        "zh-CN": "莱斯大学 Lowe 家族文献的查找指南著录了中国新闻部门于 1943 年出版的《Inside Wartime China》。尚未确认有在线全文。",
+        "en": "The finding aid for Rice University’s Lowe Family Papers lists Inside Wartime China, published by the Chinese Ministry of Information in 1943. Online full text has not been established."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "LoC",
+      "label": "美国国会图书馆",
+      "label_en": "Library of Congress",
+      "source_name_en": "Library of Congress",
+      "source_name_zh": "美国国会图书馆",
+      "url": "https://www.loc.gov/",
+      "description": "照片、图像及相关档案目录。访问状态依据来源元数据，使用权仍需逐条核对。",
+      "status": "available",
+      "count": 22,
+      "fetched_at": "2026-10-12T00:27:18.701494Z",
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "api",
+        "curated"
+      ],
+      "counts_by_origin": {
+        "api": 19,
+        "curated": 3
+      }
+    },
+    {
+      "id": "Europeana",
+      "label": "欧洲数字文化遗产平台",
+      "label_en": "Europeana",
+      "source_name_en": "Europeana",
+      "source_name_zh": "欧洲数字文化遗产平台",
+      "url": "https://www.europeana.eu/",
+      "description": "欧洲文化机构聚合目录。元数据为 CC0，原始内容使用权以来源说明为准。",
+      "status": "available",
+      "count": 3,
+      "fetched_at": "2026-10-12T00:28:12.360386Z",
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "api"
+      ],
+      "counts_by_origin": {
+        "api": 3
+      }
+    },
+    {
+      "id": "NARA",
+      "label": "美国国家档案馆",
+      "label_en": "National Archives and Records Administration",
+      "source_name_en": "National Archives and Records Administration",
+      "source_name_zh": "美国国家档案馆",
+      "url": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "description": "NARA 官方开放数据集的 RG 493 目录样本，以及人工整理的官方照片记录。目录与照片分别保留来源和访问说明；并非实时 Catalog API。",
+      "status": "available",
+      "count": 9,
+      "fetched_at": "2026-10-10T04:34:52.818729Z",
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "dataset",
+        "curated"
+      ],
+      "counts_by_origin": {
+        "dataset": 5,
+        "curated": 4
+      }
+    },
+    {
+      "id": "Taiwan NAA",
+      "label": "台湾国家发展委员会档案管理局",
+      "label_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_en": "National Archives Administration, National Development Council (Taiwan)",
+      "source_name_zh": "台湾国家发展委员会档案管理局",
+      "url": "https://aa.archives.gov.tw/",
+      "description": "官方开放案卷目录：保留繁体案名、全宗与档号。资料产制日期不是档案年代；全文与影像访问条件需在 A+ 另行确认。",
+      "status": "available",
+      "count": 11,
+      "fetched_at": "2026-10-12T02:39:47.229624+00:00",
+      "checked_at": null,
+      "access_modes": [
+        "dataset"
+      ],
+      "counts_by_origin": {
+        "dataset": 11
+      }
+    },
+    {
+      "id": "SHAC",
+      "label": "中国第二历史档案馆",
+      "label_en": "Second Historical Archives of China",
+      "source_name_en": "Second Historical Archives of China",
+      "source_name_zh": "中国第二历史档案馆",
+      "url": "https://www.saac.gov.cn/zt/2014-09/15/content_67020.htm",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 3,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 3
+      }
+    },
+    {
+      "id": "Yunnan Archives",
+      "label": "云南省档案馆",
+      "label_en": "Yunnan Provincial Archives",
+      "source_name_en": "Yunnan Provincial Archives",
+      "source_name_zh": "云南省档案馆",
+      "url": "https://www.saac.gov.cn/mowcn/cn/c100513/202104/77d37779d7534cdd8e7f2ff73bf05ed9.shtml",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 1,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T03:08:48.949685Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 1
+      }
+    },
+    {
+      "id": "Internet Archive",
+      "label": "互联网档案馆",
+      "label_en": "Internet Archive",
+      "source_name_en": "Internet Archive",
+      "source_name_zh": "互联网档案馆",
+      "url": "https://archive.org/",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 2,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 2
+      }
+    },
+    {
+      "id": "Smithsonian",
+      "label": "史密森学会",
+      "label_en": "Smithsonian Institution",
+      "source_name_en": "Smithsonian Institution",
+      "source_name_zh": "史密森学会",
+      "url": "https://www.si.edu/",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 3,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 3
+      }
+    },
+    {
+      "id": "CIA",
+      "label": "美国中央情报局博物馆",
+      "label_en": "Central Intelligence Agency Museum",
+      "source_name_en": "Central Intelligence Agency Museum",
+      "source_name_zh": "美国中央情报局博物馆",
+      "url": "https://www.cia.gov/legacy/museum/",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 1,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 1
+      }
+    },
+    {
+      "id": "IWM",
+      "label": "帝国战争博物馆",
+      "label_en": "Imperial War Museums",
+      "source_name_en": "Imperial War Museums",
+      "source_name_zh": "帝国战争博物馆",
+      "url": "https://www.iwm.org.uk/",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 2,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 2
+      }
+    },
+    {
+      "id": "CARL",
+      "label": "艾克·斯凯尔顿联合兵种研究图书馆",
+      "label_en": "Ike Skelton Combined Arms Research Library",
+      "source_name_en": "Ike Skelton Combined Arms Research Library",
+      "source_name_zh": "艾克·斯凯尔顿联合兵种研究图书馆",
+      "url": "https://cgsc.contentdm.oclc.org/",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 1,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 1
+      }
+    },
+    {
+      "id": "Rice University",
+      "label": "莱斯大学伍德森研究中心",
+      "label_en": "Woodson Research Center, Rice University",
+      "source_name_en": "Woodson Research Center, Rice University",
+      "source_name_zh": "莱斯大学伍德森研究中心",
+      "url": "https://archives.library.rice.edu/",
+      "description": "人工整理的机构目录与研究线索。逐条保留访问说明；目录链接不等于可获取全文或媒体授权。",
+      "status": "available",
+      "count": 1,
+      "fetched_at": null,
+      "checked_at": "2026-10-12T00:25:50Z",
+      "access_modes": [
+        "curated"
+      ],
+      "counts_by_origin": {
+        "curated": 1
+      }
+    }
+  ],
+  "topics": [
+    {
+      "id": "flying-tigers",
+      "title": {
+        "zh-CN": "飞虎队与航空",
+        "en": "Flying Tigers & aviation"
+      },
+      "description": {
+        "zh-CN": "从 P-40 战斗机照片、博物馆文章与航空队臂章认识飞虎队及相关航空部队。第十四航空队与最初的美国志愿航空队需要区分。",
+        "en": "Explore P-40 photographs, museum articles and an air-force patch on the Flying Tigers and related air units. The Fourteenth Air Force is distinct from the original American Volunteer Group."
+      },
+      "keywords": {
+        "zh-CN": [
+          "飞虎队",
+          "飛虎隊",
+          "陈纳德",
+          "陳納德",
+          "美国志愿航空队",
+          "航空",
+          "第十四航空队"
+        ],
+        "en": [
+          "Flying Tigers",
+          "American Volunteer Group",
+          "AVG",
+          "Chennault",
+          "P-40",
+          "Fourteenth Air Force",
+          "aviation"
+        ]
+      },
+      "record_ids": [
+        "nara:535531",
+        "smithsonian:hiding-plane-sight",
+        "smithsonian:nmah_1983471",
+        "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10"
+      ]
+    },
+    {
+      "id": "hump-airlift",
+      "title": {
+        "zh-CN": "驼峰航线",
+        "en": "The Hump airlift"
+      },
+      "description": {
+        "zh-CN": "通过飞行员个人文献与新闻影片，了解印度至中国的喜马拉雅空运。馆藏链接保留各自的媒体访问限制。",
+        "en": "Follow the India-to-China Himalayan airlift through a pilot’s personal collection and a newsreel. Each record retains its own media-access limitations."
+      },
+      "keywords": {
+        "zh-CN": [
+          "驼峰",
+          "駝峰",
+          "驼峰航线",
+          "喜马拉雅",
+          "空运",
+          "昆明"
+        ],
+        "en": [
+          "Hump",
+          "Himalayas",
+          "airlift",
+          "C-47",
+          "Dakota",
+          "Kunming"
+        ]
+      },
+      "record_ids": [
+        "loc:afc2001001.21936",
+        "iwm:503"
+      ]
+    },
+    {
+      "id": "burma-road",
+      "title": {
+        "zh-CN": "滇缅公路",
+        "en": "The Burma Road"
+      },
+      "description": {
+        "zh-CN": "沿公路的建设、村落与卫生调查照片，结合广播目录，观察这条交通线的不同记录。",
+        "en": "Explore road construction, villages and health-survey photographs alongside a French broadcast record."
+      },
+      "keywords": {
+        "zh-CN": [
+          "滇缅公路",
+          "滇緬公路",
+          "缅甸公路",
+          "中国",
+          "缅甸",
+          "雲南",
+          "云南"
+        ],
+        "en": [
+          "Burma Road",
+          "China-Burma highway",
+          "Yunnan",
+          "route de Birmanie",
+          "China",
+          "Burma"
+        ]
+      },
+      "record_ids": [
+        "loc:2004676827",
+        "loc:2017872473",
+        "loc:2017872503",
+        "loc:2017872482",
+        "loc:2017872504",
+        "loc:2017872505",
+        "loc:2017872525",
+        "europeana:/2051908/data_euscreenXL_ina_PHD85008112",
+        "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+        "yunnan:nanyang-volunteers"
+      ]
+    },
+    {
+      "id": "ledo-stilwell-road",
+      "title": {
+        "zh-CN": "雷多公路与盟军运输",
+        "en": "Ledo Road & Allied transport"
+      },
+      "description": {
+        "zh-CN": "工程、运输车队、地方侦察员及公路影片的机构记录。历史照片的原始地点说明仍需结合地图核实。",
+        "en": "Institutional records of road building, supply convoys, local scouts and a road film. Original geographic captions still require map-based checking."
+      },
+      "keywords": {
+        "zh-CN": [
+          "雷多公路",
+          "史迪威公路",
+          "运输",
+          "運輸",
+          "后勤",
+          "盟军",
+          "卡钦",
+          "昆明"
+        ],
+        "en": [
+          "Ledo Road",
+          "Stilwell Road",
+          "transport",
+          "logistics",
+          "convoy",
+          "Kachin",
+          "Kunming"
+        ]
+      },
+      "record_ids": [
+        "nara:535540",
+        "nara:535573",
+        "loc:95519388",
+        "loc:2005677702",
+        "loc:2007675029",
+        "loc:2007675030",
+        "iwm:2992",
+        "nara:567201",
+        "yunnan:nanyang-volunteers"
+      ]
+    },
+    {
+      "id": "burma-campaign",
+      "title": {
+        "zh-CN": "缅甸战役与部队",
+        "en": "Burma campaign & units"
+      },
+      "description": {
+        "zh-CN": "照片、战地新闻影片、麦瑞尔突击队个人文献及钦迪特研究线索，展现缅甸战场与部队经历。",
+        "en": "Photographs, wartime newsreels, a Merrill’s Marauders personal collection and Chindit research leads explore the Burma campaign and military service."
+      },
+      "keywords": {
+        "zh-CN": [
+          "缅甸",
+          "緬甸",
+          "缅甸战役",
+          "钦迪特",
+          "钦迪特部队",
+          "怒江"
+        ],
+        "en": [
+          "Burma",
+          "Burma campaign",
+          "Chindits",
+          "Merrill’s Marauders",
+          "Salween"
+        ]
+      },
+      "record_ids": [
+        "loc:2007675026",
+        "loc:2007675029",
+        "loc:2007675030",
+        "loc:afc2001001.82964",
+        "loc:2008678725",
+        "loc:2010636632",
+        "loc:2005692391",
+        "europeana:/2022320/8DAA882DC554386D1C625C354C1B6E031692FBF3",
+        "europeana:/2051944/data_euscreenXL_4955234",
+        "taiwan:856635a6b614e7a282ddaf7b6505162b17768af67b54cdc4d5583b50afe8fa8d",
+        "taiwan:6cd2eb9398128273c0c41d9197347537bf6c8b1ea1cb7ffb60f81718d72a5c6a",
+        "taiwan:f5b75dd85438f5704d24afc2cf91500d32e632dfadedc83fb9a7f08cb2c5e582",
+        "taiwan:4b6403a447e6e51558f2c68147d2058ad08b48c18f3c8621cbb78bac48f582c4",
+        "taiwan:d86915b33282ec38aa9faa1d308c03be6616cf5383f7b5f2142fc162df02ea9f",
+        "taiwan:c2cf4b2a16d817efda075563f7222ae8388196ed14e303a70daf3f96fdf0a973",
+        "taiwan:35756afe53c1856bc2a53f5f7928ca7ac39c8656e3c93ce6cfb61b0a09c871c6",
+        "taiwan:85db25d735594108d4521bdd3c3d394f6ab584ba0323a5530ee779e37ce7acc1",
+        "taiwan:117b64afb6daee36cf0b4b6703d3968141bdceba30dfaa1e30bc4e986e7c4d10",
+        "taiwan:196654f348a6123c21fb28bce6feb646453db7ec9326364e22cea5d36532220a",
+        "shac:67020",
+        "shac:67000",
+        "shac:67040"
+      ]
+    },
+    {
+      "id": "personal-stories",
+      "title": {
+        "zh-CN": "个人经历与回忆",
+        "en": "Personal stories & recollections"
+      },
+      "description": {
+        "zh-CN": "军人个人文献呈现中国、缅甸和印度的服役经历，包括飞行、地勤与地面部队。部分条目只有目录信息。",
+        "en": "Personal military collections offer perspectives on service in China, Burma and India, including flying, ground support and infantry. Some entries provide catalogue information only."
+      },
+      "keywords": {
+        "zh-CN": [
+          "个人经历",
+          "口述历史",
+          "口述歷史",
+          "回忆录",
+          "回憶錄",
+          "日记",
+          "士兵",
+          "老兵",
+          "军人"
+        ],
+        "en": [
+          "personal narratives",
+          "oral history",
+          "memoir",
+          "diary",
+          "soldiers",
+          "veterans",
+          "service"
+        ]
+      },
+      "record_ids": [
+        "loc:afc2001001.107713",
+        "loc:afc2001001.119534",
+        "loc:afc2001001.82964",
+        "loc:afc2001001.21936"
+      ]
+    },
+    {
+      "id": "wartime-print",
+      "title": {
+        "zh-CN": "战时报刊与生活指南",
+        "en": "Wartime press & pocket guides"
+      },
+      "description": {
+        "zh-CN": "中国、缅甸及印度袖珍指南、战区报刊与战时中国出版物。可在线阅读的扫描件与仅有查找指南的资料均有标注。",
+        "en": "Pocket guides to China, Burma and India, theater newspapers and a wartime China publication. Records distinguish available scans from finding aids."
+      },
+      "keywords": {
+        "zh-CN": [
+          "报纸",
+          "報紙",
+          "报刊",
+          "指南",
+          "生活",
+          "战时中国",
+          "中国",
+          "印度",
+          "缅甸"
+        ],
+        "en": [
+          "newspaper",
+          "press",
+          "pocket guide",
+          "China",
+          "India",
+          "Burma",
+          "CBI Roundup",
+          "Inside Wartime China"
+        ]
+      },
+      "record_ids": [
+        "ia:PocketGuideToChina1943",
+        "ia:APocketGuideToBurma",
+        "loc:48043776",
+        "carl:p4013coll8/id/2298",
+        "rice:92597",
+        "nara:531341"
+      ]
+    },
+    {
+      "id": "artifacts",
+      "title": {
+        "zh-CN": "文物与识别标志",
+        "en": "Artifacts & insignia"
+      },
+      "description": {
+        "zh-CN": "求救布告与航空队臂章的博物馆目录。相关器物来自不同机构，其使用权与图像可用性需逐项查看。",
+        "en": "Museum records of blood chits and an air-force patch. These objects come from different institutions; check each record for rights and image availability."
+      },
+      "keywords": {
+        "zh-CN": [
+          "文物",
+          "器物",
+          "血幅",
+          "血符",
+          "求救布告",
+          "臂章",
+          "徽章",
+          "识别标志"
+        ],
+        "en": [
+          "artifact",
+          "blood chit",
+          "rescue notice",
+          "patch",
+          "insignia",
+          "OSS"
+        ]
+      },
+      "record_ids": [
+        "smithsonian:nmah_1102530",
+        "smithsonian:nmah_1983471",
+        "cia:office-of-strategic-services-blood-chit"
+      ]
+    },
+    {
+      "id": "maps-military-records",
+      "title": {
+        "zh-CN": "地图与军事档案",
+        "en": "Maps & military records"
+      },
+      "description": {
+        "zh-CN": "战区里程图、兵员登记、通信与部队文件。目录层级包括系列和文件单元，并不代表每条记录已有数字化全文。",
+        "en": "A theater mileage chart, replacement registers, communications and unit files. Series and file-unit descriptions do not imply that every record has digitized full text."
+      },
+      "keywords": {
+        "zh-CN": [
+          "地图",
+          "地圖",
+          "里程",
+          "军事档案",
+          "軍事檔案",
+          "通信",
+          "兵员",
+          "中缅印"
+        ],
+        "en": [
+          "map",
+          "mileage chart",
+          "military records",
+          "communications",
+          "replacements",
+          "China Burma India",
+          "CBI"
+        ]
+      },
+      "record_ids": [
+        "loc:afc2001001.86254.pm0004001?sp=2",
+        "nara:6830397",
+        "nara:565456",
+        "nara:567201",
+        "nara:6705460",
+        "nara:377497694",
+        "taiwan:85886aaa20b3dfbfc738ba886a76e3b8123e200ff6ca9a255209fe92119b86fb",
+        "shac:67020",
+        "shac:67000",
+        "shac:67040"
+      ]
+    },
+    {
+      "id": "civilian-health",
+      "title": {
+        "zh-CN": "民众、卫生与日常生活",
+        "en": "Civilians, health & daily life"
+      },
+      "description": {
+        "zh-CN": "公路沿线村落、疟疾调查、医院与民众支援的照片，记录战时卫生与日常生活。",
+        "en": "Photographs of villages, malaria surveys, hospitals and civilian war work document wartime health and daily life."
+      },
+      "keywords": {
+        "zh-CN": [
+          "民众",
+          "民眾",
+          "平民",
+          "卫生",
+          "衛生",
+          "疟疾",
+          "瘧疾",
+          "医院",
+          "日常生活",
+          "防疫"
+        ],
+        "en": [
+          "civilian",
+          "health",
+          "malaria",
+          "hospital",
+          "daily life",
+          "village",
+          "public health"
+        ]
+      },
+      "record_ids": [
+        "loc:2017872504",
+        "loc:2017872505",
+        "loc:2017872525",
+        "loc:2004680684",
+        "loc:2005677702",
+        "loc:2004676827"
+      ]
+    }
+  ],
+  "excluded_count": 2
+}

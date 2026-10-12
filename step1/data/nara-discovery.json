@@ -1,0 +1,270 @@
+{
+  "source": "NARA",
+  "effective_query": "RG 493; one official public JSONL shard; locally selected metadata sample",
+  "fetched_at": "2026-10-10T04:34:52.818729Z",
+  "returned_count": 5,
+  "records": [
+    {
+      "id": "nara:6830397",
+      "source_id": "6830397",
+      "source": "NARA",
+      "title": "Register Regarding Chinese Replacements",
+      "description": "This series consists solely of a register of incoming Chinese replacements. The information documented in the register per each entry is as follows: dates; number of troops departed; method of travel; destination; backlog; and source.",
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "date_display": "1945",
+      "date_kind": "archival_inclusive",
+      "year": [
+        "1945"
+      ],
+      "format": "TEXT",
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "source_url": "https://catalog.archives.gov/id/6830397",
+      "aggregator_url": "https://catalog.archives.gov/id/6830397",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "series",
+      "record_group": "493",
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations"
+      ],
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "archival_ancestors": [
+        {
+          "id": "559459",
+          "title": "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+          "level_of_description": "recordGroup",
+          "source_url": "https://catalog.archives.gov/id/559459"
+        }
+      ]
+    },
+    {
+      "id": "nara:565456",
+      "source_id": "565456",
+      "source": "NARA",
+      "title": "332nd Airdrome Squadron",
+      "description": null,
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "source_url": "https://catalog.archives.gov/id/565456",
+      "aggregator_url": "https://catalog.archives.gov/id/565456",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "fileUnit",
+      "record_group": "493",
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+        "Historical Records"
+      ],
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "archival_ancestors": [
+        {
+          "id": "559459",
+          "title": "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+          "level_of_description": "recordGroup",
+          "source_url": "https://catalog.archives.gov/id/559459"
+        },
+        {
+          "id": "565374",
+          "title": "Historical Records",
+          "level_of_description": "series",
+          "source_url": "https://catalog.archives.gov/id/565374"
+        }
+      ]
+    },
+    {
+      "id": "nara:567201",
+      "source_id": "567201",
+      "source": "NARA",
+      "title": "202 Proposed Military Transportation Service",
+      "description": null,
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "source_url": "https://catalog.archives.gov/id/567201",
+      "aggregator_url": "https://catalog.archives.gov/id/567201",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "fileUnit",
+      "record_group": "493",
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+        "Numbered Subject Files"
+      ],
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "archival_ancestors": [
+        {
+          "id": "559459",
+          "title": "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+          "level_of_description": "recordGroup",
+          "source_url": "https://catalog.archives.gov/id/559459"
+        },
+        {
+          "id": "567031",
+          "title": "Numbered Subject Files",
+          "level_of_description": "series",
+          "source_url": "https://catalog.archives.gov/id/567031"
+        }
+      ]
+    },
+    {
+      "id": "nara:6705460",
+      "source_id": "6705460",
+      "source": "NARA",
+      "title": "Standard Operating Procedures",
+      "description": "This series consists of memorandums, circulars, and correspondence maintained by the Signal Section. The records pertain to standard operating procedures for various items and processes, including identification cards, film handling, signal communications, photographic supply, combat photography, and film and equipment exchange operations, among others.",
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "date_display": "1944 – 1946",
+      "date_kind": "archival_inclusive",
+      "year": [
+        "1944",
+        "1946"
+      ],
+      "format": "TEXT",
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "source_url": "https://catalog.archives.gov/id/6705460",
+      "aggregator_url": "https://catalog.archives.gov/id/6705460",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "series",
+      "record_group": "493",
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations"
+      ],
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "archival_ancestors": [
+        {
+          "id": "559459",
+          "title": "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+          "level_of_description": "recordGroup",
+          "source_url": "https://catalog.archives.gov/id/559459"
+        }
+      ]
+    },
+    {
+      "id": "nara:377497694",
+      "source_id": "377497694",
+      "source": "NARA",
+      "title": "List of Items, Files 2, 4, and 5; Messages (\"Radios\") - Personal File: File 2, Items 592-812: June 23-Sept. 15, 1943 THRU File 5, Items 1501-1609: Dec. 1, 1943-Jan. 9, 1944",
+      "description": null,
+      "holding_institution": [
+        "National Archives at College Park - Textual Reference"
+      ],
+      "metadata_provider": [
+        "NARA National Archives Catalog — official public dataset"
+      ],
+      "date_display": null,
+      "date_kind": "not_supplied",
+      "year": [],
+      "format": "TEXT",
+      "language": [],
+      "metadata_language": [
+        "en"
+      ],
+      "source_url": "https://catalog.archives.gov/id/377497694",
+      "aggregator_url": "https://catalog.archives.gov/id/377497694",
+      "access_status": "online",
+      "review_status": "candidate",
+      "metadata_rights": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+      "content_rights": [
+        "NARA use restriction: Unrestricted"
+      ],
+      "retrieved_at": "2026-10-10T04:34:52.818729Z",
+      "query_used": "RG 493; one official public JSONL shard; locally selected metadata sample",
+      "level_of_description": "fileUnit",
+      "record_group": "493",
+      "archival_context": [
+        "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+        "Personal Message Files"
+      ],
+      "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+      "dataset_updated_at": "2026-09-28T20:13:03Z",
+      "archival_ancestors": [
+        {
+          "id": "559459",
+          "title": "Records of U.S. Army Forces in the China-Burma-India Theaters of Operations",
+          "level_of_description": "recordGroup",
+          "source_url": "https://catalog.archives.gov/id/559459"
+        },
+        {
+          "id": "6279897",
+          "title": "Personal Message Files",
+          "level_of_description": "series",
+          "source_url": "https://catalog.archives.gov/id/6279897"
+        }
+      ]
+    }
+  ],
+  "dataset_url": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+  "dataset_updated_at": "2026-09-28T20:13:03Z",
+  "dataset_documentation": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+  "dataset_registry": "https://registry.opendata.aws/nara-national-archives-catalog/",
+  "shard_record_count": 5,
+  "selection_note": "A small sample from one public RG 493 metadata shard, not a search of the full NARA Catalog or a count of the record group. Direct China/Burma/India title or description matches are prioritized; remaining records have verified RG 493 ancestry. Description dates retain their source meaning. No digital objects were downloaded."
+}

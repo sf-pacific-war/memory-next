@@ -1,5 +1,7 @@
 # Archive Collection System Feature Test Cases
 
+These cases apply to the legacy Step 0 app. Run relative shell commands from `step0/` (for example, `cd step0` from the repository root); filesystem paths such as `storage/` and `backups/` are relative to that app folder. See the [Step 0 README](../README.md) for startup and existing local-data migration.
+
 Version: 0.1  
 Target URL: `http://127.0.0.1:8787`  
 Test accounts:

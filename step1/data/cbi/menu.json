@@ -1,0 +1,2464 @@
+{
+  "source_url": "https://cbi-theater.com/menu/cbi_home.html",
+  "fetched_at": "2026-10-12T00:28:58+00:00",
+  "scope": "Distinct internal HTML-page links from the supplied CBI homepage; reference only.",
+  "items": [
+    {
+      "url": "https://cbi-theater.com/links/links.html",
+      "title": "LINKS",
+      "category": "SITE NAVIGATION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/memorial/",
+      "title": "CLICK HERE",
+      "category": null,
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/menu/cbi_mobile.html",
+      "title": "MOBILE MENU",
+      "category": "SITE NAVIGATION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/lifemenu/index.html",
+      "title": "LIFE Reports and Pictorials",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/roundup/index.html",
+      "title": "CBI Roundup",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledoroad/index.html",
+      "title": "The Ledo Road",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/bloodchit/index.html",
+      "title": "CBI Blood Chits",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/tiger_rag/index.html",
+      "title": "Tiger Rag",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/maps/index.html",
+      "title": "Maps of the CBI Theater",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/yankcbi/index.html",
+      "title": "China-Burma-India Edition",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/flyingtigers/index.html",
+      "title": "Flying Tigers in Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/wall_of_honor/index.html",
+      "title": "CBI Wall Of Honor",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/dad/index.html",
+      "title": "A Tribute To My Dad",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/stilwellpages/index.html",
+      "title": "The Stilwell Pages",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hospitals/_cbi_hospitals.html",
+      "title": "Hospital Units in CBI",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/soundoff/index.html",
+      "title": "Best of CBIVA Sound-off",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/cbi-history/index.html",
+      "title": "CBI Order of Battle",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/planes/index.html",
+      "title": "Famous Planes of the CBI",
+      "category": "FEATURED SITES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/lantern/index.html",
+      "title": "China Lantern",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/command_post/index.html",
+      "title": "Command Post",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hump_express/humpexpress.html",
+      "title": "Hump Express",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/starsnstripes/index.html",
+      "title": "The Stars And Stripes",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/standard/index.html",
+      "title": "Hindusthan Standard",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/onthegroundglass/index.html",
+      "title": "On The Ground Glass",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/bullsheet/index.html",
+      "title": "The Bull Sheet",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/superfort/index.html",
+      "title": "Super-Fort",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/superfort/hellbird_022045.html",
+      "title": "Hellbird Herald",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/buck_sheet/index.html",
+      "title": "Buck Sheet",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/seac/index.html",
+      "title": "SEAC Souvenir",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/bull-dozer/bull-dozer.html",
+      "title": "Bull-Dozer",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hairy-ears/hairy-ears-013044.html",
+      "title": "Hairy Ears Herald",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/arc_light/index.html",
+      "title": "ARC Light",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pro_files/index.html",
+      "title": "P.R.O. Files",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/china_marine/index.html",
+      "title": "North China Marine",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/jargon/index.html",
+      "title": "Jungle Jargon",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/the_road_gang/index.html",
+      "title": "The Road Gang",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/roundup/china_weekly.html",
+      "title": "China Weekly",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/baksheesh_bugle/index.html",
+      "title": "Baksheesh Bugle",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/cbi-dromes/index.html",
+      "title": "CBI Dromes",
+      "category": "CBI PUBLICATIONS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/magic/magic-carpet.html",
+      "title": "YANK's Magic Carpet",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/gifavorite/",
+      "title": "Stilwell: The GIs' Favorite",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/yank-burmaroad/burmaroad.html",
+      "title": "Clearing the Burma Road",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/rangoonjump/rangoonjump.html",
+      "title": "Rangoon Jump",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/riverboat/index.html",
+      "title": "Indian Riverboat",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pipeline/index.html",
+      "title": "Longest Pipeline in the World",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/richardson/index.html",
+      "title": "YANK's Dave Richardson",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/yankcbi/yank_pinups.html",
+      "title": "Pin-Up Girls of YANK",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/destination_china/index.html",
+      "title": "First Convoy to China",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/yankcbi/truckconvoy.html",
+      "title": "Truck Convoy to China",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/sidelights/convoysidelights.html",
+      "title": "Convoy Sidelights",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/yank_marilyn/index.html",
+      "title": "Marilyn Monroe and YANK",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/home_plate/index.html",
+      "title": "16,000 Miles From Home",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/yankcbi/burma_diary.html",
+      "title": "Notes from a Burma Diary",
+      "category": "YANK - THE ARMY WEEKLY",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/calcuttakey/index.html",
+      "title": "The Calcutta Key",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/booklet/guide-to-china.html",
+      "title": "Pocket Guide to China",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/booklet/guide-to-burma.html",
+      "title": "Pocket Guide to Burma",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/booklet/guide-to-india.html",
+      "title": "Pocket Guide to India",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/booklet/china-phrase.html",
+      "title": "Chinese Phrase Book",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/booklet/cantonese.html",
+      "title": "Cantonese Language Guide",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/survival/survival.html",
+      "title": "USAAF Survival Guide",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pointie/index.html",
+      "title": "Pointie Talkie",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/redcross/index.html",
+      "title": "Red Cross Guide to India",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/aaf_handbook/index.html",
+      "title": "USAAF Handbook of Burma",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hereshow/index.html",
+      "title": "Here's How",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/icd/index.html",
+      "title": "ATC in India-China",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/atc-usaaf/index.html",
+      "title": "Air Transport Command",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/bombay/index.html",
+      "title": "Welcome to Bombay",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/karachi/index.html",
+      "title": "Guide to Karachi",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/depotno1/index.html",
+      "title": "Special Service Booklet",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/kanchrapara/index.html",
+      "title": "Camp Kanchrapara Guide",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/jalde/index.html",
+      "title": "Jalde! Jalde!",
+      "category": "POCKET GUIDES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/wartime/index.html",
+      "title": "Inside Wartime China",
+      "category": "GOVERNMENT BOOKLETS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/chungking/index.html",
+      "title": "China's War Capital",
+      "category": "GOVERNMENT BOOKLETS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/postwar/index.html",
+      "title": "India Post-War Planning",
+      "category": "GOVERNMENT BOOKLETS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/20th_gen_hosp/index.html",
+      "title": "20th General Hospital",
+      "category": "REMEMBERING",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/memorial/index.html",
+      "title": "Memorial to CBI Veterans",
+      "category": "REMEMBERING",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/arlington/index.html",
+      "title": "Arlington National Cemetery",
+      "category": "REMEMBERING",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/sixtyyears/index.html",
+      "title": "A Search of Sixty Years",
+      "category": "REMEMBERING",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/victory/index.html",
+      "title": "Victory Over Japan",
+      "category": "REMEMBERING",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ww2memorial/index.html",
+      "title": "World War II Memorial",
+      "category": "REMEMBERING",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/cbi-roundup/cbi-roundup.html",
+      "title": "What was The CBI Roundup?",
+      "category": "REMEMBERING",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/InAnAlienCity/index.html",
+      "title": "In An Alien City",
+      "category": "MISCELLANEOUS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/digest/index.html",
+      "title": "Seagrave Most Unforgettable",
+      "category": "MISCELLANEOUS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hals-zornes-story/index.html",
+      "title": "Bringing WW2 To Life",
+      "category": "MISCELLANEOUS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/valor/index.html",
+      "title": "Generations of Valor",
+      "category": "MISCELLANEOUS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/VE_Day_LIFE051445/index.html",
+      "title": "The War Ends in Europe",
+      "category": "MISCELLANEOUS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/leon_n_eddies/leon_n_eddies.html",
+      "title": "Leon & Eddie's Cafe NYC",
+      "category": "MISCELLANEOUS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/merrills_cgm/index.html",
+      "title": "Marauders Ceremony Program",
+      "category": "MISCELLANEOUS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/blue-star/index.html",
+      "title": "Blue Star Memorial Highways",
+      "category": "MISCELLANEOUS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/kapaun/",
+      "title": "Father Kapaun CBI Saint",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/walkout/walkout.html",
+      "title": "Walkout Diary",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/journey/index.html",
+      "title": "One Pilot's Journey",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/banquet/index.html",
+      "title": "Overseas Anniversary",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/rogers/index.html",
+      "title": "QM Truck Company",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/jesse/index.html",
+      "title": "Jake Jesse in CBI",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/14evac/14evac.html",
+      "title": "Evacuation Hospital",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/blueyonder/index.html",
+      "title": "Into The Wildest Blue Yonder",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/backseat/index.html",
+      "title": "CBI From The Back Seat",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/gijoe/index.html",
+      "title": "My Life as a GI Joe",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/dozen/praysingcuss.html",
+      "title": "Prayed - Sang - Cussed",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/dozen/dozen.html",
+      "title": "The Diddled Dozen",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ambush/index.html",
+      "title": "Night Ambush",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/radar/index.html",
+      "title": "Charles Beard's Story",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/louise/index.html",
+      "title": "In Her Own Words",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/777epd/unique.html",
+      "title": "A Unique Military Experience",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/dearmom/index.html",
+      "title": "Dear Mom",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/forgottenwar/index.html",
+      "title": "The Forgotten War",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/depotno1/kwclark.html",
+      "title": "Kenneth Clark's Story",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/orey/index.html",
+      "title": "Walter Orey's Memoir",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/somewhere/index.html",
+      "title": "Somewhere In India",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/billsmith/index.html",
+      "title": "William Smith at Ramgarh",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/mash_stories/index.html",
+      "title": "H. L. Riva M.A.S.H. Stories",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/28th_PSH/index.html",
+      "title": "28th PSH Personal History",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/carlile/index.html",
+      "title": "Norman Carlile's Story",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/julius_edwards/index.html",
+      "title": "Memoir of Julius Edwards",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/apocalypse/index.html",
+      "title": "Apocalypse - Raymond Kania",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/mahler/index.html",
+      "title": "Diary of Robert Mahler",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ve_grable/index.html",
+      "title": "Vernelle Grable WAC ATC",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/wendall/index.html",
+      "title": "Wendall Phillips ETO/CBI",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/beatrice/index.html",
+      "title": "Memoir of an Army Nurse",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/csdavis_merit/index.html",
+      "title": "Cited by Brig. Gen. Pick",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/wall-cbi/index.html",
+      "title": "Thomas Wall - Malaria Control",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/William_Dale/Dale.html",
+      "title": "William Dale Memoir of India",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/heller/index.html",
+      "title": "Leighton J. Heller Diary",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/altman/gerry.html",
+      "title": "Gerald Altman Dossier",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/olive/index.html",
+      "title": "The Story of Olive Lucas",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/tragedy/index.html",
+      "title": "When Tragedy Struck",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/reese/index.html",
+      "title": "Fred Reese in India",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/mattie/index.html",
+      "title": "Nurse “Mattie” Matthews",
+      "category": "CBI VETERAN'S STORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/menu/fisher.html",
+      "title": "Herb Fisher's P-40",
+      "category": "SITE NAVIGATION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/jackindia/index.html",
+      "title": "Jack Thomas' Images of India",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/bf-india/index.html",
+      "title": "Bob Fagelson's Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pcjindia/index.html",
+      "title": "Philip Johnson's Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/glenn/index.html",
+      "title": "Glenn Garrelts' India",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/orey-photos/index.html",
+      "title": "Walter Orey's CBI Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/tompkins/index.html",
+      "title": "Larry Tompkins' Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/uhler/index.html",
+      "title": "Earl Uhler's Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/164th/index.html",
+      "title": "John Smith's Images of India",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/sunne/index.html",
+      "title": "John Sunne Collection",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/lancy/index.html",
+      "title": "Tribute to Arthur Paul Lancy",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/fja_photos/index.html",
+      "title": "Frank Amenitsch Album",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/bowman/index.html",
+      "title": "Earl Jesse Bowman Album",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/bauernfeind/index.html",
+      "title": "George Bauernfeind Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/chandler/index.html",
+      "title": "Boyd Chandler Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/shephard/index.html",
+      "title": "James Shephard Bomb Pins",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/fuchs/index.html",
+      "title": "William Fuchs' Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/wm_warren/index.html",
+      "title": "Wm. Warren Memorabilia",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/antell/index.html",
+      "title": "James Antell Memoabilia",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/kierstead/index.html",
+      "title": "George Kierstead's Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ve_photos/index.html",
+      "title": "WAC War Correspondent",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ryan/index.html",
+      "title": "Walter Ryan Memories",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/gabrielson/index.html",
+      "title": "Olaf Gabrielson CBI Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/byron_hill/index.html",
+      "title": "Earthquaker: Byron Hill",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/julius_edwards/photos/index.html",
+      "title": "Julius Edwards Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/csdavis_menu/index.html",
+      "title": "Col. Charles S. Davis Archive",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hurd/index.html",
+      "title": "Lester M. Hurd Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/zornes/index.html",
+      "title": "Milford Zornes Burma Road",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/zornes/ledo/index.html",
+      "title": "Milford Zornes Ledo Road",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/savoia/index.html",
+      "title": "Vincent Savoia Photographs",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/sterner/index.html",
+      "title": "Robert Sterner Photographs",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/gartner/index.html",
+      "title": "Paul Gartner Photographs",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/reeves/signal/index.html",
+      "title": "Albert L. Reeves Jr. Collection",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/major/index.html",
+      "title": "Sidney Major ICD-ATC Photos",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/wullschleger/index.html",
+      "title": "Arnold Wullschleger's Journey",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/lewter/index.html",
+      "title": "Jim Lewter in China",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/boris/index.html",
+      "title": "Journey to Mongolia and Back",
+      "category": "CBI VETERAN'S PHOTOS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/engineers/index.html",
+      "title": "Building the Ledo Road",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ibengineers/index.html",
+      "title": "India-Burma Engineers",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/330th/index.html",
+      "title": "330th Engineers History",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/789epd/index.html",
+      "title": "789th EPD Unit History",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/879eab/879eab.html",
+      "title": "Of Men and Mud",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hastings/index.html",
+      "title": "Hastings Air Base",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ibt_base_section/ibt.html",
+      "title": "This Is IBT Base Section",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/cai/index.html",
+      "title": "Chinese Army in India-Burma",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/burma/index.html",
+      "title": "A Miracle Military Achievement",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ibt-engineers/index.html",
+      "title": "IBT Engineer Section",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/airfields/airfields.html",
+      "title": "Airfield Construction 1942-44",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/497th_pictorial/index.html",
+      "title": "497th Engineer Heavy Shop",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/69th/index.html",
+      "title": "69th Medical Depot Co.",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/758th/index.html",
+      "title": "758th Railway Shop Battalion",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/44psh/44psh.html",
+      "title": "44th Portable Surgical Hospital",
+      "category": "HISTORIES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/along_ledo_road/index.html",
+      "title": "Along the Ledo Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/lifeline/Ledo_Lifeline.html",
+      "title": "Stilwell Road - Ledo Lifeline",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledoroad/first_convoy/index.html",
+      "title": "The Story of Pick's Pike",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/backdoor/index.html",
+      "title": "The Back Door to China",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/junglesvictory/index.html",
+      "title": "The Jungle's Victory",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/national_geographic/index.html",
+      "title": "Land Route to China",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledoroad/aerial/index.html",
+      "title": "Aerial Views of Ledo Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledoroad/stilwell_road.html",
+      "title": "Stilwell Road Certificate",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/mytrip/index.html",
+      "title": "My Trip Over the Ledo Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledoroad/history/ledo-route.html",
+      "title": "Route of the Ledo Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledoroad/history/ledo-history.html",
+      "title": "History of the Road 1942-44",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/SOSreport/index.html",
+      "title": "First Anniversary Report",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/shweli/index.html",
+      "title": "Shweli River Bridge",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/linked_at_last/index.html",
+      "title": "Linked At Last",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/497th_little_peoria/index.html",
+      "title": "Peoria on the Ledo Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pm-theroad/index.html",
+      "title": "Road That Couldn't Be Built",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/mountbatten/index.html",
+      "title": "Mountbatten Visits Myitkyina",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/assignment_for_pick/index.html",
+      "title": "Assignment for Col. Pick",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pick_accident/index.html",
+      "title": "Runaway C-47 Chases Pick",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/daily_miracle/index.html",
+      "title": "Daily Miracle on Ledo Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/couldnt_be_built/index.html",
+      "title": "He Finished the Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/stilwell-burma-road/index.html",
+      "title": "Report on Stilwell-Burma Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledo_aerial_maps/maps.html",
+      "title": "Aerial Maps of Ledo Road",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledo-engineer/index.html",
+      "title": "A Ledo Engineer Here",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/toughest-road/index.html",
+      "title": "Toughest Road in the World",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/reader/index.html",
+      "title": "My Weekly Reader",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pickspike/index.html",
+      "title": "Pick of ‘Pick’s Pike’",
+      "category": "LEDO ROAD",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/777epd/index.html",
+      "title": "U.S. Army Pipelines in India",
+      "category": "CBI PIPELINES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/abcpipeline/index.html",
+      "title": "Building the ABC Pipeline",
+      "category": "CBI PIPELINES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/fuel/index.html",
+      "title": "Fuel For Freedom",
+      "category": "CBI PIPELINES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pm-oil-china/index.html",
+      "title": "Oil for the Tanks in China",
+      "category": "CBI PIPELINES",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/aluminum_trail/index.html",
+      "title": "The Hump: Aluminum Trail",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pm-thehump/index.html",
+      "title": "Heroes of the Hump",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/knight/index.html",
+      "title": "Jack Knight Medal of Honor",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/mightycbi/index.html",
+      "title": "The Mightiest Army",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ramgarh/index.html",
+      "title": "Ramgarh Training Center",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/marauders/index.html",
+      "title": "Merrill's Marauders in Burma",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/1ptg/index.html",
+      "title": "1st Provisional Tank Group",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/mars/index.html",
+      "title": "Mars Task Force",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/air_routes/index.html",
+      "title": "Hump Air Routes",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/invasion/index.html",
+      "title": "Aerial Invasion of Burma",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/air_commandos/index.html",
+      "title": "Air Commandos",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/undersiege/index.html",
+      "title": "Under Siege at Myitkyina",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/wacs/index.html",
+      "title": "Woman's Army Corps in CBI",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hoverfly/index.html",
+      "title": "The Hoverfly in CBI",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/transportation/index.html",
+      "title": "Lines of Communication",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/matterhorn/index.html",
+      "title": "Operation Matterhorn",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/crisis/crisis.html",
+      "title": "Stilwell: China Crisis",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/newsmap/index.html",
+      "title": "Newsmap",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/look090445/index.html",
+      "title": "World's Biggest Airline",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/manhunt/index.html",
+      "title": "CBI Manhunt",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/misc/cbi_apo.htm",
+      "title": "China-Burma-India APOs",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/casualties/index.html",
+      "title": "U.S. Casualties in CBI",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pm-salvage/index.html",
+      "title": "Monsoon Salvage",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/pm-tigers/index.html",
+      "title": "Flying Tiger's Christmas Battle",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/knight_hill/index.html",
+      "title": "Knight Hill Is Taken",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/air_corps_cbi/bases.html",
+      "title": "Air Corps Bases in CBI",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/IndiaCeylonMap/index.html",
+      "title": "Map of India and Ceylon",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/time-chennault/index.html",
+      "title": "When A Hawk Smiles",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/young_officer/index.html",
+      "title": "Young Officer in Burma",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/aaf_cloth_chart/index.html",
+      "title": "Kunming-Chabua Cloth Chart",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/burma_railway/index.html",
+      "title": "Burma Death Railway",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/negro_soldiers/negro_soldiers.html",
+      "title": "Negro Soldiers",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/malir/index.html",
+      "title": "Replacement Depot No. 1",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/158aacs/index.html",
+      "title": "158th AACS - Luliang, China",
+      "category": "THE CBI THEATER",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/homefront/index.html",
+      "title": "CBI News on the Homefront",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/popmech/index.html",
+      "title": "Adventure on the Stilwell Road",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/convair-hump/index.html",
+      "title": "The Story of The Hump",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/adventure/index.html",
+      "title": "Adventure in Burma",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/serendipity/index.html",
+      "title": "Serendipity",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/k2k/k2k.html",
+      "title": "Kunming-Kweiyang Route",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/camelcade/index.html",
+      "title": "Camelcade",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/robin/index.html",
+      "title": "Round Robin",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/look/index.html",
+      "title": "My Favorite War Story",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/christmas/index.html",
+      "title": "China-Burma-India Christmas",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/confusion/index.html",
+      "title": "Confusion Beyond Imagination",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ads/index.html",
+      "title": "Advertising CBI",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/convair-4days/index.html",
+      "title": "4 Days Out - 4 Days Back",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/rambler/index.html",
+      "title": "Rangoon Rambler",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/connections/index.html",
+      "title": "CBI Connections",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/china_bowl/index.html",
+      "title": "China Bowl Football Classic",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/teamwork/index.html",
+      "title": "Teamwork Does It!",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/carl/index.html",
+      "title": "Story of CBI on the Internet",
+      "category": "A UNIQUE LOOK",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/roadclosed/index.html",
+      "title": "Burma Road Closed",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-soong/index.html",
+      "title": "China's Soong",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life_063041/index.html",
+      "title": "China To The Mountains",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life_090841/index.html",
+      "title": "Wings Over China",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/burmaroad/index.html",
+      "title": "Check-up on Burma Road",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life120841/life120841.html",
+      "title": "Japan Threatens Burma Road",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life030242/index.html",
+      "title": "Chiang Kai-shek",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-india/index.html",
+      "title": "India In Peril",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life042742/index.html",
+      "title": "China Asks India",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/burmafront/index.html",
+      "title": "Burma Front",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life050442/index.html",
+      "title": "Chinese Pilots",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life051842/index.html",
+      "title": "The Rat-Trap of Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life060842/index.html",
+      "title": "Flight From Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/mission/life-mission.html",
+      "title": "Burma Mission",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life062942/index.html",
+      "title": "Japanese Invade Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life072042/index.html",
+      "title": "AVG Ends Famous Career",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/stilwellwalkout/index.html",
+      "title": "Stilwell's Flight from Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/warphotos/warphotographer.html",
+      "title": "LIFE Photographer in Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/chennault/index.html",
+      "title": "Chennault Fights to Hold China",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-roundup/index.html",
+      "title": "Dear Mom, I Got A Valet",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life011843/index.html",
+      "title": "Yanks Make a Hit in India",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life022243/index.html",
+      "title": "The Missimo",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life030143a/index.html",
+      "title": "India Speaks to China",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life030143/index.html",
+      "title": "Speech To Congress",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life030843/index.html",
+      "title": "Madame Chiang in the U.S.",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life031543/index.html",
+      "title": "Mass Tribute to Madame Chiang",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life032243/index.html",
+      "title": "American Makes Planes in India",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life041243/index.html",
+      "title": "China Air Task Force",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life041943/index.html",
+      "title": "Madame Chiang in Hollywood",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life051043/index.html",
+      "title": "Yanks In Shangri-La",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life062843/index.html",
+      "title": "British Raid Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life071243/index.html",
+      "title": "China Fights On",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life083043/index.html",
+      "title": "A Date in India",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/big_day/index.html",
+      "title": "A Big Day In China",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life110143/index.html",
+      "title": "Army Hospital in Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/elephants/elephants.html",
+      "title": "Elephants at War",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/burmawar/burmawar.html",
+      "title": "The War In Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/stilwellswar/stilwell.html",
+      "title": "Joe Stilwell's War",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life042444/index.html",
+      "title": "Trouble In Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life052244/index.html",
+      "title": "War Explodes Into Bombay",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life_chennault/index.html",
+      "title": "Claire Chennault",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life060544/index.html",
+      "title": "To India And Back In 10 Days",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life061244/index.html",
+      "title": "Airborne Raiders in Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life062644/index.html",
+      "title": "U.S. Foot Soldiers In Burma",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life071044/index.html",
+      "title": "Superforts Bomb Japan",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life080744/index.html",
+      "title": "The Mules of Myitkyina",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/lifeledo/life-ledo.html",
+      "title": "The Ledo Road",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life091144/index.html",
+      "title": "The Hump",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/us_in_china/index.html",
+      "title": "The U.S. In China",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/China_Flees/index.html",
+      "title": "China Flees",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life120444/index.html",
+      "title": "Man and His Dog",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/LIFE-Red-China/index.html",
+      "title": "Inside Red China",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life010145/index.html",
+      "title": "Jinx Returns From The War",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/stilwellroad/stilwellroad.html",
+      "title": "Stilwell Road",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/overroad/overroad.html",
+      "title": "LIFE Goes Over Stilwell Road",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life_woodcuts/index.html",
+      "title": "Woodcuts Fight China's Battles",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/Chinese_Tragedy/index.html",
+      "title": "Chinese Tragedy",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/Victorious_China/index.html",
+      "title": "Victorious China",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life092445/index.html",
+      "title": "Peace Comes to Shanghai",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-china-reborn/index.html",
+      "title": "China Reborn",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-crisis-in-china/index.html",
+      "title": "Crisis in China",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/male_call/index.html",
+      "title": "Male Call",
+      "category": "LIFE MAGAZINE",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-ledo-road/index.html",
+      "title": "The Ledo Road",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-the-hump/indexC.html",
+      "title": "The Hump (In Color)",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-marauders/index.html",
+      "title": "Merrill's Marauders",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/myitkyina/index.html",
+      "title": "Capture of Myitkyina Airdrome",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-burma-ledo/index.html",
+      "title": "First Convoy Burma-Ledo Road",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-stilwell/index.html",
+      "title": "General Joseph W. Stilwell",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-fireball-express/index.html",
+      "title": "Fire Ball Express",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/life-fireball-express/fireball-pictorial.html",
+      "title": "Fire Ball Pictorial Photos",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/seagrave/index.html",
+      "title": "Seagrave Returns to Burma",
+      "category": "LIFE PHOTO COLLECTION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/baer/index.html",
+      "title": "Paintings of Army Medicine",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/verses/index.html",
+      "title": "Ledo Road & Other Verses",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/insignia/index.html",
+      "title": "A Masterpiece of Design",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/ledo-ssi/index.html",
+      "title": "Ledo Road Insignia",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/stilwellcard/stilwell_card.html",
+      "title": "Vinegar Joe Stilwell",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/roundup/sketches-L.html",
+      "title": "Ledo Road Sketches",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/noreturn/index.html",
+      "title": "The Flight of No Return",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/sketchbook/index.html",
+      "title": "CBI Sketch Book",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/men_of_mars/index.html",
+      "title": "The Mars Task Force",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/vagabond/index.html",
+      "title": "Vagabond Journey",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/hump_express/broad_views.html",
+      "title": "Broad Views",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/menu/new_year.html",
+      "title": "New Year - Old Friend",
+      "category": "SITE NAVIGATION",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/flashes/index.html",
+      "title": "Flashes from Burma Road",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/69th/sketches.html",
+      "title": "Sketches by Wm. Warren",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/roundup/roundup121042.html",
+      "title": "",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    },
+    {
+      "url": "https://cbi-theater.com/wall_of_honor/wall_of_honor.html",
+      "title": "CBI Wall Of Honor",
+      "category": "ARTISTIC VIEWS",
+      "item_type": "reference_page",
+      "archival_match_status": "not_verified"
+    }
+  ]
+}

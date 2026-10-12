@@ -1,0 +1,114 @@
+{
+  "source": "Europeana",
+  "effective_query": "\"Burma Road\"",
+  "fetched_at": "2026-10-10T02:43:56.382359Z",
+  "total_results": 28,
+  "returned_count": 3,
+  "records": [
+    {
+      "id": "europeana:/08711/https___www_biodiversitylibrary_org_item_296987",
+      "source_id": "/08711/https___www_biodiversitylibrary_org_item_296987",
+      "source": "Europeana",
+      "title": "Spring 1944 : spring on Burma Road",
+      "description": "1944",
+      "holding_institution": [
+        "U.S. Department of Agriculture"
+      ],
+      "metadata_provider": [
+        "OpenUp!"
+      ],
+      "date_display": "1944",
+      "date_kind": "source_supplied",
+      "year": [
+        "1944"
+      ],
+      "format": "TEXT",
+      "language": [
+        "eng",
+        "ENG"
+      ],
+      "metadata_language": [
+        "en"
+      ],
+      "source_url": "https://www.europeana.eu/item/08711/https___www_biodiversitylibrary_org_item_296987",
+      "aggregator_url": "https://www.europeana.eu/item/08711/https___www_biodiversitylibrary_org_item_296987",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "content_rights": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "retrieved_at": "2026-10-10T02:43:56.382359Z",
+      "query_used": "\"Burma Road\""
+    },
+    {
+      "id": "europeana:/2051908/data_euscreenXL_ina_PHD85008112",
+      "source_id": "/2051908/data_euscreenXL_ina_PHD85008112",
+      "source": "Europeana",
+      "title": "The discussion of the three friends: The Pacific; Rommel offensive; Burma road; Japanese to Java. / La discussion des Trois Amis : le Pacifique ; offensive Rommel ; route de Birmanie ; Japonais à Java",
+      "description": null,
+      "holding_institution": [
+        "National Audiovisual Institute France"
+      ],
+      "metadata_provider": [
+        "EUscreen"
+      ],
+      "date_display": null,
+      "date_kind": "source_supplied",
+      "year": [],
+      "format": "SOUND",
+      "language": [
+        "French",
+        "fr"
+      ],
+      "metadata_language": [
+        "fr"
+      ],
+      "source_url": "http://www.ina.fr/audio/PHD85008112/la-discussion-des-trois-amis-le-pacifique-offensive-rommel-route-de-birmanie-japonais-a-java.fr.html",
+      "aggregator_url": "https://www.europeana.eu/item/2051908/data_euscreenXL_ina_PHD85008112",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "content_rights": [
+        "http://rightsstatements.org/vocab/InC/1.0/"
+      ],
+      "retrieved_at": "2026-10-10T02:43:56.382359Z",
+      "query_used": "\"Burma Road\""
+    },
+    {
+      "id": "europeana:/318/marc_nli_003995336",
+      "source_id": "/318/marc_nli_003995336",
+      "source": "Europeana",
+      "title": "תמונות ישנות. / Old pictures. / Old Pix.",
+      "description": "Photo shows: The official parade of those who built the Burma road to Jerusalem.\nהמידע אודות התצלום נמסר על ידי יוצר האוסף, מר דן הדני\nFile Record",
+      "holding_institution": [
+        "National Library of Israel"
+      ],
+      "metadata_provider": [
+        "Jewish Heritage Network"
+      ],
+      "date_display": "1948",
+      "date_kind": "source_supplied",
+      "year": [
+        "1948"
+      ],
+      "format": "IMAGE",
+      "language": [
+        "zxx"
+      ],
+      "metadata_language": [
+        "mul"
+      ],
+      "source_url": "https://www.europeana.eu/item/318/marc_nli_003995336",
+      "aggregator_url": "https://www.europeana.eu/item/318/marc_nli_003995336",
+      "access_status": "unverified",
+      "review_status": "candidate",
+      "metadata_rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "content_rights": [
+        "http://creativecommons.org/licenses/by/4.0/"
+      ],
+      "retrieved_at": "2026-10-10T02:43:56.382359Z",
+      "query_used": "\"Burma Road\""
+    }
+  ]
+}
