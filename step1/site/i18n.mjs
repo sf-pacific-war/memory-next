@@ -1,5 +1,9 @@
 /** UI translations only. Archival titles, descriptions and rights remain verbatim. */
 export const messages = Object.freeze({
+  "记录说明：{title}": {"zh-CN": "记录说明：{title}", "en": "Record notes: {title}"},
+  "在新标签页打开原馆检索入口": {"zh-CN": "在新标签页打开原馆检索入口", "en": "Open archive catalogue search in a new tab"},
+  "在新标签页打开原始出处": {"zh-CN": "在新标签页打开原始出处", "en": "Open original source in a new tab"},
+
   "繁体中文": {"zh-CN": "繁体中文", "en": "Traditional Chinese"},
   "阅读原馆精选档案 ↗": {"zh-CN": "阅读原馆精选档案 ↗", "en": "Read selected archival pages ↗"},
   "官方开放案卷目录：保留繁体案名、全宗与档号。资料产制日期不是档案年代；全文与影像访问条件需在 A+ 另行确认。": {"zh-CN": "官方开放案卷目录：保留繁体案名、全宗与档号。资料产制日期不是档案年代；全文与影像访问条件需在 A+ 另行确认。", "en": "Official open case-title catalogue, preserving Traditional Chinese titles, fonds and archival numbers. Data creation dates are not historical dates; confirm full-text and image access in A+."},
@@ -41,9 +45,9 @@ export const messages = Object.freeze({
   "公开数据集": {"zh-CN": "公开数据集", "en": "Public dataset"},
   "人工整理": {"zh-CN": "人工整理", "en": "Editorial selection"},
 
-  "查看资料：{title}（{type}）": {
-    "zh-CN": "查看资料：{title}（{type}）",
-    "en": "View record: {title} ({type})"
+  "打开原始出处：{title}（{type}）": {
+    "zh-CN": "打开原始出处：{title}（{type}）",
+    "en": "Open original source: {title} ({type})"
   },
   "无预览图": {
     "zh-CN": "无预览图",
@@ -337,13 +341,13 @@ export const messages = Object.freeze({
     "zh-CN": "回到顶部 ↑",
     "en": "Back to top ↑"
   },
-  "资料详情": {
-    "zh-CN": "资料详情",
-    "en": "Record details"
+  "记录说明": {
+    "zh-CN": "记录说明",
+    "en": "Record notes"
   },
-  "关闭资料详情": {
-    "zh-CN": "关闭资料详情",
-    "en": "Close record details"
+  "关闭记录说明": {
+    "zh-CN": "关闭记录说明",
+    "en": "Close record notes"
   },
   "关闭使用说明": {
     "zh-CN": "关闭使用说明",
@@ -377,9 +381,9 @@ export const messages = Object.freeze({
     "zh-CN": "核对原始出处",
     "en": "Check the original source"
   },
-  "打开记录查看原始描述，再前往原馆确认内容、访问条件和使用许可。": {
-    "zh-CN": "打开记录查看原始描述，再前往原馆确认内容、访问条件和使用许可。",
-    "en": "Open a record to read its original description, then visit the archive to verify its content, access and reuse conditions."
+  "点击标题或预览，在新标签页打开原始出处。使用“记录说明”查看元数据、来源和获取信息。": {
+    "zh-CN": "点击标题或预览，在新标签页打开原始出处。使用“记录说明”查看元数据、来源和获取信息。",
+    "en": "Select a title or preview to open the original source in a new tab. Use Record notes to inspect metadata, provenance and retrieval information."
   },
   "当前搜索本地已导入的真实样本，不是全馆藏实时检索。关键词命中不等于史料相关性已经确认；书目记录也不等于在线全文。": {
     "zh-CN": "当前搜索本地已导入的真实样本，不是全馆藏实时检索。关键词命中不等于史料相关性已经确认；书目记录也不等于在线全文。",
@@ -533,9 +537,9 @@ export const messages = Object.freeze({
     "zh-CN": "来源记录编号",
     "en": "Source record ID"
   },
-  "样本获取时间": {
-    "zh-CN": "样本获取时间",
-    "en": "Sample retrieved"
+  "元数据获取时间": {
+    "zh-CN": "元数据获取时间",
+    "en": "Metadata retrieved"
   },
   "档案组": {
     "zh-CN": "档案组",

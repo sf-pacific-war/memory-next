@@ -38,9 +38,21 @@ function link(label, href, className = '') {
   a.href = href;
   return a;
 }
-function preview(record, href) {
-  const a = link('', href, 'record-preview');
-  a.setAttribute('aria-label', t('查看资料：{title}（{type}）', { title: record.title, type: formatLabel(record.format, locale) }));
+function originalLink(record, label, className = '') {
+  try {
+    const url = new URL(record.source_url);
+    if (['http:', 'https:'].includes(url.protocol) && !url.username && !url.password) {
+      const a = link(label, url.href, className);
+      a.target = '_blank'; a.rel = 'noopener noreferrer';
+      a.title = `${record.title} — ${t(record.source_url_kind === 'catalogue_search' ? '在新标签页打开原馆检索入口' : '在新标签页打开原始出处')}`;
+      return a;
+    }
+  } catch { /* Keep notes available when no valid original source link exists. */ }
+  return el('span', className, label);
+}
+function preview(record) {
+  const a = originalLink(record, '', 'record-preview');
+  a.setAttribute('aria-label', t('打开原始出处：{title}（{type}）', { title: record.title, type: formatLabel(record.format, locale) }));
   const fallback = el('span', 'topic-preview-fallback', t('无预览图'));
   a.append(fallback, el('span', 'preview-type', formatLabel(record.format, locale)));
   const url = archivalThumbnail(record.thumbnail_url);
@@ -60,20 +72,15 @@ function recordCard(record) {
   const content = el('div', 'record-content');
   content.append(el('div', 'record-source', sourceLabel(record.source, locale)));
   const title = el('h3', 'record-title');
-  title.append(link(record.title, href));
+  title.append(originalLink(record, record.title));
   content.append(title, el('p', 'record-meta', `${formatLabel(record.format, locale)} · ${record.date_display || t('日期不详')}`));
   const note = record.curator_note?.[locale];
   content.append(el('p', 'record-description', record.description || (note ? `${t('编者导读')} · ${note}` : t('原目录未提供摘要，可前往来源页面查看完整记录。'))));
   const bottom = el('div', 'record-bottom');
-  bottom.append(link(t('资料详情'), href, 'record-link'));
-  try {
-    const url = new URL(record.source_url);
-    if (['http:', 'https:'].includes(url.protocol) && !url.username && !url.password) {
-      const original = link(t(record.source_url_kind === 'catalogue_search' ? '前往 A+ 查档 ↗' : '原馆记录 ↗'), url.href, 'record-link');
-      original.target = '_blank'; original.rel = 'noopener noreferrer'; bottom.append(original);
-    }
-  } catch { /* No external link for an invalid archive URL. */ }
-  content.append(bottom); card.append(preview(record, href), content);
+  const notes = link(t('记录说明'), href, 'record-link');
+  notes.setAttribute('aria-label', t('记录说明：{title}', { title: record.title }));
+  bottom.append(notes);
+  content.append(bottom); card.append(preview(record), content);
   return card;
 }
 function render() {

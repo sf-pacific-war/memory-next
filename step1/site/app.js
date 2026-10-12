@@ -163,14 +163,13 @@ function typeVisual(type) {
   return div;
 }
 function recordPreview(record) {
-  const button = el('button', 'record-preview');
-  button.type = 'button';
-  button.setAttribute('aria-label', t('查看资料：{title}（{type}）', { title: record.title || t('未提供标题'), type: formatLabel(record.format) }));
-  button.addEventListener('click', () => openRecord(record));
+  const preview = link('', record.source_url, 'record-preview') || el('div', 'record-preview');
+  preview.setAttribute('aria-label', t('打开原始出处：{title}（{type}）', { title: record.title || t('未提供标题'), type: formatLabel(record.format) }));
+  preview.title = t(record.source_url_kind === 'catalogue_search' ? '在新标签页打开原馆检索入口' : '在新标签页打开原始出处');
   const fallback = typeVisual(record.format);
   const caption = el('span', 'preview-caption', t('无预览图'));
   fallback.append(caption);
-  button.append(fallback, el('span', 'preview-type', formatLabel(record.format)));
+  preview.append(fallback, el('span', 'preview-type', formatLabel(record.format)));
   const url = archivalThumbnail(record.thumbnail_url);
   if (url?.startsWith('https://')) {
     const image = el('img', 'record-thumbnail');
@@ -188,9 +187,9 @@ function recordPreview(record) {
       caption.textContent = t('无预览图');
     }, { once: true });
     image.src = url;
-    button.append(image);
+    preview.append(image);
   }
-  return button;
+  return preview;
 }
 function recordCard(record, index) {
   const article = el('article', 'record-card');
@@ -198,11 +197,9 @@ function recordCard(record, index) {
   const top = el('div', 'record-top');
   top.append(el('span', 'record-source', `${record.source} / ${sourceLabel(record.source)}`), el('span', 'record-number', String(index + 1).padStart(3, '0')));
   const title = el('h3', 'record-title');
-  const button = el('button', '', record.title || t('未提供标题'));
-  button.type = 'button';
-  button.title = record.title || t('未提供标题');
-  button.addEventListener('click', () => openRecord(record));
-  title.append(button);
+  const original = link(record.title || t('未提供标题'), record.source_url) || el('span', '', record.title || t('未提供标题'));
+  original.title = `${record.title || t('未提供标题')} — ${t(record.source_url_kind === 'catalogue_search' ? '在新标签页打开原馆检索入口' : '在新标签页打开原始出处')}`;
+  title.append(original);
   const meta = el('div', 'record-meta');
   [record.date_display || t('日期不详'), languageLabel(record)].forEach((value, i) => {
     if (i) meta.append(el('span', 'meta-dot', '·'));
@@ -212,8 +209,12 @@ function recordCard(record, index) {
   const description = el('p', 'record-description', record.description || (note ? `${t('编者导读')} · ${note}` : t('原目录未提供摘要，可前往来源页面查看完整记录。')));
   const bottom = el('div', 'record-bottom');
   bottom.append(el('span', `access-badge${record.access_status === 'online' ? ' online' : ''}`, record.access_status === 'online' ? t('有在线资源') : t('访问条件待确认')));
-  const original = link(t(record.source_url_kind === 'catalogue_search' ? '前往 A+ 查档 ↗' : '原馆记录 ↗'), record.source_url, 'record-link');
-  if (original) bottom.append(original);
+  const notes = el('button', 'record-link', t('记录说明'));
+  notes.type = 'button';
+  notes.setAttribute('aria-label', t('记录说明：{title}', { title: record.title || t('未提供标题') }));
+  notes.setAttribute('aria-haspopup', 'dialog');
+  notes.addEventListener('click', () => openRecord(record));
+  bottom.append(notes);
   content.append(top, title, meta);
   if (record.record_group) content.append(el('p', 'record-context', t('档案组 RG {group} · {context}', { group: record.record_group, context: list(record.archival_context)[0] || t('查看详情了解档案层级') })));
   content.append(description, bottom);
@@ -269,8 +270,12 @@ function openRecord(record, { save = true } = {}) {
     [t('元数据许可'), record.metadata_rights || t('此记录未单独提供许可，请核对来源条款。')],
     [t('原件权利说明'), list(record.content_rights).join('\n') || t('未提供；不代表无版权限制。')],
     [t('来源记录编号'), record.archival_id || record.source_id || record.id],
-    [t('样本获取时间'), formatDate(record.retrieved_at)],
   ];
+  if (typeof record.retrieved_at === 'string' && Number.isFinite(Date.parse(record.retrieved_at))) {
+    fields.push([t('元数据获取时间'), new Date(record.retrieved_at).toLocaleString(locale, {
+      year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZoneName: 'short',
+    })]);
+  }
   if (record.level_of_description) {
     const levels = { recordGroup: t('档案组'), collection: t('集合'), series: t('系列'), fileUnit: t('案卷'), item: t('单件') };
     fields.splice(2, 0, [t('目录层级'), levels[record.level_of_description] || record.level_of_description]);
@@ -428,7 +433,7 @@ $('load-more').addEventListener('click', () => {
   const previousCount = visibleCount;
   visibleCount += PAGE_SIZE;
   renderResults();
-  $('results').children[previousCount]?.querySelector('button')?.focus({ preventScroll: true });
+  $('results').children[previousCount]?.querySelector('a, button')?.focus({ preventScroll: true });
 });
 $('retry-button').addEventListener('click', loadCatalog);
 $('filter-toggle').addEventListener('click', () => {
