@@ -2,7 +2,7 @@
 
 **WWII Pacific War / 二战太平洋战场**面向太平洋战争研究，重点覆盖中国、缅甸及中缅印战区。应用以两个入口连接同一份档案目录：**资料发现**用于主动搜索，**专题浏览**用于阅读已整理的主题资料。每条记录保留收藏机构、原馆链接和权利说明。
 
-当前为已上线、也可本地运行的双语研究 Demo：**58 条去重记录、10 个来源机构、10 个研究专题**。网页搜索已导入的快照，不实时查询外馆。网站通过 Firebase Hosting 公开托管：[打开网站](https://project-864074c6-a2ba-4b47-a1f.web.app/)。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在范围内。
+当前为已上线、也可本地运行的双语研究 Demo：**44 条去重记录、9 个来源机构、10 个研究专题**。网页搜索已导入的快照，不实时查询外馆。网站通过 Firebase Hosting 公开托管：[打开网站](https://project-864074c6-a2ba-4b47-a1f.web.app/)。用户账户、实时搜索后端、LLM 对话和研究成果发布尚未实现；馆藏管理不在范围内。
 
 ## 在线访问
 
@@ -17,7 +17,7 @@
 需要 **Python 3.9+、现代浏览器**。预览无需安装 Python／npm 依赖或提供 API key。
 
 ```sh
-cd step1
+cd /Users/jingxugao/Documents/sf-pacific-war-harness/step1-discovery
 python3 tools/serve.py
 ```
 
@@ -27,7 +27,7 @@ python3 tools/serve.py
 | 2 | 专题浏览：已整理的主题、导读和档案卡片 | [专题浏览](http://127.0.0.1:8000/topics.html) |
 | 3 | 数据来源：机构、记录数量与收录方式 | [数据来源](http://127.0.0.1:8000/sources.html) |
 
-右上角切换 English／中文；`?lang=en` 或 `?lang=zh-CN` 指定语言。旧的 `/cbi-demo.html` 地址跳转至专题浏览并保留查询参数。目录检索不消耗 API 配额；外部预览与原馆链接需要联网。
+首次访问默认 English，右上角可切换 English／中文并记住主动选择；`?lang=en` 或 `?lang=zh-CN` 指定语言。旧的 `/cbi-demo.html` 地址跳转至专题浏览并保留查询参数。目录检索不消耗 API 配额；外部预览与原馆链接需要联网。
 
 启动时自动离线重建统一目录。按 Ctrl+C 停止；端口占用时运行 `python3 tools/serve.py --port 8001`。
 
@@ -37,11 +37,12 @@ python3 tools/serve.py
 | --- | --- |
 | 统一目录 | 来源快照、主题候选与人工整理的原馆记录进入同一份索引；按原生编号／规范化原馆 URL 去重，统一执行排除规则 |
 | 资料发现 | 搜索原始标题、摘要、机构、档案背景、编辑专题词与导读；按来源、类型、目录年份、访问状态筛选，支持相关性及日期排序 |
-| 专题入口 | 首页显示全部专题及记录数，可直接筛选专题，再用关键词和来源进一步缩小范围 |
+| 专题入口 | 首页“Start with a topic”合并专题关键词及常用示例；点击发起新的关键词检索 |
 | 专题浏览 | 按主题阅读照片、地图、文献、实物和研究入口；优先显示带档案预览的记录，每批 12 条；导读、关键词、原馆链接和详情均可访问 |
 | 浏览与搜索衔接 | 专题中的“在资料发现中检索这个专题”打开同一组记录；关键词链接发起新的检索；导航返回保留原有搜索条件 |
 | 双语检索 | 固定词表及专题关键词支持中英文、部分繁体与日文名称；同组别名按 OR、不同词组按 AND；支持引号词组并显示扩展词 |
 | 双语界面 | 菜单、控件、专题导读、状态与错误提示支持中英文；档案原始标题、描述与权利原文保留 |
+| 临时演示提示 | 顶部可关闭的横幅显示实际样本数、来源数与更新时间；同一浏览器标签页会话中跨页面保持关闭；永久页面布局不显示统计条 |
 | 资料详情 | 展示出处、档号、原始元数据、编辑导读、主题标签、权利及访问条件；原始获取时间与人工核查时间分别记录 |
 | URL 状态 | 搜索条件、语言及专题浏览选择可恢复；可链接到单条记录详情；支持刷新及浏览器前进／后退 |
 | 响应式卡片 | 桌面三列、平板两列、手机单列；突出预览、标题、摘要，图片不可用时显示占位 |
@@ -55,7 +56,6 @@ python3 tools/serve.py
 | 来源机构 | 记录数 | 收录方式 |
 | --- | ---: | --- |
 | 美国国会图书馆（Library of Congress，LoC） | 22 | API 元数据、人工整理的原馆记录 |
-| 日本国立国会图书馆（National Diet Library，NDL） | 14 | NDL Search API；包含战后出版物 |
 | 欧洲数字文化遗产平台（Europeana） | 3 | Search API 元数据 |
 | 美国国家档案馆（National Archives and Records Administration，NARA） | 9 | RG 493 官方公开数据集、官方图片目录 |
 | 互联网档案馆（Internet Archive） | 2 | 人工整理的数字化读物记录 |
@@ -64,7 +64,7 @@ python3 tools/serve.py
 | 英国帝国战争博物馆（Imperial War Museums，IWM） | 2 | 人工整理的影片目录 |
 | 美国陆军联合兵种研究图书馆（Combined Arms Research Library，CARL） | 1 | 人工整理的文献记录 |
 | 莱斯大学（Rice University） | 1 | 人工整理的数字馆藏记录 |
-| **合计** | **58** | 有限研究样本，不代表完整馆藏 |
+| **合计** | **44** | 有限研究样本，不代表完整馆藏 |
 
 专题包括飞虎队与航空、驼峰航线、滇缅公路、雷多公路与盟军运输、缅甸战役与部队、个人经历与回忆、战时报刊与生活指南、文物与识别标志、地图与军事档案、民众卫生与日常生活。
 
@@ -89,7 +89,7 @@ flowchart LR
 ```
 
 ```text
-step1/
+step1-discovery/
   README.md
   .env.example                  空白凭据模板
   .firebaserc / firebase.json    Firebase 项目与静态托管配置
@@ -117,14 +117,14 @@ step1/
   docs/                        使用、接入与部署文档
 ```
 
-界面沿用纸色 `#f4f2ed`、海军蓝 `#21374d`、青绿 `#2b6f78` 和黄铜色 `#a8792e`。没有引入新的前端 package。
+界面沿用纸色 `#f4f2ed`、海军蓝 `#21374d`、青绿 `#2b6f78` 和黄铜色 `#a8792e`。没有引入新的前端 package。临时演示横幅由 `site/demo-banner.mjs` 的 `DEMO_BANNER_ENABLED` 控制；设为 `false` 可整体关闭。默认语言只受 URL 参数和用户主动保存的选择覆盖，不使用浏览器语言自动切换。
 
 ## 数据更新与凭据
 
 以下获取命令会联网；按需要选择来源。预览已有数据只需启动服务。
 
 ```sh
-# LoC 与 NDL 的标准样本
+# LoC 的标准样本
 python3 tools/fetch_public_metadata.py --source all
 # NARA 固定公开目录分片
 python3 tools/fetch_nara_metadata.py
@@ -152,7 +152,7 @@ python3 tools/check_archives.py --live --env-file .env.archives --query '飞虎�
 python3 tools/access_nara.py --live --rows 3
 ```
 
-LoC、NDL 与 NARA 公开数据集不需要 key；Europeana 使用 `EUROPEANA_API_KEY`。NARA Catalog API、美国数字公共图书馆（DPLA）需要各自凭据；英国国家档案馆（TNA）需先解决访问授权。日本亚洲历史资料中心（JACAR）、IWM 与台湾档案管理局有网页入口，检查器不将其标记为已接通 API。完整访问状态、测试命令与生产接入步骤见文档索引。
+LoC 与 NARA 公开数据集不需要 key；Europeana 使用 `EUROPEANA_API_KEY`。NARA Catalog API、美国数字公共图书馆（DPLA）需要各自凭据；英国国家档案馆（TNA）需先解决访问授权。日本亚洲历史资料中心（JACAR）、IWM 与台湾档案管理局有网页入口，检查器不将其标记为已接通 API。完整访问状态、测试命令与生产接入步骤见文档索引。
 
 填好的 `.env.*` 文件由 Git 忽略，不进入 `site/` 或公开 JSON。接入检查只输出状态，不更新网页数据；在线检查有不可用来源时可返回退出码 2。
 

@@ -20,7 +20,7 @@ NEW = "2026-10-12T00:00:00Z"
 
 
 def record(identity="loc:demo", title="CBI map", retrieved_at=OLD):
-    source = "NDL" if identity.startswith("ndl:") else "LoC"
+    source = "Europeana" if identity.startswith("europeana:") else "LoC"
     return {"id": identity, "source": source, "title": title,
             "retrieved_at": retrieved_at, "query_used": "Burma",
             "source_url": "https://www.loc.gov/item/" + identity.split(":", 1)[1] + "/"}
@@ -106,16 +106,23 @@ class CbiFetchTests(unittest.TestCase):
         self.assertEqual(json.loads(output)["mode"], "dry_run")
         self.assertFalse(self.output.exists())
 
+    def test_refresh_plan_only_requests_supported_api_sources(self):
+        self.assertEqual({entry[0] for entry in api.PLAN}, {"LoC", "Europeana"})
+        self.assertEqual(set(api.SOURCE_CONFIG), {"LoC", "Europeana", "NARA"})
+        with self.assertRaises(api.public.FetchError):
+            api.fetch("unsupported", "Burma", "https://example.org/api", 1, None)
+        api.public.fetch_bytes.assert_not_called()
+
     def test_rate_limit_stops_that_platform_but_allows_next_platform(self):
-        plan = (("LoC", "q1", "https://www.loc.gov/search/"), ("LoC", "q2", "https://www.loc.gov/search/"), ("NDL", "q3", "https://ndlsearch.ndl.go.jp/api/opensearch"))
-        replies = [api.public.FetchError("Upstream HTTP 429; no automatic retry."), snapshot([record("ndl:book")])]
-        with patch.object(api, "PLAN", plan), patch.object(api, "seed_records", return_value=({}, [], set())), patch.object(api, "fetch", side_effect=replies) as fetch:
-            code, _, _ = self.run_main(["--live", "--sources", "LoC", "NDL", "--output", str(self.output)])
+        plan = (("LoC", "q1", "https://www.loc.gov/search/"), ("LoC", "q2", "https://www.loc.gov/search/"), ("Europeana", "q3", api.europeana.ENDPOINT))
+        replies = [api.public.FetchError("Upstream HTTP 429; no automatic retry."), snapshot([record("europeana:book")])]
+        with patch.object(api, "PLAN", plan), patch.object(api, "seed_records", return_value=({}, [], set())), patch.object(api, "fetch", side_effect=replies) as fetch, patch.object(api.europeana, "load_key", return_value=FAKE_KEY):
+            code, _, _ = self.run_main(["--live", "--sources", "LoC", "Europeana", "--output", str(self.output)])
         result = json.loads(self.output.read_text())
         self.assertEqual(code, 1)
         self.assertEqual(fetch.call_count, 2)
         self.assertEqual([q["status"] for q in result["queries"]], ["error", "skipped_rate_limit", "ok"])
-        self.assertEqual(result["records"][0]["id"], "ndl:book")
+        self.assertEqual(result["records"][0]["id"], "europeana:book")
 
     def test_missing_credential_sends_no_request_and_records_reason(self):
         with patch.object(api, "PLAN", (("Europeana", "Burma", api.europeana.ENDPOINT),)), patch.object(api, "seed_records", return_value=({}, [], set())), patch.object(api.europeana, "load_key", side_effect=api.europeana.FetchError("Missing credential; no request sent.")):

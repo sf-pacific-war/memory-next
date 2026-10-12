@@ -1,19 +1,18 @@
 # 档案平台接入状态、统一测试与生产整合计划
 
-更新日期：2026-10-11。当前统一检查器覆盖 **9 个档案／聚合平台、10 种访问方式**，美国国家档案馆（NARA）的公开数据集和实时 Catalog API 单列。本文件集中说明当前证据、API 配好后的测试命令，以及接入生产系统的工作顺序。[台湾档案管理局（archives.gov.tw）](taiwan-archives.md)已注册为 `taiwan`，目前仅提供网页入口和说明；CSV 同步与合作 API 尚未实现。英文全称见 [平台名称对照](archive-platform-names.md)。
+更新日期：2026-10-11。当前统一检查器覆盖 **8 个档案／聚合平台、9 种访问方式**，美国国家档案馆（NARA）的公开数据集和实时 Catalog API 单列。本文件集中说明当前证据、API 配好后的测试命令，以及接入生产系统的工作顺序。[台湾档案管理局（archives.gov.tw）](taiwan-archives.md)已注册为 `taiwan`，目前仅提供网页入口和说明；CSV 同步与合作 API 尚未实现。英文全称见 [平台名称对照](archive-platform-names.md)。
 
-**既有记录中有 4 种方式完成真实小请求；3 种方式已有脚本，待 key 或 IP 审批后实测；另 3 个平台目前只有网页入口。** 其中台湾档案管理局（archives.gov.tw）的公开 CSV 有独立有界读取证据，尚不能用统一命令检索。本文中的“API 将可获得”是后续实施假设，不代表已经取得凭据、审批或接口资料。
+**既有记录中有 3 种方式完成真实小请求；3 种方式已有脚本，待 key 或 IP 审批后实测；另 3 个平台目前只有网页入口。** 其中台湾档案管理局（archives.gov.tw）的公开 CSV 有独立有界读取证据，尚不能用统一命令检索。本文中的“API 将可获得”是后续实施假设，不代表已经取得凭据、审批或接口资料。
 
-现有网页仍使用美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、欧洲数字文化遗产平台（Europeana）、美国国家档案馆（NARA）的 **31 条目录快照**。接入检查脚本输出状态和计数，既不导入新记录，也不会自动增加网页中的来源。馆藏管理不在本计划范围内。
+现有网页包含 **44 条去重记录、9 个来源机构**，收录 API 元数据、公开数据集与人工整理的原馆记录，详见 [专题浏览](topics.md)。接入检查脚本输出状态和计数，既不导入新记录，也不会自动增加网页中的来源。馆藏管理不在本计划范围内。
 
 ## 1. 全部平台的访问状态
 
-以下“实测通过”依据 **2026-10-11 22:08 UTC** 完成的四次真实小请求；每种已测试方式仅请求一次、检查 3 条样本，不代表已经用“飞虎队”完成查询。其他日期或关键词的执行证据以 [验证记录](archive-access-validation.md) 为准。
+以下“实测通过”依据 **2026-10-11 22:08 UTC** 保留的三项真实小请求记录；每种已测试方式仅请求一次、检查 3 条样本，不代表已经用“飞虎队”完成查询。其他日期或关键词的执行证据以 [验证记录](archive-access-validation.md) 为准。
 
 | 平台／访问方式 | 当前代码入口 | 当前状态 | 凭据／访问前提 | 条件就绪后可以做什么 |
 | --- | --- | --- | --- | --- |
 | 美国国会图书馆（LoC） | [access_loc.py](../tools/access_loc.py) | **实测通过**，照片 JSON API | 无需 key | 直接复测，随后扩展主题样本、分页和字段映射 |
-| 日本国立国会图书馆检索平台（NDL Search） | [access_ndl.py](../tools/access_ndl.py) | **实测通过**，`iss-ndl-opac` 书目 | 该数据子集无需 key | 直接复测；增加数据提供方时逐项核实接口及元数据条件 |
 | 美国国家档案馆（NARA）公开数据集 | [access_nara.py](../tools/access_nara.py) | **实测通过**，RG 493 一个固定分片 | 无需 key 或 AWS 账户 | 直接复测；规划分片选择与更新机制；不是关键词搜索 |
 | 欧洲数字文化遗产平台（Europeana） Search API | [access_europeana.py](../tools/access_europeana.py) | **实测通过**，已有本地 personal key | `EUROPEANA_API_KEY` | 开发 key 可复测；生产服务按 project key 流程确认用途 |
 | 美国数字公共图书馆（DPLA） | [access_dpla.py](../tools/access_dpla.py) | **待实测**；请求和解析已有离线测试 | 获取并配置 `DPLA_API_KEY` | 无需重写现有接入检查，配置后直接运行真实小请求 |
@@ -23,7 +22,7 @@
 | 帝国战争博物馆（IWM） | [access_iwm.py](../tools/access_iwm.py) | **仅网页入口**；没有已实现的 API 请求 | 假设未来取得官方接口说明和访问授权 | 同上；现有脚本不会因为填入 key 就开始检索 |
 | 台湾档案管理局（archives.gov.tw） | [access_taiwan.py](../tools/access_taiwan.py) | **仅网页入口**；`taiwan` 返回 `manual_only` | 此状态入口不需 key；合作 API 条件待确认 | 优先实现公开 CSV 同步和本地索引；实时 API 另行开发 |
 
-上述 10 行对应现有代码。下表是台湾档案管理局（archives.gov.tw）的两条后续数据路线；其历史 CSV 有界读取不计入 `check_archives.py` 的 `ok` 数量或前端来源数量。
+上述 9 行对应现有代码。下表是台湾档案管理局（archives.gov.tw）的两条后续数据路线；其历史 CSV 有界读取不计入 `check_archives.py` 的 `ok` 数量或前端来源数量。
 
 | 新增候选／访问方式 | 当前状态 | 凭据要求 | 测试与生产下一步 |
 | --- | --- | --- | --- |
@@ -46,16 +45,16 @@ cd step1
 
 使用原来的 `sf-pacific-war-harness` 仓库时，从该仓库根目录执行 `cd step1-discovery`。下文命令均从这个应用目录执行，Python 3.9+ 即可，不需要安装第三方包。
 
-如果已有 `.env.europeana`，现在即可复查四个已实测来源，同时列出其他来源的未满足条件：
+如果已有 `.env.europeana`，现在即可复查三个已实测访问路径，同时列出其他来源的未满足条件：
 
 ```sh
 python3 tools/check_archives.py --live --env-file .env.europeana
 ```
 
-该文件仅配置欧洲数字文化遗产平台（Europeana），且其余条件未变化、四个请求均成功时，预期汇总为：
+该文件仅配置欧洲数字文化遗产平台（Europeana），且其余条件未变化、三个请求均成功时，预期汇总为：
 
 ```json
-{"ok": 4, "missing_credential": 2, "permission_required": 1, "manual_only": 3}
+{"ok": 3, "missing_credential": 2, "permission_required": 1, "manual_only": 3}
 ```
 
 ### 2.2 新 API key 获得后
@@ -88,12 +87,12 @@ python3 tools/check_archives.py --source all --live --rows 3 --env-file .env.arc
 所有已实现的机器接口都成功时，当前代码的**预期结果**是：
 
 ```json
-{"ok": 7, "manual_only": 3}
+{"ok": 6, "manual_only": 3}
 ```
 
 这是条件齐备时的**预期情景，不是已经发生的真实执行结果**。日本亚洲历史资料中心（JACAR）、帝国战争博物馆（IWM）、台湾档案管理局（archives.gov.tw）仍为网页入口，因此统一命令会返回退出码 **2**，不是 0。需分别实现并验收未来数据适配器，才能将相应来源计为成功。
 
-只想检查配置而不访问外馆，移除 `--live`。三个 key 和英国国家档案馆（TNA）确认齐备时，不带自定义词的预检会返回 `{"ready": 7, "manual_only": 3}`、退出码 0、实际请求数 0；`ready` 不证明 key 有效。
+只想检查配置而不访问外馆，移除 `--live`。三个 key 和英国国家档案馆（TNA）确认齐备时，不带自定义词的预检会返回 `{"ready": 6, "manual_only": 3}`、退出码 0、实际请求数 0；`ready` 不证明 key 有效。
 
 ### 2.3 用同一个关键词测试全部平台
 
@@ -108,11 +107,11 @@ python3 tools/check_archives.py --source all --live --query '飞虎队' --rows 3
 
 已有统一配置时将文件参数改成 `--env-file .env.archives`；没有该文件则去掉文件参数，免 key 来源照常请求。英国国家档案馆（TNA）出口 IP 确认获批后才能追加 `--permission-confirmed`。
 
-这两条是独立测试，不会自动翻译查询词，也不会采用网页的主题扩展。6 条 API 路径收到同一词，但各自查询语法和馆藏范围仍不同；缺 key 或审批的来源不请求。美国国家档案馆（NARA）固定数据集返回 `query_not_supported`，3 个网页入口返回 `manual_only`，均不提供命中数。
+这两条是独立测试，不会自动翻译查询词，也不会采用网页的主题扩展。5 条 API 路径收到同一词，但各自查询语法和馆藏范围仍不同；缺 key 或审批的来源不请求。美国国家档案馆（NARA）固定数据集返回 `query_not_supported`，3 个网页入口返回 `manual_only`，均不提供命中数。
 
 表格显示逐来源状态和计数；省略 `--format table` 得到完整 JSON，顶层 `mode=keyword` 并保留显式 `query`。不传 `--query` 则是 `mode=access`，按各 API 默认词和固定数据集检查访问。两种模式都不导出档案记录、不更新网页。
 
-当 6 个关键词 API 的凭据和审批均齐备且请求全成功，预期为 `{"ok": 6, "query_not_supported": 1, "manual_only": 3}`，退出码仍为 `2`。实际结果必须以命令输出为准；主题相关性和中文、英文、日文召回需要下一阶段单独评估。
+当 5 个关键词 API 的凭据和审批均齐备且请求全成功，预期为 `{"ok": 5, "query_not_supported": 1, "manual_only": 3}`，退出码仍为 `2`。实际结果必须以命令输出为准；主题相关性和中文、英文、日文召回需要下一阶段单独评估。
 
 ### 2.4 结果与失败怎么判断
 
@@ -141,7 +140,6 @@ python3 tools/check_archives.py --source all --live --query '飞虎队' --rows 3
 | 来源 | 单条命令 | 通过标准 |
 | --- | --- | --- |
 | 美国国会图书馆（LoC） | `python3 tools/access_loc.py --live --query 'Burma Road' --rows 3` | `ok`、`request_sent=true`、退出 0 |
-| 日本国立国会图书馆（NDL） | `python3 tools/access_ndl.py --live --query 'ビルマ' --rows 3` | 同上，当前限定日本国立国会图书馆（NDL）自有书目 |
 | 美国国家档案馆（NARA）数据集 | `python3 tools/access_nara.py --live --rows 3` | 同上；不传 `--query`，不把样本数当查询总数 |
 | 欧洲数字文化遗产平台（Europeana） | `python3 tools/access_europeana.py --live --env-file .env.archives --rows 3` | 同上，默认精确短语 `"Burma Road"` |
 | 美国数字公共图书馆（DPLA） | `python3 tools/access_dpla.py --live --env-file .env.archives --rows 3` | 同上；缺 key 时应明确跳过 |
@@ -184,7 +182,6 @@ python3 tools/check_archives.py --source all --live --query '飞虎队' --rows 3
 | 来源／路线 | 生产整合方式 | 还需要完成的来源特有工作 |
 | --- | --- | --- |
 | 美国国会图书馆（LoC） | 在所选元数据使用范围确认后，继续构建本地索引；保留原馆链接 | 扩大查询／分页；处理日期区间、类型和在线资源证据；按机构限流 |
-| 日本国立国会图书馆（NDL） | 对获准的数据提供方同步书目，建立索引 | 保留提供方和许可；日文检索、刊物／书籍类型、出版日期单独处理；不能把所有日本国立国会图书馆（NDL）子库视为同一条件 |
 | 美国国家档案馆（NARA）公开数据集 | 作为可持久化的美国国家档案馆（NARA）目录来源，分批导入索引 | 选择相关档案组与分片、校验完整性、检测更新、版本化发布；保留 NAID 与层级 |
 | 欧洲数字文化遗产平台（Europeana） | 按项目用途确认后同步获准元数据，或代理实时查询 | 将开发 personal key 的用途与运营 project key 区分；保留聚合平台和实际持有机构；审阅同名误命中 |
 | 美国数字公共图书馆（DPLA） | 取得 key 后补记录标准化与检索接入；保存策略按其元数据政策确定 | 映射 `sourceResource`、提供机构与原馆 URL；处理列表／字符串差异、分页和与其他聚合来源的重复关系 |
@@ -193,7 +190,7 @@ python3 tools/check_archives.py --source all --live --query '飞虎队' --rows 3
 | 日本亚洲历史资料中心（JACAR）、帝国战争博物馆（IWM） | API 获得且验证后，再根据授权选择同步索引或实时查询 | 在正式数据权利和协议确定前保留外链；不把网页入口算作检索数据来源 |
 | 台湾档案管理局（archives.gov.tw）公开 CSV | 依据该开放数据集的许可同步案卷级目录并建立本地索引 | 档号作为身份依据；资料产制日期与档案年代分开；补详情链接、繁简匹配、更新校验和来源开关；完整步骤见 [台湾来源专页](taiwan-archives.md) |
 
-日本国立国会图书馆（NDL）的使用条件按数据提供方区分；目前 `iss-ndl-opac` 列为 CC BY。见 [日本国立国会图书馆（NDL）官方提供方清单](https://ndlsearch.ndl.go.jp/en/help/api/provider)。欧洲数字文化遗产平台（Europeana）运营服务用途按其 [project key 流程](https://www.europeana.eu/en/how-to-register-for-and-manage-an-api-key)处理。
+欧洲数字文化遗产平台（Europeana）运营服务用途按其 [project key 流程](https://www.europeana.eu/en/how-to-register-for-and-manage-an-api-key)处理。
 
 美国国家档案馆（NARA） Catalog API 与英国国家档案馆（TNA） Discovery 的当前条款要求不要缓存或保存 API 返回内容；因此这里将其默认规划为请求内存中的结果，且不写进 CDN、日志正文、数据库、向量库、问答记忆或研究导出。需要其他用法时先取得明确允许。美国国家档案馆（NARA）的公开数据集是独立路线；不要把两条路径的权利条件互相套用。依据：[美国国家档案馆（NARA） API 条款](https://www.archives.gov/research/catalog/help/api)、[英国国家档案馆（TNA） API 条款](https://www.nationalarchives.gov.uk/terms-and-conditions/discovery-for-developers-about-the-application-programming-interface-api/)、[美国国家档案馆（NARA）公开数据集](https://www.archives.gov/developer/national-archives-catalog-dataset)。
 
@@ -229,7 +226,7 @@ flowchart LR
 ### 代码与数据需要补齐的具体内容
 
 - **不要让诊断函数直接承担导入。** 当前 `check_source()` 只允许返回 `sample_count`／`total_results`，会拒绝原始记录字段。生产 connector 应另外实现 `search()`、`fetch_record()`、`normalize()`，只有来源支持时才实现分页或 `list_changes()`；公开数据集使用分片／批次接口。
-- **扩展实际发布链路。** 当前 `build_site_data.py` 只识别四个来源快照。新增允许保存的来源时，需要同时扩展来源注册、字段映射、快照 schema、排除规则、前端筛选标签和检索测试。实时来源通过未来后端加入结果，不硬塞进 `catalog.json`。
+- **扩展实际发布链路。** 当前 `build_site_data.py` 合并三个机构的机器获取快照与人工整理的机构记录。新增允许保存的来源时，需要同时扩展来源注册、字段映射、快照 schema、排除规则、前端筛选标签和检索测试。实时来源通过未来后端加入结果，不硬塞进 `catalog.json`。
 - **保留来源与档案语义。** 用来源 ID 和原始记录 ID 标识记录；保留提供机构、档案祖先层级、目录日期含义、原馆 URL、元数据与媒体许可、来源更新时间和获取时间。美国国家档案馆（NARA） API 与数据集即使命中同一 NAID，也要保留不同访问路线和保存规则。
 - **去重不抹去出处。** 聚合平台与原馆可能描述同一材料，保留独立来源描述并建立关系；不按相似标题自动合并。书目、系列、案卷和扫描件不能当作同一层级。
 - **分别设计同步和在线请求。** 同步任务按来源限速、有界退避、幂等和断点运行；在线检索使用整体时间预算、受控并行和部分结果返回，不能直接将当前串行、每源最多等待 30 秒的诊断流程搬到用户请求中。
@@ -241,7 +238,7 @@ flowchart LR
 
 ## 7. 测试与上线门槛
 
-当前已通过 **149 项 Python 测试**，其中 101 项覆盖接入模块；既有 17 项 JavaScript 测试通过，本轮没有修改前端。关键词聚合、来源跳过和真实中英文请求结果见 [验证记录](archive-access-validation.md)。运行命令如下：
+当前已通过 **188 项 Python 测试**，其中 96 项覆盖接入模块。关键词聚合、来源跳过和真实中英文请求结果见 [验证记录](archive-access-validation.md)。运行命令如下：
 
 ```sh
 # API 接入模块的离线单元测试，不用真实 key、不请求外馆

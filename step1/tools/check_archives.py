@@ -1,4 +1,4 @@
-"""Check ten access routes for nine platforms; optionally send one keyword to each API."""
+"""Check nine access routes for eight platforms; optionally send one keyword to each API."""
 
 from collections import Counter
 import importlib
@@ -6,7 +6,7 @@ import json
 from archive_access import argument_parser, check_source, exit_code
 
 
-SOURCE_IDS = ("loc", "ndl", "europeana", "nara", "nara_catalog", "dpla", "tna", "jacar", "iwm", "taiwan")
+SOURCE_IDS = ("loc", "europeana", "nara", "nara_catalog", "dpla", "tna", "jacar", "iwm", "taiwan")
 
 
 def print_table(report):

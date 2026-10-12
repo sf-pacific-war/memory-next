@@ -2,11 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { bindPageTranslations, messages, normalizeLocale, resolveLocale, translate } from '../site/i18n.mjs';
 
-test('resolves an explicit URL language before saved and browser preferences', () => {
+test('uses English for new visits, with explicit URL and saved choices taking precedence', () => {
   assert.equal(resolveLocale('en-GB', 'zh-CN', ['zh-TW']), 'en');
   assert.equal(resolveLocale('zh-TW', 'en', ['en-US']), 'zh-CN');
   assert.equal(resolveLocale('unsupported', 'zh', ['en-US']), 'zh-CN');
-  assert.equal(resolveLocale(null, null, ['fr-FR', 'zh-HK', 'en']), 'zh-CN');
+  assert.equal(resolveLocale(null, null, ['fr-FR', 'zh-HK', 'en']), 'en');
   assert.equal(resolveLocale(null, null, ['fr-FR']), 'en');
   assert.equal(normalizeLocale(null), null);
   assert.equal(normalizeLocale('english'), null);
@@ -42,8 +42,8 @@ function elementWithAttributes(attributes) {
 }
 
 test('binds UI text and accessibility attributes without replacing controls or later archival content', () => {
-  const label = textNode('  搜索资料\n');
-  const title = textNode('资料发现 · WWII Pacific War', 'TITLE');
+  const label = textNode('  Search\n');
+  const title = textNode('Discovery · WWII Pacific War', 'TITLE');
   const option = textNode('中文', 'OPTION', true);
   const script = textNode('搜索资料', 'SCRIPT');
   const style = textNode('搜索资料', 'STYLE');

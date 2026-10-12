@@ -1,87 +1,83 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="WWII Pacific War：跨来源发现中国与缅甸战场的历史资料。检索真实目录样本，查看出处并前往原馆。">
+  <meta name="description" content="WWII Pacific War: Discover historical sources on China and Burma across archives. Search catalogue samples and follow their original sources.">
   <meta name="referrer" content="no-referrer">
-  <title>资料发现 · WWII Pacific War</title>
+  <title>Discovery · WWII Pacific War</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#results-heading">跳至检索结果</a>
+  <a class="skip-link" href="#results-heading">Skip to search results</a>
   <header class="masthead">
     <div class="header-inner">
-      <a class="brand" href="./" data-page-link="./" aria-label="WWII Pacific War 首页">
+      <a class="brand" href="./" data-page-link="./" aria-label="WWII Pacific War home">
         <span class="brand-mark" aria-hidden="true">PW</span>
         <span><strong>WWII Pacific War</strong><small>二战太平洋战场</small></span>
       </a>
-      <nav aria-label="主导航">
-        <a class="nav-active" href="./" data-page-link="./" aria-current="page">资料发现</a>
-        <a href="topics.html" data-page-link="topics.html">专题浏览</a>
-        <a href="sources.html" data-page-link="sources.html">数据来源</a>
-        <button type="button" id="help-button">使用说明 <span aria-hidden="true">↗</span></button>
+      <nav aria-label="Main navigation">
+        <a class="nav-active" href="./" data-page-link="./" aria-current="page">Discover</a>
+        <a href="topics.html" data-page-link="topics.html">Topics</a>
+        <a href="sources.html" data-i18n="数据来源" data-page-link="sources.html">Sources</a>
+        <button type="button" id="help-button">Help <span aria-hidden="true">↗</span></button>
       </nav>
-      <div class="header-tools"><span class="edition"><span aria-hidden="true"></span>研究预览版</span><label class="language-control"><span class="sr-only">界面语言</span><select id="language" aria-label="界面语言"><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">中文</option></select></label></div>
+      <div class="header-tools"><span class="edition"><span aria-hidden="true"></span>Research preview</span><label class="language-control"><span class="sr-only">Interface language</span><select id="language" aria-label="Interface language"><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">中文</option></select></label></div>
     </div>
   </header>
   <main>
     <section class="intro wrap" id="discover" aria-labelledby="page-title">
       <div class="intro-top">
         <div class="intro-copy">
-          <p class="eyebrow"><span class="section-number">01</span> 跨馆藏资料发现 <span class="eyebrow-line"></span></p>
-          <h1 id="page-title">循着线索，<br>发现散落的历史。</h1>
-          <p class="intro-description">从中国与缅甸战场出发，连接不同机构的照片、地图与文献。<br class="desktop-break">在同一个入口寻找资料，回到原始出处阅读。</p>
+          <p class="eyebrow"><span class="section-number">01</span> DISCOVER ACROSS ARCHIVES <span class="eyebrow-line"></span></p>
+          <h1 id="page-title">Follow the clues.<br>Discover scattered histories.</h1>
+          <p class="intro-description">Explore photographs, maps and documents on China and Burma across institutions.<br class="desktop-break">Find sources in one place, then read them at the original archive.</p>
         </div>
-        <div class="archive-note" aria-label="研究范围">
+        <div class="archive-note" aria-label="Research focus">
           <div class="note-top">RESEARCH FOCUS <span>NO. 001</span></div>
-          <div class="note-title">中国 · 缅甸 · 印度</div>
-          <div class="note-english">CHINA · BURMA · INDIA</div>
+          <div class="note-title">China · Burma · India</div>
+          <div class="note-english">中国 · 缅甸 · 印度</div>
           <div class="note-rule"><span></span><span></span><span></span></div>
-          <div class="note-bottom"><span>战时记录与战后研究</span><span aria-hidden="true">↗</span></div>
+          <div class="note-bottom"><span>Wartime records &amp; postwar research</span><span aria-hidden="true">↗</span></div>
         </div>
       </div>
       <form class="search-form" id="search-form" role="search">
-        <label class="sr-only" for="query">搜索资料</label>
+        <label class="sr-only" for="query">Search</label>
         <span class="search-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></span>
-        <input id="query" type="search" autocomplete="off" maxlength="240" placeholder="搜索关键词、人物或地点，例如：滇缅公路" aria-describedby="search-hint">
-        <button class="primary-button" type="submit">搜索资料 <span aria-hidden="true">↗</span></button>
+        <input id="query" type="search" autocomplete="off" maxlength="240" placeholder="Search a keyword, person or place, e.g. Burma Road" aria-describedby="search-hint">
+        <button class="primary-button" type="submit">Search <span aria-hidden="true">↗</span></button>
       </form>
-      <div class="search-suggestions"><span id="search-hint">从一个主题开始</span><button type="button" data-query="滇缅公路" data-query-en="Burma Road">滇缅公路</button><button type="button" data-query="缅甸" data-query-en="Burma">缅甸战场</button><button type="button" data-query="英帕尔" data-query-en="Imphal">英帕尔</button><button type="button" data-query="中国远征军" data-query-en="Chinese Expeditionary Force">中国远征军</button></div>
-      <section class="topic-entry" aria-labelledby="topic-entry-title"><div class="topic-entry-heading"><h2 id="topic-entry-title">探索已整理专题</h2><a href="topics.html" data-page-link="topics.html">浏览专题与精选资料 ↗</a></div><div id="topic-shortcuts" class="topic-shortcuts"></div><p class="topic-entry-note">专题关键词和收录资料均可在此检索；标签由编辑整理，原始目录信息保留。</p></section>
+<div class="search-suggestions"><span id="search-hint">Start with a topic</span><div id="topic-shortcuts" class="topic-shortcuts" role="group" aria-labelledby="search-hint"></div></div>
     </section>
-    <div class="collection-strip">
-      <div class="wrap strip-inner"><p><span class="status-dot" aria-hidden="true"></span><strong id="sample-count">—</strong> 条目录样本 <span class="strip-divider">/</span> <strong id="source-count">—</strong> 个来源机构</p><p class="strip-note">本地样本检索<span class="strip-divider">·</span><span id="updated-date">正在载入资料</span></p></div>
-    </div>
-    <section class="discovery-layout wrap" aria-label="资料检索">
-      <button class="mobile-filter-button" id="filter-toggle" type="button" aria-expanded="false" aria-controls="filters">筛选资料 <span aria-hidden="true">＋</span></button>
-      <aside class="filters" id="filters" aria-label="筛选资料">
-        <div class="filter-heading"><h2>筛选资料</h2><button type="button" id="reset-filters">重置</button></div>
-        <fieldset><legend>来源机构</legend><div id="source-filters" class="checkbox-list"></div></fieldset>
-        <fieldset><legend>资料类型</legend><div id="type-filters" class="checkbox-list"></div></fieldset>
-        <fieldset><legend>目录日期</legend><div class="year-range"><label><span class="sr-only">起始年份</span><input type="number" id="start-year" placeholder="起始年" min="1000" max="2100" aria-label="起始年份"></label><span aria-hidden="true">—</span><label><span class="sr-only">结束年份</span><input type="number" id="end-year" placeholder="结束年" min="1000" max="2100" aria-label="结束年份"></label></div><p id="date-error" class="field-error" role="alert" hidden></p><label class="check-row unknown-date"><input type="checkbox" id="unknown-dates" checked><span>包含日期不详</span></label><p class="filter-hint">目录日期可能是出版或创作年份，并不一定是事件发生年份。</p></fieldset>
-        <fieldset><legend>访问状态</legend><label class="check-row"><input type="radio" name="access" value="all" checked><span>全部资料</span></label><label class="check-row"><input type="radio" name="access" value="online"><span>有在线资源</span></label><label class="check-row"><input type="radio" name="access" value="unverified"><span>访问条件待确认</span></label></fieldset>
-        <div class="filter-footnote"><span aria-hidden="true">↗</span><p>每条记录保留原始出处。原件的访问与使用条件以原馆说明为准。</p></div>
+    <section class="discovery-layout wrap" aria-label="Archive discovery">
+      <button class="mobile-filter-button" id="filter-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters <span aria-hidden="true">＋</span></button>
+      <aside class="filters" id="filters" aria-label="Filters">
+        <div class="filter-heading"><h2>Filters</h2><button type="button" id="reset-filters">Reset</button></div>
+        <fieldset><legend>Sources</legend><div id="source-filters" class="checkbox-list"></div></fieldset>
+        <fieldset><legend>Material type</legend><div id="type-filters" class="checkbox-list"></div></fieldset>
+        <fieldset><legend>Catalogue date</legend><div class="year-range"><label><span class="sr-only">Start year</span><input type="number" id="start-year" placeholder="From year" min="1000" max="2100" aria-label="Start year"></label><span aria-hidden="true">—</span><label><span class="sr-only">End year</span><input type="number" id="end-year" placeholder="To year" min="1000" max="2100" aria-label="End year"></label></div><p id="date-error" class="field-error" role="alert" hidden></p><label class="check-row unknown-date"><input type="checkbox" id="unknown-dates" checked><span>Include unknown dates</span></label><p class="filter-hint">Catalogue dates may refer to publication or creation, rather than the historical event.</p></fieldset>
+        <fieldset><legend>Access</legend><label class="check-row"><input type="radio" name="access" value="all" checked><span>All records</span></label><label class="check-row"><input type="radio" name="access" value="online"><span>Online resources</span></label><label class="check-row"><input type="radio" name="access" value="unverified"><span>Access unverified</span></label></fieldset>
+        <div class="filter-footnote"><span aria-hidden="true">↗</span><p>Each record retains its source. Check the original archive for access and reuse conditions.</p></div>
       </aside>
       <div class="results-area">
-        <div class="results-toolbar"><div><p class="small-label">DISCOVERY INDEX</p><h2 id="results-heading" tabindex="-1">全部资料 <span id="result-count">—</span></h2></div><label class="sort-control">排序<select id="sort"><option value="relevance">相关性优先</option><option value="newest">目录日期：由新到旧</option><option value="oldest">目录日期：由旧到新</option></select></label></div>
+        <div class="results-toolbar"><div><p class="small-label">DISCOVERY INDEX</p><h2 id="results-heading" tabindex="-1">All records <span id="result-count">—</span></h2></div><label class="sort-control">Sort<select id="sort"><option value="relevance">相关性优先</option><option value="newest">目录日期：由新到旧</option><option value="oldest">目录日期：由旧到新</option></select></label></div>
         <p class="expansion-note" id="expansion-note" hidden></p>
-        <div id="active-filters" class="active-filters" aria-label="当前筛选条件"></div>
-        <p class="results-context">跨来源目录与专题资料 · 保留原始语言与出处</p>
+        <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
+        <p class="results-context">Catalogue records and topic collections · Original language and attribution</p>
         <p class="sr-only" id="result-announcement" aria-live="polite" aria-atomic="true"></p>
-        <div id="results" class="results-list" aria-busy="true"><div class="loading-state"><span class="loading-line"></span><p>正在整理目录索引…</p></div></div>
-        <div id="empty-state" class="empty-state" hidden><span class="empty-icon" aria-hidden="true">⌕</span><h3>暂时没有找到匹配的资料</h3><p>试试更宽泛的关键词，或减少筛选条件。<br>这里检索的是演示样本，不代表原馆没有相关资料。</p><button type="button" class="secondary-button" id="clear-all">清除搜索与筛选</button></div>
-        <div id="error-state" class="empty-state" hidden><h3>目录样本暂时无法载入</h3><p>请检查网络连接后重试。</p><button type="button" class="secondary-button" id="retry-button">重新载入</button></div>
-        <div class="results-bottom" id="results-bottom" hidden><span id="shown-count"></span><button type="button" id="load-more" class="secondary-button" hidden>查看更多资料 <span aria-hidden="true">↓</span></button><span class="index-end" aria-hidden="true">— ARCHIVAL DISCOVERY —</span></div>
+        <div id="results" class="results-list" aria-busy="true"><div class="loading-state"><span class="loading-line"></span><p>Loading the discovery index…</p></div></div>
+        <div id="empty-state" class="empty-state" hidden><span class="empty-icon" aria-hidden="true">⌕</span><h3>No matching records</h3><p>Try a broader keyword or fewer filters.<br>This searches demo samples; the original archive may have more relevant records.</p><button type="button" class="secondary-button" id="clear-all">Clear search and filters</button></div>
+        <div id="error-state" class="empty-state" hidden><h3>Catalogue samples could not be loaded</h3><p>Check your connection and try again.</p><button type="button" class="secondary-button" id="retry-button">Try again</button></div>
+        <div class="results-bottom" id="results-bottom" hidden><span id="shown-count"></span><button type="button" id="load-more" class="secondary-button" hidden>Load more records <span aria-hidden="true">↓</span></button><span class="index-end" aria-hidden="true">— ARCHIVAL DISCOVERY —</span></div>
       </div>
     </section>
   </main>
-  <footer class="wrap footer"><div><strong>WWII Pacific War</strong><span>二战太平洋战场</span></div><p>STEP 01 · 统一发现演示 <span aria-hidden="true">/</span> 元数据有出处，历史有脉络。</p><a href="#discover">回到顶部 ↑</a></footer>
-  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span>CATALOGUE RECORD <span class="dialog-divider">/</span> 资料详情</span><button type="button" class="icon-button" id="close-detail" aria-label="关闭资料详情">×</button></div><div id="detail-content" class="detail-content"></div></dialog>
-  <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-top"><span>RESEARCH GUIDE <span class="dialog-divider">/</span> 使用说明</span><button type="button" class="icon-button" id="close-help" aria-label="关闭使用说明">×</button></div><div class="detail-content help-content"><p class="eyebrow">从关键词到原始出处</p><h2 id="help-title">如何使用 WWII Pacific War</h2><ol><li><strong>输入线索</strong><p>搜索标题、地点或人物。预设主题支持中英日检索词扩展，具体使用的词会显示在结果上方。</p></li><li><strong>缩小范围</strong><p>组合选择来源、资料类型、目录日期与访问状态。日期筛选针对目录记录，不自动判断战役发生年份。</p></li><li><strong>核对原始出处</strong><p>打开记录查看原始描述，再前往原馆确认内容、访问条件和使用许可。</p></li></ol><div class="detail-note">当前搜索本地已导入的真实样本，不是全馆藏实时检索。关键词命中不等于史料相关性已经确认；书目记录也不等于在线全文。</div></div></dialog>
+  <footer class="wrap footer"><div><strong>WWII Pacific War</strong><span>二战太平洋战场</span></div><p>STEP 01 · Discovery demo <span aria-hidden="true">/</span> Trace the sources. Explore the context.</p><a href="#discover">Back to top ↑</a></footer>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span>CATALOGUE RECORD <span class="dialog-divider">/</span> Record details</span><button type="button" class="icon-button" id="close-detail" aria-label="Close record details">×</button></div><div id="detail-content" class="detail-content"></div></dialog>
+  <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-top"><span>RESEARCH GUIDE <span class="dialog-divider">/</span> Help</span><button type="button" class="icon-button" id="close-help" aria-label="Close help">×</button></div><div class="detail-content help-content"><p class="eyebrow">FROM KEYWORDS TO ORIGINAL SOURCES</p><h2 id="help-title">How to use WWII Pacific War</h2><ol><li><strong>Enter a clue</strong><p>Search for titles, places or people. Preset topics expand to Chinese, English and Japanese terms, shown above the results.</p></li><li><strong>Narrow your search</strong><p>Combine sources, material types, catalogue dates and access filters. Date filters use catalogue metadata, not inferred battle dates.</p></li><li><strong>Check the original source</strong><p>Open a record to read its original description, then visit the archive to verify its content, access and reuse conditions.</p></li></ol><div class="detail-note">Search covers imported local samples, not live searches of entire collections. A keyword match does not establish historical relevance, and a catalogue record does not guarantee online full text.</div></div></dialog>
   <noscript><div class="noscript-note">Enable JavaScript to search catalogue samples. / 请启用 JavaScript 以检索本地目录样本。</div></noscript>
 </body>
 </html>

@@ -95,8 +95,8 @@ export function formatLabel(type, locale = 'zh-CN') {
 
 export function sourceLabel(source, locale = 'zh-CN') {
   const labels = locale === 'en'
-    ? { loc: 'Library of Congress', ndl: 'National Diet Library', europeana: 'Europeana', nara: 'U.S. National Archives', 'internet archive': 'Internet Archive', smithsonian: 'Smithsonian Institution', cia: 'CIA Museum', iwm: 'Imperial War Museums', carl: 'Combined Arms Research Library', 'rice university': 'Rice University' }
-    : { loc: '美国国会图书馆', ndl: '日本国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆', 'internet archive': '互联网档案馆', smithsonian: '史密森尼学会', cia: '美国中央情报局博物馆', iwm: '英国帝国战争博物馆', carl: '美国陆军联合兵种研究图书馆', 'rice university': '莱斯大学' };
+    ? { loc: 'Library of Congress', europeana: 'Europeana', nara: 'U.S. National Archives', 'internet archive': 'Internet Archive', smithsonian: 'Smithsonian Institution', cia: 'CIA Museum', iwm: 'Imperial War Museums', carl: 'Combined Arms Research Library', 'rice university': 'Rice University' }
+    : { loc: '美国国会图书馆', europeana: '欧洲数字文化遗产', nara: '美国国家档案馆', 'internet archive': '互联网档案馆', smithsonian: '史密森尼学会', cia: '美国中央情报局博物馆', iwm: '英国帝国战争博物馆', carl: '美国陆军联合兵种研究图书馆', 'rice university': '莱斯大学' };
   return labels[normalizeText(source)] ?? String(source ?? (locale === 'en' ? 'Unknown source' : '未知来源'));
 }
 

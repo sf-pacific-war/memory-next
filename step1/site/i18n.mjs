@@ -20,9 +20,6 @@ export const messages = Object.freeze({
   "在资料发现中检索全部资料 ↗": {"zh-CN": "在资料发现中检索全部资料 ↗", "en": "Search all records in Discover ↗"},
   "该专题暂时没有可显示的资料。": {"zh-CN": "该专题暂时没有可显示的资料。", "en": "No records are available in this topic yet."},
   "查看更多资料 ↓": {"zh-CN": "查看更多资料 ↓", "en": "Show more records ↓"},
-  "探索已整理专题": {"zh-CN": "探索已整理专题", "en": "Explore collected topics"},
-  "浏览专题与精选资料 ↗": {"zh-CN": "浏览专题与精选资料 ↗", "en": "Browse topics and selected records ↗"},
-  "专题关键词和收录资料均可在此检索；标签由编辑整理，原始目录信息保留。": {"zh-CN": "专题关键词和收录资料均可在此检索；标签由编辑整理，原始目录信息保留。", "en": "Search topic keywords and collected records here. Topic tags are editorial; original catalogue information is preserved."},
   "跨来源目录与专题资料 · 保留原始语言与出处": {"zh-CN": "跨来源目录与专题资料 · 保留原始语言与出处", "en": "Catalogue records and topic collections · Original language and attribution"},
   "个来源机构": {"zh-CN": "个来源机构", "en": "source institutions"},
   "请检查网络连接后重试。": {"zh-CN": "请检查网络连接后重试。", "en": "Check your connection and try again."},
@@ -601,9 +598,9 @@ export const messages = Object.freeze({
     "zh-CN": "访问来源网站 ↗",
     "en": "Visit source website ↗"
   },
-  "样本范围说明：当前索引包含 {count} 条真实目录记录，经过初步排除同名误命中；仍需逐条核对史料相关性。NDL 样本包括战后出版的回忆录与研究书目。更多结果需在原馆继续检索。": {
-    "zh-CN": "样本范围说明：当前索引包含 {count} 条真实目录记录，经过初步排除同名误命中；仍需逐条核对史料相关性。NDL 样本包括战后出版的回忆录与研究书目。更多结果需在原馆继续检索。",
-    "en": "Sample scope: the index contains {count} real catalogue records after an initial review of misleading name matches. Historical relevance still needs verification. NDL samples include postwar memoirs and research publications. Search the original archives for more results."
+  "样本范围说明：当前索引包含 {count} 条真实目录记录，经过初步排除同名误命中；仍需逐条核对史料相关性。更多结果需在原馆继续检索。": {
+    "zh-CN": "样本范围说明：当前索引包含 {count} 条真实目录记录，经过初步排除同名误命中；仍需逐条核对史料相关性。更多结果需在原馆继续检索。",
+    "en": "Sample scope: the index contains {count} real catalogue records after an initial review of misleading name matches. Historical relevance still needs verification. Search the original archives for more results."
   },
   "样本更新 {date}": {
     "zh-CN": "样本更新 {date}",
@@ -620,10 +617,6 @@ export const messages = Object.freeze({
   "照片、图像及相关档案目录。访问状态依据来源元数据，使用权仍需逐条核对。": {
     "zh-CN": "照片、图像及相关档案目录。访问状态依据来源元数据，使用权仍需逐条核对。",
     "en": "Photographs, images and related catalogue records. Access labels follow source metadata; check reuse rights for each record."
-  },
-  "NDL Search API 书目元数据（CC BY 4.0）。包含战后出版物；出版日期不等于战役日期。": {
-    "zh-CN": "NDL Search API 书目元数据（CC BY 4.0）。包含战后出版物；出版日期不等于战役日期。",
-    "en": "Bibliographic metadata from NDL Search (CC BY 4.0). Includes postwar publications; publication dates are not battle dates."
   },
   "欧洲文化机构聚合目录。元数据为 CC0，原始内容使用权以来源说明为准。": {
     "zh-CN": "欧洲文化机构聚合目录。元数据为 CC0，原始内容使用权以来源说明为准。",
@@ -682,9 +675,9 @@ export function normalizeLocale(value) {
   return null;
 }
 
-export function resolveLocale(query, saved, languages = []) {
-  return normalizeLocale(query) || normalizeLocale(saved)
-    || languages.map(normalizeLocale).find(Boolean) || 'en';
+// A new visit starts in English; only an explicit URL or saved choice overrides it.
+export function resolveLocale(query, saved) {
+  return normalizeLocale(query) || normalizeLocale(saved) || 'en';
 }
 
 export function translate(message, locale = 'en', values = {}) {
@@ -692,6 +685,9 @@ export function translate(message, locale = 'en', values = {}) {
   return String(template).replace(/\{(\w+)\}/g, (match, key) =>
     Object.hasOwn(values, key) ? String(values[key]) : match);
 }
+
+const englishKeys = new Map(Object.entries(messages).map(([key, value]) => [value.en, key]));
+const messageKey = text => Object.hasOwn(messages, text) ? text : englishKeys.get(text);
 
 // Bind the initial UI once, before catalogue records are rendered. Keep text
 // nodes and attributes separate so translation never replaces controls or markup.
@@ -702,16 +698,17 @@ export function bindPageTranslations(document) {
   while ((node = walker.nextNode())) {
     if (['SCRIPT', 'STYLE', 'NOSCRIPT'].includes(node.parentElement?.tagName) || node.parentElement?.closest('#language')) continue;
     const original = node.nodeValue;
-    const key = original.trim();
-    if (Object.hasOwn(messages, key)) {
+    const originalText = original.trim();
+    const key = node.parentElement?.getAttribute?.('data-i18n') || messageKey(originalText);
+    if (key) {
       const target = node;
-      bindings.push(locale => { target.nodeValue = original.replace(key, translate(key, locale)); });
+      bindings.push(locale => { target.nodeValue = original.replace(originalText, translate(key, locale)); });
     }
   }
   for (const element of document.querySelectorAll('[aria-label], [placeholder], meta[name="description"]')) {
     for (const attribute of ['aria-label', 'placeholder', 'content']) {
-      const key = element.getAttribute(attribute);
-      if (key && Object.hasOwn(messages, key)) bindings.push(locale => {
+      const key = messageKey(element.getAttribute(attribute));
+      if (key) bindings.push(locale => {
         element.setAttribute(attribute, translate(key, locale));
       });
     }

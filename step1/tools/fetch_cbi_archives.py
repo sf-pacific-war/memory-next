@@ -28,9 +28,6 @@ PLAN = (
     ("LoC", '"Flying Tigers"', "https://www.loc.gov/search/"),
     ("LoC", '"Ledo Road"', "https://www.loc.gov/photos/"),
     ("LoC", "Burma 1944", "https://www.loc.gov/maps/"),
-    ("NDL", "インパール", "https://ndlsearch.ndl.go.jp/api/opensearch"),
-    ("NDL", "フライングタイガース", "https://ndlsearch.ndl.go.jp/api/opensearch"),
-    ("NDL", "ビルマ 戦争", "https://ndlsearch.ndl.go.jp/api/opensearch"),
     ("Europeana", "Chindits", europeana.ENDPOINT),
     ("Europeana", 'Burma AND "1944"', europeana.ENDPOINT),
     ("Europeana", '"Ledo Road"', europeana.ENDPOINT),
@@ -103,16 +100,11 @@ def seed_records(output):
 def fetch(source, query, endpoint, rows, key):
     if source == "Europeana":
         return europeana.fetch_metadata(query, rows, key)
-    params = {"q": query, "fo": "json", "c": rows} if source == "LoC" else {
-        "any": query, "dpid": "iss-ndl-opac", "cnt": rows,
-    }
+    if source != "LoC":
+        raise public.FetchError("Unsupported source; no request sent.")
+    params = {"q": query, "fo": "json", "c": rows}
     body = public.fetch_bytes(endpoint + "?" + urlencode(params))
     retrieved_at = now()
-    if source == "NDL":
-        result = public.normalize_ndl_response(body, query, retrieved_at)
-        if result["returned_count"] > rows:
-            raise public.FetchError("NDL returned more records than requested.")
-        return result
     payload = json.loads(body)
     result = public.normalize_loc_response(payload, query, retrieved_at)
     if result["returned_count"] > rows:
@@ -133,7 +125,7 @@ def main():
     parser.add_argument("--live", action="store_true", help="Send the bounded requests and write the metadata report.")
     parser.add_argument("--env-file", help="Explicit Git-ignored Europeana credential file; never printed or copied.")
     parser.add_argument("--rows", type=int, default=3, choices=range(1, 6), help="Records per query, 1–5; default 3.")
-    parser.add_argument("--sources", nargs="+", choices=("LoC", "NDL", "Europeana"), default=["LoC", "NDL", "Europeana"])
+    parser.add_argument("--sources", nargs="+", choices=("LoC", "Europeana"), default=["LoC", "Europeana"])
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     plan = [entry for entry in PLAN if entry[0] in args.sources]

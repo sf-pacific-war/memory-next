@@ -5,17 +5,15 @@ small authenticated Search API request for the exact phrase `"Burma Road"`
 returned HTTP 200, `success: true`, 28 matches and three requested records.
 These are candidate matches, not 28 verified historical sources.
 
-The repository includes the resulting metadata sample, not the key used to
-retrieve it. Previewing the demo needs no credentials. To refresh Europeana,
-configure your own key: from `step1/`, copy `.env.example` to `.env.europeana`,
-run `chmod 600 .env.europeana`, and fill in `EUROPEANA_API_KEY` in a local editor.
-The `.env.*` ignore rule excludes the credential file. Never include it in Git,
-documentation, publication screenshots, browser code or exported metadata.
-The fetching utility also accepts `EUROPEANA_API_KEY` from the process environment.
+The user created the personal key. Its value is held in the Step 1 project-root
+`.env.europeana`, covered by this project's `.env.*` ignore rule and stored with
+owner-only permissions. It must not appear in Git, documentation, screenshots
+for publication, browser code or exported metadata. The fetching utility also
+accepts `EUROPEANA_API_KEY` from the process environment.
 
 ## Fetch a small sample
 
-Run from `step1/`:
+Run from `step1-discovery/`:
 
 ```sh
 python3 tools/fetch_europeana_metadata.py \
@@ -55,5 +53,5 @@ Personal keys are for individual exploration and development testing. Before
 operating a public service, follow the project-key process and applicable
 limits. [Key types and registration](https://www.europeana.eu/en/how-to-register-for-and-manage-an-api-key)
 
-See the [demo steps](demo-steps.md) for LoC, NDL, NARA and the completed search
-page, or the [README](../README.md) for current capabilities and planned work.
+See the [demo steps](demo-steps.md) for the
+current catalogue sources and the search and topic-browsing workflow.

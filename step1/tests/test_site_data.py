@@ -47,13 +47,13 @@ class BuilderTests(unittest.TestCase):
         self.assertEqual(json.loads((self.root / "site/data/catalog.json").read_text()), catalog)
 
     def test_missing_and_invalid_sources_are_visible_as_unavailable(self):
-        (self.root / "data/ndl-discovery.json").write_text("not json")
+        (self.root / "data/europeana-discovery-candidates.json").write_text("not json")
         catalog = builder.build_catalog(self.root)
-        self.assertEqual([s["id"] for s in catalog["sources"]], ["LoC", "NDL", "Europeana", "NARA"])
+        self.assertEqual([s["id"] for s in catalog["sources"]], ["LoC", "Europeana", "NARA"])
         self.assertTrue(all(s["status"] == "unavailable" and s["count"] == 0 for s in catalog["sources"]))
 
     def test_empty_successful_snapshot_is_available(self):
-        self.snapshot("NDL", [])
+        self.snapshot("Europeana", [])
         source = builder.build_catalog(self.root)["sources"][1]
         self.assertEqual((source["status"], source["count"]), ("available", 0))
 
@@ -82,7 +82,7 @@ class BuilderTests(unittest.TestCase):
         self.assertEqual(catalog["records"][0]["source_url"], "https://www.loc.gov/item/one/?id=1")
 
     def test_source_mismatch_and_bad_ids_are_not_published(self):
-        self.snapshot("LoC", [record("ndl:wrong"), record(source="NDL"), {"id": 3}, record()])
+        self.snapshot("LoC", [record("europeana:wrong"), record(source="Europeana"), {"id": 3}, record()])
         self.assertEqual(len(builder.build_catalog(self.root)["records"]), 1)
 
     def test_unknown_access_and_unsafe_url_are_conservative(self):
@@ -202,9 +202,9 @@ class PublishedTopicCorpusTests(unittest.TestCase):
 
     def test_public_corpus_contains_all_topics_and_no_reference_site_evidence(self):
         catalog = builder.build_catalog()
-        self.assertEqual(len(catalog["records"]), 58)
+        self.assertEqual(len(catalog["records"]), 44)
         self.assertEqual(len(catalog["topics"]), 10)
-        self.assertEqual(len(catalog["sources"]), 10)
+        self.assertEqual(len(catalog["sources"]), 9)
         self.assertEqual(sum(s["count"] for s in catalog["sources"]), len(catalog["records"]))
         indexed = {r["id"]: r for r in catalog["records"]}
         self.assertEqual(len(indexed), len(catalog["records"]))

@@ -1,20 +1,21 @@
+import { createDemoBanner } from './demo-banner.mjs';
 import { sourceLabel } from './search.mjs';
 import { bindPageTranslations, resolveLocale, normalizeLocale, translate } from './i18n.mjs';
 import { updatePageLinks } from './page-links.mjs';
 
 const $ = id => document.getElementById(id);
-const LANGUAGE_KEY = 'pacific-war-discovery-language';
+const LANGUAGE_KEY = 'pacific-war-language-choice';
 function savedLocale() {
   try { return localStorage.getItem(LANGUAGE_KEY); } catch { return null; }
 }
 function currentLocale() {
-  return resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale(), navigator.languages || [navigator.language]);
+  return resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale());
 }
 let locale = currentLocale();
 let catalog = null;
-let loadFailed = false;
 const t = (message, values) => translate(message, locale, values);
 const applyPageLanguage = bindPageTranslations(document);
+const renderDemoBanner = createDemoBanner(document);
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
@@ -46,26 +47,18 @@ function renderSources() {
     } catch { /* A missing or invalid URL is never made into a link. */ }
     cards.append(card);
   }
-  $('scope-note').textContent = t('样本范围说明：当前索引包含 {count} 条真实目录记录，经过初步排除同名误命中；仍需逐条核对史料相关性。NDL 样本包括战后出版的回忆录与研究书目。更多结果需在原馆继续检索。', { count: catalog.records.length });
-  $('sample-count').textContent = catalog.records.length;
-  $('source-count').textContent = catalog.sources.filter(s => s.count > 0).length;
-  const lastDate = catalog.sources.flatMap(s => [s.fetched_at, s.checked_at]).filter(Boolean).sort().at(-1);
-  const date = new Date(lastDate);
-  const formatted = lastDate && !Number.isNaN(date.valueOf()) ? date.toLocaleDateString(locale, { year: 'numeric', month: '2-digit', day: '2-digit' }) : t('日期未提供');
-  $('updated-date').textContent = t('样本更新 {date}', { date: formatted });
+  $('scope-note').textContent = t('样本范围说明：当前索引包含 {count} 条真实目录记录，经过初步排除同名误命中；仍需逐条核对史料相关性。更多结果需在原馆继续检索。', { count: catalog.records.length });
+  renderDemoBanner(catalog, locale);
 }
 
 async function loadCatalog() {
-  loadFailed = false;
   catalog = null;
   $('error-state').hidden = true;
   $('scope-note').hidden = true;
   $('sources-loading').hidden = false;
   $('source-cards').replaceChildren();
   $('source-cards').setAttribute('aria-busy', 'true');
-  $('sample-count').textContent = '—';
-  $('source-count').textContent = '—';
-  $('updated-date').textContent = t('正在载入资料');
+  renderDemoBanner(null, locale);
   try {
     const response = await fetch('./data/catalog.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error('Catalogue unavailable');
@@ -77,10 +70,9 @@ async function loadCatalog() {
     $('scope-note').hidden = false;
   } catch {
     catalog = null;
-    loadFailed = true;
     $('source-cards').replaceChildren();
     $('error-state').hidden = false;
-    $('updated-date').textContent = t('样本载入失败');
+    renderDemoBanner(null, locale);
   } finally {
     $('sources-loading').hidden = true;
     $('source-cards').setAttribute('aria-busy', 'false');
@@ -91,9 +83,9 @@ function changeLanguage(value, { save = true } = {}) {
   locale = normalizeLocale(value) || locale;
   applyPageLanguage(locale);
   $('language').value = locale;
-  try { localStorage.setItem(LANGUAGE_KEY, locale); } catch { /* Storage may be disabled. */ }
+  try { if (save) localStorage.setItem(LANGUAGE_KEY, locale); } catch { /* Storage may be disabled. */ }
   if (catalog) renderSources();
-  else $('updated-date').textContent = t(loadFailed ? '样本载入失败' : '正在载入资料');
+  else renderDemoBanner(null, locale);
   if (save) {
     const url = new URL(location.href);
     url.searchParams.set('lang', locale);

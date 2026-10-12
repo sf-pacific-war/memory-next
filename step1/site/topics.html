@@ -1,35 +1,35 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="WWII Pacific War：按专题浏览已整理的档案资料，从照片、地图与文献走向原始出处。"><title>专题浏览 · WWII Pacific War</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="topics.css"><script type="module" src="topics.js"></script></head>
-<body class="topics-page"><a class="skip-link" href="#browse-title">跳至专题资料</a>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="WWII Pacific War: Browse collected archival topics through photographs, maps and documents, with links to original sources."><title>Topics · WWII Pacific War</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="topics.css"><script type="module" src="topics.js"></script></head>
+<body class="topics-page"><a class="skip-link" href="#browse-title">Skip to topic records</a>
   <header class="masthead">
     <div class="header-inner">
-      <a class="brand" href="./" data-page-link="./" aria-label="WWII Pacific War 首页">
+      <a class="brand" href="./" data-page-link="./" aria-label="WWII Pacific War home">
         <span class="brand-mark" aria-hidden="true">PW</span>
         <span><strong>WWII Pacific War</strong><small>二战太平洋战场</small></span>
       </a>
-      <nav aria-label="主导航">
-        <a href="./" data-page-link="./">资料发现</a>
-        <a class="nav-active" href="topics.html" data-page-link="topics.html" aria-current="page">专题浏览</a>
-        <a href="sources.html" data-page-link="sources.html">数据来源</a>
-        <button type="button" id="help-button">使用说明 <span aria-hidden="true">↗</span></button>
+      <nav aria-label="Main navigation">
+        <a href="./" data-page-link="./">Discover</a>
+        <a class="nav-active" href="topics.html" data-page-link="topics.html" aria-current="page">Topics</a>
+        <a href="sources.html" data-i18n="数据来源" data-page-link="sources.html">Sources</a>
+        <button type="button" id="help-button">Help <span aria-hidden="true">↗</span></button>
       </nav>
-      <div class="header-tools"><span class="edition"><span aria-hidden="true"></span>研究预览版</span><label class="language-control"><span class="sr-only">界面语言</span><select id="language" aria-label="界面语言"><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">中文</option></select></label></div>
+      <div class="header-tools"><span class="edition"><span aria-hidden="true"></span>Research preview</span><label class="language-control"><span class="sr-only">Interface language</span><select id="language" aria-label="Interface language"><option value="en" lang="en">English</option><option value="zh-CN" lang="zh-CN">中文</option></select></label></div>
     </div>
   </header>
   <main>
     <section class="intro wrap topics-intro" aria-labelledby="page-title">
-      <div><p class="eyebrow"><span class="section-number">02</span> 专题浏览 <span class="eyebrow-line"></span></p><h1 id="page-title">让资料，串起历史。</h1><p class="intro-description">从已整理的专题出发，浏览不同机构的照片、文献与实物。<br>遇到感兴趣的线索，再到资料发现深入检索。</p></div>
-      <div class="topics-tally"><div><strong id="topic-count">—</strong><span>研究专题</span></div><div><strong id="browse-count">—</strong><span>收录资料</span></div></div>
+      <div><p class="eyebrow"><span class="section-number">02</span> Topics <span class="eyebrow-line"></span></p><h1 id="page-title">History, one source at a time.</h1><p class="intro-description">Explore collected topics through photographs, documents and artifacts from different institutions.<br>Follow a promising lead into Discover to search further.</p></div>
+      <div class="topics-tally"><div><strong id="topic-count">—</strong><span>Research topics</span></div><div><strong id="browse-count">—</strong><span>Collected records</span></div></div>
     </section>
-    <div class="wrap"><p class="topics-scope">专题由编辑整理，资料保留原馆出处。收录范围有限，全文访问与使用条件以原馆为准。</p></div>
-    <div id="browse-loading" class="wrap loading-state" role="status">正在载入资料</div>
-    <div id="browse-error" class="wrap empty-state" role="alert" hidden><h2>目录样本暂时无法载入</h2><p>请检查网络连接后重试。</p><button type="button" id="retry-button" class="secondary-button">重新载入</button></div>
+    <div class="wrap"><p class="topics-scope">Topics are editorial groupings with original archive attribution. Coverage is selective; access and reuse conditions follow the source institution.</p></div>
+    <div id="browse-loading" class="wrap loading-state" role="status">Loading sources</div>
+    <div id="browse-error" class="wrap empty-state" role="alert" hidden><h2>Catalogue samples could not be loaded</h2><p>Check your connection and try again.</p><button type="button" id="retry-button" class="secondary-button">Try again</button></div>
     <section class="wrap browse-layout" id="browse-layout" hidden>
-      <aside class="topic-sidebar" aria-labelledby="topic-menu-title"><h2 id="topic-menu-title">选择一个专题</h2><div id="topic-menu" class="topic-menu"></div><a class="topics-return" href="./" data-page-link="./">返回资料发现 ↗</a></aside>
-      <div class="browse-content"><div class="browse-heading"><p class="eyebrow">档案选读</p><h2 id="browse-title" tabindex="-1"></h2><p id="browse-description"></p><div id="topic-keywords" class="topic-keywords" aria-label="专题检索词"></div><a id="topic-search" class="topics-search-link" href="./">在资料发现中检索全部资料 ↗</a></div>
-      <p id="browse-announcement" class="browse-announcement" role="status" aria-live="polite"></p><div id="topic-records" class="results-list" aria-busy="true"></div><p id="browse-empty" hidden>该专题暂时没有可显示的资料。</p><button type="button" id="topic-more" class="secondary-button" hidden>查看更多资料 ↓</button></div>
+      <aside class="topic-sidebar" aria-labelledby="topic-menu-title"><h2 id="topic-menu-title">Browse a topic</h2><div id="topic-menu" class="topic-menu"></div><a class="topics-return" href="./" data-page-link="./">Back to discovery ↗</a></aside>
+      <div class="browse-content"><div class="browse-heading"><p class="eyebrow">FROM THE ARCHIVES</p><h2 id="browse-title" tabindex="-1"></h2><p id="browse-description"></p><div id="topic-keywords" class="topic-keywords" aria-label="Topic keywords"></div><a id="topic-search" class="topics-search-link" href="./">Search all records in Discover ↗</a></div>
+      <p id="browse-announcement" class="browse-announcement" role="status" aria-live="polite"></p><div id="topic-records" class="results-list" aria-busy="true"></div><p id="browse-empty" hidden>No records are available in this topic yet.</p><button type="button" id="topic-more" class="secondary-button" hidden>Show more records ↓</button></div>
     </section>
   </main>
-  <footer class="wrap footer"><div><strong>WWII Pacific War</strong><span>二战太平洋战场</span></div><p>STEP 01 · 统一发现演示 <span aria-hidden="true">/</span> 元数据有出处，历史有脉络。</p><a href="#page-title">回到顶部 ↑</a></footer>
-  <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-top"><span>RESEARCH GUIDE <span class="dialog-divider">/</span> 使用说明</span><button type="button" class="icon-button" id="close-help" aria-label="关闭使用说明">×</button></div><div class="detail-content help-content"><p class="eyebrow">从关键词到原始出处</p><h2 id="help-title">如何使用 WWII Pacific War</h2><ol><li><strong>输入线索</strong><p>搜索标题、地点或人物。预设主题支持中英日检索词扩展，具体使用的词会显示在结果上方。</p></li><li><strong>缩小范围</strong><p>组合选择来源、资料类型、目录日期与访问状态。日期筛选针对目录记录，不自动判断战役发生年份。</p></li><li><strong>核对原始出处</strong><p>打开记录查看原始描述，再前往原馆确认内容、访问条件和使用许可。</p></li></ol><div class="detail-note">当前搜索本地已导入的真实样本，不是全馆藏实时检索。关键词命中不等于史料相关性已经确认；书目记录也不等于在线全文。</div></div></dialog>
+  <footer class="wrap footer"><div><strong>WWII Pacific War</strong><span>二战太平洋战场</span></div><p>STEP 01 · Discovery demo <span aria-hidden="true">/</span> Trace the sources. Explore the context.</p><a href="#page-title">Back to top ↑</a></footer>
+  <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-top"><span>RESEARCH GUIDE <span class="dialog-divider">/</span> Help</span><button type="button" class="icon-button" id="close-help" aria-label="Close help">×</button></div><div class="detail-content help-content"><p class="eyebrow">FROM KEYWORDS TO ORIGINAL SOURCES</p><h2 id="help-title">How to use WWII Pacific War</h2><ol><li><strong>Enter a clue</strong><p>Search for titles, places or people. Preset topics expand to Chinese, English and Japanese terms, shown above the results.</p></li><li><strong>Narrow your search</strong><p>Combine sources, material types, catalogue dates and access filters. Date filters use catalogue metadata, not inferred battle dates.</p></li><li><strong>Check the original source</strong><p>Open a record to read its original description, then visit the archive to verify its content, access and reuse conditions.</p></li></ol><div class="detail-note">Search covers imported local samples, not live searches of entire collections. A keyword match does not establish historical relevance, and a catalogue record does not guarantee online full text.</div></div></dialog>
 <noscript><p class="noscript-note">Enable JavaScript to browse topics. / 请启用 JavaScript 以浏览专题。</p></noscript></body></html>

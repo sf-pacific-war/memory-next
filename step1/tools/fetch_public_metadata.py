@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch small, credential-free LoC and NDL metadata snapshots for the demo.
+"""Fetch small, credential-free LoC metadata snapshots for the demo.
 
 Only metadata is requested. No image/full-text download, pagination, retries,
 redirects, credentials, or environment-file loading. A failed source leaves its
@@ -9,13 +9,10 @@ seconds apart; do not schedule bulk harvesting with this demonstration tool.
 
 References:
   https://www.loc.gov/apis/json-and-yaml/requests/
-  https://ndlsearch.ndl.go.jp/help/api/specifications
-  https://ndlsearch.ndl.go.jp/help/api/provider
 """
 
 import argparse
 from datetime import datetime, timezone
-from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
@@ -24,16 +21,11 @@ import tempfile
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit, urlunsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
-import xml.etree.ElementTree as ET
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 TIMEOUT_SECONDS = 30
 MAX_RESPONSE_BYTES = 8 * 1024 * 1024
-DC = "http://purl.org/dc/elements/1.1/"
-DCTERMS = "http://purl.org/dc/terms/"
-OPENSEARCH = "http://a9.com/-/spec/opensearchrss/1.0/"
-NDL_METADATA_RIGHTS = "https://creativecommons.org/licenses/by/4.0/"
 
 
 class FetchError(Exception):
@@ -43,21 +35,6 @@ class FetchError(Exception):
 class NoRedirect(HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         return None
-
-
-class PlainText(HTMLParser):
-    def __init__(self):
-        super().__init__(convert_charrefs=True)
-        self.parts = []
-
-    def handle_data(self, data):
-        self.parts.append(data)
-
-
-def plain_text(value):
-    parser = PlainText()
-    parser.feed(value or "")
-    return " ".join(" ".join(parser.parts).split())
 
 
 def strings(value):
@@ -154,60 +131,6 @@ def normalize_loc_response(payload, query, fetched_at):
                     "First API page; excludes known title collisions for Bahamian song cards and California roads. Other records remain candidates.")
 
 
-def normalize_ndl(item, query, fetched_at):
-    link = source_url(item.findtext("link"), {"ndlsearch.ndl.go.jp"})
-    if not link:
-        raise FetchError("NDL returned an invalid record link.")
-    record_id = urlsplit(link).path.rstrip("/").split("/")[-1]
-    # RSS pubDate is an index-update timestamp, NOT the publication date.
-    date = item.findtext("{" + DCTERMS + "}issued") or item.findtext("{" + DC + "}date")
-    categories = [node.text for node in item.findall("category") if node.text]
-    return {
-        "id": "ndl:" + record_id,
-        "source_id": record_id,
-        "source": "NDL",
-        "title": item.findtext("title") or None,
-        "description": plain_text(item.findtext("description")) or None,
-        "holding_institution": ["国立国会図書館"],
-        "metadata_provider": ["NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"],
-        "date_display": date or None,
-        "date_kind": "source_supplied",
-        "year": years(date),
-        "format": "TEXT" if "図書" in categories else None,
-        "language": [node.text.strip() for node in item.findall("{" + DC + "}language") if node.text and node.text.strip()],
-        "metadata_language": ["ja"],
-        "source_url": link,
-        "aggregator_url": link,
-        "access_status": "unverified",
-        "review_status": "candidate",
-        "metadata_rights": NDL_METADATA_RIGHTS,
-        "content_rights": [],
-        "retrieved_at": fetched_at,
-        "query_used": query,
-        "subjects": [node.text.strip() for node in item.findall("{" + DC + "}subject") if node.text and node.text.strip()],
-    }
-
-
-def normalize_ndl_response(data, query, fetched_at):
-    if b"<!DOCTYPE" in data.upper() or b"<!ENTITY" in data.upper():
-        raise FetchError("NDL response contains unsupported XML declarations.")
-    try:
-        root = ET.fromstring(data)
-        total = int(root.findtext("./channel/{" + OPENSEARCH + "}totalResults"))
-        if total < 0:
-            raise ValueError
-    except (ET.ParseError, TypeError, ValueError):
-        raise FetchError("NDL returned an unexpected response structure.") from None
-    records = [normalize_ndl(item, query, fetched_at) for item in root.findall("./channel/item")]
-    if query == "ビルマ":
-        terms = ("ビルマ", "ミャンマー", "インパール", "滇緬", "太平洋戦争", "日中戦争")
-        records = [record for record in records if any(term in " ".join([
-            record["title"] or "", record["description"] or "", " ".join(record["subjects"])
-        ]) for term in terms)]
-    return snapshot("NDL", query, fetched_at, total, records,
-                    "NDL bibliographic metadata under CC BY 4.0; publication dates are not battle dates. Default Burma query excludes records without Burma/China/Pacific-war terms in visible metadata. Catalogue links do not establish public full-text access.")
-
-
 def snapshot(source, query, fetched_at, total, records, note):
     unique = list({record["id"]: record for record in records}.values())
     return {"source": source, "effective_query": query, "fetched_at": fetched_at,
@@ -246,8 +169,8 @@ def atomic_save(path, payload):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", choices=["all", "loc", "ndl"], default="all")
-    parser.add_argument("--rows", type=int, help="1–20 records per source (defaults: LoC 20, NDL 10).")
+    parser.add_argument("--source", choices=["all", "loc"], default="all")
+    parser.add_argument("--rows", type=int, help="1–20 LoC records (default: 20).")
     parser.add_argument("--query", help="Optional query for one selected source; cannot be used with all.")
     args = parser.parse_args()
     if args.rows is not None and not 1 <= args.rows <= 20:
@@ -255,20 +178,14 @@ def main():
     if args.query and (args.source == "all" or not args.query.strip() or len(args.query) > 200):
         parser.error("--query needs one source and a nonempty value of at most 200 characters")
     failed = False
-    for source in (["loc", "ndl"] if args.source == "all" else [args.source]):
-        query = args.query or ('"Burma Road"' if source == "loc" else "ビルマ")
-        count = args.rows or (20 if source == "loc" else 10)
-        if source == "loc":
-            url = "https://www.loc.gov/photos/?" + urlencode({"q": query, "fo": "json", "c": count})
-        else:
-            url = "https://ndlsearch.ndl.go.jp/api/opensearch?" + urlencode({"any": query, "dpid": "iss-ndl-opac", "cnt": count})
+    for source in ["loc"]:
+        query = args.query or '"Burma Road"'
+        count = args.rows or 20
+        url = "https://www.loc.gov/photos/?" + urlencode({"q": query, "fo": "json", "c": count})
         try:
             data = fetch_bytes(url)
             fetched_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-            if source == "loc":
-                payload = normalize_loc_response(json.loads(data), query, fetched_at)
-            else:
-                payload = normalize_ndl_response(data, query, fetched_at)
+            payload = normalize_loc_response(json.loads(data), query, fetched_at)
             atomic_save(PROJECT_ROOT / "data" / (source + "-discovery.json"), payload)
             print(source.upper() + " metadata saved: " + str(payload["returned_count"]) + " candidate records.")
         except (FetchError, json.JSONDecodeError, UnicodeError, OSError) as exc:

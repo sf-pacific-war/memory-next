@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "checked_at": "2026-10-12T00:25:50Z",
-  "scope_note": "Twenty curated cross-check entries against selected CBI reference pages. A related entry is an archival candidate, not an exact image/object match. This is not an exhaustive audit of every CBI page, embedded photo, article or artifact. No CBI-hosted media is fetched or reused.",
-  "scope_note_zh": "围绕部分 CBI 参考页整理的 20 条人工交叉核查记录。相关候选不等于同图、同物；并非对 CBI 全站及全部内嵌照片、文章、器物的穷尽核验。未抓取或复用 CBI 托管媒体。",
+  "scope_note": "Nineteen curated cross-check entries against selected CBI reference pages. A related entry is an archival candidate, not an exact image/object match. This is not an exhaustive audit of every CBI page, embedded photo, article or artifact. No CBI-hosted media is fetched or reused.",
+  "scope_note_zh": "围绕部分 CBI 参考页整理的 19 条人工交叉核查记录。相关候选不等于同图、同物；并非对 CBI 全站及全部内嵌照片、文章、器物的穷尽核验。未抓取或复用 CBI 托管媒体。",
   "records": [
     {
       "id": "cbi-match-001",
@@ -446,30 +446,6 @@
         "https://archives.library.rice.edu/repositories/2/archival_objects/92597"
       ],
       "access_note": "Official search-indexed finding aid verified; no online full text established and no repository contact sent."
-    },
-    {
-      "id": "cbi-match-019",
-      "cbi_page_url": "https://cbi-theater.com/yank-burmaroad/burmaroad.html",
-      "cbi_page_title": "Clearing the Burma Road",
-      "archival_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001663142",
-      "archival_title": "ああ滇緬公路 : ビルマ従軍",
-      "archival_id": "NDL R100000002-I000001663142; call number GB554-1548",
-      "source": "NDL",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "material_type": "book",
-      "match_status": "related",
-      "evidence": "The existing NDL metadata snapshot identifies a 1983 veterans’ publication edited by 興竜会編集委員会. NDL’s published bibliography independently lists the work. It supplies a Japanese perspective on Burma, not the same work as a wartime YANK article.",
-      "evidence_zh": "既有 NDL 元数据为兴龙会编辑委员会编纂的 1983 年战友出版物；NDL 公开书目亦有记录。它可补充日方缅甸战争视角，与 YANK 战时文章不是同一作品。",
-      "rights_note": "Catalogue access does not establish full-text availability or image reuse rights; no cover used.",
-      "checked_at": "2026-10-12T00:25:50Z",
-      "next_step": "Retrieve the full bibliographic record and relevant contents; keep its 1983 publication date separate from wartime event dates.",
-      "next_step_zh": "补全书目和相关目录，并将 1983 年出版日期与战争事件日期分别记录。",
-      "evidence_urls": [
-        "https://ndlsearch.ndl.go.jp/books/R100000002-I000001663142",
-        "https://dl.ndl.go.jp/view/download/digidepo_3192150_po_74-04.pdf?contentNo=1"
-      ],
-      "access_note": "Previously retrieved public NDL snapshot corroborated by official published bibliography; direct book page was not accessible through this retrieval tool."
     },
     {
       "id": "cbi-match-020",

@@ -8,8 +8,8 @@
         "en": "Flying Tigers & aviation"
       },
       "description": {
-        "zh-CN": "从 P-40 战斗机照片、航空史书目与博物馆文章认识飞虎队及相关航空部队。第十四航空队与最初的美国志愿航空队需要区分。",
-        "en": "Explore P-40 photographs, aviation bibliography and museum articles on the Flying Tigers and related air units. The Fourteenth Air Force is distinct from the original American Volunteer Group."
+        "zh-CN": "从 P-40 战斗机照片、博物馆文章与航空队臂章认识飞虎队及相关航空部队。第十四航空队与最初的美国志愿航空队需要区分。",
+        "en": "Explore P-40 photographs, museum articles and an air-force patch on the Flying Tigers and related air units. The Fourteenth Air Force is distinct from the original American Volunteer Group."
       },
       "keywords": {
         "zh-CN": [
@@ -33,13 +33,8 @@
       },
       "record_ids": [
         "nara:535531",
-        "ndl:R100000002-I000002148858",
         "smithsonian:hiding-plane-sight",
-        "smithsonian:nmah_1983471",
-        "ndl:R100000002-I000000007635-d3289771",
-        "ndl:R100000002-I000000007635-d3289958",
-        "ndl:R100000002-I000001093304",
-        "ndl:R100000002-I000001095893"
+        "smithsonian:nmah_1983471"
       ]
     },
     {
@@ -82,8 +77,8 @@
         "en": "The Burma Road"
       },
       "description": {
-        "zh-CN": "沿公路的建设、村落与卫生调查照片，结合日文回忆文献及法语广播目录，观察这条交通线的不同记录。",
-        "en": "Explore road construction, villages and health-survey photographs alongside Japanese memoir bibliography and a French broadcast record."
+        "zh-CN": "沿公路的建设、村落与卫生调查照片，结合广播目录，观察这条交通线的不同记录。",
+        "en": "Explore road construction, villages and health-survey photographs alongside a French broadcast record."
       },
       "keywords": {
         "zh-CN": [
@@ -112,7 +107,6 @@
         "loc:2017872504",
         "loc:2017872505",
         "loc:2017872525",
-        "ndl:R100000002-I000001663142",
         "europeana:/2051908/data_euscreenXL_ina_PHD85008112"
       ]
     },
@@ -165,15 +159,14 @@
         "en": "Burma campaign & units"
       },
       "description": {
-        "zh-CN": "照片、战地新闻影片、英帕尔回忆录及钦迪特文献线索。战后出版物的出版时间与战事时间分别保留。",
-        "en": "Photographs, wartime newsreels, Imphal memoirs and Chindit research leads. Publication dates of later works remain distinct from wartime events."
+        "zh-CN": "照片、战地新闻影片、麦瑞尔突击队个人文献及钦迪特研究线索，展现缅甸战场与部队经历。",
+        "en": "Photographs, wartime newsreels, a Merrill’s Marauders personal collection and Chindit research leads explore the Burma campaign and military service."
       },
       "keywords": {
         "zh-CN": [
           "缅甸",
           "緬甸",
           "缅甸战役",
-          "英帕尔",
           "钦迪特",
           "钦迪特部队",
           "怒江"
@@ -181,7 +174,6 @@
         "en": [
           "Burma",
           "Burma campaign",
-          "Imphal",
           "Chindits",
           "Merrill’s Marauders",
           "Salween"
@@ -195,10 +187,6 @@
         "loc:2008678725",
         "loc:2010636632",
         "loc:2005692391",
-        "ndl:R100000002-I000002594329",
-        "ndl:R100000002-I000001394546",
-        "ndl:R100000002-I000001567087",
-        "ndl:R100000002-I026027253",
         "europeana:/2022320/8DAA882DC554386D1C625C354C1B6E031692FBF3",
         "europeana:/2051944/data_euscreenXL_4955234"
       ]
@@ -210,8 +198,8 @@
         "en": "Personal stories & recollections"
       },
       "description": {
-        "zh-CN": "军人个人文献、回忆录与日记书目，呈现中国、缅甸和印度的服役经历。部分条目只有目录信息。",
-        "en": "Personal military collections, memoirs and diary bibliography offer perspectives on service in China, Burma and India. Some entries provide catalogue information only."
+        "zh-CN": "军人个人文献呈现中国、缅甸和印度的服役经历，包括飞行、地勤与地面部队。部分条目只有目录信息。",
+        "en": "Personal military collections offer perspectives on service in China, Burma and India, including flying, ground support and infantry. Some entries provide catalogue information only."
       },
       "keywords": {
         "zh-CN": [
@@ -239,15 +227,7 @@
         "loc:afc2001001.107713",
         "loc:afc2001001.119534",
         "loc:afc2001001.82964",
-        "loc:afc2001001.21936",
-        "ndl:R100000002-I000002594329",
-        "ndl:R100000002-I000001394546",
-        "ndl:R100000002-I000001567087",
-        "ndl:R100000002-I000002108359",
-        "ndl:R100000002-I000001663142",
-        "ndl:R100000002-I000001466950",
-        "ndl:R100000002-I034848408",
-        "ndl:R100000002-I026027253"
+        "loc:afc2001001.21936"
       ]
     },
     {
@@ -375,8 +355,8 @@
         "en": "Civilians, health & daily life"
       },
       "description": {
-        "zh-CN": "公路沿线村落、疟疾调查、医院与民众支援的照片，以及防疫部队的战后记录。",
-        "en": "Photographs of villages, malaria surveys, hospitals and civilian war work, with a postwar record of a disease-prevention unit."
+        "zh-CN": "公路沿线村落、疟疾调查、医院与民众支援的照片，记录战时卫生与日常生活。",
+        "en": "Photographs of villages, malaria surveys, hospitals and civilian war work document wartime health and daily life."
       },
       "keywords": {
         "zh-CN": [
@@ -407,8 +387,7 @@
         "loc:2017872525",
         "loc:2004680684",
         "loc:2005677702",
-        "loc:2004676827",
-        "ndl:R100000002-I000001214463"
+        "loc:2004676827"
       ]
     }
   ],
@@ -485,21 +464,9 @@
       "zh-CN": "莱斯大学 Lowe 家族文献的查找指南著录了中国新闻部门于 1943 年出版的《Inside Wartime China》。尚未确认有在线全文。",
       "en": "The finding aid for Rice University’s Lowe Family Papers lists Inside Wartime China, published by the Chinese Ministry of Information in 1943. Online full text has not been established."
     },
-    "ndl:R100000002-I000001663142": {
-      "zh-CN": "日本国立国会图书馆著录的 1983 年退伍军人出版物，由興竜会編集委員会编。出版时间晚于其叙述的战争经历。",
-      "en": "A 1983 veterans’ publication catalogued by the National Diet Library, edited by 興竜会編集委員会. Its publication date is later than the wartime experiences it describes."
-    },
     "europeana:/2051908/data_euscreenXL_ina_PHD85008112": {
       "zh-CN": "Europeana 著录的法国 INA 音频，标题涉及滇缅公路与太平洋战事。录音日期及可播放状态尚未核实。",
       "en": "A French INA audio record in Europeana whose title mentions the Burma Road and the Pacific war. The recording date and playable access remain unverified."
-    },
-    "ndl:R100000002-I000000007635-d3289771": {
-      "zh-CN": "通过“フライングタイガース”检索返回的《航空ファン》期刊书目。相关篇目及全文内容尚未逐页核实。",
-      "en": "An issue of 航空ファン returned for the search “フライングタイガース”. The relevant article and full-text content have not been checked page by page."
-    },
-    "ndl:R100000002-I000000007635-d3289958": {
-      "zh-CN": "通过“フライングタイガース”检索返回的《航空ファン》期刊书目。相关篇目及全文内容尚未逐页核实。",
-      "en": "An issue of 航空ファン returned for the search “フライングタイガース”. The relevant article and full-text content have not been checked page by page."
     }
   }
 }

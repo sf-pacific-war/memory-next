@@ -4,12 +4,14 @@
 
 ## 当前公开版本
 
-- [资料发现](https://project-864074c6-a2ba-4b47-a1f.web.app/?lang=zh-CN)
-- [专题浏览](https://project-864074c6-a2ba-4b47-a1f.web.app/topics.html?lang=zh-CN)
-- [数据来源](https://project-864074c6-a2ba-4b47-a1f.web.app/sources.html?lang=zh-CN)
-- 发布于 **2026-10-12 02:12 UTC**，Hosting 版本 `d57841064b4bcf54`。
-- 公开目录为 **58 条记录、10 个专题、10 个来源机构**。
-- 17 个线上文件与本地发布产物的 SHA-256 一致；页面、双语检索、JavaScript 模块 MIME、响应头及私有路径 404 均已验证。
+- [资料发现](https://project-864074c6-a2ba-4b47-a1f.web.app/)
+- [专题浏览](https://project-864074c6-a2ba-4b47-a1f.web.app/topics.html)
+- [数据来源](https://project-864074c6-a2ba-4b47-a1f.web.app/sources.html)
+- 发布于 **2026-10-12 UTC**。首次访问默认 English，可主动切换并保存中文选择。
+- 公开目录为 **44 条记录、10 个专题、9 个来源机构**。
+- 18 个线上文件与本地发布产物的 SHA-256 一致；页面、双语检索、JavaScript 模块 MIME、响应头及私有路径 404 均已验证。
+
+顶部临时演示横幅显示实际样本数、机构数与来源更新时间；可关闭，同一标签页会话跨页面保持关闭。横幅开关位于 `site/demo-banner.mjs`；永久页面布局没有统计条。
 
 ## 发布内容
 

@@ -16,7 +16,7 @@ import archive_access
 import check_archives
 
 
-API_IDS = ("loc", "ndl", "europeana", "nara_catalog", "dpla", "tna")
+API_IDS = ("loc", "europeana", "nara_catalog", "dpla", "tna")
 SYNTHETIC_KEYS = {
     "EUROPEANA_API_KEY": "synthetic-europeana-key",
     "NARA_API_KEY": "synthetic-nara-key",
@@ -38,12 +38,6 @@ def api_responses(empty=False):
         "tna": {"Count": count, "Records": [] if empty else [{"Id": "C123"}]},
     }
     responses = {source: json.dumps(payload).encode("utf-8") for source, payload in payloads.items()}
-    item = "" if empty else "<item><link>https://ndlsearch.ndl.go.jp/books/123</link></item>"
-    responses["ndl"] = (
-        '<rss xmlns:opensearch="http://a9.com/-/spec/opensearchrss/1.0/"><channel>'
-        '<opensearch:totalResults>' + str(count) + '</opensearch:totalResults>'
-        + item + '</channel></rss>'
-    ).encode("utf-8")
     return responses
 
 
@@ -66,9 +60,14 @@ class AccessCliTests(unittest.TestCase):
             code = main(args)
         return code, json.loads(output.getvalue())
 
+    def test_source_registry_contains_only_supported_routes(self):
+        self.assertEqual(check_archives.SOURCE_IDS,
+                         ("loc", "europeana", "nara", "nara_catalog", "dpla", "tna", "jacar", "iwm", "taiwan"))
+        self.assertEqual(len(set(check_archives.SOURCE_IDS)), len(check_archives.SOURCE_IDS))
+
     def test_every_independent_entry_without_credentials_is_offline(self):
         expected = {
-            "loc": (0, "ready"), "ndl": (0, "ready"), "nara": (0, "ready"),
+            "loc": (0, "ready"), "nara": (0, "ready"),
             "europeana": (2, "missing_credential"), "dpla": (2, "missing_credential"),
             "nara_catalog": (2, "missing_credential"), "tna": (2, "permission_required"),
             "jacar": (0, "manual_only"), "iwm": (0, "manual_only"),
@@ -87,8 +86,8 @@ class AccessCliTests(unittest.TestCase):
         with patch.dict(archive_access.os.environ, {"EUROPEANA_API_KEY": "synthetic-key"}, clear=True), patch.object(archive_access, "request_bytes") as network:
             code, report = self.capture(check_archives.main, [])
             self.assertEqual(code, 2)
-            self.assertEqual(report["summary"], {"ready": 4, "missing_credential": 2, "permission_required": 1, "manual_only": 3})
-            self.assertEqual(len(report["results"]), 10)
+            self.assertEqual(report["summary"], {"ready": 3, "missing_credential": 2, "permission_required": 1, "manual_only": 3})
+            self.assertEqual(len(report["results"]), 9)
             self.assertEqual(report["mode"], "access")
             self.assertIsNone(report["query"])
             self.assertNotIn("synthetic-key", json.dumps(report))
@@ -105,8 +104,8 @@ class AccessCliTests(unittest.TestCase):
 
     def assert_api_requests(self, network, sources, query, rows):
         self.assertEqual(network.call_count, len(sources))
-        query_keys = {"ndl": "any", "europeana": "query", "tna": "SearchQuery"}
-        limit_keys = {"loc": "c", "ndl": "cnt", "europeana": "rows",
+        query_keys = {"europeana": "query", "tna": "SearchQuery"}
+        limit_keys = {"loc": "c", "europeana": "rows",
                       "nara_catalog": "limit", "dpla": "page_size", "tna": "ResultsPageSize"}
         for call, source in zip(network.call_args_list, sources):
             with self.subTest(request_source=source):
@@ -125,23 +124,23 @@ class AccessCliTests(unittest.TestCase):
         self.assertEqual(code, 2)
         self.assertEqual(report["mode"], "keyword")
         self.assertEqual(report["query"], query)
-        self.assertEqual(report["summary"], {"ok": 3, "query_not_supported": 1, "missing_credential": 2,
+        self.assertEqual(report["summary"], {"ok": 2, "query_not_supported": 1, "missing_credential": 2,
                                               "permission_required": 1, "manual_only": 3})
-        self.assert_api_requests(network, ("loc", "ndl", "europeana"), query, 2)
+        self.assert_api_requests(network, ("loc", "europeana"), query, 2)
         for result in report["results"]:
-            self.assertEqual(result["request_sent"], result["source"] in {"loc", "ndl", "europeana"})
+            self.assertEqual(result["request_sent"], result["source"] in {"loc", "europeana"})
             if not result["request_sent"]:
                 self.assertNotIn("sample_count", result)
                 self.assertNotIn("total_results", result)
         self.assertNotIn(SYNTHETIC_KEYS["EUROPEANA_API_KEY"], json.dumps(report))
 
-    def test_all_keyword_can_reach_six_apis_after_keys_and_permission_are_configured(self):
+    def test_all_keyword_can_reach_five_apis_after_keys_and_permission_are_configured(self):
         query = "飞虎队 & Burma"
         with patch.dict(archive_access.os.environ, SYNTHETIC_KEYS, clear=True), \
                 patch.object(archive_access, "request_bytes", side_effect=transport_for(api_responses())) as network:
             code, report = self.capture(check_archives.main, ["--live", "--query", query, "--rows", "1", "--permission-confirmed"])
         self.assertEqual(code, 2)
-        self.assertEqual(report["summary"], {"ok": 6, "query_not_supported": 1, "manual_only": 3})
+        self.assertEqual(report["summary"], {"ok": 5, "query_not_supported": 1, "manual_only": 3})
         self.assert_api_requests(network, API_IDS, query, 1)
         for key in SYNTHETIC_KEYS.values():
             self.assertNotIn(key, json.dumps(report))
@@ -152,7 +151,7 @@ class AccessCliTests(unittest.TestCase):
             code, report = self.capture(check_archives.main, ["--query", "飞虎队", "--permission-confirmed"])
         self.assertEqual(code, 2)
         self.assertFalse(report["live"])
-        self.assertEqual(report["summary"], {"ready": 6, "query_not_supported": 1, "manual_only": 3})
+        self.assertEqual(report["summary"], {"ready": 5, "query_not_supported": 1, "manual_only": 3})
         for result in report["results"]:
             self.assertFalse(result["request_sent"])
             self.assertNotIn("sample_count", result)
@@ -164,7 +163,7 @@ class AccessCliTests(unittest.TestCase):
                 patch.object(archive_access, "request_bytes", side_effect=transport_for(api_responses(empty=True))) as network:
             code, report = self.capture(check_archives.main, ["--live", "--query", "飞虎队", "--permission-confirmed"])
         self.assertEqual(code, 2)
-        self.assertEqual(network.call_count, 6)
+        self.assertEqual(network.call_count, 5)
         for result in report["results"]:
             if result["source"] in API_IDS:
                 self.assertEqual((result["status"], result["sample_count"], result["total_results"]), ("ok", 0, 0))
@@ -181,8 +180,8 @@ class AccessCliTests(unittest.TestCase):
                 patch.object(archive_access, "request_bytes", side_effect=partial_failure) as network:
             code, report = self.capture(check_archives.main, ["--live", "--query", "飞虎队", "--permission-confirmed"])
         self.assertEqual(code, 1)
-        self.assertEqual(network.call_count, 6)
-        self.assertEqual(report["summary"], {"access_denied": 1, "ok": 5, "query_not_supported": 1, "manual_only": 3})
+        self.assertEqual(network.call_count, 5)
+        self.assertEqual(report["summary"], {"access_denied": 1, "ok": 4, "query_not_supported": 1, "manual_only": 3})
         self.assertEqual(report["results"][-1]["source"], "taiwan")
         loc = report["results"][0]
         self.assertTrue(loc["request_sent"])
@@ -212,8 +211,8 @@ class AccessCliTests(unittest.TestCase):
         self.assertIn("unchanged; no translation", text)
         rows = {fields[0]: fields[1:] for line in text.splitlines()
                 if (fields := line.split()) and fields[0] in check_archives.SOURCE_IDS}
-        self.assertEqual(len(rows), 10)
-        for source in ("loc", "ndl", "europeana"):
+        self.assertEqual(len(rows), 9)
+        for source in ("loc", "europeana"):
             self.assertEqual(rows[source], ["ok", "yes", "0", "0"])
         for source in ("nara", "nara_catalog", "dpla", "tna", "jacar", "iwm", "taiwan"):
             self.assertEqual(rows[source][1:], ["no", "-", "-"])

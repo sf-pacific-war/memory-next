@@ -1,3 +1,4 @@
+import { createDemoBanner } from './demo-banner.mjs';
 import { sourceLabel, formatLabel } from './search.mjs';
 import { archivalThumbnail } from './archive-media.mjs';
 import { bindPageTranslations, resolveLocale, normalizeLocale, translate } from './i18n.mjs';
@@ -5,15 +6,16 @@ import { updatePageLinks } from './page-links.mjs';
 import { browseRecords, discoveryLink } from './topics.mjs';
 
 const $ = id => document.getElementById(id);
-const LANGUAGE_KEY = 'pacific-war-discovery-language';
+const LANGUAGE_KEY = 'pacific-war-language-choice';
 const savedLocale = () => { try { return localStorage.getItem(LANGUAGE_KEY); } catch { return null; } };
-const getLocale = () => resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale(), navigator.languages || [navigator.language]);
+const getLocale = () => resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale());
 let locale = getLocale();
 let catalog = null;
 let active = '';
 let visible = 12;
 const t = (key, values) => translate(key, locale, values);
 const applyLanguage = bindPageTranslations(document);
+const renderDemoBanner = createDemoBanner(document);
 function el(tag, className, text) {
   const node = document.createElement(tag);
   if (className) node.className = className;
@@ -77,6 +79,7 @@ function recordCard(record) {
 function render() {
   applyLanguage(locale); $('language').value = locale;
   updatePageLinks(locale);
+  renderDemoBanner(catalog, locale);
   if (!catalog) return;
   $('topic-count').textContent = catalog.topics.length;
   $('browse-count').textContent = catalog.records.length;

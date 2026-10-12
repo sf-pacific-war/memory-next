@@ -28,7 +28,7 @@ IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".gif", ".png", ".webp", ".bmp", ".tif", ".
 HTML_EXTENSIONS = {".html", ".htm", ".shtml", ".xhtml", ""}
 ARCHIVAL_DOMAINS = {
     "loc.gov", "archives.gov", "archive.org", "europeana.eu", "nationalarchives.gov.uk",
-    "iwm.org.uk", "ndl.go.jp", "jacar.go.jp", "archives.gov.tw", "si.edu", "dp.la",
+    "iwm.org.uk", "jacar.go.jp", "archives.gov.tw", "si.edu", "dp.la",
     "history.army.mil", "history.navy.mil", "afhistory.af.mil", "digitalcollections.nypl.org",
     "collections.ushmm.org", "catalog.archives.gov", "awm.gov.au", "iwm.org.uk",
 }

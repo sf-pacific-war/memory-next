@@ -5,7 +5,7 @@ import { normalizeText, expandQuery, filterRecords, getRecordYears, formatLabel,
 const records = [
   { id: 'a', title: 'Burma Road photographs', description: 'Supply route', source: 'LoC', format: 'IMAGE', year: ['1944'], access_status: 'online' },
   { id: 'b', title: 'Supply report', description: 'Burma Road photographs', source: 'Europeana', format: 'TEXT', year: [], date_display: '1942–1945', access_status: 'unverified' },
-  { id: 'c', title: 'インパール', description: 'ビルマ 戦場', source: 'NDL', format: 'MAP', year: [], date_display: null, access_status: 'unverified' },
+  { id: 'c', title: 'インパール', description: 'ビルマ 戦場', source: 'IWM', format: 'MAP', year: [], date_display: null, access_status: 'unverified' },
   { id: 'd', title: 'Chinese Expeditionary Force', description: 'China and Burma', source: 'LoC', format: 'TEXT', date_display: '1950-03-01', access_status: 'online' },
   { id: 'e', title: 'Unrelated record', description: 'Events in 1944', query_used: 'Burma Road', source: 'Europeana', format: 'SOUND', date_display: null },
 ];
@@ -34,7 +34,7 @@ test('ANDs separate query clauses while preserving quoted phrases and longest al
 });
 
 test('combines facets with OR within a facet and AND across facets', () => {
-  assert.deepEqual(ids(filterRecords(records, { sources: ['LoC', 'NDL'], types: ['IMAGE', 'MAP'], access: 'online' })), ['a']);
+  assert.deepEqual(ids(filterRecords(records, { sources: ['LoC', 'IWM'], types: ['IMAGE', 'MAP'], access: 'online' })), ['a']);
   assert.deepEqual(ids(filterRecords(records, { sources: ['Europeana'], access: 'unverified' })), ['b', 'e']);
 });
 
@@ -72,7 +72,7 @@ test('provides Chinese labels and preserves unknown source names', () => {
   assert.equal(formatLabel('MIXED'), '综合资料');
   assert.equal(formatLabel('unknown'), '其他');
   assert.equal(sourceLabel('LoC'), '美国国会图书馆');
-  assert.equal(sourceLabel('NDL'), '日本国会图书馆');
+  assert.equal(sourceLabel('IWM'), '英国帝国战争博物馆');
   assert.equal(sourceLabel('Europeana'), '欧洲数字文化遗产');
   assert.equal(sourceLabel('NARA'), '美国国家档案馆');
   assert.equal(sourceLabel('Other Archive'), 'Other Archive');
@@ -83,7 +83,7 @@ test('switches presentation labels to English without translating unknown source
   assert.equal(formatLabel('MIXED', 'en'), 'Mixed material');
   assert.equal(formatLabel('unknown', 'en'), 'Other');
   assert.equal(sourceLabel('LoC', 'en'), 'Library of Congress');
-  assert.equal(sourceLabel('NDL', 'en'), 'National Diet Library');
+  assert.equal(sourceLabel('IWM', 'en'), 'Imperial War Museums');
   assert.equal(sourceLabel('Europeana', 'en'), 'Europeana');
   assert.equal(sourceLabel('NARA', 'en'), 'U.S. National Archives');
   assert.equal(sourceLabel(null, 'en'), 'Unknown source');
@@ -113,7 +113,7 @@ test('institution and material names are searchable in both interface languages'
   for (const query of ['美国国会图书馆', 'Library of Congress', '"Library of Congress"']) {
     assert.deepEqual(ids(filterRecords(records, { query })), ['a', 'd']);
   }
-  for (const query of ['日本国会图书馆', 'National Diet Library']) {
+  for (const query of ['英国帝国战争博物馆', 'Imperial War Museums']) {
     assert.deepEqual(ids(filterRecords(records, { query })), ['c']);
   }
   assert.deepEqual(ids(filterRecords(records, { query: 'Library of Congress 图像' })), ['a']);

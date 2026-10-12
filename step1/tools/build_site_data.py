@@ -18,7 +18,6 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 THUMBNAIL_HOSTS = ("loc.gov", "archives.gov", "si.edu", "archive.org", "iwm.org.uk")
 SOURCE_NAMES = {
     "LoC": ("Library of Congress", "美国国会图书馆"),
-    "NDL": ("National Diet Library", "日本国立国会图书馆"),
     "Europeana": ("Europeana", "欧洲数字文化遗产平台"),
     "NARA": ("National Archives and Records Administration", "美国国家档案馆"),
     "Internet Archive": ("Internet Archive", "互联网档案馆"),
@@ -40,9 +39,6 @@ SOURCES = (
     {"id": "LoC", "file": "loc-discovery.json", "prefix": "loc:",
      "label": "美国国会图书馆", "url": "https://www.loc.gov/",
      "description": "照片、图像及相关档案目录。访问状态依据来源元数据，使用权仍需逐条核对。"},
-    {"id": "NDL", "file": "ndl-discovery.json", "prefix": "ndl:",
-     "label": "日本国会图书馆", "url": "https://ndlsearch.ndl.go.jp/",
-     "description": "NDL Search API 书目元数据（CC BY 4.0）。包含战后出版物；出版日期不等于战役日期。"},
     {"id": "Europeana", "file": "europeana-discovery-candidates.json", "prefix": "europeana:",
      "label": "欧洲数字文化遗产", "url": "https://www.europeana.eu/",
      "description": "欧洲文化机构聚合目录。元数据为 CC0，原始内容使用权以来源说明为准。"},
@@ -167,7 +163,6 @@ def native_identity(source, url):
     path = parts.path.rstrip("/")
     patterns = {
         "LoC": (r"/(?:item|resource)/([^/]+)$", "loc:"),
-        "NDL": (r"/books/([^/]+)$", "ndl:"),
         "NARA": (r"/id/(\d+)$", "nara:"),
         "Europeana": (r"/item(/.+)$", "europeana:"),
         "Internet Archive": (r"/details/([^/]+)$", "ia:"),
@@ -194,7 +189,7 @@ def curated_record(raw, source):
     if not url:
         return None
     hosts = source.get("hosts") or {
-        "LoC": ("loc.gov",), "NDL": ("ndl.go.jp",),
+        "LoC": ("loc.gov",),
         "Europeana": ("europeana.eu",), "NARA": ("archives.gov",),
     }[source["id"]]
     host = urlsplit(url).hostname

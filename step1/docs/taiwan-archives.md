@@ -13,7 +13,7 @@
 | [档案局官网（National Archives Administration, National Development Council）](https://www.archives.gov.tw/) | 机构信息、档案应用说明、开放数据入口 | 公共网页可访问；不是统一搜索 API |
 | [A+ 国家档案资讯网（Archives Access Service, A+）](https://aa.archives.gov.tw/) | 查询该局档案目录、查看档案详情、申请利用 | 可浏览公开目录；会员申请服务与公开浏览是不同功能，影像是否公开需逐条确认 |
 | [机关档案目录查询网（Navigating Electronic Agencies’ Records, NEAR）](https://near.archives.gov.tw/) | 查询各机关公布的档案目录 | 目录存在不代表原件由档案局保管；申请利用通常需向档案保管机关办理 |
-| [档案资源整合查询平台（Archives Cross Boundaries, ACROSS）](https://across.archives.gov.tw/) | 跨档案馆、图书馆及博物馆的资源发现入口 | 官方介绍的整合查询网站；本项目未验证可供第三方调用的公开检索 API |
+| [档案资源整合查询平台（Archives Cross Boundaries, ACROSS）](https://across.archives.gov.tw/) | 跨档案馆、图书馆及博物馆的资源发现入口 | 官方介绍的整合查询网站；本项目未验证rename 可供第三方调用的公开检索 API |
 | [国家档案案名清单（National Archives Case-title List，英文为本文说明性译名）](https://data.gov.tw/dataset/95315) | 案卷层级标题目录 CSV | 免费、无需 API key；已验证文件访问和表头，可作为本地索引的数据来源 |
 
 三个查询系统的英文名和职责可参见[档案局官方英文介绍](https://www.archives.gov.tw/wSite/public/Attachment/0/f1715659234651.pdf)及[档案应用指南](https://www.archives.gov.tw/wSite/public/Attachment/0/f1715653511448.pdf)。

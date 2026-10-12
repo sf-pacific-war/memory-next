@@ -1,8 +1,8 @@
 # 各档案平台的 Python 接入与测试
 
-核对日期：2026-10-11。覆盖 Step 1 清单中的 **9 个平台、10 种接入方式**；美国国家档案馆（NARA）公开数据集与 Catalog API 分开。每种方式都有独立 `.py` 入口，其中 3 个入口仅提供官方网页及说明。默认只检查本机配置；只有显式添加 `--live` 才会尝试请求支持的外馆接口。
+核对日期：2026-10-11。覆盖 Step 1 清单中的 **8 个平台、9 种接入方式**；美国国家档案馆（NARA）公开数据集与 Catalog API 分开。每种方式都有独立 `.py` 入口，其中 3 个入口仅提供官方网页及说明。默认只检查本机配置；只有显式添加 `--live` 才会尝试请求支持的外馆接口。
 
-这些脚本用于确认“能否访问及返回结构是否正确”，输出状态和计数，不保存原始 API 响应、档案记录或密钥。它们不会改变网页目前的四来源、31 条样本，也不会自动把美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）等加入网页搜索。现有 `fetch_*.py` 仍负责允许持久化来源的元数据获取。
+这些脚本用于确认“能否访问及返回结构是否正确”，输出状态和计数，不保存原始 API 响应、档案记录或密钥。它们不会改变网页目前的 9 个来源机构、44 条记录，也不会自动把美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）等加入网页搜索。现有 `fetch_*.py` 仍负责允许持久化来源的元数据获取。
 
 面向后续 API 就绪和生产集成的路线、统一命令预期结果及上线门槛，见 [访问状态与生产整合计划](archive-access-production-plan.md)。
 
@@ -15,7 +15,6 @@
 | 平台／方式 | 独立脚本（相对本应用目录） | 凭据要求 | 本次配置与实测 | 未满足条件时 |
 | --- | --- | --- | --- | --- |
 | 美国国会图书馆（LoC） | [tools/access_loc.py](../tools/access_loc.py) | 无需 key | 小请求通过，检查 3 条目录 | 可直接 `--live`；网络错误单独报告 |
-| 日本国立国会图书馆检索平台（NDL Search） | [tools/access_ndl.py](../tools/access_ndl.py) | 本脚本使用的 `iss-ndl-opac` 无需 key | 小请求通过，检查 3 条书目 | 同上；书目访问不等于全文开放 |
 | 美国国家档案馆（NARA）公开数据集 | [tools/access_nara.py](../tools/access_nara.py) | 无需 key 或 AWS 账户 | RG 493 固定分片通过，校验后选取 3 条 | 可直接 `--live`；这不是关键词 API |
 | 欧洲数字文化遗产平台（Europeana） | [tools/access_europeana.py](../tools/access_europeana.py) | `EUROPEANA_API_KEY` | 使用已有本机 key，小请求通过，检查 3 条候选 | `missing_credential`，不发送请求 |
 | 美国数字公共图书馆（DPLA） | [tools/access_dpla.py](../tools/access_dpla.py) | `DPLA_API_KEY` | 未配置；离线测试通过，真实请求未测 | `missing_credential`，不发送请求 |
@@ -51,14 +50,14 @@ python3 tools/check_archives.py --live --env-file .env.europeana
 python3 tools/check_archives.py --live --query 'Flying Tigers' --env-file .env.europeana --rows 3 --format table
 ```
 
-不带 `--query` 的在线命令使用各 API 默认词，并读取美国国家档案馆（NARA）固定数据集；本机目前满足条件的是美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、美国国家档案馆（NARA）公开数据集和欧洲数字文化遗产平台（Europeana）。带 `--query` 时，所有支持检索的 API 原样接收同一关键词；固定数据集返回 `query_not_supported` 且不请求，三个网页入口返回 `manual_only`。其余跳过和错误也逐来源保留。
+不带 `--query` 的在线命令使用各 API 默认词，并读取美国国家档案馆（NARA）固定数据集；本机目前满足条件的是美国国会图书馆（LoC）、美国国家档案馆（NARA）公开数据集和欧洲数字文化遗产平台（Europeana）。带 `--query` 时，所有支持检索的 API 原样接收同一关键词；固定数据集返回 `query_not_supported` 且不请求，三个网页入口返回 `manual_only`。其余跳过和错误也逐来源保留。
 
 `--query '飞虎队'` 同样合法，但不会自动翻译成 `Flying Tigers`。可用两种词分别测试，并按机构语言补日文等词；零结果不代表接口不可用。各 API 默认最多请求 3 条，`--rows` 仅支持 1–5。没有查询词的数据集检查仍读取一个约 300 KB 的固定分片，行数只限制检查后报告的样本量。
 
 ## 3. 每个平台分别运行
 
 ```sh
-# 三种免凭据访问
+# 两种免凭据访问
 python3 tools/access_loc.py --live --query 'Burma Road' --rows 3
 python3 tools/access_ndl.py --live --query 'ビルマ' --rows 3
 python3 tools/access_nara.py --live --rows 3
@@ -155,7 +154,6 @@ node --test tests/search.test.mjs
 ## 官方依据
 
 - [美国国会图书馆（LoC） JSON API 请求](https://www.loc.gov/apis/json-and-yaml/requests/)
-- [日本国立国会图书馆（NDL） API 规范](https://ndlsearch.ndl.go.jp/help/api/specifications)、[可用数据与许可](https://ndlsearch.ndl.go.jp/help/api/provider)
 - [欧洲数字文化遗产平台（Europeana） key 注册与用途](https://www.europeana.eu/en/how-to-register-for-and-manage-an-api-key)
 - [美国国家档案馆（NARA）公开数据集](https://www.archives.gov/developer/national-archives-catalog-dataset)、[无需 AWS 账户的公开访问](https://registry.opendata.aws/nara-national-archives-catalog/)
 - [美国数字公共图书馆（DPLA）请求说明](https://pro.dp.la/developers/requests)、[key 与政策](https://pro.dp.la/developers/policies)

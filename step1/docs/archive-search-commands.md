@@ -1,6 +1,6 @@
 # 档案平台检索词与测试命令
 
-核对日期：2026-10-11。以下命令对应当前代码的 **9 个平台、10 种访问路径**，可直接复制到终端。[台湾档案管理局（archives.gov.tw）](taiwan-archives.md)已加入 `taiwan` 状态入口，当前为 `manual_only`；公开目录 CSV 的同步和关键词查询尚未实现。平台英文全称见 [中英文名称对照](archive-platform-names.md)。
+核对日期：2026-10-11。以下命令对应当前代码的 **8 个平台、9 种访问路径**，可直接复制到终端。[台湾档案管理局（archives.gov.tw）](taiwan-archives.md)已加入 `taiwan` 状态入口，当前为 `manual_only`；公开目录 CSV 的同步和关键词查询尚未实现。平台英文全称见 [中英文名称对照](archive-platform-names.md)。
 
 ## 1. 先进入正确目录
 
@@ -45,19 +45,18 @@ python3 tools/check_archives.py --source all --live --query '飞虎队' --rows 3
 | 检查本机配置 | `access_*.py` 或 `check_archives.py`，不加 `--live` | 不联网；不验证 key 是否被外馆接受 |
 | 检查真实访问及检索响应 | 对支持的来源加 `--live --query '关键词'` | 每来源最多一个请求；输出状态和计数，不保存档案记录 |
 | 验证代码行为 | `unittest` / `node --test` | 使用本地或合成数据；不访问外馆、不需要真实 key |
-| 查询现有网页样本 | `serve.py` 后在网页输入关键词 | 查询当前四来源的本地快照；不会向外馆实时搜索 |
+| 查询现有网页样本 | `serve.py` 后在网页输入关键词 | 查询当前 9 个来源机构的 44 条本地记录；不会向外馆实时搜索 |
 
 `access_*.py` 不会把新结果导入网页。更新样本由已有 `fetch_*.py` 完成，见 [README 的数据刷新步骤](../README.md#可选刷新真实来源数据)。
 
 ## 3. 每个入口的关键词命令
 
-下面三条可直接进行免 key 的真实测试：
+下面两条可直接进行免 key 的真实测试：
 
 ```sh
 # 美国国会图书馆：滇缅公路；当前限定照片目录
 python3 tools/access_loc.py --live --query 'Burma Road' --rows 3
 
-# 日本国立国会图书馆：缅甸的日文名称；限定 iss-ndl-opac 书目
 python3 tools/access_ndl.py --live --query 'ビルマ' --rows 3
 
 # 美国国家档案馆公开数据集：读取固定 RG 493 分片，没有关键词参数
@@ -94,7 +93,6 @@ python3 tools/access_taiwan.py
 | 平台／路径 | 未传 `--query` 时的默认词 | 可替换的示例关键词 | 凭据或条件 |
 | --- | --- | --- | --- |
 | 美国国会图书馆（LoC） | `Burma Road` | `Burma`、`China`、`Ledo Road` | 无需 key |
-| 日本国立国会图书馆（NDL） | `ビルマ` | `インパール`、`中国` | 此书目子集无需 key |
 | 欧洲数字文化遗产平台（Europeana） | `"Burma Road"`，包括双引号 | `Burma`、`China` | `EUROPEANA_API_KEY` |
 | 美国国家档案馆（NARA）公开数据集 | 无 | **不支持关键词**；不要加 `--query` | 无需 key 或 AWS 账户 |
 | 美国国家档案馆（NARA） Catalog API 实时目录 | `Burma` | `Burma Road`、`China Burma India` | `NARA_API_KEY` |
@@ -108,7 +106,7 @@ python3 tools/access_taiwan.py
 
 当前没有自动翻译 API 查询词：例如 `--query '缅甸'` 会原样发送给选定外馆。网页的固定中英日主题扩展也不会用于这些 Python 检查。日本亚洲历史资料中心（JACAR）／帝国战争博物馆（IWM）／台湾档案管理局（archives.gov.tw）虽共用带有 `--query` 的参数解析器，但入口会直接返回 `manual_only`，不会执行查询；不要用此参数误判它们已经支持搜索。
 
-“飞虎队”可另用英文 `Flying Tigers` 或 `American Volunteer Group` 逐来源复测；日本国立国会图书馆（NDL）可尝试日文词，命中是否相关仍需核对：
+“飞虎队”可另用英文 `Flying Tigers` 或 `American Volunteer Group` 逐来源复测；命中是否相关仍需核对。
 
 ```sh
 python3 tools/access_ndl.py --live --query 'フライング・タイガース' --rows 3
@@ -152,7 +150,6 @@ python3 tools/access_loc.py --query 'Burma Road' --rows 3
 
 # 统一入口选择一个来源后，可替代该来源独立脚本
 python3 tools/check_archives.py --source loc --live --query 'Burma Road' --rows 3
-python3 tools/check_archives.py --source ndl --live --query 'ビルマ' --rows 3
 python3 tools/check_archives.py --source europeana --live --env-file .env.europeana --query '"Burma Road"' --rows 3
 
 # 所有来源按各自默认词串行检查；缺条件的来源跳过并报告原因
@@ -162,7 +159,7 @@ python3 tools/check_archives.py --live --env-file .env.europeana --rows 3
 python3 tools/check_archives.py --live --env-file .env.europeana --query 'Flying Tigers' --rows 3 --format table
 ```
 
-统一入口可选 `--source` 值：`all`、`loc`、`ndl`、`europeana`、`nara`、`nara_catalog`、`dpla`、`tna`、`jacar`、`iwm`、`taiwan`。默认是 `all`；**`all` 可以同时传 `--query`**。共有 6 条 API 路径支持关键词，但是否真正请求还取决于 key 和审批；美国国家档案馆（NARA）固定数据集及 3 个网页入口不执行关键词查询。
+统一入口可选 `--source` 值：`all`、`loc`、`europeana`、`nara`、`nara_catalog`、`dpla`、`tna`、`jacar`、`iwm`、`taiwan`。默认是 `all`；**`all` 可以同时传 `--query`**。共有 5 条 API 路径支持关键词，但是否真正请求还取决于 key 和审批；美国国家档案馆（NARA）固定数据集及 3 个网页入口不执行关键词查询。
 
 不传 `--query` 时，JSON 的 `mode=access`，使用各 API 自己的默认词并检查固定数据集；传 `--query` 时，`mode=keyword`，以同一词测试所有支持查询且满足条件的来源。这个命令用于状态和计数检查，尚不返回跨平台档案列表。
 
@@ -187,7 +184,7 @@ python3 tools/serve.py
 启动后保持该终端运行，在浏览器打开以下地址。macOS 也可在另一个终端执行这些命令：
 
 ```sh
-# 英文关键词：本地四来源快照
+# 英文关键词：当前共享目录
 open 'http://127.0.0.1:8000/?lang=en&q=Burma'
 
 # 中文“缅甸”的 URL 编码，对应网页内置的主题扩展
@@ -200,7 +197,7 @@ open 'http://127.0.0.1:8000/?lang=zh-CN&q=%E6%BB%87%E7%BC%85%E5%85%AC%E8%B7%AF'
 open 'http://127.0.0.1:8000/?q=Burma&source=LoC&source=NARA'
 ```
 
-`open` 是 macOS 命令；其他系统直接把网址粘贴到浏览器。网页用 `q` 参数保存关键词、`lang=en`／`lang=zh-CN` 选择 English／中文界面；CLI 用 `--query`。切换界面语言不会自动翻译原馆标题、描述或任意检索词。当前网页仍仅包含美国国会图书馆（LoC）、日本国立国会图书馆（NDL）、欧洲数字文化遗产平台（Europeana）、美国国家档案馆（NARA）的本地样本；美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）的检查通过也不会自动成为网页来源。
+`open` 是 macOS 命令；其他系统直接把网址粘贴到浏览器。网页用 `q` 参数保存关键词、`lang=en`／`lang=zh-CN` 选择 English／中文界面；CLI 用 `--query`。切换界面语言不会自动翻译原馆标题、描述或任意检索词。当前网页包含 9 个来源机构、44 条去重记录；来源分别标注 API、公开数据集或人工整理；美国数字公共图书馆（DPLA）／英国国家档案馆（TNA）的检查通过也不会自动成为网页来源。
 
 ## 7. 结果如何判断
 

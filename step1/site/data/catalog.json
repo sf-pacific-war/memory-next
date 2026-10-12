@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T02:12:07.424732Z",
+  "generated_at": "2026-10-12T02:23:42.625982Z",
   "records": [
     {
       "id": "loc:2004676827",
@@ -347,13 +347,11 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween"
@@ -418,13 +416,11 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween"
@@ -576,13 +572,11 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween"
@@ -639,13 +633,11 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween"
@@ -1192,13 +1184,11 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween",
@@ -1225,674 +1215,6 @@
         "zh-CN": "该个人文献记录 Graham 在第 5307 临时混成部队（麦瑞尔突击队）及第 475 步兵团的服役经历。",
         "en": "This personal collection documents Graham’s service with the 5307th Composite Unit (Merrill’s Marauders) and the 475th Infantry."
       }
-    },
-    {
-      "id": "ndl:R100000002-I000002594329",
-      "source_id": "R100000002-I000002594329",
-      "source": "NDL",
-      "title": "噫インパール作戦 : 潰走千里・奇跡の生還",
-      "description": "熊谷印刷出版部,1996, タイトル：噫インパール作戦 : 潰走千里・奇跡の生還 タイトル（読み）：アア インパール サクセン : カイソウ センリ キセキ ノ セイカン 責任表示：城戸正光 著 NDC(9)：916",
-      "date_display": "1996.4",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1996"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)--会戦--ミャンマー",
-        "GB554",
-        "916"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000002594329",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000002594329",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "burma-campaign",
-        "personal-stories"
-      ],
-      "topic_keywords": [
-        "缅甸战役与部队",
-        "Burma campaign & units",
-        "缅甸",
-        "緬甸",
-        "缅甸战役",
-        "英帕尔",
-        "钦迪特",
-        "钦迪特部队",
-        "怒江",
-        "Burma",
-        "Burma campaign",
-        "Imphal",
-        "Chindits",
-        "Merrill’s Marauders",
-        "Salween",
-        "个人经历与回忆",
-        "Personal stories & recollections",
-        "个人经历",
-        "口述历史",
-        "口述歷史",
-        "回忆录",
-        "回憶錄",
-        "日记",
-        "士兵",
-        "老兵",
-        "军人",
-        "personal narratives",
-        "oral history",
-        "memoir",
-        "diary",
-        "soldiers",
-        "veterans",
-        "service"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I000001394546",
-      "source_id": "R100000002-I000001394546",
-      "source": "NDL",
-      "title": "ああ菊兵団 : フーコン作戦",
-      "description": "菊花之塔奉賛会,1978, タイトル：ああ菊兵団 : フーコン作戦 タイトル（読み）：アア キク ヘイダン 責任表示：牛山才太郎 著",
-      "date_display": "1978.7",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1978"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)--会戦--ミャンマー",
-        "915.9",
-        "GB544"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001394546",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001394546",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "burma-campaign",
-        "personal-stories"
-      ],
-      "topic_keywords": [
-        "缅甸战役与部队",
-        "Burma campaign & units",
-        "缅甸",
-        "緬甸",
-        "缅甸战役",
-        "英帕尔",
-        "钦迪特",
-        "钦迪特部队",
-        "怒江",
-        "Burma",
-        "Burma campaign",
-        "Imphal",
-        "Chindits",
-        "Merrill’s Marauders",
-        "Salween",
-        "个人经历与回忆",
-        "Personal stories & recollections",
-        "个人经历",
-        "口述历史",
-        "口述歷史",
-        "回忆录",
-        "回憶錄",
-        "日记",
-        "士兵",
-        "老兵",
-        "军人",
-        "personal narratives",
-        "oral history",
-        "memoir",
-        "diary",
-        "soldiers",
-        "veterans",
-        "service"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I000001567087",
-      "source_id": "R100000002-I000001567087",
-      "source": "NDL",
-      "title": "ああ菊兵団",
-      "description": "ビルマ縦断作戦,菊花之塔奉賛会,1981, タイトル：ああ菊兵団 タイトル（読み）：アア キク ヘイダン 責任表示：牛山才太郎 著",
-      "date_display": "1981.9",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1981"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)--会戦--ミャンマー",
-        "GB544",
-        "916"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001567087",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001567087",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "burma-campaign",
-        "personal-stories"
-      ],
-      "topic_keywords": [
-        "缅甸战役与部队",
-        "Burma campaign & units",
-        "缅甸",
-        "緬甸",
-        "缅甸战役",
-        "英帕尔",
-        "钦迪特",
-        "钦迪特部队",
-        "怒江",
-        "Burma",
-        "Burma campaign",
-        "Imphal",
-        "Chindits",
-        "Merrill’s Marauders",
-        "Salween",
-        "个人经历与回忆",
-        "Personal stories & recollections",
-        "个人经历",
-        "口述历史",
-        "口述歷史",
-        "回忆录",
-        "回憶錄",
-        "日记",
-        "士兵",
-        "老兵",
-        "军人",
-        "personal narratives",
-        "oral history",
-        "memoir",
-        "diary",
-        "soldiers",
-        "veterans",
-        "service"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I000002108359",
-      "source_id": "R100000002-I000002108359",
-      "source": "NDL",
-      "title": "ああ、策はやて隊 : 私のビルマ従軍記",
-      "description": "西部読売開発出版部,1990, タイトル：ああ、策はやて隊 : 私のビルマ従軍記 タイトル（読み）：アア サク ハヤテタイ 責任表示：笠置慧眼 著",
-      "date_display": "1990.7",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1990"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)",
-        "GB554",
-        "916"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000002108359",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000002108359",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "personal-stories"
-      ],
-      "topic_keywords": [
-        "个人经历与回忆",
-        "Personal stories & recollections",
-        "个人经历",
-        "口述历史",
-        "口述歷史",
-        "回忆录",
-        "回憶錄",
-        "日记",
-        "士兵",
-        "老兵",
-        "军人",
-        "personal narratives",
-        "oral history",
-        "memoir",
-        "diary",
-        "soldiers",
-        "veterans",
-        "service"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I000001093304",
-      "source_id": "R100000002-I000001093304",
-      "source": "NDL",
-      "title": "あゝ少年航空兵 : かえらざる十代の手記",
-      "description": "原書房,1967, タイトル：あゝ少年航空兵 : かえらざる十代の手記 タイトル（読み）：アア ショウネン コウクウヘイ : カエラザル 10ダイ ノ シュキ 責任表示：日本雄飛会 編 シリーズ名：原書房・100冊選書 シリーズ名（読み）：ハラショボウ 100サツ センショ",
-      "date_display": "1967",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1967"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)",
-        "915.9"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001093304",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001093304",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "flying-tigers"
-      ],
-      "topic_keywords": [
-        "飞虎队与航空",
-        "Flying Tigers & aviation",
-        "飞虎队",
-        "飛虎隊",
-        "陈纳德",
-        "陳納德",
-        "美国志愿航空队",
-        "航空",
-        "第十四航空队",
-        "Flying Tigers",
-        "American Volunteer Group",
-        "AVG",
-        "Chennault",
-        "P-40",
-        "Fourteenth Air Force",
-        "aviation"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I000001663142",
-      "source_id": "R100000002-I000001663142",
-      "source": "NDL",
-      "title": "ああ滇緬公路 : ビルマ従軍",
-      "description": "興竜会,1983, タイトル：ああ滇緬公路 : ビルマ従軍 タイトル（読み）：アア テンメン コウロ 責任表示：興竜会編集委員会 編",
-      "date_display": "1983.7",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1983"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)--会戦--ミャンマー",
-        "GB554",
-        "916"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001663142",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001663142",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "checked_at": "2026-10-12T00:25:50Z",
-      "access_note": "Previously retrieved public NDL snapshot corroborated by official published bibliography; direct book page was not accessible through this retrieval tool.",
-      "archival_id": "NDL R100000002-I000001663142; call number GB554-1548",
-      "topic_ids": [
-        "burma-road",
-        "personal-stories"
-      ],
-      "topic_keywords": [
-        "滇缅公路",
-        "The Burma Road",
-        "滇緬公路",
-        "缅甸公路",
-        "中国",
-        "缅甸",
-        "雲南",
-        "云南",
-        "Burma Road",
-        "China-Burma highway",
-        "Yunnan",
-        "route de Birmanie",
-        "China",
-        "Burma",
-        "个人经历与回忆",
-        "Personal stories & recollections",
-        "个人经历",
-        "口述历史",
-        "口述歷史",
-        "回忆录",
-        "回憶錄",
-        "日记",
-        "士兵",
-        "老兵",
-        "军人",
-        "personal narratives",
-        "oral history",
-        "memoir",
-        "diary",
-        "soldiers",
-        "veterans",
-        "service"
-      ],
-      "curator_note": {
-        "zh-CN": "日本国立国会图书馆著录的 1983 年退伍军人出版物，由興竜会編集委員会编。出版时间晚于其叙述的战争经历。",
-        "en": "A 1983 veterans’ publication catalogued by the National Diet Library, edited by 興竜会編集委員会. Its publication date is later than the wartime experiences it describes."
-      }
-    },
-    {
-      "id": "ndl:R100000002-I000001095893",
-      "source_id": "R100000002-I000001095893",
-      "source": "NDL",
-      "title": "あゝ隼戦闘隊 : かえらざる撃墜王",
-      "description": "光人社,1967, タイトル：あゝ隼戦闘隊 : かえらざる撃墜王 タイトル（読み）：アア ハヤブサ セントウタイ : カエラザル ゲキツイオウ 責任表示：黒江保彦 著",
-      "date_display": "1967",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1967"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "日中戦争 (1937-1945)",
-        "915.9"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001095893",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001095893",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "flying-tigers"
-      ],
-      "topic_keywords": [
-        "飞虎队与航空",
-        "Flying Tigers & aviation",
-        "飞虎队",
-        "飛虎隊",
-        "陈纳德",
-        "陳納德",
-        "美国志愿航空队",
-        "航空",
-        "第十四航空队",
-        "Flying Tigers",
-        "American Volunteer Group",
-        "AVG",
-        "Chennault",
-        "P-40",
-        "Fourteenth Air Force",
-        "aviation"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I000001214463",
-      "source_id": "R100000002-I000001214463",
-      "source": "NDL",
-      "title": "あ丶ビルマ : 第二十六野戦防疫給水部記録",
-      "description": "光村推古書院,1972, タイトル：あ丶ビルマ : 第二十六野戦防疫給水部記録 タイトル（読み）：アア ビルマ 責任表示：美鴨会 編",
-      "date_display": "1972",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1972"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)--会戦--ミャンマー",
-        "396.8",
-        "GB541"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001214463",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001214463",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "civilian-health"
-      ],
-      "topic_keywords": [
-        "民众、卫生与日常生活",
-        "Civilians, health & daily life",
-        "民众",
-        "民眾",
-        "平民",
-        "卫生",
-        "衛生",
-        "疟疾",
-        "瘧疾",
-        "医院",
-        "日常生活",
-        "防疫",
-        "civilian",
-        "health",
-        "malaria",
-        "hospital",
-        "daily life",
-        "village",
-        "public health"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I000001466950",
-      "source_id": "R100000002-I000001466950",
-      "source": "NDL",
-      "title": "ああビルマ",
-      "description": "愛媛県ビルマ会事務局,1980, タイトル：ああビルマ タイトル（読み）：アア ビルマ 責任表示：愛媛県ビルマ会記念誌編集委員会 [編]",
-      "date_display": "1980.3",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-10T04:18:30.798279Z",
-      "query_used": "ビルマ",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1980"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)--会戦--ミャンマー",
-        "GB554",
-        "916"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001466950",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001466950",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "personal-stories"
-      ],
-      "topic_keywords": [
-        "个人经历与回忆",
-        "Personal stories & recollections",
-        "个人经历",
-        "口述历史",
-        "口述歷史",
-        "回忆录",
-        "回憶錄",
-        "日记",
-        "士兵",
-        "老兵",
-        "军人",
-        "personal narratives",
-        "oral history",
-        "memoir",
-        "diary",
-        "soldiers",
-        "veterans",
-        "service"
-      ]
     },
     {
       "id": "europeana:/2051908/data_euscreenXL_ina_PHD85008112",
@@ -2472,13 +1794,11 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween"
@@ -2562,364 +1882,14 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I034848408",
-      "source_id": "R100000002-I034848408",
-      "source": "NDL",
-      "title": "敢へて消さず…日記の中の戦争 : NHKスペシャル新・ドキュメント太平洋戦争1945",
-      "description": "河出書房新社,2026,978-4-309-23206-5 タイトル：敢へて消さず…日記の中の戦争 : NHKスペシャル新・ドキュメント太平洋戦争1945 タイトル（読み）：アエテ ケサズ ニッキ ノ ナカ ノ センソウ : エヌエイチケー スペシャル シン ドキュメント タイヘイヨウ センソウ センキュウヒャクヨンジュウゴ 責任表示：NHKスペシャル取材班, 横井秀信 著 NDC(10)：210.75",
-      "date_display": "2026.8",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-12T00:27:52.871701Z",
-      "query_used": "インパール",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "2026"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "太平洋戦争 (1941-1945)",
-        "GB531",
-        "210.75"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034848408",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034848408",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "personal-stories"
-      ],
-      "topic_keywords": [
-        "个人经历与回忆",
-        "Personal stories & recollections",
-        "个人经历",
-        "口述历史",
-        "口述歷史",
-        "回忆录",
-        "回憶錄",
-        "日记",
-        "士兵",
-        "老兵",
-        "军人",
-        "personal narratives",
-        "oral history",
-        "memoir",
-        "diary",
-        "soldiers",
-        "veterans",
-        "service"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I026027253",
-      "source_id": "R100000002-I026027253",
-      "source": "NDL",
-      "title": "「赤紙」って、なに? : 中野信夫の回想-インパール作戦",
-      "description": "ほむぎ出版,2015,978-4-905202-00-4 タイトル：「赤紙」って、なに? : 中野信夫の回想-インパール作戦 タイトル（読み）：「 アカガミ 」 ッテ 、 ナニ? : ナカノ ノブオ ノ カイソウ-インパール サクセン 責任表示：中野信夫 著,中野圭子 編 NDC(9)：210.75",
-      "date_display": "2015.1",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-12T00:27:52.871701Z",
-      "query_used": "インパール",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "2015"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "Y2",
-        "210.75"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I026027253",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I026027253",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "burma-campaign",
-        "personal-stories"
-      ],
-      "topic_keywords": [
-        "缅甸战役与部队",
-        "Burma campaign & units",
-        "缅甸",
-        "緬甸",
-        "缅甸战役",
-        "英帕尔",
-        "钦迪特",
-        "钦迪特部队",
-        "怒江",
-        "Burma",
-        "Burma campaign",
-        "Imphal",
-        "Chindits",
-        "Merrill’s Marauders",
-        "Salween",
-        "个人经历与回忆",
-        "Personal stories & recollections",
-        "个人经历",
-        "口述历史",
-        "口述歷史",
-        "回忆录",
-        "回憶錄",
-        "日记",
-        "士兵",
-        "老兵",
-        "军人",
-        "personal narratives",
-        "oral history",
-        "memoir",
-        "diary",
-        "soldiers",
-        "veterans",
-        "service"
-      ]
-    },
-    {
-      "id": "ndl:R100000002-I000000007635-d3289771",
-      "source_id": "R100000002-I000000007635-d3289771",
-      "source": "NDL",
-      "title": "航空ファン",
-      "description": "32(6),文林堂,1983-06, タイトル：航空ファン タイトル（読み）：コウクウ ファン",
-      "date_display": "1983-06",
-      "date_kind": "source_supplied",
-      "format": null,
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-12T00:27:58.115799Z",
-      "query_used": "フライングタイガース",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1983"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "ZN25"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000007635-d3289771",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000007635-d3289771",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "flying-tigers"
-      ],
-      "topic_keywords": [
-        "飞虎队与航空",
-        "Flying Tigers & aviation",
-        "飞虎队",
-        "飛虎隊",
-        "陈纳德",
-        "陳納德",
-        "美国志愿航空队",
-        "航空",
-        "第十四航空队",
-        "Flying Tigers",
-        "American Volunteer Group",
-        "AVG",
-        "Chennault",
-        "P-40",
-        "Fourteenth Air Force",
-        "aviation"
-      ],
-      "curator_note": {
-        "zh-CN": "通过“フライングタイガース”检索返回的《航空ファン》期刊书目。相关篇目及全文内容尚未逐页核实。",
-        "en": "An issue of 航空ファン returned for the search “フライングタイガース”. The relevant article and full-text content have not been checked page by page."
-      }
-    },
-    {
-      "id": "ndl:R100000002-I000000007635-d3289958",
-      "source_id": "R100000002-I000000007635-d3289958",
-      "source": "NDL",
-      "title": "航空ファン",
-      "description": "48(1)(553),文林堂,1999-01, タイトル：航空ファン タイトル（読み）：コウクウ ファン",
-      "date_display": "1999-01",
-      "date_kind": "source_supplied",
-      "format": null,
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-12T00:27:58.115799Z",
-      "query_used": "フライングタイガース",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1999"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "ZN25"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000007635-d3289958",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000007635-d3289958",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "flying-tigers"
-      ],
-      "topic_keywords": [
-        "飞虎队与航空",
-        "Flying Tigers & aviation",
-        "飞虎队",
-        "飛虎隊",
-        "陈纳德",
-        "陳納德",
-        "美国志愿航空队",
-        "航空",
-        "第十四航空队",
-        "Flying Tigers",
-        "American Volunteer Group",
-        "AVG",
-        "Chennault",
-        "P-40",
-        "Fourteenth Air Force",
-        "aviation"
-      ],
-      "curator_note": {
-        "zh-CN": "通过“フライングタイガース”检索返回的《航空ファン》期刊书目。相关篇目及全文内容尚未逐页核实。",
-        "en": "An issue of 航空ファン returned for the search “フライングタイガース”. The relevant article and full-text content have not been checked page by page."
-      }
-    },
-    {
-      "id": "ndl:R100000002-I000002148858",
-      "source_id": "R100000002-I000002148858",
-      "source": "NDL",
-      "title": "シエンノートとフライング・タイガース : 日本軍を震撼させた男",
-      "description": "徳間書店,1991,4-19-554705-9 タイトル：シエンノートとフライング・タイガース : 日本軍を震撼させた男 タイトル（読み）：シエンノート ト フライング タイガース 責任表示：吉田一彦 著",
-      "date_display": "1991.11",
-      "date_kind": "source_supplied",
-      "format": "TEXT",
-      "access_status": "unverified",
-      "review_status": "candidate",
-      "retrieved_at": "2026-10-12T00:27:58.115799Z",
-      "query_used": "フライングタイガース",
-      "level_of_description": null,
-      "record_group": null,
-      "dataset_updated_at": null,
-      "holding_institution": [
-        "国立国会図書館"
-      ],
-      "metadata_provider": [
-        "NDL Search API — 国立国会図書館作成書誌 (iss-ndl-opac)"
-      ],
-      "year": [
-        "1991"
-      ],
-      "language": [],
-      "metadata_language": [
-        "ja"
-      ],
-      "content_rights": [],
-      "subjects": [
-        "Chennault, Claire Lee, 1893-1958",
-        "GK410",
-        "289.3"
-      ],
-      "archival_context": [],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000002148858",
-      "aggregator_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000002148858",
-      "metadata_rights": "https://creativecommons.org/licenses/by/4.0/",
-      "dataset_url": null,
-      "record_origin": "api",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "topic_ids": [
-        "flying-tigers"
-      ],
-      "topic_keywords": [
-        "飞虎队与航空",
-        "Flying Tigers & aviation",
-        "飞虎队",
-        "飛虎隊",
-        "陈纳德",
-        "陳納德",
-        "美国志愿航空队",
-        "航空",
-        "第十四航空队",
-        "Flying Tigers",
-        "American Volunteer Group",
-        "AVG",
-        "Chennault",
-        "P-40",
-        "Fourteenth Air Force",
-        "aviation"
       ]
     },
     {
@@ -2972,13 +1942,11 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween"
@@ -3037,13 +2005,11 @@
         "缅甸",
         "緬甸",
         "缅甸战役",
-        "英帕尔",
         "钦迪特",
         "钦迪特部队",
         "怒江",
         "Burma",
         "Burma campaign",
-        "Imphal",
         "Chindits",
         "Merrill’s Marauders",
         "Salween"
@@ -4264,25 +3230,6 @@
       }
     },
     {
-      "id": "NDL",
-      "label": "日本国立国会图书馆",
-      "label_en": "National Diet Library",
-      "source_name_en": "National Diet Library",
-      "source_name_zh": "日本国立国会图书馆",
-      "url": "https://ndlsearch.ndl.go.jp/",
-      "description": "NDL Search API 书目元数据（CC BY 4.0）。包含战后出版物；出版日期不等于战役日期。",
-      "status": "available",
-      "count": 14,
-      "fetched_at": "2026-10-12T00:27:58.115799Z",
-      "checked_at": "2026-10-12T00:25:50Z",
-      "access_modes": [
-        "api"
-      ],
-      "counts_by_origin": {
-        "api": 14
-      }
-    },
-    {
       "id": "Europeana",
       "label": "欧洲数字文化遗产平台",
       "label_en": "Europeana",
@@ -4445,8 +3392,8 @@
         "en": "Flying Tigers & aviation"
       },
       "description": {
-        "zh-CN": "从 P-40 战斗机照片、航空史书目与博物馆文章认识飞虎队及相关航空部队。第十四航空队与最初的美国志愿航空队需要区分。",
-        "en": "Explore P-40 photographs, aviation bibliography and museum articles on the Flying Tigers and related air units. The Fourteenth Air Force is distinct from the original American Volunteer Group."
+        "zh-CN": "从 P-40 战斗机照片、博物馆文章与航空队臂章认识飞虎队及相关航空部队。第十四航空队与最初的美国志愿航空队需要区分。",
+        "en": "Explore P-40 photographs, museum articles and an air-force patch on the Flying Tigers and related air units. The Fourteenth Air Force is distinct from the original American Volunteer Group."
       },
       "keywords": {
         "zh-CN": [
@@ -4470,13 +3417,8 @@
       },
       "record_ids": [
         "nara:535531",
-        "ndl:R100000002-I000002148858",
         "smithsonian:hiding-plane-sight",
-        "smithsonian:nmah_1983471",
-        "ndl:R100000002-I000000007635-d3289771",
-        "ndl:R100000002-I000000007635-d3289958",
-        "ndl:R100000002-I000001093304",
-        "ndl:R100000002-I000001095893"
+        "smithsonian:nmah_1983471"
       ]
     },
     {
@@ -4519,8 +3461,8 @@
         "en": "The Burma Road"
       },
       "description": {
-        "zh-CN": "沿公路的建设、村落与卫生调查照片，结合日文回忆文献及法语广播目录，观察这条交通线的不同记录。",
-        "en": "Explore road construction, villages and health-survey photographs alongside Japanese memoir bibliography and a French broadcast record."
+        "zh-CN": "沿公路的建设、村落与卫生调查照片，结合广播目录，观察这条交通线的不同记录。",
+        "en": "Explore road construction, villages and health-survey photographs alongside a French broadcast record."
       },
       "keywords": {
         "zh-CN": [
@@ -4549,7 +3491,6 @@
         "loc:2017872504",
         "loc:2017872505",
         "loc:2017872525",
-        "ndl:R100000002-I000001663142",
         "europeana:/2051908/data_euscreenXL_ina_PHD85008112"
       ]
     },
@@ -4602,15 +3543,14 @@
         "en": "Burma campaign & units"
       },
       "description": {
-        "zh-CN": "照片、战地新闻影片、英帕尔回忆录及钦迪特文献线索。战后出版物的出版时间与战事时间分别保留。",
-        "en": "Photographs, wartime newsreels, Imphal memoirs and Chindit research leads. Publication dates of later works remain distinct from wartime events."
+        "zh-CN": "照片、战地新闻影片、麦瑞尔突击队个人文献及钦迪特研究线索，展现缅甸战场与部队经历。",
+        "en": "Photographs, wartime newsreels, a Merrill’s Marauders personal collection and Chindit research leads explore the Burma campaign and military service."
       },
       "keywords": {
         "zh-CN": [
           "缅甸",
           "緬甸",
           "缅甸战役",
-          "英帕尔",
           "钦迪特",
           "钦迪特部队",
           "怒江"
@@ -4618,7 +3558,6 @@
         "en": [
           "Burma",
           "Burma campaign",
-          "Imphal",
           "Chindits",
           "Merrill’s Marauders",
           "Salween"
@@ -4632,10 +3571,6 @@
         "loc:2008678725",
         "loc:2010636632",
         "loc:2005692391",
-        "ndl:R100000002-I000002594329",
-        "ndl:R100000002-I000001394546",
-        "ndl:R100000002-I000001567087",
-        "ndl:R100000002-I026027253",
         "europeana:/2022320/8DAA882DC554386D1C625C354C1B6E031692FBF3",
         "europeana:/2051944/data_euscreenXL_4955234"
       ]
@@ -4647,8 +3582,8 @@
         "en": "Personal stories & recollections"
       },
       "description": {
-        "zh-CN": "军人个人文献、回忆录与日记书目，呈现中国、缅甸和印度的服役经历。部分条目只有目录信息。",
-        "en": "Personal military collections, memoirs and diary bibliography offer perspectives on service in China, Burma and India. Some entries provide catalogue information only."
+        "zh-CN": "军人个人文献呈现中国、缅甸和印度的服役经历，包括飞行、地勤与地面部队。部分条目只有目录信息。",
+        "en": "Personal military collections offer perspectives on service in China, Burma and India, including flying, ground support and infantry. Some entries provide catalogue information only."
       },
       "keywords": {
         "zh-CN": [
@@ -4676,15 +3611,7 @@
         "loc:afc2001001.107713",
         "loc:afc2001001.119534",
         "loc:afc2001001.82964",
-        "loc:afc2001001.21936",
-        "ndl:R100000002-I000002594329",
-        "ndl:R100000002-I000001394546",
-        "ndl:R100000002-I000001567087",
-        "ndl:R100000002-I000002108359",
-        "ndl:R100000002-I000001663142",
-        "ndl:R100000002-I000001466950",
-        "ndl:R100000002-I034848408",
-        "ndl:R100000002-I026027253"
+        "loc:afc2001001.21936"
       ]
     },
     {
@@ -4812,8 +3739,8 @@
         "en": "Civilians, health & daily life"
       },
       "description": {
-        "zh-CN": "公路沿线村落、疟疾调查、医院与民众支援的照片，以及防疫部队的战后记录。",
-        "en": "Photographs of villages, malaria surveys, hospitals and civilian war work, with a postwar record of a disease-prevention unit."
+        "zh-CN": "公路沿线村落、疟疾调查、医院与民众支援的照片，记录战时卫生与日常生活。",
+        "en": "Photographs of villages, malaria surveys, hospitals and civilian war work document wartime health and daily life."
       },
       "keywords": {
         "zh-CN": [
@@ -4844,8 +3771,7 @@
         "loc:2017872525",
         "loc:2004680684",
         "loc:2005677702",
-        "loc:2004676827",
-        "ndl:R100000002-I000001214463"
+        "loc:2004676827"
       ]
     }
   ],

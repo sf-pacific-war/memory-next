@@ -2,7 +2,7 @@
 
 核查日期：**2026-10-12 UTC**（美国太平洋时间 2026-10-11）。本文件对应 [`data/cbi/verified-matches.json`](../data/cbi/verified-matches.json)，记录原始来源链接、馆藏编号、依据、使用条件及下一步。
 
-本轮整理 **20 条人工核查记录，涉及 10 个档案／馆藏平台**：4 条可以确认同一作品或同一期报纸，15 条仅为相关主题候选，1 条仍待验证。**没有任何记录被标为“已核实同图／同一实物”。** 这些数字指人工挑选的交叉核查条目，不代表全站核查完成，也不等于 10 个自动 API 接口已经接通。
+本轮整理 **19 条人工核查记录，涉及 9 个档案／馆藏平台**：4 条可以确认同一作品或同一期报纸，14 条仅为相关主题候选，1 条仍待验证。**没有任何记录被标为“已核实同图／同一实物”。** 这些数字指人工挑选的交叉核查条目，不代表全站核查完成，也不等于 9 个自动 API 接口已经接通。
 
 [CBI Theater 网站](https://cbi-theater.com/menu/cbi_home.html)仅作为主题、标题和书目线索。演示页不抓取、不显示该站图片，不复制文章全文。六张可显示的预览分别来自美国国家档案馆（National Archives and Records Administration，NARA）和互联网档案馆（Internet Archive，IA）的原站。
 
@@ -39,7 +39,6 @@
 | 016 | [The Hump: Aluminum Trail](https://cbi-theater.com/aluminum_trail/index.html) | [THE GEN NO 16 [Main Title]](https://film.iwmcollections.org.uk/record/503)<br>帝国战争博物馆（IWM）<br>`Film number GEN 16; IWM film record 503` | 影片 | 相关主题候选 | IWM 对 1945 年 7 月新闻片的说明包括 Dakota 飞越喜马拉雅、昆明卸货及儿童返印；与驼峰主题相关，未认定与 CBI 文章有直接同源关系。 核实相关片卷与时间点；若公开演示影片片段，再确认适用许可。 |
 | 017 | [CBI Roundup — January 11, 1945](https://cbi-theater.com/roundup/roundup011145.html) | [Control of theater newspaper "CBI Roundup" — attached issue dated January 11, 1945](https://cgsc.contentdm.oclc.org/digital/collection/p4013coll8/id/2298/)<br>艾克·斯凯尔顿联合兵种研究图书馆（CARL）<br>`CARL p4013coll8/2298; call number N13669; Part 2, pages 14–19` | 报刊 | 同一作品／报刊期次（非同一实物） | CARL 目录明确说明该卷附有 1945 年 1 月 11 日 CBI Roundup 样报；CBI 转录标示同日第三卷第 18 期。元数据支持同一期作品，仍需逐页对照扫描件。 打开第二部分 PDF，核对报头、页码与头条，确认整期内容是否完整一致。 |
 | 018 | [Inside Wartime China](https://cbi-theater.com/wartime/index.html) | [Inside Wartime China published by the Chinese Ministry of Information, 1943](https://archives.library.rice.edu/repositories/2/archival_objects/92597)<br>莱斯大学伍德森研究中心（Rice University）<br>`Lowe Family Papers MS 0588; Box 4, Folder 12; archival object 92597` | 书册 | 尚未核实 | 莱斯大学检索目录提供同名册子的出版机关与年份；CBI 菜单虽同名，但未核对 CBI 版权页或莱斯藏本影像，因此作品／版本相同性仍待验证。 先核对 CBI 印记，再向馆方确认目录与扫描件信息；不可将目录开放说成全文在线。 |
-| 019 | [Clearing the Burma Road](https://cbi-theater.com/yank-burmaroad/burmaroad.html) | [ああ滇緬公路 : ビルマ従軍](https://ndlsearch.ndl.go.jp/books/R100000002-I000001663142)<br>日本国立国会图书馆（NDL）<br>`NDL R100000002-I000001663142; call number GB554-1548` | 书册 | 相关主题候选 | 既有 NDL 元数据为兴龙会编辑委员会编纂的 1983 年战友出版物；NDL 公开书目亦有记录。它可补充日方缅甸战争视角，与 YANK 战时文章不是同一作品。 补全书目和相关目录，并将 1983 年出版日期与战争事件日期分别记录。 |
 | 020 | [Japan Threatens Burma Road](https://cbi-theater.com/life120841/life120841.html) | [La discussion des Trois Amis : le Pacifique ; offensive Rommel ; route de Birmanie ; Japonais à Java](https://www.europeana.eu/item/2051908/data_euscreenXL_ina_PHD85008112)<br>欧洲数字文化遗产平台（Europeana）<br>`Europeana /2051908/data_euscreenXL_ina_PHD85008112; INA PHD85008112` | 音频 | 相关主题候选 | 既有 Europeana API 快照标明这是标题涉及滇缅公路的法国 INA 音频。它是跨语言主题候选，日期与可播放内容尚未核实，不能认定与 LIFE 文章同文同源。 解析 INA 原馆记录，核实录制日期和播放条件，再审查媒体使用许可。 |
 
 ## 预览与使用条件
@@ -74,10 +73,9 @@
 | 帝国战争博物馆（IWM） | 两个官方影片目录记录、影片编号与访问说明 | 目录开放不代表影片全部可播放或可截取 |
 | 艾克·斯凯尔顿联合兵种研究图书馆（CARL） | 官方索引明确指出卷内附有 1945-01-11 报纸 | 直接查看器本轮超时；未下载 PDF 逐页确认 |
 | 莱斯大学伍德森研究中心（Rice University） | 官方索引中的 MS 0588、箱 4／夹 12 书目 | 没有全文，版次仍待核验 |
-| 日本国立国会图书馆（NDL） | 既有 API 快照与 NDL 官方发表书目相互印证 | 本轮未读到书籍全文；没有封面许可 |
 | 欧洲数字文化遗产平台（Europeana） | 2026-10-10 成功取得的 API 元数据快照，包含 INA 标识符和权利信息 | 本轮特定条目页和 INA 提供者页未渲染；音频访问仍未核实 |
 
-英国国家档案馆（The National Archives，TNA）、美国数字公共图书馆（Digital Public Library of America，DPLA）、日本亚洲历史资料中心（Japan Center for Asian Historical Records，JACAR）及台湾档案管理局（National Archives Administration，archives.gov.tw）未在这份人工清单中确认具体同物记录。不要把“没有加入这 20 条”理解为其无相关馆藏；接口与凭据状态另见项目访问测试文档。
+英国国家档案馆（The National Archives，TNA）、美国数字公共图书馆（Digital Public Library of America，DPLA）、日本亚洲历史资料中心（Japan Center for Asian Historical Records，JACAR）及台湾档案管理局（National Archives Administration，archives.gov.tw）未在这份人工清单中确认具体同物记录。不要把“没有加入这 19 条”理解为其无相关馆藏；接口与凭据状态另见项目访问测试文档。
 
 ## 本地复核命令
 
@@ -102,7 +100,7 @@ for record in records:
 PY
 ```
 
-预期：20 条；`same_work=4`、`related=15`、`unverified=1`；10 个来源；6 个机构原站预览。
+预期：19 条；`same_work=4`、`related=14`、`unverified=1`；9 个来源；6 个机构原站预览。
 
 联网检查预览 URL，不请求 CBI 图片，也不下载图片文件：
 

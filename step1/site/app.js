@@ -1,3 +1,4 @@
+import { createDemoBanner } from './demo-banner.mjs';
 import { filterRecords, expandQuery, formatLabel as typeName, sourceLabel as sourceName } from './search.mjs';
 import { updatePageLinks } from './page-links.mjs';
 import { archivalThumbnail } from './archive-media.mjs';
@@ -5,15 +6,16 @@ import { bindPageTranslations, resolveLocale, normalizeLocale, translate } from 
 
 const $ = (id) => document.getElementById(id);
 const PAGE_SIZE = 12;
-const LANGUAGE_KEY = 'pacific-war-discovery-language';
+const LANGUAGE_KEY = 'pacific-war-language-choice';
 function savedLocale() {
   try { return localStorage.getItem(LANGUAGE_KEY); } catch { return null; }
 }
-let locale = resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale(), navigator.languages || [navigator.language]);
+let locale = resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale());
 const t = (message, values) => translate(message, locale, values);
 const sourceLabel = source => sourceName(source, locale);
 const formatLabel = type => typeName(type, locale);
 const applyPageLanguage = bindPageTranslations(document);
+const renderDemoBanner = createDemoBanner(document);
 let selectedRecord = null;
 let loadFailed = false;
 const defaults = () => ({ query: '', topic: '', sources: [], types: [], access: 'all', startYear: '', endYear: '', includeUnknownDates: true, sort: 'relevance' });
@@ -318,23 +320,24 @@ function closeRecord() {
     history.replaceState(null, '', url);
   }
 }
-function renderSourceSummary() {
-  $('sample-count').textContent = catalog.records.length;
-  $('source-count').textContent = catalog.sources.filter(s => s.count > 0).length;
-  const dates = catalog.sources.flatMap(s => [s.fetched_at, s.checked_at]).filter(Boolean).sort();
-  $('updated-date').textContent = t('样本更新 {date}', { date: formatDate(dates.at(-1)) });
-}
 function renderTopics() {
   const container = $('topic-shortcuts');
   container.replaceChildren();
-  for (const topic of catalog.topics || []) {
-    const button = el('button', 'topic-shortcut');
+  const suggestions = (catalog.topics || []).map(topic => ({
+    en: topic.keywords.en[0], 'zh-CN': topic.keywords['zh-CN'][0],
+  }));
+  suggestions.push({ en: 'Imphal', 'zh-CN': '英帕尔' }, { en: 'Chinese Expeditionary Force', 'zh-CN': '中国远征军' });
+  const seen = new Set();
+  for (const suggestion of suggestions) {
+    if (seen.has(suggestion.en)) continue;
+    seen.add(suggestion.en);
+    const button = el('button', 'topic-shortcut', suggestion[locale]);
     button.type = 'button';
-    button.dataset.topicId = topic.id;
-    button.setAttribute('aria-pressed', String(state.topic === topic.id));
-    button.append(el('span', '', topic.title[locale]), el('small', '', topic.record_ids.length));
+    button.dataset.query = suggestion['zh-CN'];
+    button.dataset.queryEn = suggestion.en;
+    button.setAttribute('aria-pressed', String(Object.values(suggestion).includes(state.query)));
     button.addEventListener('click', () => {
-      state = { ...defaults(), topic: topic.id };
+      state = { ...defaults(), query: suggestion[locale] };
       syncControls(); update();
     });
     container.append(button);
@@ -353,7 +356,7 @@ async function loadCatalog() {
     catalog = data;
     readURL();
     renderFilters();
-    renderSourceSummary();
+    renderDemoBanner(catalog, locale);
     renderTopics();
     syncControls();
     update({ save: false });
@@ -366,7 +369,7 @@ async function loadCatalog() {
     $('results').setAttribute('aria-busy', 'false');
     $('results-bottom').hidden = true;
     $('error-state').hidden = false;
-    $('updated-date').textContent = t('样本载入失败');
+    renderDemoBanner(null, locale);
     $('result-announcement').textContent = t('目录样本载入失败，可点击重新载入。');
   }
 }
@@ -374,18 +377,18 @@ function changeLanguage(value, { save = true } = {}) {
   locale = normalizeLocale(value) || locale;
   applyPageLanguage(locale);
   $('language').value = locale;
-  try { localStorage.setItem(LANGUAGE_KEY, locale); } catch { /* Storage may be disabled. */ }
+  try { if (save) localStorage.setItem(LANGUAGE_KEY, locale); } catch { /* Storage may be disabled. */ }
   if (catalog) {
     const draftQuery = $('query').value;
     renderFilters();
     for (const input of document.querySelectorAll('input[data-kind]')) input.checked = state[input.dataset.kind].includes(input.value);
-    renderSourceSummary();
+    renderDemoBanner(catalog, locale);
     renderTopics();
     update({ save: false, resetPage: false });
     $('query').value = draftQuery;
     if ($('detail-dialog').open && selectedRecord) openRecord(selectedRecord, { save: false });
   } else if (loadFailed) {
-    $('updated-date').textContent = t('样本载入失败');
+    renderDemoBanner(null, locale);
     $('result-announcement').textContent = t('目录样本载入失败，可点击重新载入。');
   }
   if (save) {
@@ -408,11 +411,6 @@ $('search-form').addEventListener('submit', e => {
   state.query = $('query').value.trim();
   update();
 });
-document.querySelectorAll('[data-query]').forEach(button => button.addEventListener('click', () => {
-  state.query = locale === 'en' ? button.dataset.queryEn : button.dataset.query;
-  $('query').value = state.query;
-  update();
-}));
 $('reset-filters').addEventListener('click', () => reset(true));
 $('clear-all').addEventListener('click', () => reset());
 for (const [id, name] of [['start-year', 'startYear'], ['end-year', 'endYear']]) {
@@ -446,7 +444,7 @@ for (const id of ['detail-dialog', 'help-dialog']) $(id).addEventListener('click
 });
 window.addEventListener('popstate', () => {
   if (catalog) { readURL(); syncControls(); }
-  changeLanguage(resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale(), navigator.languages || [navigator.language]), { save: false });
+  changeLanguage(resolveLocale(new URLSearchParams(location.search).get('lang'), savedLocale()), { save: false });
   const requested = catalog?.records.find(record => record.id === new URLSearchParams(location.search).get('record'));
   if (requested) openRecord(requested, { save: false });
   else { $('detail-dialog').close(); selectedRecord = null; }
