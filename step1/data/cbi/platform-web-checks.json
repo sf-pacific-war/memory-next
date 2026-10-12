@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-12T00:33:45Z",
+  "scope_note": "Four supplementary public-web discovery checks. Public records/articles are distinct from API connectivity and from exact CBI-item matches. Search-indexed official metadata and direct HEAD outcomes are recorded separately.",
+  "platforms": [
+    {
+      "source": "TNA",
+      "source_en": "The National Archives",
+      "source_zh": "英国国家档案馆",
+      "status": "public_record",
+      "url": "https://discovery.nationalarchives.gov.uk/details/r/C952223",
+      "title": "Burma: Royal Engineers: Commander Royal Engineers Works: 177 CRE Works",
+      "record_id": "C952223",
+      "archival_reference": "WO 172/7849",
+      "query": "Burma WO 172",
+      "note": "Official Discovery metadata identifies a January–December 1945 war diary file at Kew. It explicitly says the record has not been digitised and cannot be downloaded. This is a related Burma record, not a verified CBI-site item match.",
+      "note_zh": "Discovery 官方目录确认该卷为 1945 年 1–12 月的缅甸工兵相关档案，藏于邱园；明确说明尚未数字化、不可下载。它是缅甸主题的相关记录，并非与 CBI 网站某项内容相同的已核实记录。",
+      "access_note": "Official search-indexed catalogue metadata read. Direct web-tool retrieval missed cache; a separate HEAD request returned HTTP 202. A 202 response does not prove the catalogue body was served.",
+      "access_note_zh": "已读到官方目录的搜索索引内容；网页工具直接获取遇到缓存缺失，另一次 HEAD 返回 HTTP 202。202 不代表已经返回有效目录正文。",
+      "next_step": "Open the public catalogue manually, record the unit/date range, and use the repository copying or visit route if the full diary is needed. No API success is claimed.",
+      "next_step_zh": "在公开目录人工核对单位和日期；需要完整日记时按馆方复制或到馆流程办理。这里不表示 API 已成功接通。",
+      "http_check": {
+        "method": "HEAD",
+        "status": 202,
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "retrieval_mode": "official_indexed_metadata",
+      "material_type": "archival_file",
+      "fulltext_status": "not_digitised",
+      "checked_at": "2026-10-12T00:33:45Z",
+      "route": "public_web",
+      "api_verified": false,
+      "match_status": "related",
+      "evidence_urls": [
+        "https://discovery.nationalarchives.gov.uk/details/r/C952223"
+      ],
+      "rights_note": "No media licence is inferred from public catalogue/article access. No media downloaded or embedded in this supplementary check."
+    },
+    {
+      "source": "JACAR",
+      "source_en": "Japan Center for Asian Historical Records",
+      "source_zh": "日本亚洲历史资料中心",
+      "status": "public_record",
+      "url": "https://www.jacar.archives.go.jp/das/meta/C12122376900",
+      "title": "泰．ビルマ 比島．仏印 方面発電綴 第１４軍 第１４方面軍 第３０混成旅団 第８師団 他 自昭和１６年１１月至昭和１９年１２月（５）",
+      "record_id": "C12122376900",
+      "archival_reference": "中央-作戦指導重要電報-90; 防衛省防衛研究所",
+      "query": "ビルマ 飛行",
+      "note": "Official JACAR metadata supplies reference code C12122376900, the holding institution and a Japanese telegram excerpt concerning air operations in Burma. A specific archival record is identified; none of its scanned pages or media has been fetched here.",
+      "note_zh": "JACAR 官方元数据给出参考号 C12122376900、馆藏机构及涉及缅甸航空作战的日文电报摘要。已识别具体档案记录，本轮未抓取任何扫描页或媒体。",
+      "access_note": "Official indexed record text was read; a direct HEAD returned HTTP 200 text/html. The image viewer and an API search response were not tested in this supplementary check.",
+      "access_note_zh": "已读到官方索引中的记录文本，直接 HEAD 返回 HTTP 200 text/html；本项补充检查未验证影像查看器或 API 搜索响应。",
+      "next_step": "Open the record viewer manually, verify the relevant frame/date, preserve the NIDS shelfmark, and review the source reproduction terms before using scans.",
+      "next_step_zh": "人工打开记录查看器，核对相关画幅和日期，保留防卫研究所索书号，并在使用扫描件前确认来源条款。",
+      "http_check": {
+        "method": "HEAD",
+        "status": 200,
+        "content_type": "text/html;charset=UTF-8"
+      },
+      "retrieval_mode": "official_indexed_metadata_and_direct_head",
+      "material_type": "archival_file",
+      "fulltext_status": "viewer_not_tested",
+      "checked_at": "2026-10-12T00:33:45Z",
+      "route": "public_web",
+      "api_verified": false,
+      "match_status": "related",
+      "evidence_urls": [
+        "https://www.jacar.archives.go.jp/das/meta/C12122376900"
+      ],
+      "rights_note": "No media licence is inferred from public catalogue/article access. No media downloaded or embedded in this supplementary check."
+    },
+    {
+      "source": "TaiwanNAA",
+      "source_en": "National Archives Administration, Taiwan",
+      "source_zh": "台湾档案管理局",
+      "status": "public_article",
+      "url": "https://www.archives.gov.tw/wSite/public/Attachment/0/f1717664345611.pdf",
+      "title": "虎翔天際：Flying Tiger（官方文章 PDF，标题略写）",
+      "record_id": "official-article:f1717664345611.pdf",
+      "archival_reference": null,
+      "query": "飛虎隊 Flying Tiger",
+      "note": "The official agency PDF contains a Flying Tigers research article and cites archival file numbers. It is an interpretive article pointing to records, not a catalogue item API response; the article and its embedded photographs have not been copied into the demo.",
+      "note_zh": "该机构官方 PDF 收录飞虎队主题研究文章，并引用若干档号。它是指向档案的介绍文章，不是单件档案 API 返回；未将文章或其中照片复制到演示。",
+      "access_note": "Official search-indexed PDF text was read. Direct HEAD returned HTTP 200 application/pdf; the web tool timed out retrieving the full PDF. The title is deliberately abbreviated because indexed OCR differs on one character.",
+      "access_note_zh": "已读到官方 PDF 的搜索索引文本。直接 HEAD 返回 HTTP 200 application/pdf，网页工具获取完整 PDF 超时。因索引 OCR 的一个字不一致，这里采用略写标题。",
+      "next_step": "Search the official National Archives Information website using the cited file numbers; verify item-level metadata, online image availability and reuse conditions separately.",
+      "next_step_zh": "用文中档号在国家档案资讯网检索，分别核实单件元数据、在线影像可用性与使用条件。",
+      "http_check": {
+        "method": "HEAD",
+        "status": 200,
+        "content_type": "application/pdf"
+      },
+      "retrieval_mode": "official_indexed_article_and_direct_head",
+      "material_type": "research_article",
+      "fulltext_status": "article_pdf_available_by_head_content_not_downloaded",
+      "catalogue_search_url": "https://aa.archives.gov.tw/ELK/AdvSearch",
+      "cited_record_leads": [
+        {
+          "reference": "0026/152.1/2320",
+          "title": "外籍空軍志願隊參加抗日戰史"
+        },
+        {
+          "reference": "0031/107.9/8043",
+          "title": "美自願軍歸建移交案"
+        },
+        {
+          "reference": "0033/544.2/8043",
+          "title": "美十四航空隊在華戰果統計表"
+        }
+      ],
+      "checked_at": "2026-10-12T00:33:45Z",
+      "route": "public_web",
+      "api_verified": false,
+      "match_status": "related",
+      "evidence_urls": [
+        "https://www.archives.gov.tw/wSite/public/Attachment/0/f1717664345611.pdf"
+      ],
+      "rights_note": "No media licence is inferred from public catalogue/article access. No media downloaded or embedded in this supplementary check."
+    },
+    {
+      "source": "DPLA",
+      "source_en": "Digital Public Library of America",
+      "source_zh": "美国数字公共图书馆",
+      "status": "public_record",
+      "url": "https://dp.la/item/26d3b44f2299cc1e6b6e8da45178a394",
+      "title": "U.S. TROOPS ON ALASKAN FRONT [ETC.]",
+      "record_id": "26d3b44f2299cc1e6b6e8da45178a394",
+      "archival_reference": null,
+      "query": "Flying Tigers",
+      "note": "The official DPLA record describes a 1942 newsreel whose first part includes Flying Tigers preparing for a mission. It names NARA as partner and the National Archives at College Park – Motion Pictures as contributing institution. This is an aggregator record, not proof of a CBI-site match.",
+      "note_zh": "DPLA 官方记录将其描述为 1942 年新闻片，第一部分包含飞虎队执行任务前的准备，并标明 NARA 为合作机构、College Park 电影档案部门为提供者。它是聚合目录记录，不证明与 CBI 页同片。",
+      "access_note": "Official search-indexed item metadata was read. Direct web-tool access returned HTTP 403; HEAD returned HTTP 202. These responses do not establish a working public search API or playable film.",
+      "access_note_zh": "已读到官方条目的搜索索引元数据；网页工具直接访问返回 HTTP 403，HEAD 返回 HTTP 202。这些结果不能证明公共搜索 API 已接通或影片可播放。",
+      "next_step": "Follow View Full Item to NARA in a browser, resolve the original NAID, and only then verify playback and rights. API credential setup remains a separate task.",
+      "next_step_zh": "在浏览器经 View Full Item 跟进 NARA 原馆，获取原始 NAID，再验证播放与使用条件。API 凭据配置仍是另一项工作。",
+      "http_check": {
+        "method": "HEAD",
+        "status": 202,
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "retrieval_mode": "official_indexed_metadata",
+      "material_type": "film_catalogue_record",
+      "fulltext_status": "playback_not_verified",
+      "checked_at": "2026-10-12T00:33:45Z",
+      "route": "public_web",
+      "api_verified": false,
+      "match_status": "related",
+      "evidence_urls": [
+        "https://dp.la/item/26d3b44f2299cc1e6b6e8da45178a394"
+      ],
+      "rights_note": "No media licence is inferred from public catalogue/article access. No media downloaded or embedded in this supplementary check."
+    }
+  ]
+}

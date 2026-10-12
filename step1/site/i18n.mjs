@@ -1,5 +1,6 @@
 /** UI translations only. Archival titles, descriptions and rights remain verbatim. */
 export const messages = Object.freeze({
+  "CBI demo": { "zh-CN": "CBI 演示", "en": "CBI demo" },
   "查看资料：{title}（{type}）": {
     "zh-CN": "查看资料：{title}（{type}）",
     "en": "View record: {title} ({type})"
@@ -12,13 +13,13 @@ export const messages = Object.freeze({
     "zh-CN": "正在载入预览…",
     "en": "Loading preview…"
   },
-  "数据来源 · 太平洋战争档案": {
-    "zh-CN": "数据来源 · 太平洋战争档案",
-    "en": "Sources · Pacific War Archives"
+  "数据来源 · WWII Pacific War": {
+    "zh-CN": "数据来源 · WWII Pacific War",
+    "en": "Sources · WWII Pacific War"
   },
-  "了解目录样本的来源机构、收录范围与原始出处。": {
-    "zh-CN": "了解目录样本的来源机构、收录范围与原始出处。",
-    "en": "Explore the institutions, coverage and provenance of the catalogue samples."
+  "WWII Pacific War：了解目录样本的来源机构、收录范围与原始出处。": {
+    "zh-CN": "WWII Pacific War：了解目录样本的来源机构、收录范围与原始出处。",
+    "en": "WWII Pacific War: Explore the institutions, coverage and provenance of the catalogue samples."
   },
   "跳至数据来源": {
     "zh-CN": "跳至数据来源",
@@ -28,25 +29,25 @@ export const messages = Object.freeze({
     "zh-CN": "返回资料发现 ↗",
     "en": "Back to discovery ↗"
   },
-  "资料发现 · 太平洋战争档案": {
-    "zh-CN": "资料发现 · 太平洋战争档案",
-    "en": "Discovery · Pacific War Archives"
+  "资料发现 · WWII Pacific War": {
+    "zh-CN": "资料发现 · WWII Pacific War",
+    "en": "Discovery · WWII Pacific War"
   },
-  "跨来源发现中国与缅甸战场的历史资料。检索真实目录样本，查看出处并前往原馆。": {
-    "zh-CN": "跨来源发现中国与缅甸战场的历史资料。检索真实目录样本，查看出处并前往原馆。",
-    "en": "Discover historical sources on China and Burma across archives. Search catalogue samples and follow their original sources."
+  "WWII Pacific War：跨来源发现中国与缅甸战场的历史资料。检索真实目录样本，查看出处并前往原馆。": {
+    "zh-CN": "WWII Pacific War：跨来源发现中国与缅甸战场的历史资料。检索真实目录样本，查看出处并前往原馆。",
+    "en": "WWII Pacific War: Discover historical sources on China and Burma across archives. Search catalogue samples and follow their original sources."
   },
   "跳至检索结果": {
     "zh-CN": "跳至检索结果",
     "en": "Skip to search results"
   },
-  "太平洋战争档案首页": {
-    "zh-CN": "太平洋战争档案首页",
-    "en": "Pacific War Archives home"
+  "WWII Pacific War 首页": {
+    "zh-CN": "WWII Pacific War 首页",
+    "en": "WWII Pacific War home"
   },
-  "太平洋战争档案": {
-    "zh-CN": "太平洋战争档案",
-    "en": "Pacific War Archives"
+  "WWII Pacific War": {
+    "zh-CN": "WWII Pacific War",
+    "en": "WWII Pacific War"
   },
   "主导航": {
     "zh-CN": "主导航",
@@ -312,9 +313,9 @@ export const messages = Object.freeze({
     "zh-CN": "从关键词到原始出处",
     "en": "FROM KEYWORDS TO ORIGINAL SOURCES"
   },
-  "如何使用资料发现": {
-    "zh-CN": "如何使用资料发现",
-    "en": "How to use discovery"
+  "如何使用 WWII Pacific War": {
+    "zh-CN": "如何使用 WWII Pacific War",
+    "en": "How to use WWII Pacific War"
   },
   "输入线索": {
     "zh-CN": "输入线索",
@@ -604,9 +605,9 @@ export const messages = Object.freeze({
     "zh-CN": "档案标题和描述保留原文。",
     "en": "Record titles and descriptions remain in their original language."
   },
-  "PACIFIC WAR ARCHIVES": {
-    "en": "太平洋战争档案",
-    "zh-CN": "PACIFIC WAR ARCHIVES"
+  "二战太平洋战场": {
+    "en": "二战太平洋战场",
+    "zh-CN": "二战太平洋战场"
   },
   "RESEARCH FOCUS": {
     "en": "RESEARCH FOCUS",

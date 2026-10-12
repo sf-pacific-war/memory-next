@@ -43,7 +43,7 @@ function elementWithAttributes(attributes) {
 
 test('binds UI text and accessibility attributes without replacing controls or later archival content', () => {
   const label = textNode('  搜索资料\n');
-  const title = textNode('资料发现 · 太平洋战争档案', 'TITLE');
+  const title = textNode('资料发现 · WWII Pacific War', 'TITLE');
   const option = textNode('中文', 'OPTION', true);
   const script = textNode('搜索资料', 'SCRIPT');
   const style = textNode('搜索资料', 'STYLE');
@@ -52,7 +52,7 @@ test('binds UI text and accessibility attributes without replacing controls or l
   const input = elementWithAttributes({ 'aria-label': '搜索资料', placeholder: '起始年' });
   input.value = 'Unsubmitted Burma Road query';
   const originalInput = input;
-  const meta = elementWithAttributes({ content: '跨来源发现中国与缅甸战场的历史资料。检索真实目录样本，查看出处并前往原馆。' });
+  const meta = elementWithAttributes({ content: 'WWII Pacific War：跨来源发现中国与缅甸战场的历史资料。检索真实目录样本，查看出处并前往原馆。' });
   const document = {
     documentElement: { lang: 'zh-CN' },
     createTreeWalker() {
@@ -71,12 +71,12 @@ test('binds UI text and accessibility attributes without replacing controls or l
   apply('en');
   assert.equal(document.documentElement.lang, 'en');
   assert.equal(label.nodeValue, '  Search\n');
-  assert.equal(title.nodeValue, 'Discovery · Pacific War Archives');
+  assert.equal(title.nodeValue, 'Discovery · WWII Pacific War');
   assert.equal(input, originalInput);
   assert.equal(input.value, 'Unsubmitted Burma Road query');
   assert.equal(input.getAttribute('aria-label'), 'Search');
   assert.equal(input.getAttribute('placeholder'), 'From year');
-  assert.match(meta.getAttribute('content'), /^Discover historical sources/);
+  assert.match(meta.getAttribute('content'), /^WWII Pacific War: Discover historical sources/);
   assert.equal(option.nodeValue, '中文');
   for (const skipped of [script, style, noScript]) assert.equal(skipped.nodeValue, '搜索资料');
   assert.equal(archivalTitle.nodeValue, '搜索资料');

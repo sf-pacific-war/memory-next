@@ -1,4 +1,4 @@
-# Pacific War Memory — Demo Apps
+# WWII Pacific War — Demo Apps
 
 本仓库保留两个**独立运行**的应用，研究主题为太平洋战争，重点包括中国、缅甸及中缅印战区。`step0/` 保存已有馆藏管理原型；`step1/` 是当前的跨平台统一发现 Demo。数字编号用于区分阶段，运行 Step 1 无需先运行 Step 0。
 
@@ -24,6 +24,12 @@ python3 step1/tools/serve.py
 更新样本时，美国国会图书馆（LoC）、日本国立国会图书馆（NDL） 和 美国国家档案馆（NARA） 公开数据集无需 key；欧洲数字文化遗产平台（Europeana） 获取工具需要自己的 `EUROPEANA_API_KEY`。仓库仅包含空白 [凭据模板](step1/.env.example)，不包含可用密钥。具体命令、来源范围、凭据说明和后续规划见 [Step 1 README](step1/README.md)。新增 [逐平台接入检查](step1/docs/archive-access.md) 覆盖 9 平台、10 种方式，分别说明无须凭据、已有／缺少 key、待 IP 审批和仅网页入口的状态。统一入口可用 `--live --query '飞虎队' --format table` 测试同一关键词；完整命令和中英文实测结果见 [关键词测试说明](step1/docs/archive-search-commands.md)。
 
 档案平台使用中英文对照名称，见 [名称表](step1/docs/archive-platform-names.md)。[台湾档案管理局（archives.gov.tw）总结](step1/docs/taiwan-archives.md)记录免 key CSV 的访问验证、合作 API 状态和后续生产接入；已作为 `taiwan` 状态入口加入统一检查器，目前返回 `manual_only`；尚未实现 CSV 检索或加入当前四来源网页。
+
+## WWII Pacific War：CBI 演示
+
+顶部的 [CBI 演示](step1/docs/cbi-demo.md) 连接独立页面 `/cbi-demo.html`：展示 20 条来自 10 个机构的人工对照、41 条 API／公开数据集候选，以及可筛选的参考清单和接入证据。4 条对照识别同一作品，15 条是相关材料，1 条待确认；没有声称核实同一张照片或同一件实物。
+
+CBI Theater 只用于识别题材、标题和链接。**不下载或显示其图片、PDF、音视频**；全部预览来自档案机构。已尝试首页的 351 个内部入口，完整的逐件核对尚未完成；最新数量、失败和待访问链接见 [覆盖记录](step1/data/cbi/coverage.md)。原首页的 31 条样本与新演示的 41 条研究候选保持独立。
 
 ## 运行旧应用：Step 0
 
@@ -80,7 +86,7 @@ python3 -m unittest discover -s step1/tests -p 'test_*.py' -v
 node --test step1/tests/*.test.mjs
 ```
 
-Step 0 的 7 项检查使用临时副本和新建的演示数据库，验证迁移后的启动、静态资源、登录、搜索和权限。Step 1 的 149 项 Python 测试、17 项 JavaScript 测试验证数据处理、凭据边界、HTTP 文件隔离和搜索。测试无需 API key、不连接外馆；HTTP 检查会短暂绑定本机端口。
+Step 0 的 7 项检查使用临时副本和新建的演示数据库，验证迁移后的启动、静态资源、登录、搜索和权限。Step 1 的 181 项 Python 测试、20 项 JavaScript 测试验证数据处理、凭据边界、HTTP 文件隔离、搜索和 CBI 参考核查。测试无需 API key、不连接外馆；HTTP 检查会短暂绑定本机端口。
 
 仓库提供 [GitHub Actions 测试模板](ci/demo-tests.yml)，**尚未启用自动 CI**。当前推送凭据缺少 GitHub 的 `workflow` 权限，因此模板保存在 `ci/`；有相应权限的维护者可以按 [启用说明](ci/README.md) 将其放入 `.github/workflows/`。启用后会在 PR 和 `main` 更新时运行这些检查，不自动部署。
 

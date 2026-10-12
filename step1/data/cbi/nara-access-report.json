@@ -1,0 +1,18 @@
+{
+  "source": "nara",
+  "name": "NARA public catalog dataset",
+  "access_mode": "dataset",
+  "endpoint": "https://nara-national-archives-catalog.s3.us-east-2.amazonaws.com/descriptions/record-groups/rg_493/rg_493-1.jsonl",
+  "portal_url": "https://catalog.archives.gov/",
+  "documentation_url": "https://www.archives.gov/developer/national-archives-catalog-dataset",
+  "notes": "Downloads one fixed RG 493 JSONL metadata shard anonymously. The returned sample count is not keyword search results, a full Catalog search, or the record-group total; query input is not supported. Authenticated Catalog API access is separate.",
+  "credential_env": null,
+  "credential_state": "not_required",
+  "permission_required": false,
+  "permission_confirmed": null,
+  "request_sent": true,
+  "checked_at": "2026-10-12T00:25:31.635567Z",
+  "sample_count": 3,
+  "status": "ok",
+  "message": "One bounded request succeeded and its response structure was validated."
+}
